@@ -279,7 +279,7 @@ Both Armor Class (AC) and To Hit are based on your Dexterity. Below is a summary
 
 The bonus in the above formulas refers to some *hidden* To Hit modifiers specific for each character class. They are listed in the table below but do not show up in the To Hit value you see on the character screen. For the blocking bonus see chapter 2.2.
 
-| **Class**      | **Melee** | **Arrow** | **Magic** | **Blocking** [^1] |
+| **Class**      | **Melee** | **Arrow** | **Magic** | **Blocking** [^3] |
 |--------------|:-------:|:-------:|:-------:|:---------:|
 | **Warrior**   | 20      | 10      | -       | 30        |
 | **Rogue**     | -       | 20      | -       | 20        |
@@ -288,7 +288,7 @@ The bonus in the above formulas refers to some *hidden* To Hit modifiers specifi
 | **Bard**      | -       | 10      | 10      | 25        |
 | **Barbarian** | -       | -       | -       | 30        |
 
-[^1]: There exists a bug where the **blocking bonus is always 0**, except during the first game a character plays.
+[^3]: There exists a bug where the **blocking bonus is always 0**, except during the first game a character plays.
 
 
 In the table below, maximum AC and To Hit for each character class is summarized. The columns for max values from max stats are maximum values without the use of any items that specifically add to AC and To Hit (only to Dex). When two numbers are given the first one belongs to Diablo and the second one to Hellfire. The reason is that there are some new unique rings only available in Hellfire. It also excludes any effects from oils and shrines that directly affect AC or To Hit. The values are, of course, excluding such things as clvl that is factored in for computing the real final To Hit.
@@ -298,11 +298,11 @@ In the table below, maximum AC and To Hit for each character class is summarized
 | **Warrior**   | 12               | 80               | 45 / 57               | 162 / 192                 | 349 / 401 | 392        |
 | **Rogue**     | 50               | 175              | 83 / 95               | 257 / 287                 | 385 / 425 | 487        |
 | **Sorcerer**  | 17               | 92               | 50 / 62               | 175 / 205                 | 350 / 390 | 405        |
-| **Monk**      | 130 [^1]         | 125              | 175 [^1]              | 237                        | 419       | 437        |
+| **Monk**      | 130 [^4]         | 125              | 175 [^4]              | 237                        | 419       | 437        |
 | **Bard**      | 24               | 110              | 72                     | 230                        | 413       | 565        |
-| **Barbarian**     | 23 [^1]      | 77               | 56                     | 190                        | 370       | 390        |
+| **Barbarian**     | 23 [^4]      | 77               | 56                     | 190                        | 370       | 390        |
 
-[^1]: For a level 50 character.
+[^4]: For a level 50 character.
 
 
 
