@@ -341,24 +341,16 @@ Blocking trap:	Dex + bonus
 
 There are a few ways by which the damage done to a player is modified depending upon the target. Below is listed what those effects are and in what order they are applied. Note that not all effects are applicable to all situations.
 
-|1\.|*of thieves*|Having an item with this suffix will reduce any trap damage by 50%. In Hellfire it will in|
-| -: | :- | :- |
-|||addition reduce the damage from any magical or ranged attack from monsters by 50%.|
-|||This effect is not cumulative if you have more than one item with the suffix.|
-|2\.|- damage taken|Having any item with a suffix that reduces damage (or in the case of a cursed suffix,|
-|||increases it), will reduce any damage, even magical, done by a monster by the combined|
-|||amount of all the suffixes you are wearing. Damage can never be reduced below 1 by|
-|||this effect.|
-|3\.|Reflect|In Hellfire the Reflect spell will reduce the amount of melee damage a monster does to|
-|||a player by 20 to 29%.|
-|3\.|player vs player|All magic damage is halved in player versus player attacks. This includes the damage by|
-|||Bone Spirit, which will only reduce 1/6 of current life.|
-|4\.|resistance|Having any item which gives you resistance will reduce any magical attack of the same|
-|||type by the total resistance of that type you have. Maximum resistance is 75%, which is|
-|||shown with the letters MAX.|
-|5\.|Mana Shield|If you are using a Mana Shield, it will reduce the damage by 33% in Diablo and by|
-|||(1/(3·slvl) ·100)% (if slvl is higher than 7, set slvl to 7) in Hellfire. In addition it will|
-|||remove mana instead of life.|
+| **Effect**          | **Description** |
+|------------------|--------------|
+| *of thieves*       | Having an item with this suffix will reduce any trap damage by 50%. In Hellfire, it will also reduce the damage from any magical or ranged attack from monsters by 50%. This effect is not cumulative if you have more than one item with the suffix. |
+| - Damage Taken    | Having any item with a suffix that reduces damage (or in the case of a cursed suffix, increases it), will reduce any damage, even magical, done by a monster by the combined amount of all the suffixes you are wearing. Damage can never be reduced below 1 by this effect. |
+| Reflect           | In Hellfire, the Reflect spell will reduce the amount of melee damage a monster does to a player by **20 to 29%**. |
+| Player vs Player  | All magic damage is halved in **player versus player** attacks. This includes the damage by **Bone Spirit**, which will only reduce **1/6** of current life. |
+| Resistance        | Having any item which gives you resistance will reduce any magical attack of the same type by the total resistance of that type you have. Maximum resistance is **75%**, which is shown with the letters **MAX**. |
+| Mana Shield       | If you are using a **Mana Shield**, it will reduce the damage by **33%** in *Diablo* and by **(1/(3 × slvl) × 100%)** (if slvl is higher than 7, set slvl to 7) in *Hellfire*. In addition, it will remove mana instead of life. |
+
+
 
 Checks for hit recovery are done between step 4 and 5 and will thus not be affected by the use of Mana Shield.
 
@@ -380,19 +372,23 @@ Barbarian using Mana Shield: current life > damage >= 1.25·clvl
 
 The table below list the time, in seconds, it takes to block and to do a hit recovery for each character class. It also lists the effects of some specific suffixes that influence blocking or hit recovery. For more information on the suffixes, see chapter 3.2.2.
 
-|**Class/Suffix**|**Blocking**|<b>Fast block<sup>1</sup></b>|**Hit recovery**|**of balance**|**of stability**|**of harmony**|
-| :- | :-: | :-: | :- | :- | :-: | :- |
-|Warrior|0\.10|0\.10|0\.30|0\.25|0\.20|0\.153|
-|Rogue|0\.20|0\.10|0\.35|0\.30|0\.25|0\.203|
-|Sorcerer|0\.30|0\.10|0\.40|0\.35|0\.30|0\.253|
-|Monk|0\.15|0\.10|0\.30|0\.25|0\.20|0\.15|
-|Bard|0\.20|0\.10|0\.35|0\.30|0\.25|0\.20|
-|Barbarian|0\.10|0\.10|0\.302|0\.252|0\.20|0\.15|
+| **Class/Suffix** | **Blocking** | **Fast Block<sup>[^1]</sup>** | **Hit Recovery** | **of Balance** | **of Stability** | **of Harmony** |
+| :- | :-: | :-: | :-: | :-: | :-: | :-: |
+| **Warrior**   | 0.10 | 0.10 | 0.30 | 0.25 | 0.20 | 0.15<sup>[^3]</sup> |
+| **Rogue**     | 0.20 | 0.10 | 0.35 | 0.30 | 0.25 | 0.20<sup>[^3]</sup> |
+| **Sorcerer**  | 0.30 | 0.10 | 0.40 | 0.35 | 0.30 | 0.25<sup>[^3]</sup> |
+| **Monk**      | 0.15 | 0.10 | 0.30 | 0.25 | 0.20 | 0.15 |
+| **Bard**      | 0.20 | 0.10 | 0.35 | 0.30 | 0.25 | 0.20 |
+| **Barbarian** | 0.10 | 0.10 | 0.30<sup>[^2]</sup> | 0.25<sup>[^2]</sup> | 0.20 | 0.15 |
 
-1. Fast block indicates the use of an item with the *of blocking* suffix or a unique item with the fast block effect.
-1. The Barbarian has built-in *of stability* while using an axe or a club and the hit recovery time in those cases is 0.20 unless he is using an item *of harmony*.
+[^1]: Fast block indicates the use of an item with the *of Blocking* suffix or a unique item with the **fast block** effect.  
+[^2]: The Barbarian has built-in *of Stability* while using an **axe or a club**, and the hit recovery time in those cases is **0.20**, unless he is using an item *of Harmony*.  
+[^3]: In *Diablo* (but not in *Hellfire*), equipping three or more items that together have all three suffixes (*of Balance, of Stability,* and *of Harmony*) will **reduce hit recovery time by 0.05 seconds** to:  
+- **Warrior**: 0.10
+- **Rogue**: 0.15
+- **Sorcerer**: 0.20
+Just equipping two items with different suffixes **has no effect**.  
 
-1. In Diablo, but not in Hellfire, equipping three or more items having together all of the three suffixes (of balance, of stability, and of harmony), will reduce the hit recovery time a further 0.05 seconds to: Warrior: 0.10, Rogue: 0.15 and Sorcerer: 0.20. Just equipping two items with different suffixes will do no difference.
 
 
 ### 2.2.2 Damage done
