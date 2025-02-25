@@ -13,181 +13,181 @@
 
 **Table of Contents**
 
-1. INTRODUCTION
-    1.1 Patches for Diablo and Hellfire
-    1.2 Hidden quests and characters in Hellfire
-    1.3 General remarks
-    1.4 Abbreviations
-    1.5 Acknowledgment
-    1.6 New in this version
+# 1. INTRODUCTION
+## 1.1 Patches for Diablo and Hellfire
+## 1.2 Hidden quests and characters in Hellfire
+## 1.3 General remarks
+## 1.4 Abbreviations
+## 1.5 Acknowledgment
+## 1.6 New in this version
 
-2. CHARACTERS
-    2.1 Character stats
-        2.1.1 Starting stats
-        2.1.2 Maximum stats
-        2.1.3 Life and mana
-        2.1.4 Armor Class and To Hit
-    2.2 Fighting
-        2.2.1 Getting hit
-        2.2.2 Damage done
-        2.2.3 Weapon speed
-    2.3 Timing information
-    2.4 Skills
-    2.5 Starting equipment
-    2.6 Experience points
-    2.7 Character level restrictions
-        2.7.1 Single player difficulty levels
-    2.8 Character names
+# 2. CHARACTERS
+## 2.1 Character stats
+### 2.1.1 Starting stats
+### 2.1.2 Maximum stats
+### 2.1.3 Life and mana
+### 2.1.4 Armor Class and To Hit
+## 2.2 Fighting
+### 2.2.1 Getting hit
+### 2.2.2 Damage done
+### 2.2.3 Weapon speed
+## 2.3 Timing information
+## 2.4 Skills
+## 2.5 Starting equipment
+## 2.6 Experience points
+## 2.7 Character level restrictions
+### 2.7.1 Single player difficulty levels
+## 2.8 Character names
 
-3. ITEMS
-    3.1 Armor, weapons and jewelry
-    3.2 Other base items
-        3.2.1 Runes and oils
-        3.2.2 Potions and elixirs
-        3.2.3 Books, scrolls and staves with spells
-    3.3 Quest items
-    3.4 Prefixes and suffixes
-    3.5 Unique items
-        3.5.1 Properties of unique items
-        3.5.2 Unfindable unique items in multi player
-    3.6 Prices of magical items
-        3.6.1 Formulas
-        3.6.2 Additional notes on the prices
-        3.6.3 Recharge cost
-    3.7 Durability of items
-        3.7.1 Losing durability
-        3.7.2 Repair cost
-    3.8 Item creation in dungeon
-        3.8.1 What is dropped?
-        3.8.2 Item type
-        3.8.3 Item properties
-    3.9 Item creation in town
-        3.9.1 Adria
-        3.9.2 Griswold
-        3.9.3 Pepin
-        3.9.4 Wirt
-    3.10 General remarks on possible items
-    3.11 Probabilities of finding unique items
-        3.11.1 Probabilities in Diablo
-        3.11.2 Probabilities in Hellfire
-    3.12 Probabilities of finding magical items
-    3.13 Summary of various item properties
-        3.13.1 Levels of base items
-        3.13.2 Levels of spells on books and staves
-        3.13.3 Levels of prefixes and suffixes
-        3.13.4 Levels of unique items
-        3.13.5 Effects of prefixes and suffixes
-        3.13.6 Occurrence of prefixes and suffixes
+# 3. ITEMS
+## 3.1 Armor, weapons and jewelry
+## 3.2 Other base items
+### 3.2.1 Runes and oils
+### 3.2.2 Potions and elixirs
+### 3.2.3 Books, scrolls and staves with spells
+## 3.3 Quest items
+## 3.4 Prefixes and suffixes
+## 3.5 Unique items
+### 3.5.1 Properties of unique items
+### 3.5.2 Unfindable unique items in multi player
+## 3.6 Prices of magical items
+### 3.6.1 Formulas
+### 3.6.2 Additional notes on the prices
+### 3.6.3 Recharge cost
+## 3.7 Durability of items
+### 3.7.1 Losing durability
+### 3.7.2 Repair cost
+## 3.8 Item creation in dungeon
+### 3.8.1 What is dropped?
+### 3.8.2 Item type
+### 3.8.3 Item properties
+## 3.9 Item creation in town
+### 3.9.1 Adria
+### 3.9.2 Griswold
+### 3.9.3 Pepin
+### 3.9.4 Wirt
+## 3.10 General remarks on possible items
+## 3.11 Probabilities of finding unique items
+### 3.11.1 Probabilities in Diablo
+### 3.11.2 Probabilities in Hellfire
+## 3.12 Probabilities of finding magical items
+## 3.13 Summary of various item properties
+### 3.13.1 Levels of base items
+### 3.13.2 Levels of spells on books and staves
+### 3.13.3 Levels of prefixes and suffixes
+### 3.13.4 Levels of unique items
+### 3.13.5 Effects of prefixes and suffixes
+### 3.13.6 Occurrence of prefixes and suffixes
 
-4. MAGIC
-    4.1 Spells available to players
-        4.1.1 List of spells and spell effects
-        4.1.2 Details about spells
-        4.1.3 Spells available in Diablo
-        4.1.4 New spells in Hellfire
-        4.1.5 Mana cost and magic requirements for spells
-        4.1.6 Spell level of cast spells
-        4.1.7 Targeting of spells
-    4.2 Spell casting monsters
-        4.2.1 Details about monster spells in Diablo
-        4.2.2 Details about new monster spells in Hellfire
-    4.3 Traps
+# 4. MAGIC
+## 4.1 Spells available to players
+### 4.1.1 List of spells and spell effects
+### 4.1.2 Details about spells
+### 4.1.3 Spells available in Diablo
+### 4.1.4 New spells in Hellfire
+### 4.1.5 Mana cost and magic requirements for spells
+### 4.1.6 Spell level of cast spells
+### 4.1.7 Targeting of spells
+## 4.2 Spell casting monsters
+### 4.2.1 Details about monster spells in Diablo
+### 4.2.2 Details about new monster spells in Hellfire
+## 4.3 Traps
 
-5. MONSTERS
-    5.1 How to calculate monster data
-    5.2 Monster data
-        5.2.1 Monsters in Diablo
-        5.2.2 Special monsters in Diablo
-        5.2.3 Monsters in Hellfire
-        5.2.4 Special monsters in Hellfire
-    5.3 Monster properties
-        5.3.1 Monster size
-        5.3.2 Monster occurrences in the dungeons
-        5.3.3 Attack types
-        5.3.4 Timing information
-    5.4 Unique monsters
-    5.5 Monster AI
-        5.5.1 General information
-        5.5.2 Activating monsters
-        5.5.3 About walking
-        5.5.4 About charging
-        5.5.5 About ranged attack
-        5.5.6 Target selection
-        5.5.7 Non even distributed random numbers
-        5.5.8 Reseed bug
-        5.5.9 AI scripts
-    5.6 Summary of various monster stats
-        5.6.1 Resistances, immunities and uniques for monsters
-        5.6.2 Resistances, immunities and mob for unique monsters
-        5.6.3 Experience points from monsters
-        5.6.4 Monster levels
-        5.6.5 Monster types
+# 5. MONSTERS
+## 5.1 How to calculate monster data
+## 5.2 Monster data
+### 5.2.1 Monsters in Diablo
+### 5.2.2 Special monsters in Diablo
+### 5.2.3 Monsters in Hellfire
+### 5.2.4 Special monsters in Hellfire
+## 5.3 Monster properties
+### 5.3.1 Monster size
+### 5.3.2 Monster occurrences in the dungeons
+### 5.3.3 Attack types
+### 5.3.4 Timing information
+## 5.4 Unique monsters
+## 5.5 Monster AI
+### 5.5.1 General information
+### 5.5.2 Activating monsters
+### 5.5.3 About walking
+### 5.5.4 About charging
+### 5.5.5 About ranged attack
+### 5.5.6 Target selection
+### 5.5.7 Non even distributed random numbers
+### 5.5.8 Reseed bug
+### 5.5.9 AI scripts
+## 5.6 Summary of various monster stats
+### 5.6.1 Resistances, immunities and uniques for monsters
+### 5.6.2 Resistances, immunities and mob for unique monsters
+### 5.6.3 Experience points from monsters
+### 5.6.4 Monster levels
+### 5.6.5 Monster types
 
-6. BATTLE
-    6.1 General information
-        6.1.1 Mana Shield
-        6.1.2 Fire Wall, Flame Wave and Ring of Fire
-        6.1.3 Reflect
-        6.1.4 Life and Mana stealing
-        6.1.5 Fire and Lightning damage on melee weapons
-        6.1.6 Fire and Lightning damage on bows
-        6.1.7 Charge attacks
-        6.1.8 How spells really work
-        6.1.9 Possible targets of attacks
-        6.1.10 Spell and arrow speeds
-        6.1.11 Some general notes about the formulas
-    6.2 Melee attacks
-        6.2.1 Player versus Monster
-        6.2.2 Player versus Player
-        6.2.3 Monster versus Player
-        6.2.4 Monster versus Monster
-    6.3 Non melee attacks
-        6.3.1 Player versus Monster
-        6.3.2 Player versus Player
-        6.3.3 Monster/Trap versus Player
-        6.3.4 Monster/Trap versus Monster
+# 6. BATTLE
+## 6.1 General information
+### 6.1.1 Mana Shield
+### 6.1.2 Fire Wall, Flame Wave and Ring of Fire
+### 6.1.3 Reflect
+### 6.1.4 Life and Mana stealing
+### 6.1.5 Fire and Lightning damage on melee weapons
+### 6.1.6 Fire and Lightning damage on bows
+### 6.1.7 Charge attacks
+### 6.1.8 How spells really work
+### 6.1.9 Possible targets of attacks
+### 6.1.10 Spell and arrow speeds
+### 6.1.11 Some general notes about the formulas
+## 6.2 Melee attacks
+### 6.2.1 Player versus Monster
+### 6.2.2 Player versus Player
+### 6.2.3 Monster versus Player
+### 6.2.4 Monster versus Monster
+## 6.3 Non melee attacks
+### 6.3.1 Player versus Monster
+### 6.3.2 Player versus Player
+### 6.3.3 Monster/Trap versus Player
+### 6.3.4 Monster/Trap versus Monster
 
-7. SHRINES
+# 7. SHRINES
 
-8. QUESTS
-    8.1 How quests are chosen
-    8.2 Quests in Diablo
-        8.2.1 The Butcher
-        8.2.2 Poisoned water supply
-        8.2.3 The Curse of King Leoric
-        8.2.4 Gharbad the Weak
-        8.2.5 Ogden’s Sign
-        8.2.6 The Magic Rock
-        8.2.7 Valor
-        8.2.8 The Chamber of Bone
-        8.2.9 Halls of the Blind
-        8.2.10 Zhar the Mad
-        8.2.11 Black Mushroom
-        8.2.12 Slain Hero
-        8.2.13 Anvil of Fury
-        8.2.14 Warlord of Blood
-        8.2.15 Lachdanan
-        8.2.16 Archbishop Lazarus
-        8.2.17 Diablo
-    8.3 Quests in Hellfire
-        8.3.1 Farmer’s Orchard
-        8.3.2 The Jersey’s Jersey
-        8.3.3 Little Girl
-        8.3.4 The Defiler
-        8.3.5 Grave Matters
-        8.3.6 Cornerstone of the World
-        8.3.7 Torn Notes
-        8.3.8 Na-Krul
+# 8. QUESTS
+## 8.1 How quests are chosen
+## 8.2 Quests in Diablo
+### 8.2.1 The Butcher
+### 8.2.2 Poisoned water supply
+### 8.2.3 The Curse of King Leoric
+### 8.2.4 Gharbad the Weak
+### 8.2.5 Ogden’s Sign
+### 8.2.6 The Magic Rock
+### 8.2.7 Valor
+### 8.2.8 The Chamber of Bone
+### 8.2.9 Halls of the Blind
+### 8.2.10 Zhar the Mad
+### 8.2.11 Black Mushroom
+### 8.2.12 Slain Hero
+### 8.2.13 Anvil of Fury
+### 8.2.14 Warlord of Blood
+### 8.2.15 Lachdanan
+### 8.2.16 Archbishop Lazarus
+### 8.2.17 Diablo
+## 8.3 Quests in Hellfire
+### 8.3.1 Farmer’s Orchard
+### 8.3.2 The Jersey’s Jersey
+### 8.3.3 Little Girl
+### 8.3.4 The Defiler
+### 8.3.5 Grave Matters
+### 8.3.6 Cornerstone of the World
+### 8.3.7 Torn Notes
+### 8.3.8 Na-Krul
 
-10. OTHER USEFUL INFORMATION
-    10.1 Hot keyed messages while playing
-    10.2 Save files
-    10.3 Transferring save files
-    10.4 Backing up your character
-    10.5 Daylight-saving time problems in Diablo 1.00
-    10.6 Avoiding the Game End movie
-    10.7 Meaningless information about this guide
-    10.8 The End
+# 10. OTHER USEFUL INFORMATION
+## 10.1 Hot keyed messages while playing
+## 10.2 Save files
+## 10.3 Transferring save files
+## 10.4 Backing up your character
+## 10.5 Daylight-saving time problems in Diablo 1.00
+## 10.6 Avoiding the Game End movie
+## 10.7 Meaningless information about this guide
+## 10.8 The End
 
 **1. Introduction**
 
