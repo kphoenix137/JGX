@@ -113,7 +113,7 @@ There are a few general things about the guide that can be good to know when you
 
 Throughout this guide some common abbreviations are used. They are summarized below.
 
-| Abbreviation | Meaning |
+| **Abbreviation** | **Meaning** |
 |-------------|--------------------------------------------------|
 | clvl        | character level |
 | dlvl        | dungeon level |
@@ -133,17 +133,14 @@ Throughout this guide some common abbreviations are used. They are summarized be
 
 The most important character in the game is of course you. So this guide will start by giving information about the characters you can choose to play. The available characters are listed below.
 
-Warrior:	Available in Diablo and Hellfire.
-
-Rogue:	Available in Diablo and Hellfire.
-
-Sorcerer:	Available in Diablo and Hellfire.
-
-Monk:	Available in Hellfire.
-
-Bard:	Hidden test character available in Hellfire.
-
-Barbarian:	Hidden test character available in Hellfire, added in the 1.01 patch.
+| **Class**      | **Availability** |
+|---------------|----------------|
+| **Warrior**   | Available in *Diablo* and *Hellfire*. |
+| **Rogue**     | Available in *Diablo* and *Hellfire*. |
+| **Sorcerer**  | Available in *Diablo* and *Hellfire*. |
+| **Monk**      | Available in *Hellfire*. |
+| **Bard**      | Hidden test character, available in *Hellfire*. |
+| **Barbarian** | Hidden test character, available in *Hellfire*, added in the **1.01 patch**. |
 
 For information about how to activate the hidden characters, see chapter 1.2. Note that the Bard uses the same graphics as the Rogue and the Barbarian uses the same graphics as the Warrior.
 
@@ -157,14 +154,14 @@ Each character in Diablo has a set of stats (or abilities) that greatly affect h
 
 Each character class has its own starting values for the basic stats. They are listed below. Also listed are which stats are increased and by how much when you gain a level. Apart from those, you also gain 5 ”points” to distribute among your four main stats until they have reached their maximum value. Shrines and some monsters have the ability to alter your stats, too. See appropriate chapters for more information.
 
-| **Class**    | **Strength** | **Magic** | **Dexterity** | **Vitality** | **Life** | **Mana** | **Effect of Level [^1]** |
+| **Class**    | **Strength** | **Magic** | **Dexterity** | **Vitality** | **Life** | **Mana** | **Effect of Level <sup>[^1]</sup>** |
 |-------------|:-----------:|----------:|:------------:|:-----------:|:--------:|---------:|:-----------------:|
 | **Warrior**   | 30  | 10  | 20  | 25  | 70  | 10  | +2 life, +1 mana  |
 | **Rogue**     | 20  | 15  | 30  | 20  | 45  | 22  | +2 life, +2 mana  |
 | **Sorcerer**  | 15  | 35  | 15  | 20  | 30  | 70  | +1 life, +2 mana  |
 | **Monk**      | 25  | 15  | 25  | 20  | 45  | 22  | +2 life, +2 mana  |
 | **Bard**      | 20  | 20  | 25  | 20  | 45  | 35  | +2 life, +2 mana  |
-| **Barbarian** | 40  |  0  | 20  | 25  | 70  |  0  | +2 life, +0 mana [^2]  |
+| **Barbarian** | 40  |  0  | 20  | 25  | 70  |  0  | +2 life, +0 mana <sup>[^2]</sup>  |
 
 [^1]: You don’t get any life or mana when gaining level 50.  
 [^2]: The Barbarian also gets 1% resistance per level.
@@ -279,7 +276,7 @@ Both Armor Class (AC) and To Hit are based on your Dexterity. Below is a summary
 
 The bonus in the above formulas refers to some *hidden* To Hit modifiers specific for each character class. They are listed in the table below but do not show up in the To Hit value you see on the character screen. For the blocking bonus see chapter 2.2.
 
-| **Class**      | **Melee** | **Arrow** | **Magic** | **Blocking** [^3] |
+| **Class**      | **Melee** | **Arrow** | **Magic** | **Blocking <sup>[^3]</sup>** |
 |--------------|:-------:|:-------:|:-------:|:---------:|
 | **Warrior**   | 20      | 10      | -       | 30        |
 | **Rogue**     | -       | 20      | -       | 20        |
@@ -298,9 +295,9 @@ In the table below, maximum AC and To Hit for each character class is summarized
 | **Warrior**   | 12               | 80               | 45 / 57               | 162 / 192                 | 349 / 401 | 392        |
 | **Rogue**     | 50               | 175              | 83 / 95               | 257 / 287                 | 385 / 425 | 487        |
 | **Sorcerer**  | 17               | 92               | 50 / 62               | 175 / 205                 | 350 / 390 | 405        |
-| **Monk**      | 130 [^4]         | 125              | 175 [^4]              | 237                        | 419       | 437        |
+| **Monk**      | 130 <sup>[^4]</sup>         | 125              | 175 <sup>[^4]</sup>              | 237                        | 419       | 437        |
 | **Bard**      | 24               | 110              | 72                     | 230                        | 413       | 565        |
-| **Barbarian**     | 23 [^4]      | 77               | 56                     | 190                        | 370       | 390        |
+| **Barbarian**     | 23 <sup>[^4]</sup>      | 77               | 56                     | 190                        | 370       | 390        |
 
 [^4]: For a level 50 character.
 
@@ -326,15 +323,15 @@ When you are hit by a melee weapon, an arrow, or magic (while not having any res
 
 The chance of blocking is calculated according to:
 
-Blocking monster:	Dex + 2·(clvl - mlvl) + bonus
+| **Blocking Type**       | **Formula** |
+|------------------------|--------------------------------------------------|
+| **Blocking vs Monster** | Dex + (2 × (clvl - mlvl)) + bonus |
+| **Blocking vs Player**  | Dex + (2 × (clvl<sub>target</sub> - clvl<sub>attacker</sub>)) + bonus |
+| **Blocking vs Trap**    | Dex + bonus |
 
-Blocking player:	Dex + 2·(clvltarget - clvlattacker) + bonus
-
-Blocking trap:	Dex + bonus
 
 - There exists a bug so that the bonus is always 0, except during the first game a character play. For information about what the bonus should be, see table under To Hit %, chapter 2.1.4.
 - You can only block while standing still or while doing a melee attack.
-
 - Monsters can never block attacks against them.
 
 **Modified damage received**
@@ -349,8 +346,6 @@ There are a few ways by which the damage done to a player is modified depending 
 | Player vs Player  | All magic damage is halved in **player versus player** attacks. This includes the damage by **Bone Spirit**, which will only reduce **1/6** of current life. |
 | Resistance        | Having any item which gives you resistance will reduce any magical attack of the same type by the total resistance of that type you have. Maximum resistance is **75%**, which is shown with the letters **MAX**. |
 | Mana Shield       | If you are using a **Mana Shield**, it will reduce the damage by **33%** in *Diablo* and by **(1/(3 × slvl) × 100%)** (if slvl is higher than 7, set slvl to 7) in *Hellfire*. In addition, it will remove mana instead of life. |
-
-
 
 Checks for hit recovery are done between step 4 and 5 and will thus not be affected by the use of Mana Shield.
 
@@ -372,23 +367,22 @@ Barbarian using Mana Shield: current life > damage >= 1.25·clvl
 
 The table below list the time, in seconds, it takes to block and to do a hit recovery for each character class. It also lists the effects of some specific suffixes that influence blocking or hit recovery. For more information on the suffixes, see chapter 3.2.2.
 
-| **Class/Suffix** | **Blocking** | **Fast Block<sup>[^1]</sup>** | **Hit Recovery** | **of Balance** | **of Stability** | **of Harmony** |
+| **Class/Suffix** | **Blocking** | **Fast Block<sup>[^5]</sup>** | **Hit Recovery** | **of Balance** | **of Stability** | **of Harmony** |
 | :- | :-: | :-: | :-: | :-: | :-: | :-: |
-| **Warrior**   | 0.10 | 0.10 | 0.30 | 0.25 | 0.20 | 0.15<sup>[^3]</sup> |
-| **Rogue**     | 0.20 | 0.10 | 0.35 | 0.30 | 0.25 | 0.20<sup>[^3]</sup> |
-| **Sorcerer**  | 0.30 | 0.10 | 0.40 | 0.35 | 0.30 | 0.25<sup>[^3]</sup> |
+| **Warrior**   | 0.10 | 0.10 | 0.30 | 0.25 | 0.20 | 0.15<sup>[^7]</sup> |
+| **Rogue**     | 0.20 | 0.10 | 0.35 | 0.30 | 0.25 | 0.20<sup>[^7]</sup> |
+| **Sorcerer**  | 0.30 | 0.10 | 0.40 | 0.35 | 0.30 | 0.25<sup>[^7]</sup> |
 | **Monk**      | 0.15 | 0.10 | 0.30 | 0.25 | 0.20 | 0.15 |
 | **Bard**      | 0.20 | 0.10 | 0.35 | 0.30 | 0.25 | 0.20 |
-| **Barbarian** | 0.10 | 0.10 | 0.30<sup>[^2]</sup> | 0.25<sup>[^2]</sup> | 0.20 | 0.15 |
+| **Barbarian** | 0.10 | 0.10 | 0.30<sup>[^6]</sup> | 0.25<sup>[^6]</sup> | 0.20 | 0.15 |
 
-[^1]: Fast block indicates the use of an item with the *of Blocking* suffix or a unique item with the **fast block** effect.  
-[^2]: The Barbarian has built-in *of Stability* while using an **axe or a club**, and the hit recovery time in those cases is **0.20**, unless he is using an item *of Harmony*.  
-[^3]: In *Diablo* (but not in *Hellfire*), equipping three or more items that together have all three suffixes (*of Balance, of Stability,* and *of Harmony*) will **reduce hit recovery time by 0.05 seconds** to:  
+[^5]: Fast block indicates the use of an item with the *of Blocking* suffix or a unique item with the **fast block** effect.  
+[^6]: The Barbarian has built-in *of Stability* while using an **axe or a club**, and the hit recovery time in those cases is **0.20**, unless he is using an item *of Harmony*.  
+[^7]: In *Diablo* (but not in *Hellfire*), equipping three or more items that together have all three suffixes (*of Balance, of Stability,* and *of Harmony*) will **reduce hit recovery time by 0.05 seconds** to:  
 - **Warrior**: 0.10
 - **Rogue**: 0.15
 - **Sorcerer**: 0.20
 Just equipping two items with different suffixes **has no effect**.  
-
 
 
 ### 2.2.2 Damage done
