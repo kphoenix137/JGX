@@ -206,8 +206,6 @@ Life is based on vitality while mana is based on magic. To calculate how much li
 | **Bard**      | (1 × Vit<sub>character</sub>) + (1.5 × Vit<sub>items</sub>) + (2 × clvl) + Life<sub>items</sub> | +23  |
 | **Barbarian** | (2 × Vit<sub>character</sub>) + (2.5 × Vit<sub>items</sub>) + (2 × clvl) + Life<sub>items</sub> | +18  |
 
----
-
 | **Class**     | **Formula for Mana Calculation**                                      | **Bonus** |
 |--------------|------------------------------------------------------------------------|---------:|
 | **Warrior**   | (1 × Mag<sub>character</sub>) + (1 × Mag<sub>items</sub>) + (1 × clvl) + Mana<sub>items</sub>  | -1  |
@@ -218,11 +216,8 @@ Life is based on vitality while mana is based on magic. To calculate how much li
 | **Barbarian** | (1 × Mag<sub>character</sub>) + (1 × Mag<sub>items</sub>) + (0 × clvl) + Mana<sub>items</sub> | +0  |
 
 - Black Deaths (a zombie type of monster) can permanently decrease your life.
-
 - You do not get any mana or life when reaching level 50 (use clvl=49 to get the correct result).
-
 - Some shrines might permanently decrease your max mana (see chapter 5.6.5).
-
 - If you are on level 16, you will not lose any of your items when you die.
 
 ### 2.1.4 Armor Class and To Hit
@@ -236,42 +231,33 @@ Both Armor Class (AC) and To Hit are based on your Dexterity. Below is a summary
 | **Monk with Mail Armor** | (Dex ÷ 5) + AC<sub>items</sub> + (clvl ÷ 2) |
 | **Monk with Light Armor (Leather, etc.)** | (Dex ÷ 5) + AC<sub>items</sub> + (2 × clvl) |
 | **Monk with No Armor** | (Dex ÷ 5) + AC<sub>items</sub> + (2 × clvl) |
-| **Bard** | (Dex ÷ 5) + AC<sub>items</sub> |
-| **Barbarian** | (Dex ÷ 5) + AC<sub>items</sub> + (clvl ÷ 4) |
+| **Bard** | `(Dex ÷ 5) + AC`<sub>`items`</sub> |
+| **Barbarian** | `(Dex ÷ 5) + AC`<sub>`items`</sub>` + (clvl ÷ 4)` |
 
 
 - When calculating AC for a Monk, unique plate is treated as mail and unique mail as leather.
-
 - Shields only give half AC (rounded up) to the Barbarian.
 
 
 | **To Hit % Calculation** | **Formula** | **Notes** |
 |-------------------------|-------------|------|
-| **Character Screen** | 50 + (Dex ÷ 2) + ToHit<sub>items</sub> | Displayed on the in-game character screen. |
-| **Melee Attack** | 50 + (Dex ÷ 2) + ToHit<sub>items</sub> + clvl + bonus | Used for melee combat calculations. |
-| **Ranged Attack (Arrows)** | 50 + Dex + ToHit<sub>items</sub> + clvl + bonus - (distance² ÷ 2) | Distance-based penalty applies. |
-| **Magic vs Monster** | 50 + Mag - (2 × mlvl) + bonus | Spell accuracy against monsters. |
-| **Magic vs Player** | 50 + Mag - (2 × clvl<sub>target</sub>) + bonus | Spell accuracy against other players. |
-| **To Hit Penalty for Adjacent Quarter Damage** | 70 - (2 × clvl) | Minimum value: 30. |
+| **Character Screen** | `50 + (Dex ÷ 2) + ToHit`<sub>`items`</sub> | Displayed on the in-game character screen. |
+| **Melee Attack** | `50 + (Dex ÷ 2) + ToHit`<sub>`items`</sub>` + clvl + bonus` | Used for melee combat calculations. |
+| **Ranged Attack (Arrows)** | `50 + Dex + ToHit`<sub>`items`</sub>` + clvl + bonus - (distance² ÷ 2)` | Distance-based penalty applies. |
+| **Magic vs Monster** | `50 + Mag - (2 × mlvl) + bonus` | Spell accuracy against monsters. |
+| **Magic vs Player** | `50 + Mag - (2 × clvl<sub>target</sub>) + bonus` | Spell accuracy against other players. |
+| **To Hit Penalty for Adjacent Quarter Damage** | `70 - (2 × clvl)` | Minimum value: 30. |
 
 
 - All magic attacks will always check for To Hit, even for spells like Lightning and Fire Wall.
-
 - A player is immune to its own spells with the exception of Fire Wall and Flame Wave.
-
 - Fire Wall, Flame Wave and Ring of Fire will check for To Hit like magical traps against players including the caster (but not against monsters). See chapters 4.3 and 6.1.2.
-
 - Distance is actually a time count. It goes up by 1 twenty times each second. Arrows always have a distance factor, even if they have extra fire or lightning. For more information see chapters 4.1.2.
-
 - Note that the effects of some oils (see chapter 3.2.1) are only visible on the stats in the character screen. They don’t show up on the information about the item.
-
 - In Diablo, the *bashing* series of suffixes also adds to your To Hit value but it will never show up on the character screen. The amount is always fixed for a specific item and within the range of the suffix. See chapter 3.4 for more information.
-
 - The adjacent quarter damage To Hit penalty is subtracted from the normal To Hit for the two monsters adjacent to the one you attack. For an explanation of adjacent quarter damage see chapter 2.2.2.
 - For a list of the bonuses, see the table below.
-
 - To get the final chance of hitting you subtract the AC of the enemy (monster or player). See chapter 5.1 for information about monster’s AC. The AC is not subtracted if it is a magic attack.
-
 - When the game checks if you have hit there is always a 5% chance that you will miss, no matter what the final modified To Hit is. In the same way there is also always a 5% chance to hit, no matter what the final modified To Hit is. See chapter 5.1 for information about monster’s chance of automatic hit (they never automatically miss).
 
 The bonus in the above formulas refers to some *hidden* To Hit modifiers specific for each character class. They are listed in the table below but do not show up in the To Hit value you see on the character screen. For the blocking bonus see chapter 2.2.
@@ -325,9 +311,9 @@ The chance of blocking is calculated according to:
 
 | **Blocking Type**       | **Formula** |
 |------------------------|--------------------------------------------------|
-| **Blocking vs Monster** | Dex + (2 × (clvl - mlvl)) + bonus |
-| **Blocking vs Player**  | Dex + (2 × (clvl<sub>target</sub> - clvl<sub>attacker</sub>)) + bonus |
-| **Blocking vs Trap**    | Dex + bonus |
+| **Blocking vs Monster** | `Dex + (2 × (clvl - mlvl)) + bonus` |
+| **Blocking vs Player**  | `Dex + (2 × (clvl<sub>target</sub> - clvl<sub>attacker</sub>)) + bonus` |
+| **Blocking vs Trap**    | `Dex + bonus` |
 
 
 - There exists a bug so that the bonus is always 0, except during the first game a character play. For information about what the bonus should be, see table under To Hit %, chapter 2.1.4.
@@ -391,46 +377,41 @@ Damage done by players is composed of two parts, character damage and weapon dam
 
 | **Class**     | **Bow Character Damage Formula**             |
 |--------------|----------------------------------------------|
-| **Warrior**   | (Str × clvl) / 200                         |
-| **Rogue**     | ((Str + Dex) × clvl) / 200                 |
-| **Sorcerer**  | (Str × clvl) / 200                         |
-| **Monk**      | ((Str + Dex) × clvl) / 600                 |
-| **Bard**      | ((Str + Dex) × clvl) / 500                 |
-| **Barbarian** | (Str × clvl) / 600                         |
+| **Warrior**   | `(Str × clvl) / 200`                         |
+| **Rogue**     | `((Str + Dex) × clvl) / 200`                 |
+| **Sorcerer**  | `(Str × clvl) / 200`                         |
+| **Monk**      | `((Str + Dex) × clvl) / 600`                 |
+| **Bard**      | `((Str + Dex) × clvl) / 500`                 |
+| **Barbarian** | `(Str × clvl) / 600`                         |
 
 | **Class**      | **Melee Character Damage Formula**                  |
 |---------------|----------------------------------------------------|
-| **Warrior**   | (Str × clvl) / 100                                |
-| **Rogue**     | ((Str + Dex) × clvl) / 200                        |
-| **Sorcerer**  | (Str × clvl) / 100                                |
-| **Monk** (staff or bare-handed) | ((Str + Dex) × clvl) / 150  |
-| **Monk** (other weapons)        | ((Str + Dex) × clvl) / 300  |
-| **Bard** (at least one sword)   | ((Str + Dex) × clvl) / 150  |
-| **Bard** (any weapon except sword) | (Str × clvl) / 100       |
-| **Barbarian** (axes and clubs)  | (Str × clvl) / 75           |
-| **Barbarian** (except axes and clubs) | (Str × clvl) / 100    |
-| **Extra Bonus** (Barbarian without shield) | (Vit × clvl) / 100 |
+| **Warrior**   | `(Str × clvl) / 100`                                |
+| **Rogue**     | `((Str + Dex) × clvl) / 200`                        |
+| **Sorcerer**  | `(Str × clvl) / 100`                                |
+| **Monk** (staff or bare-handed) | `((Str + Dex) × clvl) / 150`  |
+| **Monk** (other weapons)        | `((Str + Dex) × clvl) / 300`  |
+| **Bard** (at least one sword)   | `((Str + Dex) × clvl) / 150`  |
+| **Bard** (any weapon except sword) | `(Str × clvl) / 100`       |
+| **Barbarian** (axes and clubs)  | `(Str × clvl) / 75`           |
+| **Barbarian** (except axes and clubs) | `(Str × clvl) / 100`    |
+| **Extra Bonus** (Barbarian without shield) | `(Vit × clvl) / 100` |
 
 - All Bow character damage is doubled for player versus player except for Rogues.
-
 - There are quite a few bugs associated with fire and lightning arrows which makes them often deal erroneous damage (way too high or no additional damage at all). For more information, see chapter 6.1.6.
 - For the Monk, *other weapons* include just having a shield equiped.
-
 - For the Bard, damage enhancements from the *king’s* and *merciless* series of prefixes (+% damage) are added together if they occur on both weapons. It is then applied to the sum of both weapons’ damage. Damage from enhancements of the *slaughter* series is only applicable to the weapon it comes on.
-
 - The Barbarian can use a maul and two-handed swords in one hand.
-
 - The Barbarian’s bonus for not using a shield does not apply if he is using a staff.
-
 - Magic damage is halved in player versus player.
 
 As already stated, you add weapon damage to the damage above to get the final damage. Some ”weapons” don’t have any damage listed and are given below. Shield damage only applies if you wear no other weapon and hand/feet damage only applies if you have no other weapon or shield equipped.
 
 | **Special "Weapon"**            | **Damage Formula**             |
 |---------------------------------|------------------------------|
-| **Hands/Feet (except for Monk)** | 1                            |
-| **Shield (except for Monk)**     | 1 - 3                        |
-| **Feet or Shield (for Monk)**    | clvl / 2 - clvl              |
+| **Hands/Feet (except for Monk)** | `1`                            |
+| **Shield (except for Monk)**     | `1 - 3`                        |
+| **Feet or Shield (for Monk)**    | `clvl / 2 - clvl`              |
 
 
 - The special damage for a Monk using his feet or just a shield will never be below those values listed for non Monks (min and max damage checked separately).
@@ -644,7 +625,7 @@ In all cases you must be alive at the moment the monster dies and you must never
 
 In single player you are then rewarded the amount of experience points according to the formula below. In multi player the same formula applies, but the base experience points of the monster are first divided by the number of players that are entitled to receive experience points, which is not necessarily all players in the game.
 
-base · (1.0 + 0.1·(mlvl - clvl))
+`base · (1.0 + 0.1·(mlvl - clvl))`
 
 So when your clvl is 10 levels higher than the mlvl, you no longer receive any experience for killing it. *Base* refers to the base experience points found in chapter 5.2 modified for the number of players that are entitled for experience points according to the explanation above.
 
@@ -1035,7 +1016,7 @@ The tables below hold information about potions and elixirs. As always, the pric
 | Elixir of Dexterity | 5,000 | 15 | Increases Dexterity by 1 |
 | Elixir of Vitality | 5,000<sup>[^47]</sup> | 20 | Increases Vitality by 1<sup>[^49]</sup> |
 
-[^46]In **multiplayer**, elixirs can be **bought from Adria** once your character reaches **level 26**. In **single-player**, they can be **bought from both Adria and Pepin** once you have been to **dlvl 13, the Hive, or the Crypt (Hellfire)**.  
+[^46]: In **multiplayer**, elixirs can be **bought from Adria** once your character reaches **level 26**. In **single-player**, they can be **bought from both Adria and Pepin** once you have been to **dlvl 13, the Hive, or the Crypt (Hellfire)**.  
 [^47]: **Elixirs of Vitality** cannot be bought, only **found in dungeons**.  
 [^48]: In **Hellfire**, the **Elixir of Magic** **also restores all of your mana**.  
 [^49]: In **Hellfire**, the **Elixir of Vitality** **also restores all of your life**.  
@@ -1166,351 +1147,448 @@ Not all prefixes and suffixes can occur on all types of items. The tables also l
 
 ### + Strength
 
-| **Suffix**  | **Value**  | **Occurrence** | **qlvl** | **Steps** | **Base-Max** | **Range** | **Multiplier** |
-|------------|-----------|---------------|---------|----------|------------|---------|-------------|
-| frailty    | -10 – -6  | ASW–BJ        | 3       | -        | -          | -       | -3          |
-| weakness   | -5 – -1   | ASWtBJ        | 1       | -        | -          | -       | -2          |
-| strength   | 1         | ASWtBJ        | 1       | 4        | 200 – 1,000 | 800     | 2           |
-| might      | 6         | ASW–BJ        | 5       | 4        | 1,200 – 2,000 | 800     | 3           |
-| power      | 11        | ASW–BJ        | 11      | 4        | 2,200 – 3,000 | 800     | 4           |
-| giants     | 16        | A–W–BJ        | 17      | 4        | 3,200 – 5,000 | 1,800   | 7           |
-| titans     | 21        | ––W––J        | 23      | 9        | 5,200 – 10,000 | 4,800   | 10          |
+| **Suffix**    | **Value**     | **Occurrence** | **qlvl** | **Steps** | **Base-Max**        | **Range**  | **Multiplier** |
+|--------------|--------------|---------------|---------|----------|-------------------|---------|-------------|
+| frailty      | -10 – -6     | ASW–BJ        | 3       | -        | -                 | -       | -3          |
+| weakness     | -5 – -1      | ASWtBJ        | 1       | -        | -                 | -       | -2          |
+| strength     | 1 – 5        | ASWtBJ        | 1       | 4        | 200 – 1,000       | 800     | 2           |
+| might        | 6 – 10       | ASW–BJ        | 5       | 4        | 1,200 – 2,000     | 800     | 3           |
+| power        | 11 – 15      | ASW–BJ        | 11      | 4        | 2,200 – 3,000     | 800     | 4           |
+| giants       | 16 – 20      | A–W–BJ        | 17      | 4        | 3,200 – 5,000     | 1,800   | 7           |
+| titans       | 21 – 30      | ––W––J        | 23      | 9        | 5,200 – 10,000    | 4,800   | 10          |
+
 
 ### + Magic
 
-| **Suffix**    | **Value**  | **Occurrence** | **qlvl** | **Steps** | **Base-Max**  | **Range**  | **Multiplier** |
-|--------------|-----------|---------------|---------|----------|------------|---------|-------------|
-| the fool    | -10 – -6  | ASWTBJ        | 3       | -        | -          | -       | -3          |
-| dyslexia    | -5 – -1   | ASWTBJ        | 1       | -        | -          | -       | -2          |
-| magic       | 1         | ASWTBJ        | 1       | 4        | 200 – 1,000 | 800     | 2           |
-| the mind    | 6         | ASWTBJ        | 5       | 4        | 1,200 – 2,000 | 800     | 3           |
-| brilliance  | 11        | ASWTBJ        | 11      | 4        | 2,200 – 3,000 | 800     | 4           |
-| sorcery     | 16        | A–WTBJ        | 17      | 4        | 3,200 – 5,000 | 1,800   | 7           |
-| wizardry    | 21        | –––T–J        | 23      | 9        | 5,200 – 10,000 | 4,800   | 10          |
+| **Suffix**   | **Value**    | **Occurrence** | **qlvl** | **Steps** | **Base-Max**    | **Range** | **Multiplier** |
+|--------------|--------------|----------------|----------|-----------|-----------------|-----------|----------------|
+| the fool     | -10 – -6     | ASWTBJ         | 3       | -          | -               | -         | -3             |
+| dyslexia     | -5 – -1      | ASWTBJ         | 1       | -          | -               | -         | -2             |
+| magic        | 1 – 5        | ASWTBJ         | 1       | 4          | 200 – 1,000     | 800       | 2              |
+| the mind     | 6 – 10       | ASWTBJ         | 5       | 4          | 1,200 – 2,000   | 800       | 3              |
+| brilliance   | 11 – 15      | ASWTBJ         | 11      | 4          | 2,200 – 3,000   | 800       | 4              |
+| sorcery      | 16 – 20      | A–WTBJ         | 17      | 4          | 3,200 – 5,000   | 1,800     | 7              |
+| wizardry     | 21 – 30      | –––T–J         | 23      | 9          | 5,200 – 10,000  | 4,800     | 10             |
 
-|**+ Dexterity**||||||||||||||
-|**Suffix**|**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**||**Range**|**Multiplier**||||||
-|paralysis|-10 -|-6|ASW–BJ|3|||||||-3|||
-|atrophy|-5 -|-1|ASWtBJ|1|||||||-2|||
-|dexterity|1|-|5|ASWtBJ|1|4|200|-|1 000||800|2||
-|skill|6|-|10|ASW–BJ|5|4|1 200|-|2 000||800|3||
-|accuracy|11|-|15|ASW–BJ|11|4|2 200|-|3 000||800|4||
-|precision|16|-|20|A–W–BJ|17|4|3 200|-|5 000||1 800|7||
-|perfection|21|-|30|––––BJ|23|9|5 200|-|10 000||4 800|10||
 
-|**+Vitality**||||||||||||||
-|**Suffix**|**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**||**Range**|**Multiplier**||||||
-|illness|-10 -|-6|ASW–BJ|3|||||||-3|||
-|disease|-5 -|-1|ASWtBJ|1|||||||-2|||
-|vitality|1|-|5|ASWtBJ|1|4|200|-|1 000||800|2||
-|zest|6|-|10|ASW–BJ|5|4|1 200|-|2 000||800|3||
-|vim|11|-|15|ASW–BJ|11|4|2 200|-|3 000||800|4||
-|vigor|16|-|20|A–W–BJ|17|4|3 200|-|5 000||1 800|7||
-|life|21|-|30|––-––J|23|9|5 200|-|10 000||4 800|10||
+### + Dexterity
 
-|**+ All Attributes**||||||||||||||
-|**Suffix**|**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**||**Range**|**Multiplier**||||||
-|trouble|-10 -|-6|ASWtBJ|12|||||||-10|||
-|the pit|-5 -|-1|ASWtBJ|5|||||||-5|||
-|the sky|1|-|3|ASWtBJ|5|2|800|-|4 000||3 200|5||
-|the moon|4|-|7|ASWtBJ|11|3|4 800|-|8 000||3 200|10||
-|the stars|8|-|11|A-W-BJ|17|3|8 800|-|12 000||3 200|15||
-|the heavens|12|-|15|-–W–BJ|25|3|12 800 -|20 000||7 200|20|||
-|the zodiac|16|-|20|––-––J|30|4|20 800 -|40 000||19 200|30|||
+| **Suffix**     | **Value**     | **Occurrence** | **qlvl** | **Steps** | **Base-Max**        | **Range**  | **Multiplier** |
+|---------------|--------------|---------------|---------|----------|-------------------|---------|-------------|
+| paralysis     | -10 – -6     | ASW–BJ        | 3       | -        | -                 | -       | -3          |
+| atrophy       | -5 – -1      | ASWtBJ        | 1       | -        | -                 | -       | -2          |
+| dexterity     | 1 – 5        | ASWtBJ        | 1       | 4        | 200 – 1,000       | 800     | 2           |
+| skill         | 6 – 10       | ASW–BJ        | 5       | 4        | 1,200 – 2,000     | 800     | 3           |
+| accuracy      | 11 – 15      | ASW–BJ        | 11      | 4        | 2,200 – 3,000     | 800     | 4           |
+| precision     | 16 – 20      | A–W–BJ        | 17      | 4        | 3,200 – 5,000     | 1,800   | 7           |
+| perfection    | 21 – 30      | ––––BJ        | 23      | 9        | 5,200 – 10,000    | 4,800   | 10          |
 
-|**+ Life**||||||||||||||
-|**Suffix**|**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**||**Range**|**Multiplier**||||||
-|the vulture|-25|-|-11|AS---J|4|||||||-4||
-|the jackal|-10|-|-1|AS---J|1|||||||-2||
-|the fox|10|-|15|AS---J|1|5|100|-|1 000||900|2||
-|the jaguar|16|-|20|AS---J|5|4|1 100|-|2 000||900|3||
-|the eagle|21|-|30|AS---J|9|9|2 100|-|4 000||1 900|5||
-|the wolf|30|-|40|AS---J|15|10|4 100|-|6 000||1 900|7||
-|the tiger|41|-|50|AS---J|21|9|6 100|-|10 000||3 900|9||
-|the lion|51|-|60|A----J|27|9|10 100 -|15 000||4 900|11|||
-|the mammoth|61|-|80|A-----|35|19|15 100 - 19 000||3 900|12||||
-|the whale|81|- 100|A-----|60|19|19 100 - 30 000||10 900|13|||||
 
-|**+ Mana**||||||||||||||
-|**Prefix**|**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**||**Range**|**Multiplier**||||||
-|corruption[1]|||-all|ASW---|5||-1 000||||2|||
-|hyena’s|-25|- -11|---T-J|4|14|100|-|1 000||900|-2|||
-|frog’s|-10|-|-1|---T-J|1|||||||-2||
-|spider’s|10|-|15|---T-J|1|5|500|-|1 000||500|2||
-|raven’s|15|-|20|---T-J|5|5|1 100|-|2 000||900|3||
-|snake’s|21|-|30|---T-J|9|9|2 100|-|4 000||1 900|5||
-|serpent’s|30|-|40|---T-J|15|10|4 100|-|6 000||1 900|7||
-|drake’s|41|-|50|---T-J|21|9|6 100|-|10 000||3 900|9||
-|dragon’s|51|-|60|---T-J|27|9|10 100 -|15 000||4 900|11|||
-|wyrm’s[2]|61|-|80|---t--|35|19|15 100 - 19 000||3 900|12||||
-|hydra’s[2]|81|- 100|---t--|60|19|19 100 -|30 000||10 900|13||||
-1. A suffix.
-2. Only available in Hellfire.
 
-<b>+% Armor Class<sup>1</sup></b>
+### + Vitality
 
-||**Prefix**|**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**|**Range**|**Multiplier**||||||
-| :- | :- | -: | :-: | -: | -: | -: | -: | -: | :- | :- | :- | :- | :- |
-||vulnerable|-100|-|-51|AS––––|3||||||-3||
-||rusted|-50|-|-25|AS––––|1||||||-2||
-||fine|20|-|30|AS––––|1|10|20|-|100|80|2||
-||strong|31|-|40|AS––––|3|9|120|-|200|80|3||
-||grand|41|-|55|AS––––|6|14|220|-|300|80|5||
-||valiant|56|-|70|AS––––|10|14|320|-|400|80|7||
-||glorious|71|-|90|AS––––|14|19|420|-|600|180|9||
-||blessed|91|- 110|AS––––|19|19|620|-|800|180|11|||
-||saintly|111|- 130|AS––––|24|19|820|-|1 200|380|13|||
-||awesome|131|- 150|AS––––|28|19|1 220|-|2 000|780|15|||
-||holy|151|- 170|AS––––|35|19|5 200|-|6 000|800|17|||
-||godly|171|- 200|AS––––|60|29|6 200|-|7 000|800|20|||
-1. There is a minimum increase of 1 in AC. That is, even if the percentage will give an increase to AC less than one, it will be increased by at least one. Due to a bug, any decrease in AC less than 1 will be transformed into a positive increase by 1.
+| **Suffix**  | **Value**     | **Occurrence** | **qlvl** | **Steps** | **Base-Max**        | **Range**  | **Multiplier** |
+|------------|--------------|---------------|---------|----------|-------------------|---------|-------------|
+| illness    | -10 – -6     | ASW–BJ        | 3       | -        | -                 | -       | -3          |
+| disease    | -5 – -1      | ASWtBJ        | 1       | -        | -                 | -       | -2          |
+| vitality   | 1 – 5        | ASWtBJ        | 1       | 4        | 200 – 1,000       | 800     | 2           |
+| zest       | 6 – 10       | ASW–BJ        | 5       | 4        | 1,200 – 2,000     | 800     | 3           |
+| vim        | 11 – 15      | ASW–BJ        | 11      | 4        | 2,200 – 3,000     | 800     | 4           |
+| vigor      | 16 – 20      | A–W–BJ        | 17      | 4        | 3,200 – 5,000     | 1,800   | 7           |
+| life       | 21 – 30      | ––-––J        | 23      | 9        | 5,200 – 10,000    | 4,800   | 10          |
 
-||**+% To Hit**||||||||||||||||||||||||||||||
-||**Prefix**|||**Value**||**Occurrence**|**qlvl**||**Steps**||**Base-Max**|||**Range**|**Multiplier**||||||||||||||||
-||tin|||-10|-|-6||––W–BJ|3||||||||||||||||-3||||||
-||brass|||-5|-|-1||––W–BJ|1||||||||||||||||-2||||||
-||bronze|||1|-|5||––W–BJ|1|||4||||100|-|500||400|||2||||||||
-||iron|||6|-|10||––W–BJ|4|||4||||600|-|1 000||400|||3||||||||
-||steel|||11|-|15||––W–BJ|6|||4|||1 100|-|1 500||400|||5|||||||||
-||silver|||16|-|20||––W–BJ|9|||4|||1 600|-|2 000||400|||7|||||||||
-||gold|||21|-|30||––W–BJ|12|||9|||2 100|-|3 000||900|||9|||||||||
-||platinum|||31|-|40||––W–B–|16|||9|||3 100|-|4 000||900|||11|||||||||
-||mithril|||41|-|60||––W–B–|20|||19|||4 100|-|6 000||1 900|||13|||||||||
-||meteoric|||61|-|80||––W–B–|23|||19|||6 100|-|10 000||3 900|||15|||||||||
-||weird|||81|- 100||––W–B–|35|||19|||10 100 - 14 000||3 900|||17||||||||||||
-||strange|||101|- 150||––W–B–|60|||49|||14 100 -|20 000||5 900|||20|||||||||||
 
-|**+% To Hit, +% Damage Done**|||||||||||||||||||||||||||||||
-|**Prefix**||**To Hit**||**Damage**|**Occurrence**||**qlvl**||<b>Steps<sup>[1]</sup></b>||**Base-Max**||**Range**||**Multiplier**||||||||||||||||
-|clumsy||-10|-|-6||-75|-|-50|––WTB–||5||||||||||||||-7||||||
-|dull||-5|-|-1||-45|-|-25|––WTB–||1||||||||||||||-5||||||
-|sharp[2]||1|-|5||20|-|35|––WTB–||1||15|||350|-|950||600||5|||||||||
-|fine||6|-|10||36|-|50|––WTB–||6||14|||1 100|-|1 700||600||7|||||||||
-|Warrior’s||11|-|15||51|-|65|––WTB–||10||14|||1 850|-|2 450||600||13|||||||||
-|soldier’s||16|-|20||66|-|80|––WT––||15||14|||2 600|-|3 950||1 350||17|||||||||
-|lord’s||21|-|30||81|-|95|––WT––||19||14|||4 100|-|5 950||1 850||21|||||||||
-|knight’s||31|-|40||96|- 110|––WT––||23||14|||6 100|-|8 450||2 350||26||||||||||
-|master’s||41|-|50||111|- 125|––WT––||28||14|||8 600|-|13 000||4 400||30||||||||||
-|champion’s||51|-|75||126|- 150|––WT––||40||24||15 200 - 24 000||8 800||33|||||||||||||
-|king’s||76|- 100||151|- 175|––WT––||28||24||24 100 -|35 000||10 900||38|||||||||||||
-|doppelganger’s[3]||21|-|30||81|-|95|––Wt––||11||14|||2 000|-|2 400||400||10|||||||||
 
-1. It is the damage value that is used for price calculations.
-2. Is treated by the game as a cursed item during item creation so you will, for example, not be able to buy it in town.
+### + All Attributes
 
-3. Only available in Hellfire. Has 10% chance of duplicating any monster hit except Diablo and unique monsters.
+| **Suffix**   | **Value**     | **Occurrence** | **qlvl** | **Steps** | **Base-Max**         | **Range**  | **Multiplier** |
+|-------------|--------------|---------------|---------|----------|--------------------|---------|-------------|
+| trouble     | -10 – -6     | ASWtBJ        | 12      | -        | -                  | -       | -10         |
+| the pit     | -5 – -1      | ASWtBJ        | 5       | -        | -                  | -       | -5          |
+| the sky     | 1 – 3        | ASWtBJ        | 5       | 2        | 800 – 4,000        | 3,200   | 5           |
+| the moon    | 4 – 7        | ASWtBJ        | 11      | 3        | 4,800 – 8,000      | 3,200   | 10          |
+| the stars   | 8 – 11       | A-W-BJ        | 17      | 3        | 8,800 – 12,000     | 3,200   | 15          |
+| the heavens | 12 – 15      | ––W–BJ        | 25      | 3        | 12,800 – 20,000    | 7,200   | 20          |
+| the zodiac  | 16 – 20      | ––-––J        | 30      | 4        | 20,800 – 40,000    | 19,200  | 30          |
 
-**+% Damage Done**
 
-||**Prefix**|**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**|**Range**|**Multiplier**||||||
-| :- | :- | -: | :-: | -: | -: | -: | -: | -: | :- | :- | :- | :- | :- |
-||useless|-100||––WtB–|5||||||-8|||
-||bent|-75|-|-50|––WtB–|3||||||-4||
-||weak|-45|- -25|––WtB–|1||||||-3|||
-||jagged|20|-|35|––WtB–|4|15|250|-|450|200|3||
-||deadly|36|-|50|––WtB–|6|14|500|-|700|200|4||
-||heavy|51|-|65|––WtB–|9|14|750|-|950|200|5||
-||vicious|66|-|80|––WtB–|12|14|1 000|-|1 450|450|8||
-||brutal|81|-|95|––WtB–|16|14|1 500|-|1 950|450|10||
-||massive|96|- 110|––WtB–|20|14|2 000|-|2 450|450|13|||
-||savage|111|- 125|––W–B–|23|14|2 500|-|3 000|500|15|||
-||ruthless|126|- 150|––W–B–|35|24|10 100 -|15 000|4 900|17||||
-||merciless|151|- 175|––W–B–|60|24|15 000 -|20 000|5 000|20||||
-||decay[1][2]|150|- 250|––WtB–|1||200|-|200|0|2|||
-||crystalline[1][3]|200|- 280|––W–––|5|79|1 000|-|3 000|2 000|3|||
-1. Only available in Hellfire.
-2. Bonus decreases by 5% each hit. When reaching -100%, the item is destroyed.
 
-3. Also has from -30 to -70% lower durability.
+### + Life
 
-|**+ Damage Done**||||||||||||||
-|**Suffix**|**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**||**Range**|**Multiplier**||||||
-|quality|1|-|2|––WtB–|2|1|100|-|200||100|2||
-|maiming|3|-|5|––WtB–|7|2|1 300|-|1 500||200|3||
-|slaying|6|-|8|––W–––|15|2|2 600|-|3 000||400|5||
-|gore|9|-|12|––W–––|25|3|4 100|-|5 000||900|8||
-|carnage|13|-|16|––W–––|35|3|5 100|-|10 000||4 900|10||
-|slaughter|17|-|20|––W–––|60|3|10 100 -|15 000||4 900|13|||
+| **Suffix**     | **Value**     | **Occurrence** | **qlvl** | **Steps** | **Base-Max**         | **Range**  | **Multiplier** |
+|---------------|--------------|---------------|---------|----------|--------------------|---------|-------------|
+| the vulture  | -25 – -11     | AS---J        | 4       | -        | -                  | -       | -4          |
+| the jackal   | -10 – -1      | AS---J        | 1       | -        | -                  | -       | -2          |
+| the fox      | 10 – 15       | AS---J        | 1       | 5        | 100 – 1,000        | 900     | 2           |
+| the jaguar   | 16 – 20       | AS---J        | 5       | 4        | 1,100 – 2,000      | 900     | 3           |
+| the eagle    | 21 – 30       | AS---J        | 9       | 9        | 2,100 – 4,000      | 1,900   | 5           |
+| the wolf     | 30 – 40       | AS---J        | 15      | 10       | 4,100 – 6,000      | 1,900   | 7           |
+| the tiger    | 41 – 50       | AS---J        | 21      | 9        | 6,100 – 10,000     | 3,900   | 9           |
+| the lion     | 51 – 60       | A----J        | 27      | 9        | 10,100 – 15,000    | 4,900   | 11          |
+| the mammoth  | 61 – 80       | A-----        | 35      | 19       | 15,100 – 19,000    | 3,900   | 12          |
+| the whale    | 81 – 100      | A-----        | 60      | 19       | 19,100 – 30,000    | 10,900  | 13          |
 
-|<b>- Damage Taken<sup>[1]</sup></b>||||||||||||||
-|**Suffix**|**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**||**Range**|**Multiplier**||||||
-|pain|+4|-|+2|AS–––J|4|||||||-4||
-|tears|||+1|AS–––J|2|||||||-2||
-|health|||1|AS–––J|2||200||||2|||
-|protection|||2|AS––––|6||400||||4|||
-|absorption|||3|AS––––|12||1 001||||10|||
-|deflection|||4|A–––––|20||2 500||||15|||
-|osmosis|5|-|6|A–––––|50|1|7 500|-|10 000||2 500|20||
-1. Works for all type of damage, even from spells, but does not work against other players. The damage is reduced before any resistance is applied but after the thieves effect. The damage will never be reduced below 1.
 
-<b>+ Fire Damage<sup>[1]</sup></b>
 
-||**Suffix**|**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**|**Range**|**Multiplier**|||
-| :- | :- | -: | :-: | -: | :- | :- | :- | :-: | :- | :- |
-||flame|1 -|3|––––B–|1||2 000||2||
-||fire|1 -|6|––––B–|11||4 000||4||
-||burning|1 -|16|––––B–|35||6 000||6||
-||flaming[2]|1 -|10|––WT––|7||5 000||2||
-1. There are quite a few bugs associated with fire and lightning arrows which make them often deal erroneous damage (way too high or no additional damage at all).
+### + Mana
 
-2. A prefix.
+| **Prefix**    | **Value**    | **Occurrence** | **qlvl** | **Steps** | **Base-Max**         | **Range**  | **Multiplier** |
+|--------------|-------------|---------------|---------|----------|--------------------|---------|-------------|
+| corruption<sup>[^56]</sup> | -            | all          | ASW---  | 5        | -1,000              | -       | 2           |
+| hyena’s      | -25 – -11   | ---T-J       | 4       | 14       | 100 – 1,000       | 900     | -2          |
+| frog’s       | -10 – -1    | ---T-J       | 1       | -        | -                  | -       | -2          |
+| spider’s     | 10 – 15     | ---T-J       | 1       | 5        | 500 – 1,000       | 500     | 2           |
+| raven’s      | 16 – 20     | ---T-J       | 5       | 5        | 1,100 – 2,000     | 900     | 3           |
+| snake’s      | 21 – 30     | ---T-J       | 9       | 9        | 2,100 – 4,000     | 1,900   | 5           |
+| serpent’s    | 31 – 40     | ---T-J       | 15      | 10       | 4,100 – 6,000     | 1,900   | 7           |
+| drake’s      | 41 – 50     | ---T-J       | 21      | 9        | 6,100 – 10,000    | 3,900   | 9           |
+| dragon’s     | 51 – 60     | ---T-J       | 27      | 9        | 10,100 – 15,000   | 4,900   | 11          |
+| wyrm’s<sup>[^57]</sup>     | 61 – 80     | ---t--       | 35      | 19       | 15,100 – 19,000   | 3,900   | 12          |
+| hydra’s<sup>[^57]</sup>    | 81 – 100    | ---t--       | 60      | 19       | 19,100 – 30,000   | 10,900  | 13          |
 
-<b>+ Lightning Damage<sup>[1]</sup></b>
+[^56]: A suffix.  
+[^57]: Only available in *Hellfire*.  
 
-||**Suffix**|**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**|**Range**|**Multiplier**|||
-| :- | :- | -: | :-: | -: | :- | -: | :- | :-: | :- | :- |
-||shock|1 -|6|––––B–|13||6 000||2||
-||lightning|1 -|10|––––B–|21||8 000||4||
-||thunder|1 -|20|––––B–|60||12 000||6||
-||lightning[2]|2 -|20|––WT––|18||10 000||2||
-1. There are quite a few bugs associated with fire and lightning arrows which make them often deal erroneous damage (way too high or no additional damage at all).
 
-2. A prefix.
+### +% Armor Class<sup>[^58]</sup>
 
-<b>% Steal Life<sup>[1]</sup></b>
+| **Prefix**   | **Value**      | **Occurrence** | **qlvl** | **Steps** | **Base-Max**       | **Range**  | **Multiplier** |
+|-------------|---------------|---------------|---------|----------|------------------|---------|-------------|
+| vulnerable  | -100 – -51     | AS––––        | 3       | -        | -                | -       | -3          |
+| rusted      | -50 – -25      | AS––––        | 1       | -        | -                | -       | -2          |
+| fine        | 20 – 30        | AS––––        | 1       | 10       | 20 – 100         | 80      | 2           |
+| strong      | 31 – 40        | AS––––        | 3       | 9        | 120 – 200        | 80      | 3           |
+| grand       | 41 – 55        | AS––––        | 6       | 14       | 220 – 300        | 80      | 5           |
+| valiant     | 56 – 70        | AS––––        | 10      | 14       | 320 – 400        | 80      | 7           |
+| glorious    | 71 – 90        | AS––––        | 14      | 19       | 420 – 600        | 180     | 9           |
+| blessed     | 91 – 110       | AS––––        | 19      | 19       | 620 – 800        | 180     | 11          |
+| saintly     | 111 – 130      | AS––––        | 24      | 19       | 820 – 1,200      | 380     | 13          |
+| awesome     | 131 – 150      | AS––––        | 28      | 19       | 1,220 – 2,000    | 780     | 15          |
+| holy        | 151 – 170      | AS––––        | 35      | 19       | 5,200 – 6,000    | 800     | 17          |
+| godly       | 171 – 200      | AS––––        | 60      | 29       | 6,200 – 7,000    | 800     | 20          |
 
-||**Suffix**|**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**|**Range**|**Multiplier**||
-| :- | :- | -: | :-: | -: | :- | -: | :- | :-: | :- |
-||the leech|3|––W–––|8||7 500||3||
-||blood|5|––W–––|19||15 000||3||
-1. The amount is based on damage done even if the monster has less HP left. The amount is *not* cumulative if you have more than one item with the capability of stealing life (an item of blood will take precedence over an item of the leech). An exception is The Undead Crown which is cumulative with both an item of blood or an item of the leech for a total of 3% to 15.5% or 5% to 17.5% life stealing. The Helm of Sprits, Shadowhawk, and The Eater of Souls are all treated as items of blood. Does not work against players. See chapter 6.1.4 for more information.
+[^58]: There is a minimum increase of 1 in AC. Even if the percentage results in an increase of less than one, AC will still increase by at least one. Due to a bug, any decrease in AC less than 1 will be transformed into a positive increase by 1.
 
-<b>% Steal Mana<sup>[1]</sup></b>
 
-||**Suffix**|**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**|**Range**|**Multiplier**||
-| :- | :- | -: | :-: | -: | :- | -: | :- | :-: | :- |
-||the bat|3|––W–––|8||7 500||3||
-||vampires|5|––W–––|19||15 000||3||
-1. The amount is based on damage done even if the monster has less HP left. The amount is *not* cumulative if you have more than one item with the capability of stealing mana (an item of vampires will take precedence over an item of the bat. The Eater of Souls is treated as an item of vampire. Does not work against players. See chapter 6.1.4 for more information.
+### +% To Hit<sup>[^59]</sup>
 
-|<b>+% Resist Magic<sup>[1]</sup></b>||||||||||||||||
-|**Prefix**||||**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**||**Range**|**Multiplier**|||||
-|white||||10 -|20|ASWTBJ|4|10|500|-|1 500||1 000|2||
-|pearl||||21 -|30|ASWTBJ|10|9|2 100|-|3 000||900|2||
-|ivory||||31 -|40|ASWTBJ|16|9|3 100|-|4 000||900|2||
-|crystal||||41 -|50|ASWTBJ|20|9|8 200|-|12 000||3 800|3||
-|diamond||||51 -|60|ASWTBJ|26|9|17 100 - 20 000||2 900|5||||
-|1  Is applied after any|effects from thieves and -damage. It can reduce damage below 1.|||||||||||||||
+| **Prefix**  | **Value**         | **Occurrence** | **qlvl** | **Steps** | **Base-Max**       | **Range**  | **Multiplier** |
+|------------|------------------|---------------|---------|----------|------------------|---------|-------------|
+| tin        | -10 – -6         | ––W–BJ       | 3       | -        | -                | -       | -3          |
+| brass      | -5 – -1          | ––W–BJ       | 1       | -        | -                | -       | -2          |
+| bronze     | 1 – 5            | ––W–BJ       | 1       | 4        | 100 – 500        | 400     | 2           |
+| iron       | 6 – 10           | ––W–BJ       | 4       | 4        | 600 – 1,000      | 400     | 3           |
+| steel      | 11 – 15          | ––W–BJ       | 6       | 4        | 1,100 – 1,500    | 400     | 5           |
+| silver     | 16 – 20          | ––W–BJ       | 9       | 4        | 1,600 – 2,000    | 400     | 7           |
+| gold       | 21 – 30          | ––W–BJ       | 12      | 9        | 2,100 – 3,000    | 900     | 9           |
+| platinum   | 31 – 40          | ––W–B–       | 16      | 9        | 3,100 – 4,000    | 900     | 11          |
+| mithril    | 41 – 60          | ––W–B–       | 20      | 19       | 4,100 – 6,000    | 1,900   | 13          |
+| meteoric   | 61 – 80          | ––W–B–       | 23      | 19       | 6,100 – 10,000   | 3,900   | 15          |
+| weird      | 81 – 100         | ––W–B–       | 35      | 19       | 10,100 – 14,000  | 3,900   | 17          |
+| strange    | 101 – 150        | ––W–B–       | 60      | 49       | 14,100 – 20,000  | 5,900   | 20          |
 
-|<b>+% Resist Fire<sup>[1]</sup></b>||||||||||||||||
-|**Prefix**||||**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**||**Range**|**Multiplier**|||||
-|red||||10 -|20|ASWTBJ|4|10|500|-|1 500||1 000|2||
-|crimson||||21 -|30|ASWTBJ|10|9|2 100|-|3 000||900|2||
-|crimson||||31 -|40|ASWTBJ|16|9|3 100|-|4 000||900|2||
-|garnet||||41 -|50|ASWTBJ|20|9|8 200|-|12 000||3 800|3||
-|ruby||||51 -|60|ASWTBJ|26|9|17 100 - 20 000||2 900|5||||
-|1  Is applied after any|effects from thieves and -damage. It can reduce damage below 1.|||||||||||||||
+[^59]: Determines the percentage bonus or penalty applied to a character's chance to hit enemies in melee or ranged combat.
 
-|<b>+% Resist Lightning<sup>[1]</sup></b>||||||||||||||||
-|**Prefix**||||**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**||**Range**|**Multiplier**|||||
-|blue||||10 -|20|ASWTBJ|4|10|500|-|1 500||1 000|2||
-|azure||||21 -|30|ASWTBJ|10|9|2 100|-|3 000||900|2||
-|lapis||||31 -|40|ASWTBJ|16|9|3 100|-|4 000||900|2||
-|cobalt||||41 -|50|ASWTBJ|20|9|8 200|-|12 000||3 800|3||
-|sapphire||||51 -|60|ASWTBJ|26|9|17 100 -|20 000||2 900|5|||
-|1  Is applied after any|effects from thieves and -damage. It can reduce damage below 1.|||||||||||||||
 
-|<b>+% Resist All<sup>[1]</sup></b>||||||||||||||||
-|**Prefix**||||**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**||**Range**|**Multiplier**|||||
-|topaz||||10 -|15|ASWTBJ|8|5|2 000|-|5 000||3 000|3||
-|amber||||16 -|20|ASWTBJ|12|4|7 400|-|10 000||2 600|3||
-|jade||||21 -|30|ASWTBJ|18|9|11 000 -|15 000||4 000|3|||
-|obsidian||||31 -|40|ASWTBJ|24|9|24 000 -|40 000||16 000|4|||
-|emerald||||41 -|50|–SWTB–|31|9|61 000 - 75 000||14 000|7||||
-|1  Is applied after any|effects from thieves and -damage. It can reduce damage below 1.|||||||||||||||
+### +% To Hit, +% Damage Done<sup>[^60]</sup>
 
-|**+ Spell Levels**||||||||||||||||
-|**Prefix**||||**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**||**Range**|**Multiplier**|||||
-|angel’s||||1||–––T––|15||25 000||||2|||
-|arch-angel’s||||2||–––T––|25||50 000||||3|||
+| **Prefix**         | **To Hit**      | **Damage**        | **Occurrence** | **qlvl** | **Steps** | **Base-Max**         | **Range**      | **Multiplier** |
+|-------------------|---------------|----------------|--------------|---------|----------|--------------------|------------|-------------|
+| clumsy           | -10 – -6       | -75 – -50      | ––WTB–       | 5       | -        | -                  | -          | -7          |
+| dull             | -5 – -1        | -45 – -25      | ––WTB–       | 1       | -        | -                  | -          | -5          |
+| sharp<sup>[^61]</sup>         | 1 – 5          | 20 – 35       | ––WTB–       | 1       | 15       | 350 – 950          | 600        | 5           |
+| fine             | 6 – 10         | 36 – 50        | ––WTB–       | 6       | 14       | 1,100 – 1,700      | 600        | 7           |
+| Warrior’s        | 11 – 15        | 51 – 65        | ––WTB–       | 10      | 14       | 1,850 – 2,450      | 600        | 13          |
+| soldier’s        | 16 – 20        | 66 – 80        | ––WT––       | 15      | 14       | 2,600 – 3,950      | 1,350      | 17          |
+| lord’s           | 21 – 30        | 81 – 95        | ––WT––       | 19      | 14       | 4,100 – 5,950      | 1,850      | 21          |
+| knight’s         | 31 – 40        | 96 – 110       | ––WT––       | 23      | 14       | 6,100 – 8,450      | 2,350      | 26          |
+| master’s         | 41 – 50        | 111 – 125      | ––WT––       | 28      | 14       | 8,600 – 13,000     | 4,400      | 30          |
+| champion’s       | 51 – 75        | 126 – 150      | ––WT––       | 40      | 24       | 15,200 – 24,000    | 8,800      | 33          |
+| king’s           | 76 – 100       | 151 – 175      | ––WT––       | 28      | 24       | 24,100 – 35,000    | 10,900     | 38          |
+| doppelganger’s<sup>[^62]</sup> | 21 – 30        | 81 – 95        | ––Wt––       | 11      | 14       | 2,000 – 2,400      | 400        | 10          |
 
-|**× Charges**||||||||||||||||
-|**Prefix**||||**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**||**Range**|**Multiplier**|||||
-|plentiful||||2||–––T––|4||2 000||||2|||
-|bountiful||||3||–––T––|9||3 000||||3|||
+[^60]: The damage value is used for price calculations.  
+[^61]: This is treated as a cursed item during item creation, meaning it will not be available for purchase in town.  
+[^62]: Only available in *Hellfire*. Has a 10% chance of duplicating any monster hit, except for *Diablo* and unique monsters.
 
-|<b>Damage / Penetrate Armor<sup>[1]</sup></b>||||||||||||||||
-|**Suffix**|<b>Value<sup>[2]</sup></b>|<b>Value<sup>[3]</sup></b>|**Occurrence**|**qlvl**|**Steps**|**Base-Max**||**Range**|**Multiplier**|||||||
-|piercing|2 -|6|25[4] %|––W–B–|1||1 000||||3|||||
-|puncturing|4 -|12|50[4] %|––W–B–|9||2 000||||6|||||
-|bashing|8 -|24|75[4] %|––W–––|17||4 000||||12|||||
-1. In Diablo these suffixes lower the AC of the target by a specific random amount in the range shown in the table. In Hellfire they reduce the AC of the target by a certain percentage shown in the table. It does not work against players. The exact value (in Diablo) is determined at the time of creation of the item and the extra To Hit is never shown on the character screen.
-2. In Diablo.
 
-3. In Hellfire.
+### +% Damage Done<sup>[^63]</sup>
 
-4. Add 12.5 when used by a Barbarian.
+| **Prefix**         | **Value**        | **Occurrence** | **qlvl** | **Steps** | **Base-Max**        | **Range**     | **Multiplier** |
+|-------------------|----------------|--------------|---------|----------|-------------------|------------|-------------|
+| useless          | -100            | ––WtB–       | 5       | -        | -                 | -          | -8          |
+| bent            | -75 – -50       | ––WtB–       | 3       | -        | -                 | -          | -4          |
+| weak            | -45 – -25       | ––WtB–       | 1       | -        | -                 | -          | -3          |
+| jagged          | 20 – 35         | ––WtB–       | 4       | 15       | 250 – 450         | 200        | 3           |
+| deadly          | 36 – 50         | ––WtB–       | 6       | 14       | 500 – 700         | 200        | 4           |
+| heavy           | 51 – 65         | ––WtB–       | 9       | 14       | 750 – 950         | 200        | 5           |
+| vicious         | 66 – 80         | ––WtB–       | 12      | 14       | 1,000 – 1,450     | 450        | 8           |
+| brutal          | 81 – 95         | ––WtB–       | 16      | 14       | 1,500 – 1,950     | 450        | 10          |
+| massive         | 96 – 110        | ––WtB–       | 20      | 14       | 2,000 – 2,450     | 450        | 13          |
+| savage         | 111 – 125        | ––W–B–       | 23      | 14       | 2,500 – 3,000     | 500        | 15          |
+| ruthless       | 126 – 150        | ––W–B–       | 35      | 24       | 10,100 – 15,000   | 4,900      | 17          |
+| merciless      | 151 – 175        | ––W–B–       | 60      | 24       | 15,000 – 20,000   | 5,000      | 20          |
+| decay<sup>[^64][^65]</sup>        | 150 – 250      | ––WtB–       | 1       | -        | 200 – 200         | 0          | 2           |
+| crystalline<sup>[^64][^66]</sup>  | 200 – 280      | ––W–––       | 5       | 79       | 1,000 – 3,000     | 2,000      | 3           |
 
-|<b>+% Light Radius<sup>[1]</sup></b>||||||||||
-|**Suffix**|**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**||**Range**|**Multiplier**||
-|the dark|-40|A–W—J|6|||||-3||
-|the night|-20|A–W—J|3|||||-2||
-|light|20|A–W—J|4||750|||2||
-|radiance|40|A–W—J|8||1 500|||3||
-1. Also affects the distance at which you activate monsters. A higher value means at a greater distance. There is no additional effect of wearing more than +50% or less than -80% light radius. As a curiosity, the light radius is always one square less in the catacombs and it is always the highest light radius you have had on a level that counts, even if you later lower it.
+[^63]: Damage bonus applies to total damage, not just weapon damage.  
+[^64]: Only available in *Hellfire*.  
+[^65]: Bonus decreases by 5% per hit. When reaching -100%, the item is destroyed.  
+[^66]: Also has **-30% to -70% lower durability**.  
 
-<b>Weapon Speed<sup>[1]</sup></b>
 
-||**Suffix**|**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**|**Range**|**Multiplier**||
-| :- | :- | :-: | :-: | -: | :- | -: | :- | -: | :- |
-||readiness[2][3]|quick|––WTB–|1||2 000||2||
-||swiftness[3]|fast|––WTB–|10||4 000||4||
-||speed|faster|––WT––|19||8 000||8||
-||haste[4]|fastest|––WT––|27||16 000||16||
-1. A Bard only benefits from the fastest weapon.
-2. Has no effect in Diablo.
+### + Damage Done<sup>[^67]</sup>
 
-3. In Hellfire, it makes the arrows travel faster on bows instead of increasing the ”swing” speed.
+| **Suffix**  | **Value**    | **Occurrence** | **qlvl** | **Steps** | **Base-Max**       | **Range**  | **Multiplier** |
+|------------|------------|--------------|---------|----------|-----------------|------------|-------------|
+| quality    | 1          | ––WtB–       | 2       | 1        | 100 – 200       | 100        | 2           |
+| maiming    | 3 – 5      | ––WtB–       | 7       | 2        | 1,300 – 1,500   | 200        | 3           |
+| slaying    | 6 – 8      | ––W–––       | 15      | 2        | 2,600 – 3,000   | 400        | 5           |
+| gore       | 9 – 12     | ––W–––       | 25      | 3        | 4,100 – 5,000   | 900        | 8           |
+| carnage    | 13 – 16    | ––W–––       | 35      | 3        | 5,100 – 10,000  | 4,900      | 10          |
+| slaughter  | 17 – 20    | ––W–––       | 60      | 3        | 10,100 – 15,000 | 4,900      | 13          |
 
-4. Has the same effect as speed despite what is said in the latest Diablo patch (1.07).
+[^67]: These suffixes increase the flat damage done by weapons.  
 
-<b>Hit Recovery<sup>[1]</sup></b>
 
-||**Suffix**|**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**|**Range**|**Multiplier**||
-| :- | :- | :-: | :-: | -: | :- | :- | :- | :-: | :- |
-||balance[1]|fast|A––––J|1||2 000||2||
-||stability[1]|faster|A––––J|10||4 000||4||
-||harmony[1]|fastest|A––––J|20||8 000||8||
-1. A character only benefits from the fastest one, as they are not cumulative. The exception is if you have one of each in which case you will, in Diablo only, receive a further reduction in hit recovery time. See chapter 2.2.1 for more information.
+### - Damage Taken<sup>[^68]</sup>
 
-**+% Durability**
+| **Suffix**   | **Value**   | **Occurrence** | **qlvl** | **Steps** | **Base-Max**       | **Range**  | **Multiplier** |
+|-------------|------------|--------------|---------|----------|-----------------|------------|-------------|
+| pain        | +2 – +4    | AS–––J       | 4       | -        | -               | -4         | -           |
+| tears       | +1         | AS–––J       | 2       | -        | -               | -2         | -           |
+| health      | 1          | AS–––J       | 2       | -        | 200             | -          | 2           |
+| protection  | 2          | AS––––       | 6       | -        | 400             | -          | 4           |
+| absorption  | 3          | AS––––       | 12      | -        | 1,001           | -          | 10          |
+| deflection  | 4          | A–––––       | 20      | -        | 2,500           | -          | 15          |
+| osmosis     | 5 – 6      | A–––––       | 50      | 1        | 7,500 – 10,000  | 2,500      | 20          |
 
-||**Suffix**|**Value**|**Occurrence**||**qlvl**|**Steps**||**Base-Max**||**Range**|**Multiplier**|||||
-| :- | :- | :-: | :- | :- | -: | :- | :- | :- | :- | -: | -: | :- | :- | :- | :- |
-||fragility|||=1|ASW–––||3|||||||-4||
-||brittleness|-75|-|-26|ASW–––||1|||||||-2||
-||sturdiness|26|-|75|ASWt––||1|||100||||2||
-||craftsmanship|51|- 100|ASWt––||6|||200||||2|||
-||structure|101|- 200|ASWt––||12|||300||||2|||
-||many|||100|––––B–||3|||750||||2||
-||plenty|||200|––––B–||7|||1 500||||3||
-||the ages|indestruct.|ASWt––||25|||600||||5||||
+[^68]: Works for all types of damage, including spells, but does not work against other players. The damage reduction is applied **before** resistances but **after** the *Thieves' Effect*. Damage will never be reduced below **1**.
 
-||**Other**|||||||||||||||
-||**Suffix**||||**Effect**||**Occurrence**|**qlvl**||**Base-Max**|**Multiplier**|||||
-||the bear[2]|knocks target back||––WTB–|5||750|2||||||||
-||blocking[2]|fast block||||-S----|5||4 000|4||||||
-||thieves[1][2][3]|absorbs half trap damage||AS–––J|11||1 500|2||||||||
-||thorns[1][2]|attacker takes 1-3 damage||AS––––|1||500|2||||||||
-||devastation[1][2][4][5][6]|5% chance of doing ×3 damage||––WtB–|1||1 200|3||||||||
-||jester’s[1][2][4][5][7]|each swing does ×0-6 damage9||––W–––|7||1 200|3||||||||
-||peril[1][2][4][6][8]|×2 damage to monster, ×1 to user|––WtB–|5||500|1|||||||||
-1. Does not work versus players.
-2. These effects are not cumulative if you have them more than once. They are cumulative with other effects though.
 
-3. In Hellfire it also absorbs half arrow and magical damage (magic, fire, lightning and apocalypse) from monster attacks. It is applied before both -damage and resistance.
+### + Fire Damage<sup>[^69]</sup>
 
-4. Only available in Hellfire.
+| **Suffix**  | **Value**  | **Occurrence** | **qlvl** | **Steps** | **Base-Max** | **Range** | **Multiplier** |
+|------------|-----------|--------------|---------|----------|------------|----------|-------------|
+| flame      | 1 – 3     | ––––B–       | 1       | -        | 2,000      | -        | 2           |
+| fire       | 1 – 6     | ––––B–       | 11      | -        | 4,000      | -        | 4           |
+| burning    | 1 – 16    | ––––B–       | 35      | -        | 6,000      | -        | 6           |
+| flaming<sup>[^70]</sup>  | 1 – 10    | ––WT––       | 7       | -        | 5,000      | -        | 2           |
 
-5. Damage bonus applies to total damage, not just weapon damage.
+[^69]: There are several **bugs** associated with fire and lightning arrows, causing them to sometimes deal **erroneous damage** (either too high or no additional damage at all).  
+[^70]: *Flaming* is a **prefix**, not a suffix.
 
-6. Does not work on bows.
 
-7. A prefix.
+### + Lightning Damage<sup>[^71]</sup>
 
-8. Affects total damage versus monsters but only weapon damage and character damage versus user. This damage is modified by any -damage from enemies, though.
+| **Suffix**     | **Value**  | **Occurrence** | **qlvl** | **Steps** | **Base-Max** | **Range** | **Multiplier** |
+|---------------|-----------|--------------|---------|----------|------------|----------|-------------|
+| shock        | 1 – 6     | ––––B–       | 13      | -        | 6,000      | -        | 2           |
+| lightning    | 1 – 10    | ––––B–       | 21      | -        | 8,000      | -        | 4           |
+| thunder      | 1 – 20    | ––––B–       | 60      | -        | 12,000     | -        | 6           |
+| lightning<sup>[^72]</sup> | 2 – 20    | ––WT––       | 18      | -        | 10,000     | -        | 2           |
 
-9. The game erroneously states it does ×0-5. Average value is ×2. For more details, see chapter 6.2.1. Does not work against Diablo or unique monsters.
+[^71]: There are several **bugs** associated with fire and lightning arrows, causing them to sometimes deal **erroneous damage** (either too high or no additional damage at all).  
+[^72]: *Lightning* is a **prefix**, not a suffix.
+
+
+### % Steal Life<sup>[^73]</sup>
+
+| **Suffix**    | **Value** | **Occurrence** | **qlvl** | **Steps** | **Base-Max** | **Range** | **Multiplier** |
+|--------------|---------|--------------|---------|----------|------------|----------|-------------|
+| the leech   | 3%     | ––W–––       | 8       | -        | 7,500      | -        | 3           |
+| blood       | 5%     | ––W–––       | 19      | -        | 15,000     | -        | 3           |
+
+[^73]: The amount of **life stolen** is based on **damage dealt**, even if the monster has **less HP remaining**.  
+- **Not cumulative** if multiple items have this effect (e.g., an *item of blood* takes precedence over *an item of the leech*).  
+- **Exception:** *The Undead Crown* stacks with both *leech* and *blood*, allowing **up to 3% – 15.5%** or **5% – 17.5%** life steal.  
+- **Items treated as "blood"**: *The Helm of Sprits*, *Shadowhawk*, *The Eater of Souls*.  
+- **Does not work against players.**  
+- See **Chapter 6.1.4** for more details.
+
+
+### % Steal Mana<sup>[^74]</sup>
+
+| **Suffix**   | **Value** | **Occurrence** | **qlvl** | **Steps** | **Base-Max** | **Range** | **Multiplier** |
+|-------------|---------|--------------|---------|----------|------------|----------|-------------|
+| the bat    | 3%     | ––W–––       | 8       | -        | 7,500      | -        | 3           |
+| vampires   | 5%     | ––W–––       | 19      | -        | 15,000     | -        | 3           |
+
+[^74]: The amount of **mana stolen** is based on **damage dealt**, even if the monster has **less mana remaining**.  
+- **Not cumulative** if multiple items have this effect (*e.g., an item of vampires takes precedence over an item of the bat*).  
+- **Exception:** *The Eater of Souls* is treated as an *item of vampires*.  
+- **Does not work against players.**  
+- See **Chapter 6.1.4** for more details.
+
+
+### +% Resist Magic<sup>[^75]</sup>
+
+| **Prefix**  | **Value**  | **Occurrence** | **qlvl** | **Steps** | **Base-Max** | **Range**  | **Multiplier** |
+|------------|-----------|--------------|---------|----------|------------|-----------|-------------|
+| white      | 10% - 20% | ASWTBJ       | 4       | 10       | 500 - 1,500  | 1,000     | 2           |
+| pearl      | 21% - 30% | ASWTBJ       | 10      | 9        | 2,100 - 3,000 | 900       | 2           |
+| ivory      | 31% - 40% | ASWTBJ       | 16      | 9        | 3,100 - 4,000 | 900       | 2           |
+| crystal    | 41% - 50% | ASWTBJ       | 20      | 9        | 8,200 - 12,000 | 3,800     | 3           |
+| diamond    | 51% - 60% | ASWTBJ       | 26      | 9        | 17,100 - 20,000 | 2,900     | 5           |
+
+[^75]: **Resistance applies after** other damage reductions (*thieves & -damage effects*).  
+- It **can reduce damage below 1** in some cases.
+
+
+### +% Resist Fire<sup>[^76]</sup>
+
+| **Prefix**  | **Value**   | **Occurrence** | **qlvl** | **Steps** | **Base-Max**  | **Range**    | **Multiplier** |
+|------------|------------|--------------|---------|----------|--------------|-------------|-------------|
+| red        | 10% - 20%  | ASWTBJ       | 4       | 10       | 500 - 1,500   | 1,000       | 2           |
+| crimson    | 21% - 30%  | ASWTBJ       | 10      | 9        | 2,100 - 3,000  | 900         | 2           |
+| crimson    | 31% - 40%  | ASWTBJ       | 16      | 9        | 3,100 - 4,000  | 900         | 2           |
+| garnet     | 41% - 50%  | ASWTBJ       | 20      | 9        | 8,200 - 12,000 | 3,800       | 3           |
+| ruby       | 51% - 60%  | ASWTBJ       | 26      | 9        | 17,100 - 20,000 | 2,900       | 5           |
+
+[^76]: **Resistance applies after** other damage reductions (*thieves & -damage effects*).  
+- It **can reduce damage below 1** in some cases.
+
+
+### +% Resist Lightning<sup>[^77]</sup>
+
+| **Prefix**  | **Value**   | **Occurrence** | **qlvl** | **Steps** | **Base-Max**  | **Range**    | **Multiplier** |
+|------------|------------|--------------|---------|----------|--------------|-------------|-------------|
+| blue       | 10% - 20%  | ASWTBJ       | 4       | 10       | 500 - 1,500   | 1,000       | 2           |
+| azure      | 21% - 30%  | ASWTBJ       | 10      | 9        | 2,100 - 3,000  | 900         | 2           |
+| lapis      | 31% - 40%  | ASWTBJ       | 16      | 9        | 3,100 - 4,000  | 900         | 2           |
+| cobalt     | 41% - 50%  | ASWTBJ       | 20      | 9        | 8,200 - 12,000 | 3,800       | 3           |
+| sapphire   | 51% - 60%  | ASWTBJ       | 26      | 9        | 17,100 - 20,000 | 2,900       | 5           |
+
+[^77]: **Resistance applies after** other damage reductions (*thieves & -damage effects*).  
+- It **can reduce damage below 1** in some cases.
+
+
+### +% Resist All<sup>[^78]</sup>
+
+| **Prefix**  | **Value**   | **Occurrence** | **qlvl** | **Steps** | **Base-Max**   | **Range**     | **Multiplier** |
+|------------|------------|--------------|---------|----------|---------------|--------------|-------------|
+| topaz      | 10% - 15%  | ASWTBJ       | 8       | 5        | 2,000 - 5,000  | 3,000        | 3           |
+| amber      | 16% - 20%  | ASWTBJ       | 12      | 4        | 7,400 - 10,000 | 2,600        | 3           |
+| jade       | 21% - 30%  | ASWTBJ       | 18      | 9        | 11,000 - 15,000 | 4,000       | 3           |
+| obsidian   | 31% - 40%  | ASWTBJ       | 24      | 9        | 24,000 - 40,000 | 16,000      | 4           |
+| emerald    | 41% - 50%  | –SWTB–       | 31      | 9        | 61,000 - 75,000 | 14,000      | 7           |
+
+[^78]: **Resistance applies after** other damage reductions (*thieves & -damage effects*).  
+- It **can reduce damage below 1** in some cases.
+
+
+### + Spell Levels
+
+| **Prefix**       | **Value** | **Occurrence** | **qlvl** | **Steps** | **Base-Max** | **Range** | **Multiplier** |
+|-----------------|----------|--------------|---------|----------|-------------|--------|-------------|
+| angel’s        | +1       | –––T––      | 15      | -        | 25,000       | -      | 2           |
+| arch-angel’s   | +2       | –––T––      | 25      | -        | 50,000       | -      | 3           |
+
+
+### × Charges
+
+| **Prefix**      | **Value** | **Occurrence** | **qlvl** | **Steps** | **Base-Max** | **Range** | **Multiplier** |
+|----------------|----------|--------------|---------|----------|-------------|--------|-------------|
+| plentiful     | ×2       | –––T––      | 4       | -        | 2,000       | -      | 2           |
+| bountiful     | ×3       | –––T––      | 9       | -        | 3,000       | -      | 3           |
+
+
+### Damage / Penetrate Armor<sup>[^79]</sup>
+
+| **Suffix**    | **Value (Diablo)**<sup>[^80]</sup> | **Value (Hellfire)**<sup>[^81]</sup> | **Occurrence** | **qlvl** | **Steps** | **Base-Max** | **Range** | **Multiplier** |
+|--------------|----------------------------------|------------------------------------|--------------|---------|----------|-------------|--------|-------------|
+| Piercing     | 2 - 6                            | 25%<sup>[^82]</sup>                 | ––W–B–       | 1       | -        | 1,000       | -      | 3           |
+| Puncturing   | 4 - 12                           | 50%<sup>[^82]</sup>                 | ––W–B–       | 9       | -        | 2,000       | -      | 6           |
+| Bashing      | 8 - 24                           | 75%<sup>[^82]</sup>                 | ––W–––       | 17      | -        | 4,000       | -      | 12          |
+
+[^79]: In *Diablo*, these suffixes lower the **AC** of the target by a specific **random amount** in the table.  
+      In *Hellfire*, they reduce the **AC** of the target by the percentage shown.  
+      **Does not work against players.**  
+      The exact value (in *Diablo*) is determined at item creation, and the extra *To Hit* is never displayed on the character screen.
+
+[^80]: **Diablo version** - Flat AC reduction range.  
+[^81]: **Hellfire version** - Percentage-based AC reduction.  
+[^82]: **Bonus when used by a Barbarian:** Add **12.5%** to the listed effect.
+
+
+### +% Light Radius<sup>[^83]</sup>
+
+| **Suffix**   | **Value** | **Occurrence** | **qlvl** | **Steps** | **Base-Max** | **Range** | **Multiplier** |
+|-------------|---------:|--------------|---------:|----------|-------------|--------:|-------------:|
+| The Dark    | -40%    | A–W—J       | 6       | -        | -           | -3      | -            |
+| The Night   | -20%    | A–W—J       | 3       | -        | -           | -2      | -            |
+| Light       | 20%     | A–W—J       | 4       | -        | 750         | 2       | -            |
+| Radiance    | 40%     | A–W—J       | 8       | -        | 1,500       | 3       | -            |
+
+[^83]: **Light radius also affects monster activation distance.**  
+- A higher value **increases** the distance at which you **activate** monsters.  
+- **Maximum effective range:** +50%. **Minimum effective range:** -80%.  
+- Light radius is **always reduced by one** in the *Catacombs*.  
+- The **highest light radius** achieved on a level persists, even if later lowered.
+
+
+### Weapon Speed<sup>[^84]</sup>
+
+| **Suffix**       | **Value**   | **Occurrence** | **qlvl** | **Steps** | **Base-Max** | **Range** | **Multiplier** |
+|-----------------|------------|---------------|---------:|----------|-------------|--------:|-------------:|
+| Readiness<sup>[^85][^3]</sup>   | Quick    | ––WTB–   | 1        | -        | 2,000       | 2       | -            |
+| Swiftness<sup>[^86]</sup>       | Fast     | ––WTB–   | 10       | -        | 4,000       | 4       | -            |
+| Speed         | Faster   | ––WT––   | 19       | -        | 8,000       | 8       | -            |
+| Haste<sup>[^87]</sup>         | Fastest  | ––WT––   | 27       | -        | 16,000      | 16      | -            |
+
+[^84]: **Weapon speed affects attack rate and animation speed.**  
+[^85]: Has **no effect in Diablo**.  
+[^86]: In *Hellfire*, **increases arrow travel speed** for bows instead of swing speed.  
+[^87]: *Despite patch 1.07 notes, "Haste" functions identically to "Speed"*.  
+
+
+### Hit Recovery<sup>[^88]</sup>
+
+| **Suffix**     | **Value** | **Occurrence** | **qlvl** | **Steps** | **Base-Max** | **Range** | **Multiplier** |
+|---------------|:---------:|:-------------:|:--------:|:---------:|:------------:|:---------:|:--------------:|
+| balance<sup>[^88]</sup>  | fast    | A––––J  | 1  |  -  | 2 000  | -  | 2  |
+| stability<sup>[^88]</sup> | faster  | A––––J  | 10 |  -  | 4 000  | -  | 4  |
+| harmony<sup>[^88]</sup>   | fastest | A––––J  | 20 |  -  | 8 000  | -  | 8  |
+
+[^88]: A character only benefits from the fastest one, as they are not cumulative.  
+The exception is if you have one of each, in which case, in *Diablo* only, you will receive a further reduction in hit recovery time.  
+See chapter **2.2.1** for more information.
+
+
+### +% Durability
+
+| **Suffix**         | **Value**  | **Occurrence** | **qlvl** | **Steps** | **Base-Max** | **Range** | **Multiplier** |
+|-------------------|:---------:|:-------------:|:--------:|:---------:|:------------:|:---------:|:--------------:|
+| fragility        | -         | =1            | ASW–––   | 3         | -            | -         | -4             |
+| brittleness      | -75       | -26           | ASW–––   | 1         | -            | -         | -2             |
+| sturdiness       | 26 - 75   | -             | ASWt––   | 1         | 100          | -         | 2              |
+| craftsmanship    | 51 - 100  | -             | ASWt––   | 6         | 200          | -         | 2              |
+| structure       | 101 - 200  | -             | ASWt––   | 12        | 300          | -         | 2              |
+| many            | -         | 100           | ––––B–   | 3         | 750          | -         | 2              |
+| plenty          | -         | 200           | ––––B–   | 7         | 1 500        | -         | 3              |
+| the ages        | indestruct.| -             | ASWt––   | 25        | 600          | -         | 5              |
+
+### Other Effects<sup>[^89]</sup>
+
+| **Suffix**                   | **Effect**                                    | **Occurrence** | **qlvl** | **Base-Max** | **Multiplier** |
+|------------------------------|----------------------------------------------|---------------|---------:|-------------|--------------:|
+| The Bear<sup>[^90]</sup>     | Knocks target back                           | ––WTB–        | 5        | 750         | 2            |
+| Blocking<sup>[^90]</sup>     | Fast block                                  | -S----        | 5        | 4,000       | 4            |
+| Thieves<sup>[^89][^90][^91]</sup>   | Absorbs half trap damage                    | AS–––J        | 11       | 1,500       | 2            |
+| Thorns<sup>[^89][^90]</sup>   | Attacker takes 1-3 damage                    | AS––––        | 1        | 500         | 2            |
+| Devastation<sup>[^89][^90][^92][^93][^94]</sup>  | 5% chance of doing ×3 damage                | ––WtB–        | 1        | 1,200       | 3            |
+| Jester’s<sup>[^89][^90][^92][^93][^95]</sup>  | Each swing does ×0-6 damage<sup>[^97]</sup>  | ––W–––        | 7        | 1,200       | 3            |
+| Peril<sup>[^89][^90][^92][^94][^96]</sup>  | ×2 damage to monster, ×1 to user            | ––WtB–        | 5        | 500         | 1            |
+
+[^89]: **Does not work versus players.**  
+[^90]: **These effects are not cumulative if applied more than once**, but they stack with other effects.  
+[^91]: In *Hellfire*, **also absorbs half arrow and magical damage** (*magic, fire, lightning, and Apocalypse*) from monster attacks. Applied before `-damage` and resistances.  
+[^92]: **Only available in Hellfire.**  
+[^93]: **Damage bonus applies to total damage, not just weapon damage.**  
+[^94]: **Does not work on bows.**  
+[^95]: A **prefix**.  
+[^96]: Affects **total damage versus monsters**, but only **weapon damage and character damage versus the user**. Modified by any `-damage` effects.  
+[^97]: The game erroneously states damage as ×0-5. **Actual average value is ×2**. *Does not work against Diablo or unique monsters.*  
 
 
 ## 3.5 Unique items
@@ -1522,326 +1600,250 @@ If you are playing the Playstation version you should know that when you restart
 
 ### 3.5.1 Properties of unique items
 
-In the tables below are listed all unique items in the game that you can equip, both the ones randomly generated and
+In the tables below are listed all unique items in the game that you can equip, both the ones randomly generated and the ones given as part of quests. For special quest items that are unequipable, see chapter 3.3. The prices shown are the buying prices. You can never buy unique items however. The stated qlvl is used in item generation, see chapter 3.8. Please note that all items *below* a thick line are only available in Hellfire. The *Pic* column indicates whether the item has a unique picture or not.
 
-the ones given as part of quests. For special quest items that are unequipable, see chapter 3.3. The prices shown are
+### Armor
 
-the buying prices. You can never buy unique items however. The stated qlvl is used in item generation, see
+| **Name**                        | **Base Item**         | **Price**  | **qlvl** | **Pic** | **Magical Effects** |
+|---------------------------------|----------------------|----------:|--------:|:------:|---------------------------------------------------------------|
+| Arkaine’s Valor<sup>[^98]</sup>  | Arkaine’s Valor      | 42,000    | n/a     | ✅      | AC 25, +10 Vitality, -3 damage from enemies, fastest hit recovery |
+| Demonspike Coat                 | Full Plate Mail      | 251,175   | 25      | ❌      | AC 100, +10 Strength, +50% Resist Fire, -6 damage from enemies, Indestructible |
+| The Gladiator’s Bane            | Studded Leather      | 3,450     | 6       | ❌      | AC 25, -3 All Attributes, -2 damage from enemies, High durability (135) |
+| Leather of Aut                  | Leather Armor        | 10,550    | 4       | ❌      | AC 15, +5 Strength, -5 Magic, +5 Dexterity, Indestructible |
+| Naj’s Light Plate               | Plate Mail           | 78,700    | 19      | ✅      | +5 Magic, +20 Mana, +20% Resist All, +1 Spell Level, No Strength Requirements |
+| Nightscape                      | Cape                 | 11,600    | 16      | ✅<sup>[^99]</sup> | AC 15, +3 Dexterity, +20% Resist All, Faster Hit Recovery, -40% Light Radius |
+| The Rainbow Cloak               | Cloak                | 4,900     | 2       | ✅<sup>[^99]</sup> | AC 10, +1 All Attributes, +5 Life, +10% Resist All, High durability (27) |
+| Scavenger Carapace              | Breast Plate         | 14,000    | 13      | ❌      | AC -6 to -10, +5 Dexterity, +40% Resist Lightning, -15 damage from enemies |
+| Sparking Mail                   | Chain Mail           | 15,750    | 9       | ❌      | AC 30, 1-10 Lightning Damage |
+| Torn Flesh of Souls             | Rags                 | 4,825     | 2       | ✅      | AC 8, +10 Vitality, -1 damage from enemies, Indestructible |
+| Wisdom’s Wrap                   | Robe                 | 6,200     | 5       | ✅<sup>[^99]</sup> | AC 15, +5 Magic, +10 Mana, +25% Resist Lightning, -1 damage from enemies |
+| Armor of Gloom                  | Full Plate Mail      | 200,000   | 25      | ✅      | AC 225, All Resistances = 0%, -20% Light Radius, No Strength Requirements |
+| Bone Chain Armor                | Chain Mail           | 36,000    | 13      | ✅      | AC 40, AC 60 vs. Undead |
+| Bovine Plate<sup>[^100]</sup>    | Bovine Plate         | 400       | n/a     | ✅      | AC 150, -50 Mana, +30% Resist All, -2 Spell Levels, +50% Light Radius, Indestructible |
+| Demon Plate Armor               | Full Plate Mail      | 80,000    | 25      | ✅      | AC 80, AC 120 vs. Demons |
 
-chapter 3.8. Please note that all items *below* a thick line are only available in Hellfire. The *Pic* column indicates whether
+[^98]: **A quest item only available in single player.**  
+[^99]: **These items share the same picture.**  
+[^100]: **A quest item.**  
 
-the item has a unique picture or not.
 
-**Armor**
+### Axes
 
-||**Name**|**Base item**|**Price**|**qlvl**|**Pic**|**Magical Effects**||
-| :- | :- | :- | -: | -: | :-: | :- | :- |
-||Arkaine’s Valor1|Arkaine’s Valor|42 000|n/a|Yes|AC 25, +10 vitality, -3 damage from enemies, fastest hit||
-|||||||recovery||
-||Demonspike Coat|full plate mail|251 175|25||AC 100, +10 strength, +50% resist fire, -6 damage from||
-|||||||enemies, indestructible||
-||The Gladiator’s Bane|studded leather|3 450|6||AC 25, -3 all attributes, -2 damage from enemies, high||
-|||armor||||durability (135)||
-||Leather of Aut|leather armor|10 550|4||AC 15, +5 strength, -5 magic, +5 dexterity,||
-|||||||indestructible||
-||Naj’s Light Plate|plate mail|78 700|19|Yes|+5 magic, +20 mana, +20% resist all, +1 spell level, no||
-|||||||strength requirements||
-||Nightscape|cape|11 600|16|Yes2|AC 15, +3 dexterity, +20% resist all, faster hit recovery,||
-|||||||-40% light radius||
-||The Rainbow Cloak|cloak|4 900|2|Yes2|AC 10, +1 all attributes, +5 life, +10% resist all, high||
-|||||||durability (27)||
-||Scavenger Carapace|breast plate|14 000|13||AC -6 - -10, +5 dexterity, +40% resist lightning, -15||
-|||||||damage from enemies||
-||Sparking Mail|chain mail|15 750|9||AC 30, 1-10 lightning damage||
-||Torn Flesh of Souls|rags|4 825|2|Yes|AC 8, +10 vitality, -1 damage from enemies,||
-|||||||indestructible||
-||Wisdom’s Wrap|robe|6 200|5|Yes2|AC 15, +5 magic, +10 mana, +25% resist lightning, -1||
-|||||||damage from enemies||
-||Armor of Gloom|full plate mail|200 000|25|Yes|AC 225, all resistances=0%, -20% light radius, no||
-|||||||strength requirements||
-||Bone Chain Armor|chain mail|36 000|13|Yes|AC 40, AC 60 vs. Undead||
-||Bovine Plate3|Bovine Plate|400|n/a|Yes|AC 150, -50 mana, +30% resist all, -2 spell levels, +50%||
-|||||||light radius, indestructible||
-||Demon Plate Armor|full plate mail|80 000|25|Yes|AC 80, AC 120 vs. Demons||
-1. A quest item only available in single player.
-1. These items have the same picture.
+| **Name**                           | **Base Item**  | **Price** | **qlvl** | **Pic** | **Magical Effects** |
+|------------------------------------|--------------|----------:|--------:|:------:|------------------------------------------------------------|
+| Aguinara’s Hatchet                 | Small Axe    | 24,800    | 12      | ❌      | +10 Magic, +75% Resist Magic, +1 Spell Level |
+| Bloodslayer                        | Broad Axe    | 2,500     | 3       | ✅<sup>[^101]</sup> | -5 All Attributes, +100% Damage, +200% Damage versus Demons<sup>[^102]</sup>, -1 Spell Level |
+| The Butcher’s Cleaver<sup>[^103]</sup> | Cleaver      | 3,650     | n/a     | ✅      | +10 Strength, Unusual Damage (4-24), Altered Durability (10) |
+| The Celestial Axe                  | Battle Axe   | 14,100    | 4       | ❌      | -15 Strength, +15 Life, +15% To Hit, No Strength Requirements |
+| Hellslayer                         | Battle Axe   | 26,200    | 15      | ❌      | +8 Strength, +8 Vitality, +25 Life, -25 Mana, +100% Damage |
+| The Mangler                        | Large Axe    | 2,850     | 2       | ✅<sup>[^101]</sup> | -5 Magic, -5 Dexterity, -10 Mana, +200% Damage |
+| Messerschmidt’s Reaver              | Great Axe    | 58,000    | 25      | ✅      | +5 All Attributes, -50 Life, +15 Damage, +200% Damage, 2-12 Fire Damage |
+| Sharp Beak                         | Large Axe    | 2,850     | 2       | ✅<sup>[^104]</sup> | -10 Magic, +20 Life, -10 Mana |
+| Stonecleaver                       | Broad Axe    | 23,900    | 7       | ✅      | +30 Life, +20% To Hit, +50% Damage, +40% Resist Lightning |
+| Wicked Axe                         | Large Axe    | 31,150    | 5       | ✅<sup>[^104]</sup> | +10 Dexterity, -10 Vitality, +30% To Hit, -1 to -6 Damage from Enemies, Indestructible |
 
-1. A quest item.
+[^101]: **These items share the same picture, which is that of a normal axe.**  
+[^102]: **Applies to the total damage.**  
+[^103]: **A quest item only available in single player.**  
+[^104]: **These items share the same picture, which is that of a normal great axe.**  
 
-||<a name="page35"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||**Created by Pedro Faria**||||
-| :- | -: | :- | :- | :- | :- | :- | :- |
-|||||||||
-|**Axes**||||||||
-|**Name**|**Base item**|**Price**|**qlvl**|**Pic**|**Magical Effects**|||
-|Aguinara’s Hatchet|small axe|24 800|12||+10 magic, +75% resist magic, +1 spell level,|||
-|Bloodslayer|broad axe|2 500|3|Yes1|-5 all attributes, +100% damage, +200% damage versus|||
-|||||||demons2, -1 spell level||
-|The Butcher’s Cleaver3|cleaver|3 650|n/a|Yes|+10 strength, unusual damage (4-24), altered durability|||
-|||||||(10)||
-|The Celestial Axe|battle axe|14 100|4||-15 strength, +15 life, +15% to hit, no strength|||
-|||||||requirements||
-|Hellslayer|battle axe|26 200|15||+8 strength, +8 vitality, +25 life, -25 mana, +100%|||
-|||||||damage||
-|The Mangler|large axe|2 850|2|Yes1|-5 magic, -5 dexterity, -10 mana, +200% damage|||
-|Messerschmidt’s Reaver|great axe|58 000|25|Yes|+5 all attributes, -50 life, +15 damage, +200% damage,|||
-|||||||2-12 fire damage||
-|Sharp Beak|large axe|2 850|2|Yes4|-10 magic, +20 life, -10 mana|||
-|Stonecleaver|broad axe|23 900|7|Yes|+30 life, +20% to hit, +50% damage, +40% resist|||
-|||||||lightning||
-|Wicked Axe|large axe|31 150|5|Yes4|+10 dexterity, -10 vitality, +30% to hit, -1- -6 damage|||
-|||||||from enemies, indestructible||
 
-1. These items have the same picture and it is one of a normal axe.
-1. Applies to the total damage
+### Bows
 
-1. A quest item only available in single player.
+| **Name**            | **Base Item**    | **Price** | **qlvl** | **Pic** | **Magical Effects** |
+|--------------------|----------------|----------:|--------:|:------:|------------------------------------------------------------|
+| The Blackoak Bow  | Long Bow       | 2,500     | 5       | ❌      | +10 Dexterity, -10 Vitality, +50% Damage, -10% Light Radius |
+| Bow of the Dead   | Composite Bow  | 2,500     | 5       | ✅<sup>[^105]</sup> | -3 Vitality, +4 Dexterity, +10% To Hit, -20% Light Radius, Altered Durability (30) |
+| The Celestial Bow | Long Bow       | 1,200     | 2       | ✅      | AC 5, +2 Damage, No Strength Requirement |
+| Deadly Hunter     | Composite Bow  | 8,750     | 3       | ✅<sup>[^105]</sup> | -5 Magic, +20% To Hit, +200% Damage versus Demons |
+| Eaglehorn        | Long Battle Bow | 42,500    | 26      | ✅<sup>[^105]</sup> | +20 Dexterity, +50% To Hit, +100% Damage, Indestructible |
+| Flamedart        | Hunter’s Bow    | 14,250    | 10      | ❌      | +20% To Hit, +40% Resist Fire, 1-6 Fire Arrows<sup>[^106]</sup> |
+| Fleshstinger     | Long Bow        | 16,500    | 13      | ❌      | +15 Dexterity, +40% To Hit, +80% Damage, High Durability (37) |
+| The Needler      | Short/Cross Bow | 8,900     | 2       | ✅      | +50% To Hit, Unusual Item Damage (1-3), Fast Attack |
+| The Rift Bow     | Short Bow       | 1,800     | 1       | ❌      | -3 Dexterity, +2 Damage, Random Speed Arrows |
+| Windforce       | Long War Bow    | 37,750    | 17      | ✅      | +5 Strength, +200% Damage, Knocks Target Back |
+| Blitzen         | Composite Bow   | 30,000    | 13      | ✅      | Lightning Damage 10-15<sup>[^107]</sup>, Unusual Item Damage (0), Indestructible |
+| Flambeau        | Composite Bow   | 30,000    | 11      | ✅      | Fireball Damage 15-20<sup>[^108]</sup>, Unusual Item Damage (0), Indestructible |
+| Gnat Sting      | Hunter’s Bow    | 30,000    | 15      | ✅      | Multiple Arrows, Unusual Item Damage (1-2), Quick Attack, Indestructible |
 
-1. These items have the same picture and it is one of a normal great axe.
+[^105]: **These items share the same picture.**  
+[^106]: **The fire arrow damage is listed twice, but the real fire damage is only applied once and is in the range of 1-6.**  
+[^107]: **Will cast a Lightning spell when fired.**  
+[^108]: **Will cast a Fireball when fired.**  
 
-**Bows**
 
-||**Name**|**Base item**|**Price**|**qlvl**|**Pic**|**Magical Effects**||
-| :- | :- | :- | -: | -: | :-: | :- | :- |
-||The Blackoak Bow|long bow|2 500|5||+10 dexterity, -10 vitality, +50% damage, -10% light||
-|||||||radius||
-||Bow of the Dead|composite bow|2 500|5|Yes1|-3 vitality, +4 dexterity, +10% to hit, -20% light radius,||
-|||||||altered durability (30)||
-||The Celestial Bow|long bow|1 200|2|Yes|AC 5, +2 damage, no strength requirement||
-||Deadly Hunter|composite bow|8 750|3|Yes1|-5 magic, +20% to hit, +200% damage versus demons||
-||Eaglehorn|long battle bow|42 500|26|Yes1|+20 dexterity, +50% to hit, +100% damage,||
-|||||||indestructible||
-||Flamedart|hunter’s bow|14 250|10||+20% to hit, +40% resist fire, 1-6 fire arrows2||
-||Fleshstinger|long bow|16 500|13||+15 dexterity, +40% to hit, +80% damage, high||
-|||||||durability (37)||
-||The Needler|short/cross bow|8 900|2|Yes|+50% to hit, unusual item damage (1-3), fast attack||
-||The Rift Bow|short bow|1 800|1||-3 dexterity, +2 damage, random speed arrows||
-||Windforce|long war bow|37 750|17|Yes|+5 strength, +200% damage, knocks target back||
-||Blitzen|composite bow|30 000|13|Yes|Lightning damage10-153, unusual item damage (0),||
-|||||||indestructible||
-||Flambeau|composite bow|30 000|11|Yes|Fireball damage 15-204, unusual item damage (0),||
-|||||||indestructible||
-||Gnat Sting|hunter’s bow|30 000|15|Yes|multiple arrows, unusual item damage (1-2), quick attack,||
-|||||||indestructible||
-1. These items have the same picture.
-1. The fire arrow damage is listed twice but the real fire damage is only applied once and is in the range 1-6.
+### Clubs
 
-1. Will cast a lightning spell when fired.
+| **Name**             | **Base Item**         | **Price**  | **qlvl** | **Pic** | **Magical Effects** |
+|---------------------|---------------------|-----------:|---------:|:------:|------------------------------------------------------------|
+| Baranar’s Star     | Morning Star        | 6,850      | 5        | ❌      | -4 Dexterity, +4 Vitality, +12% To Hit, +80% Damage, Quick Attack, Altered Durability (60) |
+| The Celestial Star | Flail               | 7,810      | 2        | ✅<sup>[^109]</sup> | AC -8, +10 Damage, +20% Light Radius, No Strength Requirement |
+| Civerb’s Cudgel    | Mace                | 2,000      | 1        | ❌      | -2 Magic, -5 Dexterity, +200% Damage versus Demons<sup>[^110]</sup> |
+| Crackrust         | Mace                | 11,375     | 1        | ❌      | +2 All Attributes, +15% Resist All, +50% Damage, -1 Spell Level, Indestructible |
+| The Cranium Basher | Maul                | 36,500     | 12       | ✅<sup>[^109]</sup> | +15 Strength, -150 Mana, +20 Damage, +5% Resist All, Indestructible |
+| Dreamflange       | Mace                | 26,450     | 26       | ❌      | +30 Magic, +50 Mana, +50% Resist Magic, +1 Spell Levels, +20% Light Radius |
+| Gnarled Root      | Club/Spiked Club    | 9,820      | 9        | ❌      | AC -10, +5 Magic, +10 Dexterity, +20% To Hit, +10% Resist All, +300% Damage |
+| Hammer of Jholm   | Maul                | 8,700      | 1        | ❌      | +3 Strength, +4-10% Damage, +15% To Hit, Indestructible |
+| Lightforge<sup>[^111]</sup> | Mace       | 26,675     | 1        | ❌      | +8 All Attributes, +25% To Hit, +150% Damage, +10-20 Fire Damage, +40% Light Radius, Indestructible |
+| Schaefer’s Hammer | War Hammer          | 56,125     | 16       | ❌      | +50 Life, +75% Resist Lightning, +30% To Hit, -100% Damage, 1-50 Lightning Damage, +10% Light Radius |
+| Thunderclap       | War Hammer          | 30,000     | 13       | ✅      | +20 Strength, +30% Resist Lightning, Charged Bolt (3-6 Damage), +20% Light Radius, Indestructible |
 
-1. Will cast a fireball when fired.
+[^109]: **These items actually have the unique picture of the same item they are based on, so for all practical reasons, they don’t really have a unique picture.**  
+[^110]: **Applies to total damage.**  
+[^111]: **Does not exist in *Hellfire* and is not possible to find in *multiplayer* in *Diablo*, only in *single-player*. Still very rare in single-player (see chapter 3.5.2 for more information). It also seems that although findable in single-player, it will morph as soon as a new game is started or loaded.**  
 
-||<a name="page36"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||**Created by Pedro Faria**||||
-| :- | -: | :- | :- | :- | :- | :- | :- |
-|||||||||
-|**Clubs**||||||||
-|**Name**|**Base item**|**Price**|**qlvl**|**Pic**|**Magical Effects**|||
-|Baranar’s Star|morning star|6 850|5||-4 dexterity, +4 vitality, +12% to hit, +80% damage,|||
-|||||||quick attack, altered durability (60)||
-|The Celestial Star|flail|7 810|2|Yes1|AC -8, +10 damage, +20% light radius, no strength|||
-|||||||requirement||
-|Civerb’s Cudgel|mace|2 000|1||-2 magic, -5 dexterity, +200% damage versus demons2|||
-|Crackrust|mace|11 375|1||+2 all attributes, +15% resist all, +50% damage, -1 spell|||
-|||||||level, indestructible||
-|The Cranium Basher|maul|36 500|12|Yes1|+15 strength, -150 mana, +20 damage, +5% resist all,|||
-|||||||indestructible||
-|Dreamflange|mace|26 450|26||+30 magic, +50 mana, +50% resist magic, +1 spell|||
-|||||||levels, +20% light radius||
-|Gnarled Root|club/spiked club|9 820|9||AC -10, +5 magic, +10 dexterity, +20% to hit, +10%|||
-|||||||resist all, +300% damage||
-|Hammer of Jholm|maul|8 700|1||+3 strength, +4-10% damage, +15% to hit,|||
-|||||||indestructible||
-|Lightforge3|mace|26 675|1||+8 all attributes, +25% to hit, +150% damage, +10-20|||
-|||||||fire damage, +40% light radius, indestructible||
-|Schaefer’s Hammer|war hammer|56 125|16||+50 life, +75% resist lightning, +30% to hit, -100%|||
-|||||||damage, 1-50 lightning damage, +10% light radius||
-|Thunderclap|war hammer|30 000|13|Yes|+20 strength, +30% resist lightning, charged bolt (3-6|||
-|||||||damage), +20% light radius, indestructible||
 
-1. These items actually have the unique picture of the same item they are based on, so for all practical reasons they don’t really have a unique picture.
+### Helms
 
-1. Applies to total damage.
+| **Name**             | **Base Item**       | **Price**  | **qlvl** | **Pic** | **Magical Effects** |
+|---------------------|------------------|-----------:|---------:|:------:|------------------------------------------------------------|
+| Fool’s Crest      | Helm             | 10,150     | 12       | ✅      | -4 All Attributes, +100 Life, +1-6 Damage from Enemies, 1-3 Damage to Attacker |
+| Gotterdamerung<sup>[^112]</sup> | Great Helm      | 54,900     | 21       | ✅<sup>[^113]</sup> | AC 60, +20 All Attributes, All Resistances = 0%<sup>[^114]</sup>, -4 Damage from Enemies, -40% Light Radius |
+| Harlequin Crest<sup>[^115]</sup> | Harlequin Crest | 4,000      | n/a      | ✅ | AC -3, +2 All Attributes, +7 Mana, +7 Life, -1 Damage from Enemies |
+| Helm of Sprits    | Helm             | 7,525      | 1        | ✅<sup>[^116]</sup> | 5% Steal Life |
+| Overlord’s Helm   | Helm             | 12,500     | 7        | ✅      | +20 Strength, -20 Magic, +15 Dexterity, +5 Vitality, Altered Durability (15) |
+| Royal Circlet     | Crown            | 24,875     | 27       | ✅      | AC 40, +10 All Attributes, +40 Mana, +10% Light Radius |
+| Thinking Cap      | Skull Cap        | 2,020      | 6        | ✅      | +30 Mana, +20% Resist All, +2 Spell Levels, Altered Durability (1) |
+| The Undead Crown<sup>[^115]</sup> | Undead Crown   | 16,650     | n/a      | ✅<sup>[^116]</sup> | AC 8, 0-12.5% Steal Life |
+| Veil of Steel<sup>[^115]</sup> | Veil of Steel   | 63,800     | n/a      | ✅<sup>[^113]</sup> | +15 Strength, +15 Vitality, -30 Mana, +60% Armor, +50% Resist All, -20% Light Radius |
 
-1. Does not exist in Hellfire and is not possible to find in multi player in Diablo, only single player. Still very rare in single player, see chapter 3.5.2 for more information. It also seems that although findable in single player, it will morph as soon as a new game is started or loaded.
+[^112]: **These items have the same picture.**  
+[^113]: **If you wear both a *Gotterdamerung* and a *Constricting Ring*, your resistance would still be 0%.**  
+[^114]: **A quest item only available in *single-player*.**  
+[^115]: **A quest item only available in *single-player*.**  
+[^116]: **These items have the same picture. The *Helm of Sprits* looks like a crown when on the ground.**  
 
-**Helms**
 
-||**Name**|**Base item**|**Price**|**qlvl**|**Pic**|**Magical Effects**||
-| :- | :- | :- | -: | -: | :-: | :- | :- |
-||Fool’s Crest|helm|10 150|12|Yes|-4 all attributes, +100 life, +1- +6 damage from enemies,||
-|||||||1-3 damage to attacker||
-||Gotterdamerung|great helm|54 900|21|Yes1|AC 60, +20 all attributes, all resistances=0%2, -4 damage||
-|||||||from enemies, -40% light radius||
-||Harlequin Crest3|Harlequin Crest|4 000|n/a|Yes|AC -3, +2 all attributes, +7 mana, +7 life, -1 damage||
-|||||||from enemies||
-||Helm of Sprits|helm|7 525|1|Yes4|5% steal life||
-||Overlord’s Helm|helm|12 500|7|Yes|+20 strength, -20 magic, +15 dexterity, +5 vitality,||
-|||||||altered durability (15)||
-||Royal Circlet|crown|24 875|27|Yes|AC 40, +10 all attributes, +40 mana, +10% light radius||
-||Thinking Cap|skull cap|2 020|6|Yes|+30 mana, +20% resist all, +2 spell levels, altered||
-|||||||durability (1)||
-||The Undead Crown3|Undead Crown|16 650|n/a|Yes4|AC 8, 0-12.5% steal life||
-||Veil of Steel3|Veil of Steel|63 800|n/a|Yes1|+15 strength, +15 vitality, -30 mana, +60% armor,||
-|||||||+50% resist all, -20% light radius||
-1. These items have the same picture.
-1. If you wear both a Gotterdamerung and a Constricting Ring, your resistance would still be 0%.
+### Jewelry
 
-1. A quest item only available in single player.
+| **Name**              | **Base Item** | **Price**  | **qlvl** | **Pic** | **Magical Effects** |
+|----------------------|-------------|-----------:|---------:|:------:|---------------------------------------------------------------|
+| The Bleeder        | Ring        | 8,500      | 2        | ✅      | +30 Mana, -10 Life, +20% Resist Magic |
+| Bramble           | Ring        | 1,000      | 1        | ✅      | -2 All Attributes, +10 Mana, +3 Damage |
+| Constricting Ring | Ring        | 62,000     | 5        | ✅      | +75% Resist All<sup>[^117]</sup>, Causes Continuous Damage (1.25 Life/sec)<sup>[^118]</sup> |
+| Empyrean Band<sup>[^119]</sup> | Ring        | 8,000      | n/a      | ✅      | +2 All Attributes, Fast Hit Recovery, Absorbs Half of Trap Damage, +20% Light Radius |
+| Optic Amulet<sup>[^119]</sup> | Amulet      | 9,750      | n/a      | ✅      | +5 Magic, +20% Resist Lightning, -1 Damage from Enemies, +20% Light Radius |
+| Ring of Engagement | Ring        | 12,476     | 11       | ✅      | AC 5, -1 or -2 Damage from Enemies, 1-3 Damage to Attacker, Damages Target’s Armor<sup>[^120]</sup> |
+| Ring of Regha     | Ring        | 4,175      | 1        | ✅      | -3 Strength, +10 Magic, -3 Dexterity, +10% Resist Magic, +10% Light Radius |
+| Ring of Truth<sup>[^119]</sup>  | Ring        | 9,100      | n/a      | ✅      | +10 Life, +10% Resist All, -1 Damage from Enemies |
+| Amulet of Warding | Amulet      | 30,000     | 12       | ✅      | -100 Life, +40% Resist All |
+| Acolyte’s Amulet  | Amulet      | 10,000     | 10       | ✅      | 50% of Base Mana Moved to Life |
+| Auric Amulet<sup>[^121]</sup>  | Amulet      | 100       | n/a      | ✅      | Allows You to Carry Piles of 10,000 Gold |
+| Giant’s Knuckle  | Ring        | 8,000      | 8        | ✅      | +60 Strength, -30 Dexterity |
+| Gladiator’s Ring | Ring        | 10,000     | 10       | ✅      | 40% of Base Life Moved to Mana |
+| Karik’s Ring     | Ring        | 8,000      | 8        | ✅      | -30 Magic, +60 Vitality |
+| Mercurial Ring   | Ring        | 8,000      | 8        | ✅      | -30 Strength, +60 Dexterity |
+| Ring of Magma    | Ring        | 8,000      | 8        | ✅      | -30% Resist Magic, +60% Resist Fire, -30% Resist Lightning |
+| Ring of the Mystics | Ring     | 8,000      | 8        | ✅      | +60% Resist Magic, -30% Resist Fire, -30% Resist Lightning |
+| Ring of Thunder  | Ring        | 8,000      | 8        | ✅      | -30% Resist Magic, -30% Resist Fire, +60% Resist Lightning |
+| Xorine’s Ring    | Ring        | 8,000      | 8        | ✅      | -30 Strength, +60 Magic |
 
-1. These items have the same picture. The Helm of Sprits looks like a crown when on the ground.
+[^117]: **The effect is +75%, *not* max resistance.** If you wear both a *Gotterdamerung* and a *Constricting Ring*, your resistance would still be 0%. Similarly, if you use an item that decreases any resistance, the final value may not be 75%.  
+[^118]: **If you are using Mana Shield, the damage will be taken from your mana instead.** Due to rounding errors, the actual value may not be correctly reduced. See chapter 6.1.1 for more information.  
+[^119]: **A quest item only available in *single-player*.**  
+[^120]: **Has an effect equivalent to "of Puncturing".** In *Diablo*, adds +4-12 To Hit. In *Hellfire*, it reduces AC by 87.5% (or 12.5% if Barbarian, making any monster’s AC = 0), making it more effective than other suffixes with similar properties.  
+[^121]: **A quest item, not truly a unique item.**  
 
-||<a name="page37"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||**Created by Pedro Faria**||||
-| :- | -: | :- | :- | :- | :- | :- | :- |
-|||||||||
-|**Jewelry**||||||||
-|**Name**|**Base item**|**Price**|**qlvl**|**Pic**|**Magical Effects**|||
-|The Bleeder|ring|8 500|2|Yes|+30 mana, -10 life, +20% resist magic|||
-|Bramble|ring|1 000|1|Yes|-2 all attributes, +10 mana, +3 damage|||
-|Constricting Ring|ring|62 000|5|Yes|+75% resist all1, causes continuous damage when worn|||
-|||||||(1.25 life/sec2)||
-|Empyrean Band3|ring|8 000|n/a|Yes|+2 all attributes, fast hit recovery, absorbs half of trap|||
-|||||||damage, +20% light radius||
-|Optic Amulet3|amulet|9 750|n/a|Yes|+5 magic, +20% resist lightning, -1 damage from|||
-|||||||enemies, +20% light radius||
-|Ring of Engagement|ring|12 476|11|Yes|AC 5, -1 or -2 damage from enemies, 1-3 damage to|||
-|||||||attacker, damages target’s armor4||
-|Ring of Regha|ring|4 175|1|Yes|-3 strength, +10 magic, -3 dexterity, +10% resist magic,|||
-|||||||+10% light radius||
-|Ring of Truth3|ring|9 100|n/a|Yes|+10 life, +10% resist all, -1 damage from enemies|||
-|Amulet of Warding|amulet|30 000|12|Yes|-100 life, +40% resist all|||
-|Acolytes Amulet|amulet|10 000|10|Yes|50% of base mana moved to life|||
-|Auric Amulet5|amulet|100|n/a|Yes|Allows you to carry piles of 10 000 gold|||
-|Giant’s Knuckle|ring|8 000|8|Yes|+60 strength, -30 dexterity|||
-|Gladiators Ring|ring|10 000|10|Yes|40% of base life moved to mana|||
-|Karik’s Ring|ring|8 000|8|Yes|-30 magic, +60 vitality|||
-|Mercurial Ring|ring|8 000|8|Yes|-30 strength, +60 dexterity|||
-|Ring of Magma|ring|8 000|8|Yes|-30% resist magic, +60% resist fire, -30% resist lightning|||
-|Ring of the Mystics|ring|8 000|8|Yes|+60% resist magic, -30% resist fire, -30% resist lightning|||
-|Ring of Thunder|ring|8 000|8|Yes|-30% resist magic, -30% resist fire, +60% resist lightning|||
-|Xorine’s Ring|ring|8 000|8|Yes|-30 strength, +60 magic|||
 
-1. The effect is +75%, *not* max resistance. If you wear both a Gotterdamerung and a Constricting Ring, your resistance would still be 0%. Similarly, if you use some item that decreases any resistance, the final value may not be 75%.
+### Shields
 
-1. If you are using Mana Shield, the damage will as any other damage be taken from your mana instead. Due to rounding errors with such small damage values, the actual value may not be correctly reduced by the Mana Shield. For more information about the Mana Shield, see chapter 6.1.1.
+| **Name**             | **Base Item**          | **Price**  | **qlvl** | **Pic** | **Magical Effects** |
+|----------------------|----------------------|-----------:|---------:|:------:|---------------------------------------------------------------|
+| Blackoak Shield     | Small Shield         | 5,725      | 4        | ✅[^122]   | AC 18, +10 Dexterity, -10 Vitality, -10% Light Radius, High Durability (60) |
+| The Deflector      | Buckler              | 1,500      | 1        | ✅[^123]   | AC 7, +10% Resist All, -20% Damage, -5% To Hit |
+| Dragon’s Breach    | Kite Shield          | 19,200     | 2        | ✅      | AC 20, +5 Strength, -5 Magic, +25% Resist Fire, Indestructible |
+| Holy Defender      | Large Shield         | 13,800     | 10       | ✅[122]   | AC 15, -2 Damage from Enemies, +20% Resist Fire, Fast Block, High Durability (96) |
+| Split Skull Shield | Buckler              | 2,025      | 1        | ✅      | AC 10, +10 Life, +2 Strength, -10% Light Radius, Altered Durability (15) |
+| Stormshield       | Gothic Shield / Tower Shield<sup>[^122]</sup> | 49,000     | 24       | ✅[^124]   | AC 40, +4 Damage from Enemies, +10 Strength, Fast Block, Indestructible |
 
-1. A quest item only available in single player.
+[^122]: **These items share the same picture.**  
+[^123]: **The Deflector has a normal Buckler’s sprite.**  
+[^124]: **Both versions of Stormshield use the normal Gothic Shield sprite.**  
 
-1. Has the effect equivalent to ”of Puncturing”, that is, adds 4-12 to To Hit in Diablo. In Hellfire it reduces the AC by 87.5% (+12.5% if Barbarian making any AC of a monster equal 0) and is thus better than any of the suffixes with the same property.
 
-1. A quest item. Not really a unique item.
+### Staves
 
-**Shields**
+| **Name**         | **Base Item**     | **Price**  | **qlvl** | **Pic** | **Magical Effects** |
+|-----------------|----------------|-----------:|---------:|:------:|-----------------------------------------------------------|
+| Gleamsong      | Short Staff    | 6,520      | 8        | ✅      | +25 Mana, -3 Strength, -3 Vitality, 76 Phasing Charges |
+| Immolator      | Long Staff     | 3,900      | 4        | ✅      | +10 Mana, -5 Vitality, +20% Resist Fire, 4 Fire Damage |
+| Mindcry        | Quarter Staff  | 41,500     | 20       | ✅      | +15 Magic, +15% Resist All, +1 Spell Level, 69 Guardian Charges |
+| Naj’s Puzzler  | Long Staff     | 34,000     | 18       | ✅      | +20 Magic, +10 Dexterity, +20% Resist All, -25 Life, 57 Teleport Charges |
+| The Protector  | Short Staff    | 17,240     | 16       | ✅[^125] | AC 40, +5 Vitality, -5 Damage from Enemies, 1-3 Damage to Attacker, 86 Healing Charges |
+| Rod of Onan    | War Staff      | 44,167     | 22       | ✅      | +5 All Attributes, +100% Damage, 50 Golem Charges |
+| Staff of Shadows | Long Staff  | 1,250      | 2        | ✅      | -10 Magic, +10% To Hit, +60% Damage, -20% Light Radius, Quick Attack |
+| Storm Spire    | War Staff      | 22,500     | 8        | ✅      | +10 Strength, -10 Magic, +50% Resist Lightning, 2-8 Lightning Damage |
+| Thundercall    | Composite Staff | 22,250     | 14       | ✅      | +35% To Hit, 1-10 Lightning Damage, +30% Resist Lightning, +20% Light Radius, 76 Lightning Charges |
 
-||**Name**|**Base item**|**Price**|**qlvl**|**Pic**|**Magical Effects**||
-| :- | :- | :- | -: | -: | :-: | :- | :- |
-||Blackoak Shield|small shield|5 725|4|Yes1|AC 18, +10 dexterity, -10 vitality, -10% light radius, high||
-|||||||durability (60)||
-||The Deflector|buckler|1 500|1|Yes2|AC 7, +10% resist all, -20% damage, -5% to hit||
-||Dragon’s Breach|kite shield|19 200|2|Yes|AC 20, +5 strength, -5 magic, +25% resist fire,||
-|||||||indestructible||
-||Holy Defender|large shield|13 800|10|Yes1|AC 15, -2 damage from enemies, +20% resist fire, fast||
-|||||||block, high durability (96)||
-||Split Skull Shield|buckler|2 025|1|Yes|AC 10, +10 life, +2 strength, -10% light radius, altered||
-|||||||durability (15)||
-||Stormshield|gothic shield /|49 000|24|Yes3|AC 40, +4 damage from enemies, +10 strength, fast||
-|||tower shield1||||block, indestructible||
-1. These items have the same picture.
-1. This item has a picture of a normal buckler.
+[^125]: **The Protector looks like a club when on the ground.**
 
-1. Both versions have a picture of a normal gothic shield.
 
-||<a name="page38"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||**Created by Pedro Faria**||||
-| :- | :- | :- | :- | :- | :- | :- | :- |
-|||||||||
-|**Staves**||||||||
-|**Name**|**Base item**|**Price**|**qlvl**|**Pic**|**Magical Effects**|||
-|Gleamsong|short staff|6 520|8||+25 mana, -3 strength, -3 vitality, 76 Phasing charges|||
-|Immolator|long staff|3 900|4||+10 mana, -5 vitality, +20% resist fire, 4 fire damage|||
-|Mindcry|quarter staff|41 500|20||+15 magic, +15% resist all, +1 spell level , 69 Guardian|||
-|||||||charges||
-|Naj’s Puzzler|long staff|34 000|18||+20 magic, +10 dexterity, +20% resist all, -25 life, 57|||
-|||||||Teleport charges||
-|The Protector|short staff|17 240|16|Yes1|AC 40, +5 vitality, -5 damage from enemies, 1-3 damage|||
-|||||||to attacker, 86 Healing charges||
-|Rod of Onan|war staff|44 167|22||+5 all attributes, +100% damage, 50 Golem charges|||
-|Staff of Shadows|long staff|1 250|2||-10 magic +10% to hit, +60% damage, -20% light radius,|||
-|||||||quick attack||
-|Storm Spire|war staff|22 500|8||+10 strength, -10 to magic, +50% resist lightning, 2-8|||
-|||||||lightning damage||
-|Thundercall|composite staff|22 250|14||+35% to hit, 1-10 lightning damage, +30% resist|||
-|||||||lightning, +20% light radius, 76 Lightning charges||
-||1  Looks like a club|when on the ground.||||||
-|||||||||
-|**Swords**||||||||
-|**Name**|**Base item**|**Price**|**qlvl**|**Pic**|**Magical Effects**|||
-|Black Razor|dagger|2 000|1|Yes|+2 vitality, +150% damage, altered durability (5)|||
-|The Bonesaw|claymore|4 400|6||+10 strength, -5 dexterity, -5 magic, +10 life, -10 mana,|||
-|||||||+10 damage||
-|The Defender|sabre|2 000|1||AC 5, +5 vitality, -5% to hit|||
-|Doombringer|bastard sword|18 250|19||-5 all attributes, -25 life, +25% to hit, +250% damage, -|||
-|||||||20% light radius||
-|The Executioner’s Blade|falchion|7 080|3|Yes|-10 life, +150% damage, -10% light radius, high|||
-|||||||durability (60)||
-|The Falcon’s Talon|scimitar|7 867|15|Yes1|+10 dexterity, +20% to hit, -33% damage, fastest attack|||
-|Gibbous Moon|broad sword|6 660|2||+2 all attributes, +15 mana, +25% damage, -30% light|||
-|||||||radius||
-|Gonnagal’s Dirk|dagger|7 040|1|Yes|-5 dexterity, +4 damage, +25% resist fire, fast attack|||
-|The Grandfather|great sword|119 800|27|Yes|+5 all attributes, +20 life, +20% to hit, +70% damage,|||
-|||||||only requires one hand||
-|Griswold’s Edge2|Griswold’s Edge|42 000|n/a|Yes3|-20 life, +20 mana, +25% to hit, 1-10 fire damage, fast|||
-|||||||attack, knocks target back||
-|The Grizzly|two-handed sword|50 000|23|Yes|+20 strength, -5 vitality, +200% damage, knocks target|||
-|||||||back, high durability (150)||
-|Gryphons Claw|falchion|1 000|1|Yes1|-2 magic, -5 dexterity, +100% damage|||
-|Ice Shank|long sword|5 250|3||+5-10 strength, +40% resist fire, altered durability (15)|||
-|Inferno|long sword|34 600|17||+20 mana, +75% resist fire, 2-12 fire damage, +30%|||
-|||||||light radius||
-|Lightsabre|sabre|19 150|13||+20% to hit, +50% resist lightning, 1-10 lightning|||
-|||||||damage, +20% light radius||
-|Shadowhawk|broad sword|13 750|8||+15% to hit, +5% resist all, 5% steal life, -20% light|||
-|||||||radius||
-|Wizardspike|dagger|12 920|11|Yes|+15 magic, +35 mana, +25% to hit, +15% resist all|||
-|Diamondedge|long sword|42 000|17|Yes|AC 10, +50% resist lightning, +50% to hit, +100%|||
-|||||||damage, altered durability (10)||
-|Eater of Souls|two-handed sword|42 000|23|Yes|+50 life, 5% steal life, 5% steal mana, causes continuous|||
-|||||||damage when worn, indestructible||
-|Shirotachi|great sword|36 000|21||+6 lightning damage, penetrates target’s armor (half AC),|||
-|||||||fastest attack, one-handed||
+### Swords
 
-1. These items have the same picture.
-1. A quest item only available in single player.
+| **Name**              | **Base Item**       | **Price**  | **qlvl** | **Pic** | **Magical Effects** |
+|----------------------|------------------|-----------:|---------:|:------:|-----------------------------------------------------------|
+| Black Razor        | Dagger           | 2,000      | 1        | ✅      | +2 Vitality, +150% Damage, Altered Durability (5) |
+| The Bonesaw        | Claymore         | 4,400      | 6        | ✅      | +10 Strength, -5 Dexterity, -5 Magic, +10 Life, -10 Mana, +10 Damage |
+| The Defender       | Sabre            | 2,000      | 1        | ✅      | AC 5, +5 Vitality, -5% To Hit |
+| Doombringer        | Bastard Sword    | 18,250     | 19       | ✅      | -5 All Attributes, -25 Life, +25% To Hit, +250% Damage, -20% Light Radius |
+| The Executioner’s Blade | Falchion   | 7,080      | 3        | ✅      | -10 Life, +150% Damage, -10% Light Radius, High Durability (60) |
+| The Falcon’s Talon | Scimitar         | 7,867      | 15       | ✅[^126] | +10 Dexterity, +20% To Hit, -33% Damage, Fastest Attack |
+| Gibbous Moon       | Broad Sword      | 6,660      | 2        | ✅      | +2 All Attributes, +15 Mana, +25% Damage, -30% Light Radius |
+| Gonnagal’s Dirk    | Dagger           | 7,040      | 1        | ✅      | -5 Dexterity, +4 Damage, +25% Resist Fire, Fast Attack |
+| The Grandfather    | Great Sword      | 119,800    | 27       | ✅      | +5 All Attributes, +20 Life, +20% To Hit, +70% Damage, Only Requires One Hand |
+| Griswold’s Edge    | Griswold’s Edge  | 42,000     | n/a      | ✅[^127] | -20 Life, +20 Mana, +25% To Hit, 1-10 Fire Damage, Fast Attack, Knocks Target Back |
+| The Grizzly        | Two-Handed Sword | 50,000     | 23       | ✅      | +20 Strength, -5 Vitality, +200% Damage, Knocks Target Back, High Durability (150) |
+| Gryphon’s Claw     | Falchion         | 1,000      | 1        | ✅[^126] | -2 Magic, -5 Dexterity, +100% Damage |
+| Ice Shank          | Long Sword       | 5,250      | 3        | ✅      | +5-10 Strength, +40% Resist Fire, Altered Durability (15) |
+| Inferno            | Long Sword       | 34,600     | 17       | ✅      | +20 Mana, +75% Resist Fire, 2-12 Fire Damage, +30% Light Radius |
+| Lightsabre         | Sabre            | 19,150     | 13       | ✅      | +20% To Hit, +50% Resist Lightning, 1-10 Lightning Damage, +20% Light Radius |
+| Shadowhawk        | Broad Sword      | 13,750     | 8        | ✅      | +15% To Hit, +5% Resist All, 5% Steal Life, -20% Light Radius |
+| Wizardspike        | Dagger           | 12,920     | 11       | ✅      | +15 Magic, +35 Mana, +25% To Hit, +15% Resist All |
+| Diamondedge        | Long Sword       | 42,000     | 17       | ✅      | AC 10, +50% Resist Lightning, +50% To Hit, +100% Damage, Altered Durability (10) |
+| Eater of Souls     | Two-Handed Sword | 42,000     | 23       | ✅      | +50 Life, 5% Steal Life, 5% Steal Mana, Causes Continuous Damage When Worn, Indestructible |
+| Shirotachi         | Great Sword      | 36,000     | 21       | ✅      | +6 Lightning Damage, Penetrates Target’s Armor (Half AC), Fastest Attack, One-Handed |
 
-1. This item actually has the unique picture of the same item it is based on, so for all practical reasons it doesn’t really have a unique picture.
+[^126]: **These items have the same picture.**  
+[^127]: **A quest item only available in single player.**  
+[^128]: **This item actually has the unique picture of the same item it is based on, so for all practical reasons it doesn’t really have a unique picture.**  
+
 
 
 ### 3.5.2 Unfindable unique items in multi player
 
 Due to the way the game generates unique items (see chapter 3.8), some unique items will never be found in *multi player*. The same items are findable in single player but only if you find another unique item of the same base item and* qlvl first in the same game session. This phenomenon occurs when there are multiple items of the same base item and qlvl. The table below lists those items. Note that the list for Diablo is also applicable to Hellfire.
 
-|**Diablo**|<b>Hellfire<sup>1</sup></b>|
-| :- | :- |
-|Bramble (ring)|Armor of Gloom (full plate mail)|
-|Crackrust (mace)|Demonspike Coat (full plate mail)|
-|The Deflector (buckler)|Giant’s Knuckle (ring)|
-|Gonnagal’s Dirk (dagger)|The Grizzly (two-handed sword)|
-|Lightforge2 (mace)|Inferno (long sword)|
-|The Mangler (large axe)|Karik’s Ring (ring)|
-||Mercurial Ring (ring)|
-||Ring of Magma (ring)|
-||Ring of the Mystics (ring)|
-||Xorine’s Ring (ring)|
+### Diablo vs. Hellfire Unique Items<sup>[^129]</sup>
 
-1. In addition to the ones from Diablo.
-1. It seems that although findable in single player, it will morph as soon as a new game is started or loaded.
+| **Diablo**              | **Hellfire** |
+|------------------------|----------------------------|
+| Bramble (Ring)         | Armor of Gloom (Full Plate Mail) |
+| Crackrust (Mace)       | Demonspike Coat (Full Plate Mail) |
+| The Deflector (Buckler) | Giant’s Knuckle (Ring) |
+| Gonnagal’s Dirk (Dagger) | The Grizzly (Two-Handed Sword) |
+| Lightforge<sup>[^130]</sup> (Mace) | Inferno (Long Sword) |
+| The Mangler (Large Axe) | Karik’s Ring (Ring) |
+|                        | Mercurial Ring (Ring) |
+|                        | Ring of Magma (Ring) |
+|                        | Ring of the Mystics (Ring) |
+|                        | Xorine’s Ring (Ring) |
+
+[^129]: **In addition to the ones from Diablo.**  
+[^130]: **It seems that although findable in single player, it will morph as soon as a new game is started or loaded.**  
+
 
 The table below lists the order for those cases where more than two unique items have the same qlvl. All other cases only have two items with the same qlvl and it should be obvious that the unique item *not* in the table above is dropped first (and always dropped in multi player).
 
-|**Base item**|**qlvl**|<b>Order, from first to last<sup>1</sup></b>|
-| :- | -: | :- |
-|Full Plate Mail|25|Demon Plate Armor, Armor of Gloom and Demonspike Coat|
-|Mace|1|Civerb’s Cudgel, Crackrust and Lightforge|
-|Ring|8|Ring of Thunder, Ring of the Mystics, Ring of Magma, Karik’s Ring,|
-|||Xorine’s Ring, Mercurial Ring and Giant’s Knuckle|
+### Unique Item Order by Base Item<sup>[^131]</sup>
 
-1	In multi player only the first one is findable.
+| **Base Item**      | **qlvl** | **Order, from First to Last** |
+|-------------------|--------:|----------------------------------|
+| Full Plate Mail  | 25     | Demon Plate Armor, Armor of Gloom, and Demonspike Coat |
+| Mace            | 1      | Civerb’s Cudgel, Crackrust, and Lightforge |
+| Ring            | 8      | Ring of Thunder, Ring of the Mystics, Ring of Magma, Karik’s Ring, Xorine’s Ring, Mercurial Ring, and Giant’s Knuckle |
+
+[^131]: **In multiplayer, only the first unique item of each base type is findable.**  
+
 
 
 ## 3.6 Prices of magical items
@@ -1852,39 +1854,50 @@ This chapter will describe how the price of magical items is calculated. Please 
 
 The price of a magical item is affected by three elements: the base effect of a prefix/suffix, the quality effect of a prefix/suffix, and the item’s base cost multiplied by the prefix/suffix intrinsic multiplier. On staves with spells there is an additional factor added to the item’s base cost which depends on the spell type and number of charges. The formulas for calculating the price of all magical items are given below.
 
-<table><tr><th colspan="1" valign="bottom">All magical items except staves with spells:</th><th colspan="1" rowspan="2" valign="bottom">if Mp + Ms ≥ 0</th><th colspan="1" valign="bottom"></th></tr>
-<tr><td colspan="1" valign="bottom">C = Bp + Bs +Qp + Qs + I · (Mp + Ms)</td><td colspan="1" valign="bottom"></td></tr>
-<tr><td colspan="1" valign="bottom">C = Bp + Bs +Qp + Qs + I / (Mp + Ms)</td><td colspan="1" valign="bottom">if Mp + Ms < 0</td><td colspan="1" valign="bottom"></td></tr>
-<tr><td colspan="1" valign="bottom">Staves with spells:</td><td colspan="1" rowspan="2" valign="bottom">if Mp ≥ 0</td><td colspan="1" valign="bottom"></td></tr>
-<tr><td colspan="1" valign="bottom">C = Bp  +Qp + (I + H·P) · Mp</td><td colspan="1" valign="bottom"></td></tr>
-<tr><td colspan="1" valign="bottom">C = Bp  +Qp + (I + H·P) / Mp</td><td colspan="1" valign="bottom">if Mp < 0</td><td colspan="1" valign="bottom"></td></tr>
-</table>
+### Magic Item Cost Formula
 
-|where:|||
-| :- | :- | :- |
-|C|=|Total cost|
-|Bp|=|Base prefix effect|
-|Bs|=|Base suffix effect|
-|Qp|=  Quality effect of the prefix||
-|Qs|=  Quality effect of the suffix||
-|I|=  Cost of base item||
-|H|=  Number of charges on staff||
-|P|=|Spell multiplier|
-|Mp|=|Prefix intrinsic multiplier|
-|Ms|=|Suffix intrinsic multiplier|
+| **All magical items except staves with spells:** | **Condition** |
+|--------------------------------|------------------|
+| `C = Bp + Bs + Qp + Qs + I · (Mp + Ms)` | `If Mp + Ms ≥ 0` |
+| `C = Bp + Bs + Qp + Qs + I / (Mp + Ms)` | `If Mp + Ms < 0` |
+
+| **Staves with spells:** | **Condition** |
+|------------------------|--------------|
+| `C = Bp + Qp + (I + H · P) · Mp` | `If Mp ≥ 0` |
+| `C = Bp + Qp + (I + H · P) / Mp` | `If Mp < 0` |
+
+
+### **Definitions for Magic Item Cost Formula**
+
+| **Variable** | **Meaning** |
+|------------|------------|
+| C  | Total cost |
+| Bp | Base prefix effect |
+| Bs | Base suffix effect |
+| Qp | Quality effect of the prefix |
+| Qs | Quality effect of the suffix |
+| I  | Cost of base item |
+| H  | Number of charges on staff |
+| P  | Spell multiplier |
+| Mp | Prefix intrinsic multiplier |
+| Ms | Suffix intrinsic multiplier |
+
 
 - On plentiful and bountiful staves, one should take the *base* amount of charges. That is, divide the number of charges shown by 2 for plentiful and 3 for bountiful staves.
 
 Some prefixes/suffixes, like *speed* or *the ages,* do not have the Q to affect the price, and in such cases the price formulas would be simplified to:
 
-<table><tr><th colspan="2" valign="bottom">All magical items except staves with spells:</th><th colspan="1" rowspan="2" valign="bottom">if Mp + Ms ≥ 0</th><th colspan="1" valign="bottom"></th></tr>
-<tr><td colspan="2" valign="bottom">C = Bp + Bs + I · (Mp + Ms)</td><td colspan="1" valign="bottom"></td></tr>
-<tr><td colspan="2" valign="bottom">C = Bp + Bs + I / (Mp + Ms)</td><td colspan="1" valign="bottom">if Mp + Ms < 0</td><td colspan="1" valign="bottom"></td></tr>
-<tr><td colspan="2" valign="bottom">Staves with spells:</td><td colspan="1" rowspan="1" valign="bottom">if Mp ≥ 0</td><td colspan="1" valign="bottom"></td></tr>
-<tr><td colspan="1" valign="bottom">C = Bp</td><td colspan="1" valign="bottom">+ (I + H·P) · Mp</td><td colspan="1" valign="bottom"></td></tr>
-<tr><td colspan="1" valign="bottom">C = Bp</td><td colspan="1" valign="bottom">+ (I + H·P) / Mp</td><td colspan="1" valign="bottom">if Mp < 0</td><td colspan="1" valign="bottom"></td></tr>
-</table>
+### Magic Item Cost Formula
 
+| **All magical items except staves with spells:** | **Condition** |
+|------------|--------------|
+| `C = Bp + Bs + I · (Mp + Ms)` | `if Mp + Ms ≥ 0` |
+| `C = Bp + Bs + I / (Mp + Ms)` | `if Mp + Ms < 0` |
+
+| **Staves with spells:** | **Condition** |
+|------------|--------------|
+| `C = Bp + (I + H·P) · Mp` | `if Mp ≥ 0` |
+| `C = Bp + (I + H·P) / Mp` | `if Mp < 0` |
 
 **Cursed and semi-cursed items**
 
@@ -1899,19 +1912,19 @@ Let’s use the prefix *massive* as an example here. The lowest level of quality
 
 Now, how about the different quality levels in between the base and the max values? Starting from the base at 96% we go on to 97%, 98%,… until we reach the max Q value at 110%. And we took 14 steps to get there (110 - 96 = 14). The quality level on the first step (97%) is 1/14 or 0.071428. On the second step it is 2/14 or 0.142857 and so on until on the last step (at 110%) it is 14/14 or 1. The Q can now be counted with the values we have:
 
-Q=L/S·R
+`Q=L/S·R`
 
-where:
+### Variable Definitions
 
-L	=	Location or quality level
-
-S	=	Total number of steps in the prefix/suffix
-
-R	=	Range of the quality effect (Max - Base)
+| **Symbol** | **Meaning** |
+|-----------|------------|
+| L | Location or quality level |
+| S | Total number of steps in the prefix/suffix |
+| R | Range of the quality effect (Max - Base) |
 
 One important note here: When counting the value of L/S and you get something like 0.071428 or 0.777777 (7/9) you take into account only two digits after the decimal, meaning that in the first case we would have the L/S to yield 0.07 and in the second case 0.77. Alternatively one can use the formula below in which case the rounding is done automatically:
 
-Q = [ { [ (100·(Stat - MinStat)) / (MaxStat - MinStat) ] · (Max - Base) } / 100 ]
+`Q = [ { [ (100·(Stat - MinStat)) / (MaxStat - MinStat) ] · (Max - Base) } / 100 ]`
 
 
 **Unidentified magical item**
