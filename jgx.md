@@ -157,65 +157,68 @@ Each character in Diablo has a set of stats (or abilities) that greatly affect h
 
 Each character class has its own starting values for the basic stats. They are listed below. Also listed are which stats are increased and by how much when you gain a level. Apart from those, you also gain 5 ”points” to distribute among your four main stats until they have reached their maximum value. Shrines and some monsters have the ability to alter your stats, too. See appropriate chapters for more information.
 
-|**Class**|**Strength**|**Magic**|**Dexterity**|**Vitality**|**Life**|**Mana**|<b>Effect of Level<sup>1</sup></b>|
-| :- | :-: | -: | :-: | :-: | :-: | -: | :-: |
-|Warrior|30|10|20|25|70|10|+2 life, +1 mana|
-|Rogue|20|15|30|20|45|22|+2 life, +2 mana|
-|Sorcerer|15|35|15|20|30|70|+1 life, +2 mana|
-|Monk|25|15|25|20|45|22|+2 life, +2 mana|
-|Bard|20|20|25|20|45|35|+2 life, +2 mana|
-|Barbarian|40|0|20|25|70|0|+2 life, +0 mana2|
+| **Class**    | **Strength** | **Magic** | **Dexterity** | **Vitality** | **Life** | **Mana** | **Effect of Level [1]** |
+|-------------|:-----------:|----------:|:------------:|:-----------:|:--------:|---------:|:-----------------:|
+| **Warrior**   | 30  | 10  | 20  | 25  | 70  | 10  | +2 life, +1 mana  |
+| **Rogue**     | 20  | 15  | 30  | 20  | 45  | 22  | +2 life, +2 mana  |
+| **Sorcerer**  | 15  | 35  | 15  | 20  | 30  | 70  | +1 life, +2 mana  |
+| **Monk**      | 25  | 15  | 25  | 20  | 45  | 22  | +2 life, +2 mana  |
+| **Bard**      | 20  | 20  | 25  | 20  | 45  | 35  | +2 life, +2 mana  |
+| **Barbarian** | 40  |  0  | 20  | 25  | 70  |  0  | +2 life, +0 mana [2]  |
 
-1. You don’t get any life or mana when gaining level 50.
-1. The Barbarian also gets 1% resistance per level.
+[1]: You don’t get any life or mana when gaining level 50.  
+[2]: The Barbarian also gets 1% resistance per level.
 
 
 ### 2.1.2 Maximum stats
 
 When your stats turn golden they have reached their maximum value and can only be increased by wearing items that increases them further (life and mana never turn golden). The table below lists the maximum stats for each character class assuming a naked character. Note that you don’t get any life or mana when you gain level 50.
 
-|**Class**|**Max Strength**|**Max Magic**|**Max Dexterity**|**Max Vitality**|**Max Life**|**Max Mana**|
-| :- | -: | -: | -: | -: | -: | -: |
-|Warrior|250|50|60|100|316|98|
-|Rogue|55|70|250|80|201|173|
-|Sorcerer|45|250|85|80|138|596|
-|Monk|150|80|150|80|201|183|
-|Bard|120|120|120|100|221|231|
-|Barbarian|255|0|55|150|416|0|
+| **Class**     | **Max Strength** | **Max Magic** | **Max Dexterity** | **Max Vitality** | **Max Life** | **Max Mana** |
+|--------------|---------------:|-------------:|---------------:|---------------:|-----------:|-----------:|
+| **Warrior**   | 250 | 50  | 60  | 100 | 316 | 98  |
+| **Rogue**     | 55  | 70  | 250 | 80  | 201 | 173 |
+| **Sorcerer**  | 45  | 250 | 85  | 80  | 138 | 596 |
+| **Monk**      | 150 | 80  | 150 | 80  | 201 | 183 |
+| **Bard**      | 120 | 120 | 120 | 100 | 221 | 231 |
+| **Barbarian** | 255 | 0  | 55  | 150 | 416 | 0  |
 
-The table below also shows the maximum stats, but this time when equipped with items that give the maximum stat increase. Note that it is *not* possible to reach those maximum values all at once. When two numbers are given the first
 
-one belongs to Diablo and the second one to Hellfire. The reason for this is the use of four new unique rings only available in Hellfire. It does *not* take into account the possibility of the use of two new unique jewelry in Hellfire that move life to/from mana.
+The table below also shows the maximum stats, but this time when equipped with items that give the maximum stat increase. Note that it is *not* possible to reach those maximum values all at once. When two numbers are given the first one belongs to Diablo and the second one to Hellfire. The reason for this is the use of four new unique rings only available in Hellfire. It does *not* take into account the possibility of the use of two new unique jewelry in Hellfire that move life to/from mana.
 
-|**Class**|**Max Strength**|**Max Magic**|**Max Dexterity**|**Max Vitality**|**Max Life**|**Max Mana**|||
-| :- | :-: | :-: | :-: | :-: | -: | -: | :- | :- |
-|Warrior|425 / 485|225 / 285|225 / 285|265 / 325|796 / 916|533|/ 568||
-|Rogue|230 / 290|245 / 305|415 / 475|245 / 305|681 / 741|690|/ 718||
-|Sorcerer|220 / 280|425 / 485|250 / 310|245 / 305|618 / 618|1 196|/ 1|216|
-|Monk|385|315|375|305|741||728||
-|Bard|370|360|360|340|761||865||
-|Barbarian|490|235|280|375|1 091||470||
+| **Class**   | **Max Strength** | **Max Magic** | **Max Dexterity** | **Max Vitality** | **Max Life**  | **Max Mana**  |
+|------------|:---------------:|:------------:|:--------------:|:--------------:|-------------:|-------------:|
+| **Warrior**  | 425 / 485       | 225 / 285    | 225 / 285      | 265 / 325      | 796 / 916    | 533 / 568    |
+| **Rogue**    | 230 / 290       | 245 / 305    | 415 / 475      | 245 / 305      | 681 / 741    | 690 / 718    |
+| **Sorcerer** | 220 / 280       | 425 / 485    | 250 / 310      | 245 / 305      | 618 / 618    | 1196 / 1216  |
+| **Monk**     | 385             | 315          | 375            | 305            | 741          | 728          |
+| **Bard**     | 370             | 360          | 360            | 340            | 761          | 865          |
+| **Barbarian**| 490             | 235          | 280            | 375            | 1091         | 470          |
+
 
 ### 2.1.3 Life and mana
 
 Life is based on vitality while mana is based on magic. To calculate how much life and mana you have, use the formulas listed below.
 
+| **Class**     | **Formula for Life Calculation**                                      | **Bonus** |
+|--------------|------------------------------------------------------------------------|---------:|
+| **Warrior**   | (2 × Vit<sup>character</sup>) + (2 × Vit<sup>items</sup>) + (2 × clvl) + Life<sup>items</sup>  | +18  |
+| **Rogue**     | (1 × Vit<sup>character</sup>) + (1.5 × Vit<sup>items</sup>) + (2 × clvl) + Life<sup>items</sup> | +23  |
+| **Sorcerer**  | (1 × Vit<sup>character</sup>) + (1 × Vit<sup>items</sup>) + (1 × clvl) + Life<sup>items</sup>  | +9   |
+| **Monk**      | (1 × Vit<sup>character</sup>) + (1.5 × Vit<sup>items</sup>) + (2 × clvl) + Life<sup>items</sup> | +23  |
+| **Bard**      | (1 × Vit<sup>character</sup>) + (1.5 × Vit<sup>items</sup>) + (2 × clvl) + Life<sup>items</sup> | +23  |
+| **Barbarian** | (2 × Vit<sup>character</sup>) + (2.5 × Vit<sup>items</sup>) + (2 × clvl) + Life<sup>items</sup> | +18  |
 
-|**Life**|||||||
-| :- | :- | :- | :- | :- | :- | :- |
-|Warrior:|2·Vitcharacter +|2·Vititems +|2·clvl +|Lifeitems|+ 18||
-|Rogue:|1·Vitcharacter +|1\.5·Vititems +|2·clvl +|Lifeitems|+ 23||
-|Sorcerer:|1·Vitcharacter +|1·Vititems +|1·clvl +|Lifeitems|+|9|
-|Monk:|1·Vitcharacter +|1\.5·Vititems +|2·clvl +|Lifeitems|+ 23||
-|Bard:|1·Vitcharacter +|1\.5·Vititems +|2·clvl +|Lifeitems|+ 23||
-|Barbarian:|2·Vitcharacter +|2\.5·Vititems +|2·clvl +|Lifeitems|+ 18||
-|**Mana**|||||||
-|Warrior:|1·Magcharacter +|1·Magitems +|1·clvl +|Manaitems|-|1|
-|Rogue:|1·Magcharacter +|1\.5·Magitems +|2·clvl +|Manaitems|+|5|
-|Sorcerer:|2·Magcharacter +|2·Magitems +|2·clvl +|Manaitems|-|2|
-|Monk:|1·Magcharacter +|1\.5·Magitems +|2·clvl +|Manaitems|+|5|
-|Bard:|1\.5·Magcharacter +|1\.75·Magitems +|2·clvl +|Manaitems|+|3|
-|Barbarian:|1·Magcharacter +|1·Magitems +|0·clvl +|Manaitems|+|0|
+---
+
+| **Class**     | **Formula for Mana Calculation**                                      | **Bonus** |
+|--------------|------------------------------------------------------------------------|---------:|
+| **Warrior**   | (1 × Mag<sup>character</sup>) + (1 × Mag<sup>items</sup>) + (1 × clvl) + Mana<sup>items</sup>  | -1  |
+| **Rogue**     | (1 × Mag<sup>character</sup>) + (1.5 × Mag<sup>items</sup>) + (2 × clvl) + Mana<sup>items</sup> | +5  |
+| **Sorcerer**  | (2 × Mag<sup>character</sup>) + (2 × Mag<sup>items</sup>) + (2 × clvl) + Mana<sup>items</sup>  | -2  |
+| **Monk**      | (1 × Mag<sup>character</sup>) + (1.5 × Mag<sup>items</sup>) + (2 × clvl) + Mana<sup>items</sup> | +5  |
+| **Bard**      | (1.5 × Mag<sup>character</sup>) + (1.75 × Mag<sup>items</sup>) + (2 × clvl) + Mana<sup>items</sup> | +3  |
+| **Barbarian** | (1 × Mag<sup>character</sup>) + (1 × Mag<sup>items</sup>) + (0 × clvl) + Mana<sup>items</sup> | +0  |
 
 - Black Deaths (a zombie type of monster) can permanently decrease your life.
 
@@ -229,30 +232,31 @@ Life is based on vitality while mana is based on magic. To calculate how much li
 
 Both Armor Class (AC) and To Hit are based on your Dexterity. Below is a summary on how they are calculated. For more information about AC and To Hit, see chapter 5.6.5.
 
+| **Armor Class Calculation** | **Formula** |
+|---------------------------|-------------|
+| **Warrior, Rogue, Sorcerer** | (Dex ÷ 5) + AC<sub>items</sub> |
+| **Monk with Plate Armor** | (Dex ÷ 5) + AC<sub>items</sub> |
+| **Monk with Mail Armor** | (Dex ÷ 5) + AC<sub>items</sub> + (clvl ÷ 2) |
+| **Monk with Light Armor (Leather, etc.)** | (Dex ÷ 5) + AC<sub>items</sub> + (2 × clvl) |
+| **Monk with No Armor** | (Dex ÷ 5) + AC<sub>items</sub> + (2 × clvl) |
+| **Bard** | (Dex ÷ 5) + AC<sub>items</sub> |
+| **Barbarian** | (Dex ÷ 5) + AC<sub>items</sub> + (clvl ÷ 4) |
 
-|**Armor Class**||
-| :- | :- |
-|Warrior, Rogue, Sorcerer:|Dex/5 + ACitems|
-|Monk with plate:|Dex/5 + ACitems|
-|Monk with mail:|Dex/5 + ACitems + clvl/2|
-|Monk with leather and other light armor:|Dex/5 + ACitems + 2·clvl|
-|Monk with no armor:|Dex/5 + ACitems + 2·clvl|
-|Bard:|Dex/5 + ACitems|
-|Barbarian:|Dex/5 + ACitems + clvl/4|
 
 - When calculating AC for a Monk, unique plate is treated as mail and unique mail as leather.
 
 - Shields only give half AC (rounded up) to the Barbarian.
 
 
-|**To Hit %**|||
-| :- | :- | :- |
-|on character screen:|50 + Dex/2 + ToHititems||
-|melee:|50|+ Dex/2 + ToHititems + clvl + bonus|
-|arrow:|50|+ Dex + ToHititems + clvl + bonus - distance·distance/2|
-|magic versus monster:|50|+ Mag - 2·mlvl + bonus|
-|magic versus player:|50|+ Mag - 2·clvltarget + bonus|
-|To Hit penalty for adjacent quarter damage:|70|- 2·clvl (minimum 30)|
+| **To Hit % Calculation** | **Formula** | **Notes** |
+|-------------------------|-------------|------|
+| **Character Screen** | 50 + (Dex ÷ 2) + ToHit<sub>items</sub> | Displayed on the in-game character screen. |
+| **Melee Attack** | 50 + (Dex ÷ 2) + ToHit<sub>items</sub> + clvl + bonus | Used for melee combat calculations. |
+| **Ranged Attack (Arrows)** | 50 + Dex + ToHit<sub>items</sub> + clvl + bonus - (distance² ÷ 2) | Distance-based penalty applies. |
+| **Magic vs Monster** | 50 + Mag - (2 × mlvl) + bonus | Spell accuracy against monsters. |
+| **Magic vs Player** | 50 + Mag - (2 × clvl<sub>target</sub>) + bonus | Spell accuracy against other players. |
+| **To Hit Penalty for Adjacent Quarter Damage** | 70 - (2 × clvl) | Minimum value: 30. |
+
 
 - All magic attacks will always check for To Hit, even for spells like Lightning and Fire Wall.
 
@@ -275,31 +279,31 @@ Both Armor Class (AC) and To Hit are based on your Dexterity. Below is a summary
 
 The bonus in the above formulas refers to some *hidden* To Hit modifiers specific for each character class. They are listed in the table below but do not show up in the To Hit value you see on the character screen. For the blocking bonus see chapter 2.2.
 
-|**Class**|**Melee**|**Arrow**|**Magic**|<b>Blocking<sup>1</sup></b>|
-| :- | :- | :- | :- | :-: |
-|Warrior|20|10|-|30|
-|Rogue|-|20|-|20|
-|Sorcerer|-|-|20|10|
-|Monk|-|-|-|25|
-|Bard|-|10|10|25|
-|Barbarian|-|-|-|30|
+| **Class**      | **Melee** | **Arrow** | **Magic** | **Blocking** [1] |
+|--------------|:-------:|:-------:|:-------:|:---------:|
+| **Warrior**   | 20      | 10      | -       | 30        |
+| **Rogue**     | -       | 20      | -       | 20        |
+| **Sorcerer**  | -       | -       | 20      | 10        |
+| **Monk**      | -       | -       | -       | 25        |
+| **Bard**      | -       | 10      | 10      | 25        |
+| **Barbarian** | -       | -       | -       | 30        |
 
-1	There exists a bug so that the bonus is always 0, except during the first game a character play.
+[1]: There exists a bug where the **blocking bonus is always 0**, except during the first game a character plays.
+
 
 In the table below, maximum AC and To Hit for each character class is summarized. The columns for max values from max stats are maximum values without the use of any items that specifically add to AC and To Hit (only to Dex). When two numbers are given the first one belongs to Diablo and the second one to Hellfire. The reason is that there are some new unique rings only available in Hellfire. It also excludes any effects from oils and shrines that directly affect AC or To Hit. The values are, of course, excluding such things as clvl that is factored in for computing the real final To Hit.
 
-|**Class**|**Max AC**|**Max To Hit**|**Max AC from**|**Max To Hit**|**Max AC**|**Max To Hit**|||
-| :- | -: | -: | :-: | :-: | :- | :-: | :- | :- |
-||**naked**|**naked**|**maxed stats**|**from maxed**|||||
-|||||||**stats**|||
-|Warrior|12||80|45/57|162 / 192|349 / 401|392||
-|Rogue|50||175|83/95|257 / 287|385 / 425|487||
-|Sorcerer|17||92|50/62|175 / 205|350 / 390|405||
-|Monk|130|1|125|175|1|237|419|437|
-|Bard|24||110|72||230|413|565|
-|Barbarian|23|1|77|56||190|370|390|
+| **Class**      | **Max AC Naked** | **Max To Hit Naked** | **Max AC from Maxed Stats** | **Max To Hit from Maxed Stats** | **Max AC** | **Max To Hit** |
+|--------------|----------------:|------------------:|----------------------:|--------------------------:|---------:|------------:|
+| **Warrior**   | 12               | 80               | 45 / 57               | 162 / 192                 | 349 / 401 | 392        |
+| **Rogue**     | 50               | 175              | 83 / 95               | 257 / 287                 | 385 / 425 | 487        |
+| **Sorcerer**  | 17               | 92               | 50 / 62               | 175 / 205                 | 350 / 390 | 405        |
+| **Monk**      | 130 [1]          | 125              | 175 [1]               | 237                        | 419       | 437        |
+| **Bard**      | 24               | 110              | 72                     | 230                        | 413       | 565        |
+| **Barbarian**     | 23 [1]       | 77               | 56                     | 190                        | 370       | 390        |
 
-1	For a level 50 character.
+[1]: For a level 50 character.
+
 
 
 ## 2.2 Fighting
