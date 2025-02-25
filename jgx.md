@@ -157,17 +157,17 @@ Each character in Diablo has a set of stats (or abilities) that greatly affect h
 
 Each character class has its own starting values for the basic stats. They are listed below. Also listed are which stats are increased and by how much when you gain a level. Apart from those, you also gain 5 ”points” to distribute among your four main stats until they have reached their maximum value. Shrines and some monsters have the ability to alter your stats, too. See appropriate chapters for more information.
 
-| **Class**    | **Strength** | **Magic** | **Dexterity** | **Vitality** | **Life** | **Mana** | **Effect of Level [1]** |
+| **Class**    | **Strength** | **Magic** | **Dexterity** | **Vitality** | **Life** | **Mana** | **Effect of Level [^1]** |
 |-------------|:-----------:|----------:|:------------:|:-----------:|:--------:|---------:|:-----------------:|
 | **Warrior**   | 30  | 10  | 20  | 25  | 70  | 10  | +2 life, +1 mana  |
 | **Rogue**     | 20  | 15  | 30  | 20  | 45  | 22  | +2 life, +2 mana  |
 | **Sorcerer**  | 15  | 35  | 15  | 20  | 30  | 70  | +1 life, +2 mana  |
 | **Monk**      | 25  | 15  | 25  | 20  | 45  | 22  | +2 life, +2 mana  |
 | **Bard**      | 20  | 20  | 25  | 20  | 45  | 35  | +2 life, +2 mana  |
-| **Barbarian** | 40  |  0  | 20  | 25  | 70  |  0  | +2 life, +0 mana [2]  |
+| **Barbarian** | 40  |  0  | 20  | 25  | 70  |  0  | +2 life, +0 mana [^2]  |
 
-[1]: You don’t get any life or mana when gaining level 50.  
-[2]: The Barbarian also gets 1% resistance per level.
+[^1]: You don’t get any life or mana when gaining level 50.  
+[^2]: The Barbarian also gets 1% resistance per level.
 
 
 ### 2.1.2 Maximum stats
@@ -279,7 +279,7 @@ Both Armor Class (AC) and To Hit are based on your Dexterity. Below is a summary
 
 The bonus in the above formulas refers to some *hidden* To Hit modifiers specific for each character class. They are listed in the table below but do not show up in the To Hit value you see on the character screen. For the blocking bonus see chapter 2.2.
 
-| **Class**      | **Melee** | **Arrow** | **Magic** | **Blocking** [1] |
+| **Class**      | **Melee** | **Arrow** | **Magic** | **Blocking** [^1] |
 |--------------|:-------:|:-------:|:-------:|:---------:|
 | **Warrior**   | 20      | 10      | -       | 30        |
 | **Rogue**     | -       | 20      | -       | 20        |
@@ -288,7 +288,7 @@ The bonus in the above formulas refers to some *hidden* To Hit modifiers specifi
 | **Bard**      | -       | 10      | 10      | 25        |
 | **Barbarian** | -       | -       | -       | 30        |
 
-[1]: There exists a bug where the **blocking bonus is always 0**, except during the first game a character plays.
+[^1]: There exists a bug where the **blocking bonus is always 0**, except during the first game a character plays.
 
 
 In the table below, maximum AC and To Hit for each character class is summarized. The columns for max values from max stats are maximum values without the use of any items that specifically add to AC and To Hit (only to Dex). When two numbers are given the first one belongs to Diablo and the second one to Hellfire. The reason is that there are some new unique rings only available in Hellfire. It also excludes any effects from oils and shrines that directly affect AC or To Hit. The values are, of course, excluding such things as clvl that is factored in for computing the real final To Hit.
@@ -298,11 +298,11 @@ In the table below, maximum AC and To Hit for each character class is summarized
 | **Warrior**   | 12               | 80               | 45 / 57               | 162 / 192                 | 349 / 401 | 392        |
 | **Rogue**     | 50               | 175              | 83 / 95               | 257 / 287                 | 385 / 425 | 487        |
 | **Sorcerer**  | 17               | 92               | 50 / 62               | 175 / 205                 | 350 / 390 | 405        |
-| **Monk**      | 130 [1]          | 125              | 175 [1]               | 237                        | 419       | 437        |
+| **Monk**      | 130 [^1]         | 125              | 175 [^1]              | 237                        | 419       | 437        |
 | **Bard**      | 24               | 110              | 72                     | 230                        | 413       | 565        |
-| **Barbarian**     | 23 [1]       | 77               | 56                     | 190                        | 370       | 390        |
+| **Barbarian**     | 23 [^1]      | 77               | 56                     | 190                        | 370       | 390        |
 
-[1]: For a level 50 character.
+[^1]: For a level 50 character.
 
 
 
