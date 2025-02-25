@@ -199,21 +199,21 @@ Life is based on vitality while mana is based on magic. To calculate how much li
 
 | **Class**     | **Formula for Life Calculation**                                      | **Bonus** |
 |--------------|------------------------------------------------------------------------|---------:|
-| **Warrior**   | (2 × Vit<sub>character</sub>) + (2 × Vit<sub>items</sub>) + (2 × clvl) + Life<sub>items</sub>  | +18  |
-| **Rogue**     | (1 × Vit<sub>character</sub>) + (1.5 × Vit<sub>items</sub>) + (2 × clvl) + Life<sub>items</sub> | +23  |
-| **Sorcerer**  | (1 × Vit<sub>character</sub>) + (1 × Vit<sub>items</sub>) + (1 × clvl) + Life<sub>items</sub>  | +9   |
-| **Monk**      | (1 × Vit<sub>character</sub>) + (1.5 × Vit<sub>items</sub>) + (2 × clvl) + Life<sub>items</sub> | +23  |
-| **Bard**      | (1 × Vit<sub>character</sub>) + (1.5 × Vit<sub>items</sub>) + (2 × clvl) + Life<sub>items</sub> | +23  |
-| **Barbarian** | (2 × Vit<sub>character</sub>) + (2.5 × Vit<sub>items</sub>) + (2 × clvl) + Life<sub>items</sub> | +18  |
+| **Warrior**   | `(2 × Vit`<sub>`character`</sub>`) + (2 × Vit`<sub>`items`</sub>`) + (2 × clvl) + Life`<sub>`items`</sub>  | +18  |
+| **Rogue**     | `(1 × Vit`<sub>`character`</sub>`) + (1.5 × Vit`<sub>`items`</sub>`) + (2 × clvl) + Life`<sub>`items`</sub> | +23  |
+| **Sorcerer**  | `(1 × Vit`<sub>`character`</sub>`) + (1 × Vit`<sub>`items`</sub>`) + (1 × clvl) + Life`<sub>`items`</sub>  | +9   |
+| **Monk**      | `(1 × Vit`<sub>`character`</sub>`) + (1.5 × Vit`<sub>`items`</sub>`) + (2 × clvl) + Life`<sub>`items`</sub> | +23  |
+| **Bard**      | `(1 × Vit`<sub>`character`</sub>`) + (1.5 × Vit`<sub>`items`</sub>`) + (2 × clvl) + Life`<sub>`items`</sub> | +23  |
+| **Barbarian** | `(2 × Vit`<sub>`character`</sub>`) + (2.5 × Vit`<sub>`items`</sub>`) + (2 × clvl) + Life`<sub>`items`</sub> | +18  |
 
 | **Class**     | **Formula for Mana Calculation**                                      | **Bonus** |
 |--------------|------------------------------------------------------------------------|---------:|
-| **Warrior**   | (1 × Mag<sub>character</sub>) + (1 × Mag<sub>items</sub>) + (1 × clvl) + Mana<sub>items</sub>  | -1  |
-| **Rogue**     | (1 × Mag<sub>character</sub>) + (1.5 × Mag<sub>items</sub>) + (2 × clvl) + Mana<sub>items</sub> | +5  |
-| **Sorcerer**  | (2 × Mag<sub>character</sub>) + (2 × Mag<sub>items</sub>) + (2 × clvl) + Mana<sub>items</sub>  | -2  |
-| **Monk**      | (1 × Mag<sub>character</sub>) + (1.5 × Mag<sub>items</sub>) + (2 × clvl) + Mana<sub>items</sub> | +5  |
-| **Bard**      | (1.5 × Mag<sub>character</sub>) + (1.75 × Mag<sub>items</sub>) + (2 × clvl) + Mana<sub>items</sub> | +3  |
-| **Barbarian** | (1 × Mag<sub>character</sub>) + (1 × Mag<sub>items</sub>) + (0 × clvl) + Mana<sub>items</sub> | +0  |
+| **Warrior**   | `(1 × Mag`<sub>`character`</sub>`) + (1 × Mag`<sub>`items`</sub>`) + (1 × clvl) + Mana`<sub>`items`</sub>  | -1  |
+| **Rogue**     | `(1 × Mag`<sub>`character`</sub>`) + (1.5 × Mag`<sub>`items`</sub>`) + (2 × clvl) + Mana`<sub>`items`</sub> | +5  |
+| **Sorcerer**  | `(2 × Mag`<sub>`character`</sub>`) + (2 × Mag`<sub>`items`</sub>`) + (2 × clvl) + Mana`<sub>`items`</sub>  | -2  |
+| **Monk**      | `(1 × Mag`<sub>`character`</sub>`) + (1.5 × Mag`<sub>`items`</sub>`) + (2 × clvl) + Mana`<sub>`items`</sub> | +5  |
+| **Bard**      | `(1.5 × Mag`<sub>`character`</sub>`) + (1.75 × Mag`<sub>`items`</sub>`) + (2 × clvl) + Mana`<sub>`items`</sub> | +3  |
+| **Barbarian** | `(1 × Mag`<sub>`character`</sub>`) + (1 × Mag`<sub>`items`</sub>`) + (0 × clvl) + Mana`<sub>`items`</sub> | +0  |
 
 - Black Deaths (a zombie type of monster) can permanently decrease your life.
 - You do not get any mana or life when reaching level 50 (use clvl=49 to get the correct result).
@@ -226,11 +226,11 @@ Both Armor Class (AC) and To Hit are based on your Dexterity. Below is a summary
 
 | **Armor Class Calculation** | **Formula** |
 |---------------------------|-------------|
-| **Warrior, Rogue, Sorcerer** | (Dex ÷ 5) + AC<sub>items</sub> |
-| **Monk with Plate Armor** | (Dex ÷ 5) + AC<sub>items</sub> |
-| **Monk with Mail Armor** | (Dex ÷ 5) + AC<sub>items</sub> + (clvl ÷ 2) |
-| **Monk with Light Armor (Leather, etc.)** | (Dex ÷ 5) + AC<sub>items</sub> + (2 × clvl) |
-| **Monk with No Armor** | (Dex ÷ 5) + AC<sub>items</sub> + (2 × clvl) |
+| **Warrior, Rogue, Sorcerer** | `(Dex ÷ 5) + AC`<sub>`items`</sub> |
+| **Monk with Plate Armor** | `(Dex ÷ 5) + AC`<sub>`items`</sub> |
+| **Monk with Mail Armor** | `(Dex ÷ 5) + AC`<sub>`items`</sub>` + (clvl ÷ 2)` |
+| **Monk with Light Armor (Leather, etc.)** | `(Dex ÷ 5) + AC`<sub>`item`s`</sub>` + (2 × clvl)` |
+| **Monk with No Armor** | `(Dex ÷ 5) + AC`<sub>`items`</sub>` + (2 × clvl)` |
 | **Bard** | `(Dex ÷ 5) + AC`<sub>`items`</sub> |
 | **Barbarian** | `(Dex ÷ 5) + AC`<sub>`items`</sub>` + (clvl ÷ 4)` |
 
@@ -312,7 +312,7 @@ The chance of blocking is calculated according to:
 | **Blocking Type**       | **Formula** |
 |------------------------|--------------------------------------------------|
 | **Blocking vs Monster** | `Dex + (2 × (clvl - mlvl)) + bonus` |
-| **Blocking vs Player**  | `Dex + (2 × (clvl<sub>target</sub> - clvl<sub>attacker</sub>)) + bonus` |
+| **Blocking vs Player**  | `Dex + (2 × (clvl`<sub>`target`</sub>` - clvl`<sub>`attacker`</sub>`)) + bonus` |
 | **Blocking vs Trap**    | `Dex + bonus` |
 
 
@@ -342,14 +342,14 @@ When you are hit and don’t block it, you will take damage. If the damage is bi
 
 Any character except the Barbarian:	damage >= clvl
 
-Barbarian:	damage >= 1.25·clvl
+Barbarian:	`damage >= 1.25·clvl`
 
 It is worth noticing that the check for hit recovery is made prior to any damage reduction due to using a Mana Shield. There are also some bugs regarding hit recovery while using Mana Shield. So while using a Mana Shield, in addition to the requirements above, damage must also be below your current life for you to be put into hit recovery:
 
 
-Any character, except the Barbarian, using Mana Shield: current life > damage >= clvl
+Any character, except the Barbarian, using Mana Shield: `current life > damage >= clvl`
 
-Barbarian using Mana Shield: current life > damage >= 1.25·clvl
+Barbarian using Mana Shield: `current life > damage >= 1.25·clvl`
 
 The table below list the time, in seconds, it takes to block and to do a hit recovery for each character class. It also lists the effects of some specific suffixes that influence blocking or hit recovery. For more information on the suffixes, see chapter 3.2.2.
 
@@ -1933,11 +1933,11 @@ An unidentified magical item has a price as given below.
 
 All magical items except staves with spells:
 
-C = I
+`C = I`
 
 Staves with spells:
 
-C=I+H·P
+`C=I+H·P`
 
 
 ### 3.6.2 Additional notes on the prices
@@ -1955,35 +1955,36 @@ You can’t sell an item at Griswold if you will be given more gold for it than 
 
 Staves can be recharged at Adria (or by a Sorcerer, see chapter 2.4). The cost to recharge a staff can be calculated using the formula below:
 
-RcC = FRcC · (1 - CurCha/MaxCha)
+`RcC = FRcC · (1 - CurCha/MaxCha)`
 
-|where:|||
-| :- | :- | :- |
-|RcC|=|Recharge Cost|
-|FRcC|=  Full Recharge Cost (see below)||
-|MaxDur|=  Maximum charges on item||
-|CurDur|=|Current charges on item|
+### Variable Definitions for Recharge Cost Calculations
+
+| **Symbol** | **Meaning** |
+|-----------|------------|
+| RcC | Recharge Cost |
+| FRcC | Full Recharge Cost (see below) |
+| MaxDur | Maximum charges on item |
+| CurDur | Current charges on item |
+
 
 The Full Recharge Cost in the formula above can be calculated with:
 
-FRcC = 0.50 · (I + 5·P)	if unique or starting staff of the Sorcerer
+`FRcC = 0.50 · (I + 5·P)`	if unique or starting staff of the Sorcerer
 
-FRcC = 0.50 · (I + H·P + 5·P)	if *not* unique and *not* starting staff of the Sorcerer
+`FRcC = 0.50 · (I + H·P + 5·P)`	if *not* unique and *not* starting staff of the Sorcerer
 
-where:
+### Variable Definitions for Recharge Cost Calculations
 
-FRcC	=	Full Recharge Cost
+| **Symbol** | **Meaning** |
+|-----------|------------|
+| FRcC | Full Recharge Cost |
+| I | Cost of base item (always a staff) |
+| H | Number of charges on staff |
+| P | The spell multiplier |
 
-9. =  Cost of base item (always a staff).
-
-H=  Number of charges on staff.
-
-P	=	The spell multiplier.
 
 - The base cost of the starting staff for Sorcerers can be found in chapter 2.5. For other staves, see chapter 3.1.
-
 - On plentiful and bountiful staves, one should take the *base* amount of charges. That is divide the number of charges shown by 2 for plentiful and 3 for bountiful staves.
-
 - As the recharge cost is not influenced by the prefix of the staff, there is no difference to the recharge cost between an identified and an unidentified staff.
 - If a Sorcerer uses his recharge skill on a staff, one should still use the initial number of charges in the formula.
 
@@ -1991,7 +1992,7 @@ If the recharge cost is less than 1 gold (can happen if the ratio CurDur/MaxDur 
 
 Just as with the price of magical items, when counting the value of CurCha/MaxCha you take into account only two digits after the decimal. Alternatively one can use the formula below in which case the rounding is done automatically:
 
-RcC = [ [ { [ (100·(MaxCha - CurCha)) / MaxCha ] · (I + H·P + 5·P) } / 100 ] / 2 ]
+`RcC = [ [ { [ (100·(MaxCha - CurCha)) / MaxCha ] · (I + H·P + 5·P) } / 100 ] / 2 ]`
 
 - Of course, for unique staves and the starting staff of the Sorcerer, skip H·P in the formula above.
 
@@ -1999,20 +2000,23 @@ RcC = [ [ { [ (100·(MaxCha - CurCha)) / MaxCha ] · (I + H·P + 5·P) } / 100 ]
 
 All unique items and staves with spells found in the dungeon have full durability. So do all items bought in town, of course. All other items found in the dungeon only have partial durability in the range below:
 
-Durability of items found in dungeon:	(1 + maxdur/4) to 3·maxdur/4
+Durability of items found in dungeon:	`(1 + maxdur/4) to 3·maxdur/4`
 
 
 ### 3.7.1 Losing durability
 
 All items (except those that are indestructible) have a durability, which will, over time, decrease as you fight. The table below explains under what circumstances and with what chance the durability will go down. It will never go down by more than 1 at a time.
 
-|**Item type**|**When durability may decrease**|**Chance of decreasing**||
-| :- | :- | -: | :- |
-|Armor1|Character is stunned|3/4 · 2/3 = 1/22|50\.0%|
-|Helm1|Character is stunned|3/4 · 1/3 = 1/42|25\.0%|
-|Shield|Character blocks an attack|1/10|10\.0%|
-|Melee weapon|Character hits|1/30|3\.3%|
-|Bow|Character fires|1/40|2\.5%|
+### **Durability Reduction Chances**
+
+| **Item Type**     | **When Durability May Decrease** | **Chance of Decreasing** | **Percentage** |
+|-------------------|---------------------------------|-------------------------:|--------------:|
+| Armor    | Character is stunned          | \( \frac{3}{4} \times \frac{2}{3} = \frac{1}{2} \) | 50.0% |
+| Helm      | Character is stunned          | \( \frac{3}{4} \times \frac{1}{3} = \frac{1}{4} \) | 25.0% |
+| Shield          | Character blocks an attack     | \( \frac{1}{10} \) | 10.0% |
+| Melee Weapon   | Character hits                 | \( \frac{1}{30} \) | 3.3% |
+| Bow            | Character fires                | \( \frac{1}{40} \) | 2.5% |
+
 
 1. If you don’t wear both armor and helm but only one of them, the chance is 3/4 that its durability will be decreased.
 1. You will never lose durability on both the armor and the helm in the same hit.
