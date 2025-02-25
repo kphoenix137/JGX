@@ -1,23 +1,4 @@
-﻿
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<a name="page1"></a>**Jarulf’s Guide**
+﻿**Jarulf’s Guide**
 
 **to**
 
@@ -28,10 +9,6 @@
 **by**
 
 **Pedro Faria / Jarulf**
-
-<a name="page2"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
 
 
 **Table of Contents**
@@ -97,7 +74,6 @@
 
 **i**
 
-<a name="page3"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
 
 ![ref1]
 
@@ -210,17 +186,6 @@
 
 5\.6.1 Resistances, immunities and uniques for monsters	123
 
-![ref1]
-
-
-
-**ii**
-
-<a name="page4"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
-
 5\.6.2 Resistances, immunities and mob for unique monsters	125
 
 5\.6.3 Experience points from monsters	127
@@ -328,17 +293,6 @@
 
 8\.3.4 The Defiler	155
 
-![ref1]
-
-
-
-**iii**
-
-<a name="page5"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
-
 |||8\.3.5 Grave Matters...................................................................................................................................................|155|
 | :- | :- | -: | -: |
 |||8\.3.6 Cornerstone of the World ..............................................................................................................................|155|
@@ -361,54 +315,6 @@
 |**10.6 Avoiding the Game End movie ..........................................................................**|**166**|||
 |**10.7**|**Meaningless information about this guide.........................................................**|**166**||
 |**10.8**|**The End ..............................................................................................................**|**167**||
-
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**iv**
-
-<a name="page6"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 **1. Introduction**
 
@@ -437,20 +343,6 @@ This guide is written for the latest versions (as given above) only. Thus if you
 **1.2 Hidden quests and characters in Hellfire**
 
 There are some hidden Easter Eggs in Hellfire. To activate them, you must create a text file named *command.txt* in your Hellfire folder. In the text file you put the following line:
-
-![ref1]
-
-
-
-
-
-**1**
-
-<a name="page7"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
-
 cowquest; theoquest; bardtest; barbariantest; nestart;
 
 Note that the Barbarian is only available if you have Hellfire 1.01 or later. In version 1.00 of Hellfire, you could also add *multitest* for the option to play multi player games over modem, direct cable, or IPX. That option is disabled in version 1.01. To play multi player in version 1.01 of Hellfire, obtaining a hacked hellfrui.dll is the only solution I am aware of. Use it at your own risk and note that multi player is *not* supported by Sierra. The *nestart* command simply sets a specific palette when playing in the Hive. Otherwise, the palette is chosen randomly as normal.
@@ -490,21 +382,6 @@ Throughout this guide some common abbreviations are used. They are summarized be
 |qlvl|quality level of base item, prefix, suffix and unique item|Intf|Intelligence factor|
 |slvl|spell level|||
 |Rnd[x]|random integer in the range 0 to x-1|[ ]|round down|
-
-![ref1]
-
-
-
-
-
-
-
-**2**
-
-<a name="page8"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 **1.5 Acknowledgment**
 
@@ -555,18 +432,6 @@ As there are always more things to add and errors to correct, I must at some tim
 
 - Added information about what and how monsters and players are targetable, especially in reference to walking.
 - Updated the command section for Battle.net.
-
-![ref1]
-
-
-
-
-**3**
-
-<a name="page9"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 - Added information about channels on Battle.net.
 
@@ -659,17 +524,6 @@ This list contain *all* changes between 1.61 and 1.62. Some changes, this page f
 
 - Updated chapter 10.7.
 
-![ref1]
-
-
-
-
-**4**
-
-<a name="page10"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 **2. Characters**
 
@@ -726,18 +580,6 @@ When your stats turn golden they have reached their maximum value and can only b
 |Barbarian|255|0|55|150|416|0|
 
 The table below also shows the maximum stats, but this time when equipped with items that give the maximum stat increase. Note that it is *not* possible to reach those maximum values all at once. When two numbers are given the first
-
-![ref1]
-
-
-
-
-**5**
-
-<a name="page11"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 one belongs to Diablo and the second one to Hellfire. The reason for this is the use of four new unique rings only available in Hellfire. It does *not* take into account the possibility of the use of two new unique jewelry in Hellfire that move life to/from mana.
 
@@ -798,23 +640,6 @@ Both Armor Class (AC) and To Hit are based on your Dexterity. Below is a summary
 
 - Shields only give half AC (rounded up) to the Barbarian.
 
-![ref1]
-
-
-
-
-
-
-
-
-
-
-**6**
-
-<a name="page12"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 |**To Hit %**|||
 | :- | :- | :- |
@@ -872,17 +697,6 @@ In the table below, maximum AC and To Hit for each character class is summarized
 
 1	For a level 50 character.
 
-![ref1]
-
-
-
-
-**7**
-
-<a name="page13"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 **2.2 Fighting**
 
@@ -939,19 +753,6 @@ There are a few ways by which the damage done to a player is modified depending 
 |||remove mana instead of life.|
 
 Checks for hit recovery are done between step 4 and 5 and will thus not be affected by the use of Mana Shield.
-
-![ref1]
-
-
-
-
-
-
-**8**
-
-<a name="page14"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
 
 
 **Hit recovery**
@@ -1033,17 +834,6 @@ Barbarian except for axes and clubs:	Str·clvl / 100
 
 Extra bonus for Barbarian without shield:	Vit·clvl / 100
 
-![ref1]
-
-
-
-**9**
-
-<a name="page15"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
-
 - All Bow character damage is doubled for player versus player except for Rogues.
 
 - There are quite a few bugs associated with fire and lightning arrows which makes them often deal erroneous damage (way too high or no additional damage at all). For more information, see chapter 6.1.6.
@@ -1102,17 +892,6 @@ Various things affect the amount of damage a character does. Mostly those things
 **Critical Hit**
 
 Warriors and Barbarians have the ability to do a critical hit while doing melee attacks. The chance for a critical hit is clvl% and a critical hit does twice the damage.
-
-![ref1]
-
-
-
-
-**10**
-
-<a name="page16"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
 
 
 **Adjacent quarter damage**
@@ -1253,18 +1032,6 @@ The skill of the Sorcerer works in the following way:
 1. if CurChrg < MaxChrg, goto 3.
 1. CurChrg = MaxChrg
 
-![ref1]
-
-
-
-
-**12**
-
-<a name="page18"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
-
 It seems strange that it is not the qlvl of the spell on a staff, and I wonder what happens for a spell like resurrect where the qlvl value is -1. Any information about this is appreciated.
 
 
@@ -1320,21 +1087,6 @@ Each time you kill a monster you have a chance of receiving experience points. Y
 - Having your golem kill or deal damage to the monster.
 
 - Having used Telekinesis on the monster (Snotspill, Gharbad the Weak, Zhar the Mad, Warlord of Blood, Lachdanan, Arch-Bishop Lazarus, Blackjade and Red Vex are all immune to Telekinesis though).
-
-![ref1]
-
-
-
-
-
-
-
-**13**
-
-<a name="page19"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 In all cases you must be alive at the moment the monster dies and you must never have left the level in-between fulfilling any of the requirements above and the monster dying, or you will not receive any experience points. The requirement of dealing damage is fulfilled even if for some reason the damage itself is reduced to below 1 point of damage (theoretically even 0 damage will be enough). Stone Cursing a monster will *not* be enough to receive any experience points. A Guardian is treated as a normal fire spell for the purpose of deciding if the owning player is entitled to experience points. In Hellfire a Berserk monster will *not* give you experience points for the other monsters it kills.
 
@@ -1444,18 +1196,6 @@ In multi player, all areas are accessible from town right away, but you can go d
 
 1	There is no requirement if you enter a level by going through a portal.
 
-![ref1]
-
-
-
-
-
-**15**
-
-<a name="page21"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 **Difficulty levels**
 
@@ -1492,43 +1232,6 @@ When you create a character, you also have to give it a name. Depending on if it
 |Multi player|!@$(){}[]=+`~^-’.:;\_||
 
 1. By localized characters are meant characters that are specific for various non English languages. Examples are: åäöüâãï, and many others. Such localized characters are still possible to enter when you create the character, but there will be an error message when you finish typing in the name.
-
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**16**
-
-<a name="page22"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
 
 
 **3. Items**
@@ -1821,17 +1524,6 @@ The tables below hold information about potions and elixirs. As always, the pric
 1. In Hellfire it also restores all of your mana.
 
 1. In Hellfire it also restores all of your life.
-
-![ref1]
-
-
-
-**20**
-
-<a name="page26"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 Potions of Healing and Mana restore life and mana as stated below. Potions of Rejuvenation are basically treated as one Potion of Mana and one Potion of Healing. For information on how scrolls of healing and the Healing spell work, see chapter 4.1.2.
 
@@ -2433,16 +2125,6 @@ Not all prefixes and suffixes can occur on all types of items. The tables also l
 
 1. The game erroneously states it does ×0-5. Average value is ×2. For more details, see chapter 6.2.1. Does not work against Diablo or unique monsters.
 
-![ref1]
-
-
-
-**28**
-
-<a name="page34"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 **3.5 Unique items**
 
@@ -2819,19 +2501,6 @@ the item has a unique picture or not.
 
 1. This item actually has the unique picture of the same item it is based on, so for all practical reasons it doesn’t really have a unique picture.
 
-![ref1]
-
-
-
-
-
-
-**33**
-
-<a name="page39"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 **3.5.2 Unfindable unique items in multi player**
 
@@ -2880,23 +2549,6 @@ The price of a magical item is affected by three elements: the base effect of a 
 <tr><td colspan="1" valign="bottom">C = Bp  +Qp + (I + H·P) · Mp</td><td colspan="1" valign="bottom"></td></tr>
 <tr><td colspan="1" valign="bottom">C = Bp  +Qp + (I + H·P) / Mp</td><td colspan="1" valign="bottom">if Mp < 0</td><td colspan="1" valign="bottom"></td></tr>
 </table>
-![ref1]
-
-
-
-
-
-
-
-
-
-
-**34**
-
-<a name="page40"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 |where:|||
 | :- | :- | :- |
@@ -2946,18 +2598,6 @@ L	=	Location or quality level
 S	=	Total number of steps in the prefix/suffix
 
 R	=	Range of the quality effect (Max - Base)
-
-![ref1]
-
-
-
-
-**35**
-
-<a name="page41"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 One important note here: When counting the value of L/S and you get something like 0.071428 or 0.777777 (7/9) you take into account only two digits after the decimal, meaning that in the first case we would have the L/S to yield 0.07 and in the second case 0.77. Alternatively one can use the formula below in which case the rounding is done automatically:
 
@@ -3017,18 +2657,6 @@ H=  Number of charges on staff.
 
 P	=	The spell multiplier.
 
-![ref1]
-
-
-
-
-**36**
-
-<a name="page42"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
-
 - The base cost of the starting staff for Sorcerers can be found in chapter 2.5. For other staves, see chapter 3.1.
 
 - On plentiful and bountiful staves, one should take the *base* amount of charges. That is divide the number of charges shown by 2 for plentiful and 3 for bountiful staves.
@@ -3082,19 +2710,6 @@ Repairs are done at Griswold (or by a Warrior, see chapter 2.4). Griswold uses t
 
 If the repair cost is less than 1 gold Griswold won’t repair it. That makes many of the cursed items irreparable. There also seems to be a bug so that when the ratio CurDur/MaxDur is greater than 99%, the repair cost is rounded down to 0 along the way and is thus not repairable until it takes more damage.
 
-![ref1]
-
-
-
-
-
-**37**
-
-<a name="page43"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
-
 Just as with the price of magical items, when counting the value of CurDur/MaxDur you take into account only two digits after the decimal. Alternatively one can use the formulas below (plus the step by step list following) in which case the rounding is done automatically:
 
 For magical and unique items first calculate:
@@ -3147,20 +2762,6 @@ An item can come from many different sources in the dungeon, and depending on th
 **Special items**
 
 Special items appear on those occasions where the item created will not follow normal procedures. Such special items will normally only generate potions and scrolls (in Hellfire it also includes oils). For more information about what base items are possible for special items, see chapter 3.8.3.
-
-![ref1]
-
-
-
-
-
-
-
-**38**
-
-<a name="page44"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
 
 
 **3.8.1 What is dropped?**
@@ -3223,18 +2824,6 @@ Barrels can be of two different types, exploding and non exploding. For informat
 |Special item:|6\.7%|
 |Item:|3\.3%|
 |Nothing:|60%|
-
-![ref1]
-
-
-
-
-**39**
-
-<a name="page45"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 - Barrels can only exist in church, catacombs, caves and hell.
 
@@ -3302,21 +2891,6 @@ Next, the item type that is to be generated is determined, and the procedure is 
 
 First, it has to be determined what the base item should be. For information about base items, see chapters 3.1 and 3.2. Each base item has a qlvl, and those within the ranges below can be dropped. Depending on the source of the item some base items are, of course, excluded (see chapter 3.8.1).
 
-![ref1]
-
-
-
-
-
-
-
-**40**
-
-<a name="page46"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
-
 Normal and special monster:	1 to mlvl
 
 Unique monster:	1 to mlvlbattle
@@ -3382,18 +2956,6 @@ Hell difficulty:	5·(32 + dlvl) to 15·(32 + dlvl) - 1
 
 - The Hive levels are numbered 9-12 and the Crypt levels are numbered 13-16.
 
-![ref1]
-
-
-
-
-**41**
-
-<a name="page47"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
-
 Furthermore, on any hell dungeon level (dlvl 13-16) or Crypt dungeon level (dlvl 13-16) the amount of gold is increased by:
 
 Hell or Crypt dungeon level:	amount · 1.125
@@ -3440,19 +3002,6 @@ The range above means that unless the lower limit is set to 25, the highest qlvl
 
 34. There is no prefix or suffix in the range of 32-34, so qlvl 31 is the highest one you will find, and only emerald has that qlvl. In Hellfire (but not Diablo), Diablo is level 45, so he can drop items with prefixes and suffixes of qlvl up to
 45. Similarly, Na-Krul can drop items with prefixes and suffixes of qlvl up to 44 as he is level 40, and the +4 bonus for being a unique monster applies to him. If for any reason the game fails to select a prefix and/or a suffix, the game will then proceed to create the item as a normal non magical item instead. See chapter 3.13.3 for a list of prefixes and suffixes in the order of their qlvl.
-
-![ref1]
-
-
-
-
-
-**42**
-
-<a name="page48"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 Some prefixes actually has a double chance of being chosen. The table below list all prefixes that has a double chance of being chosen.
 
@@ -3519,18 +3068,6 @@ Staves can either have a spell or be normal magical items (of course, they can a
 |Chance for having spell:|75%|
 | :- | -: |
 |Chance for having prefix if it has a spell:|10%|
-
-![ref1]
-
-
-
-
-**43**
-
-<a name="page49"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 - Staves from a location that has a 100% chance of being magical will, if they have a spell, always have a prefix. as staves with spells without a prefix will not be considered as magical by the game.
 
@@ -3658,17 +3195,6 @@ In Hellfire the list is slightly modified and depends on the dlvl. For dlvl 1 th
 |Blacksmith Oil|14\.3%|
 
 For any dlvl higher than 1 in Hellfire, the list of probabilities is:
-
-![ref1]
-
-
-
-**45**
-
-<a name="page51"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 |Scroll of Town Portal|28\.6%|
 | :- | -: |
@@ -3804,19 +3330,6 @@ Range of qlvl for base item:	1 to ilvl
 
 As with items from normal monsters, bows has a double chance of being selected. He will renew his inventory of basic items each time you come back up from the dungeons or reload the game in single player.
 
-![ref1]
-
-
-
-
-
-
-**47**
-
-<a name="page53"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 **Premier items**
 
@@ -3916,18 +3429,6 @@ As explained in chapter 3.8, prefixes and suffixes are assigned to items based o
 
 The same restriction mentioned above for the dungeon also applies to Griswold and Adria. They will never sell you any item with a prefix or suffix with a qlvl higher than 30 (32 at Adria). This again rules out the best prefixes and suffixes even if they would be possible according to what was said above under occurrences and qlvl differences.
 
-![ref1]
-
-
-
-
-
-**49**
-
-<a name="page55"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 **Restrictions on the price**
 
@@ -3965,21 +3466,7 @@ As with all other items in the game with the exception of quest related items, w
 
 - For various reasons, mostly due to the difficulties in making good estimates of the frequencies, no considerations have been made to those items sometimes appearing directly on the ground or appearing on weapon or armor racks. This should not affect the final probabilities much though. If anyone has any more information on the frequencies of them, please feel free to tell me.
 
-- The values are only valid for multi player. In single player some quest monsters will drop a quest item instead of a random magical item. Also, dungeon levels normally has less monsters than in single player. Finally, unique items are picked slightly different in single player than multi player meaning some of the unique items marked as Impossible ones, actually has a very small chance of appearing in a single player game (but very
-
-![ref1]
-
-
-
-
-**50**
-
-<a name="page56"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
-
-small, typically square the number for the uniques being second in the order and raise it to the power of three for the third one in the list. For the drop order of such unique items, see chapter 3.5.2. It is my belief that the values should be more or less accurate for single player as well though.
+- The values are only valid for multi player. In single player some quest monsters will drop a quest item instead of a random magical item. Also, dungeon levels normally has less monsters than in single player. Finally, unique items are picked slightly different in single player than multi player meaning some of the unique items marked as Impossible ones, actually has a very small chance of appearing in a single player game (but very small, typically square the number for the uniques being second in the order and raise it to the power of three for the third one in the list. For the drop order of such unique items, see chapter 3.5.2. It is my belief that the values should be more or less accurate for single player as well though.
 
 The value given is an estimate of how many games it takes on average to find a specific unique. To find the probability of a specific unique to exist in a game, simply divide 1 by the number given. Given are also numbers telling on what dlvl the unique item has the highest overall chance (includes all sources) to be found. It is very important to realize that the number given here are necessarily *not* the same as the typical player will find. A typical player will for example not play in all areas equally much. Also, even though the chances are over all greater for monsters than for unique monsters, you need to kill a lot more of them. So if you are hunting for specific unique items, it is normally a much faster method to kill, say only bosses on level 13-15 than killing all monsters on the same levels. Never the less, the numbers below should give a rough estimate on how rare or common a specific unique item is. If an item is impossible to generate for some reason, it will say ”impossible”.
 
@@ -4302,21 +3789,6 @@ It would of course be possible to do similar tables for magical items, as for un
 
 This chapter summarizes various properties of items and lets you review them without being confused by other non related properties. All data below can of course be found in the complete tables in chapter 3.1 - 3.5. To make it as convenient as possible, I have tried to have each summary on its own page or opening.
 
-![ref1]
-
-
-
-
-
-
-
-**55**
-
-<a name="page61"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
-
 
 **3.13.1 Levels of base items**
 
@@ -4373,26 +3845,6 @@ Below is a list of all the base items in the game. It has been divided into two 
 ||Scroll of Fire Wall|4|Ring|10||||
 1	Only available in Hellfire.
 
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-**56**
-
-<a name="page62"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
-
 
 **3.13.2 Levels of spells on books and staves**
 
@@ -4421,55 +3873,6 @@ When spells are attached to books and staves (they never exist on scrolls as eac
 |||||Mana1|5|Magi1|20|
 
 1	Only available in Hellfire.
-
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**57**
-
-<a name="page63"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 
 **3.13.3 Levels of prefixes and suffixes**
@@ -4521,30 +3924,6 @@ The tables below list all prefixes and suffixes according to their qlvl. All the
 ||health|2|the pit|5|power|11|lightning|21|||
 1	Only available in Hellfire.
 
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**58**
-
-<a name="page64"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
-
 
 **3.13.4 Levels of unique items**
 
@@ -4594,30 +3973,6 @@ The table below lists all unique items according to their qlvl. As quest items a
 ||Bovine Plate1|n/a|Harlequin Crest|n/a|Veil of Steel|n/a|
 ||The Butcher’s Cleaver|n/a|Optic Amulet|n/a|||
 1	Only available in Hellfire.
-
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**59**
-
-<a name="page65"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 
 **3.13.5 Effects of prefixes and suffixes**
@@ -4764,17 +4119,6 @@ The tables below are extracted from the more comprehensive ones above and summar
 
 1. The game erroneously states it does ×0-5. Average value is ×2. For more details, see chapter 6.2.1. Does not work against Diablo or unique monsters.
 
-![ref1]
-
-
-
-
-**61**
-
-<a name="page67"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 **3.13.6 Occurrence of prefixes and suffixes**
 
@@ -4866,59 +4210,6 @@ The tables below are extracted from the more comprehensive ones above and summar
 |blocking|–S––––|||||jester’s||--W---|||||||
 |thieves|AS–––J|||||peril|||--WtB-||||||
 |thorns|AS––––||||||||||||||
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**63**
-
-<a name="page69"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
 
 
 **4. Magic**
@@ -4974,21 +4265,7 @@ and max. damage where appropriate.
 
 Real Damage:	The real damage as used by the game. This is not necessarily the same as the
 
-stated damage, especially for non missile spells, as they instead can often attack several times. If no real damage is stated, it is identical to the damage stated. Also, if the real damage distribution is linear within the range given, it is not
-
-![ref1]
-
-
-
-
-**64**
-
-<a name="page70"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
-
-shown either. All this is done to reduce the amount of data presented, as it is already extensive.
+stated damage, especially for non missile spells, as they instead can often attack several times. If no real damage is stated, it is identical to the damage stated. Also, if the real damage distribution is linear within the range given, it is not shown either. All this is done to reduce the amount of data presented, as it is already extensive.
 
 Duration:	This is how long each spell lasts. The time given is always in seconds unless
 
@@ -5046,19 +4323,6 @@ Note that this formula does not round down and you will therefore get a damage a
 |(9/8)^5|1\.802|(9/8)^10|3\.247|(9/8)^15|5\.852|(9/8)^20|10\.545|
 
 Lets make an example for the iterative function as well. Take the damage of the flash spell (case 1). It uses a recursive formulas where the slvl0 (see above) is actually first calculated using an iterative formula. Lets calculate slvl0 for a level 30 character:
-
-![ref1]
-
-
-
-
-
-**65**
-
-<a name="page71"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 slvl0 = Itt(clvl, Rnd[20] + 1); clvl=30
 
@@ -5668,18 +4932,6 @@ The casting of spells in Diablo and Hellfire is normally easy to do. Just click 
 
 It is worth noticing that there can be a small delay between the time you click on the mouse and the actual cast of the spell. If you change the cursor position during the time in between, or change the spell, you will normally cast the new spell and the target will be the new position of the cursor. Another side effect of this is that the actual mana reduction is done when the spell is cast which may at times lead to mana reaching negative values (the check for enough mana to cast the spell is done when you click the mouse, while the actual reduction is done when it is cast; due to this effect , one can, if one clicks fast enough, end up with negative mana, or be able to cast a spell twice from a scroll, or squeeze out an extra spell from a staff).
 
-![ref1]
-
-
-
-
-
-**74**
-
-<a name="page80"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 **Area**
 
@@ -6084,24 +5336,6 @@ As with attacks from monsters, there is also an automatic chance of hitting for 
 
 - magic traps includes Fire Wall, Flame Wave and Ring of Fire attacks from other players.
 
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-**80**
-
-<a name="page86"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 **5. Monsters**
 
@@ -6138,22 +5372,6 @@ This tells on what dungeon level the monster can occur on. This does not differ 
 |Hell:|normal + 30|
 
 A monster’s level affects many things, including To Hit and experience points given. It also affects how fast it regenerates hit points, what treasures it can drop, and many other things. For some unique monsters, one should add +30/+60 instead of the normal +15/+30. For information about this, see chapter 5.4.
-
-![ref1]
-
-
-
-
-
-
-
-
-
-**81**
-
-<a name="page87"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
 
 
 **Hit points**
@@ -6200,18 +5418,6 @@ All data for To Hit in the tables are for the physical attacks only. Magic attac
 |Hell:|normal + 120|
 
 Note that the To Hit values shown in the tables are the *base* To Hit chance a monster has. The formula for a monster hitting a player is:
-
-![ref1]
-
-
-
-
-**82**
-
-<a name="page88"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 |To Hit with melee attack:|30 + base + 2·(mlvl - clvl)||
 | :- | :- | :- |
@@ -6281,23 +5487,7 @@ Hell:	4·normal + 4000
 
 **5.2 Monster data**
 
-Each monster type is presented in its own table below. In Diablo, each monster type has four subtypes of monsters that differ in color and stats. The monsters in Hellfire do not follow this pattern, and have instead been grouped into
-
-![ref1]
-
-
-
-
-**83**
-
-<a name="page89"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
-
-two sections: monsters found in the Hive and monsters found in the Crypt. Finally, there is a table for the special
-
-monsters: Diablo, Skeleton King and The Butcher in Diablo, and Hork Demon, The Defiler and Na-Krul in Hellfire.
+Each monster type is presented in its own table below. In Diablo, each monster type has four subtypes of monsters that differ in color and stats. The monsters in Hellfire do not follow this pattern, and have instead been grouped into two sections: monsters found in the Hive and monsters found in the Crypt. Finally, there is a table for the special monsters: Diablo, Skeleton King and The Butcher in Diablo, and Hork Demon, The Defiler and Na-Krul in Hellfire.
 
 Data for unique monsters is presented in chapter 5.4.
 
@@ -7140,22 +6330,6 @@ In the table below are listed the special monsters in Hellfire. They are truly u
 
 1. Due to a bug, the base To Hit for Na-Krul will be 14% on hell difficulty.
 
-![ref1]
-
-
-
-
-
-
-
-
-
-**94**
-
-<a name="page100"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 **5.3 Monster properties**
 
@@ -7210,18 +6384,6 @@ The process of selecting monsters for a dungeon level is as follows:
 1. In multi player, if it is the same dungeon level as the Skeleton King appears on (dlvl 3), pick a random skeleton type that can appear on that dungeon level. Subtract its size. It can now appear on that dungeon level and will be the skeleton type that appears around the Skeleton King.
 
 1. If possible, pick a random monster type of the ones that has not yet been picked that can appear on the dungeon level in question, and whose size is equal or less than the size left. Subtract that monsters size; it can now appear on the level.
-
-![ref1]
-
-
-
-
-**95**
-
-<a name="page101"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 7. If there are still monsters that have a size less than the size left, go to step 6. Otherwise, end monster type selection.
 
@@ -7519,22 +6681,7 @@ This is the time it takes for the monster to walk one square. For a player, it t
 
 **Hit recovery time**
 
-This is the time it takes for a monster to go through a hit recovery (stun). To stun lock a monster, you need to hit it again before it has finished its hit recovery and either hit you (hit time) or moved away (for information about entering a new location, see chapter 6.1.9). For the monster to actually go into a hit recovery, you have to hit it and do damage equal or exceeding mlvl+3 (monsters of The Hiddens go into hit recovery regardless of the damage as
-
-![ref1]
-
-
-
-
-
-**100**
-
-<a name="page106"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
-
-long as they have no resistance to the attack type). Thanks to concre+e for initial information about monsters and hit recoveries.
+This is the time it takes for a monster to go through a hit recovery (stun). To stun lock a monster, you need to hit it again before it has finished its hit recovery and either hit you (hit time) or moved away (for information about entering a new location, see chapter 6.1.9). For the monster to actually go into a hit recovery, you have to hit it and do damage equal or exceeding mlvl+3 (monsters of The Hiddens go into hit recovery regardless of the damage as long as they have no resistance to the attack type). Thanks to concre+e for initial information about monsters and hit recoveries.
 
 
 **Attack time**
@@ -7663,21 +6810,7 @@ This is the monster the unique monster is based on. Unless otherwise changed, it
 
 **Attack type**
 
-This will list the attack type of the unique monster (and its followers). It will be in italic if it differ from the normal attack type for that monster For information about attack types, see chapter 5.3.3. Most unique monsters that appear
-
-![ref1]
-
-
-
-
-**102**
-
-<a name="page108"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
-
-in quests have their own special attack type. It is normally related to the attack type the monster normally has but may have some differences. They are noted as *special* in the tables below.
+This will list the attack type of the unique monster (and its followers). It will be in italic if it differ from the normal attack type for that monster For information about attack types, see chapter 5.3.3. Most unique monsters that appear in quests have their own special attack type. It is normally related to the attack type the monster normally has but may have some differences. They are noted as *special* in the tables below.
 
 
 **Attack type and Intelligence factor**
@@ -7726,18 +6859,6 @@ Unlike normal monsters, unique monsters have the same resistances and immunities
 **Experience points**
 
 Experience points given for killing a unique monster follows that of normal monsters (see chapter 5.1). The base experience for a unique monster is twice that of a normal monster. However, there seems to be a bug with experience points for unique monsters. The calculations for nightmare and hell difficulty increase and seem to be applied twice. This will in most cases mean the experience points will overflow and wrap around (maximum base experience points is 65535). For that reason, I have not given any base experience points for unique monsters.
-
-![ref1]
-
-
-
-
-
-**103**
-
-<a name="page109"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
 
 
 **Armor Class and To Hit**
@@ -8237,20 +7358,6 @@ At any time, the game, for each monster, thus has complete knowledge of what tar
 
 Within the scripts, some common tasks are very often performed either at the start or at the end. One of them is calculate the distance to its target. The game will also check the direction in which the target is located. This is usually used to determine in what direction the monster will walk. This chapter will *not* deal with path algorithms used, or explain how a monster walk. Many monsters will walk towards the target in the closest possible way, others will (at times depending on the distance to the target) instead walk around the target and so on. This chapter will generally just tell that the monster will chose to *walk* as its next action. Usually at the end of the script, if the monster is still in *stand* mode, it will turn around towards it target if necessary.
 
-![ref1]
-
-
-
-
-
-
-
-**110**
-
-<a name="page116"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 **5.5.2 Activating monsters**
 
@@ -8279,21 +7386,6 @@ walks in a circular path around the target, often without either increasing nor 
 **5.5.4 About charging**
 
 If a monster has the possibility to charge and it has been decided that it should charge, the game will check if there is really a path along which to charge that is not blocked by for example lava or a fence. If that is the case, the script will generally continue finding another action to perform as if it was decided to not charge.
-
-![ref1]
-
-
-
-
-
-
-
-
-**111**
-
-<a name="page117"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
 
 
 **5.5.5 About ranged attack**
@@ -8327,18 +7419,6 @@ A further problem is the fact that the game reseeds the random number generator 
 **5.5.8 Reseed bug**
 
 In an attempt to keep monsters more in synch between computers in a multi player game, Blizzard has unfortunately used a rather strange and incorrect way of reseeding the random number generator in Diablo right before processing monsters (technically each monster has its own seed used for its behavior and it is the seeds of the monsters that are reseeded). This may cause the familiar result of a monster getting ”stuck” with a particular behavior or result both when acting and when attacking. This is unfortunate.
-
-![ref1]
-
-
-
-
-
-**112**
-
-<a name="page118"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
 
 
 **5.5.9 AI scripts**
@@ -8396,21 +7476,7 @@ When a monster is killed, any Fallen Ones within 5 squares will be set into *ret
 |Devil Kin|3|
 |Dark One|2|
 
-Occasionally a Fallen One will do a war cry. It is recognized by the monster jumping up and screaming. When that happens any Fallen One within range (see table below), unless using another attack type, will be set into war cry
-
-![ref1]
-
-
-
-
-**113**
-
-<a name="page119"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
-
-mode. The war cry mode last for a specific time depending on the subtype doing the actual war cry, see table below. During the war cry mode, they will walk straight for the closest target and attack. If adjacent it will continue to attack without pausing until the time runs out for the war cry mode. Unfortunately the war cry mode also ends as soon as any close by monster is killed and the fallen one is set into retreat mode.
+Occasionally a Fallen One will do a war cry. It is recognized by the monster jumping up and screaming. When that happens any Fallen One within range (see table below), unless using another attack type, will be set into war cry mode. The war cry mode last for a specific time depending on the subtype doing the actual war cry, see table below. During the war cry mode, they will walk straight for the closest target and attack. If adjacent it will continue to attack without pausing until the time runs out for the war cry mode. Unfortunately the war cry mode also ends as soon as any close by monster is killed and the fallen one is set into retreat mode.
 
 |**Fallen Ones**|**Distance**|**Time (sec)**|
 | :- | -: | -: |
@@ -8476,18 +7542,6 @@ General
 
 1. if not active, exit
 1. R = Rnd[100]
-
-![ref1]
-
-
-
-
-**114**
-
-<a name="page120"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 Distance = 1 to 3
 
@@ -8559,17 +7613,6 @@ Distance > 3
 1. if last action was walking and standtime is 0 and R < Intf + 63, walk towards target, exit
 1. if standtime is greater than 1 second and R < Intf + 13, walk towards target
 
-![ref1]
-
-
-
-
-**115**
-
-<a name="page121"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 **Hidden**
 
@@ -8640,19 +7683,6 @@ Distance > 3, in light
 1. if target is in another area, use out of light AI
 1. if D > 3 and Rnd[4] = 0, start circle walk, exit
 
-![ref1]
-
-
-
-
-
-**116**
-
-<a name="page122"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
-
 3. if last action was walking and standtime is 0 and R < 2·Intf + 78, walk towards last seen position of target, exit
 
 3. if standtime is greater than 1 second and R < 2·Intf + 28, walk towards last seen position of target
@@ -8719,20 +7749,6 @@ Distance > 1, in light
 1. if last action was walking and standtime is 0 and R < 2·Intf + 78, walk towards last seen position of target, exit
 
 1. if standtime is greater than 1 second and R < 2·Intf + 28, walk towards last seen position of target
-
-![ref1]
-
-
-
-
-
-
-
-**117**
-
-<a name="page123"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
 
 
 **Goat Archer**
@@ -8807,18 +7823,6 @@ Distance = 2, in light
 
 1. do delay for (Rnd[10] + 5)/20 seconds
 
-![ref1]
-
-
-
-
-**118**
-
-<a name="page124"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
-
 Distance > 2, in light
 
 1. if target is in another area, use out of light AI
@@ -8880,20 +7884,6 @@ Circle Walk
 1. If R < 100·(5·Intf + 5)/2, do ranged attack, exit (after this ranged attack, the monster will resume circle walk)
 
 1. continue with circle walk
-
-![ref1]
-
-
-
-
-
-
-**119**
-
-<a name="page125"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 General
 
@@ -8964,19 +7954,6 @@ Distance = 1
 1. if Rnd[2] = 0, do spell attack, exit
 1. do melee attack
 
-![ref1]
-
-
-
-
-
-**120**
-
-<a name="page126"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
-
 Distance > 1, out of light
 
 1. if R < 10·Intf + 50, walk towards last seen position of target, exit
@@ -9045,19 +8022,6 @@ Distance > 2, in light
 **Horned Demon**
 
 When finishing a circle walk, a monster using the Horned Demon attack type will start acting normally but will not pick circle walk as its next action.
-
-![ref1]
-
-
-
-
-
-**121**
-
-<a name="page127"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 General
 
@@ -9745,33 +8709,6 @@ In the table below is listed in summary what type of monster, animal, undead or 
 
 1. With the exception of Hell Spawns in Hellfire which are animals.
 
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**131**
-
-<a name="page137"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 **6. Battle**
 
@@ -9810,20 +8747,6 @@ Most combat situations can be divided into a few specific main steps:
 A. Pre-hit	This checks for things like if the target in question is really possible as a target. A
 
 player is, for example, mostly immune to attacks from himself, and monsters are similarly also immune to attacks from other monsters. It also includes checks if a target is available at all. For example, a bow may lose durability even if there is no target present, but for a melee weapon to lose durability it actually needs to hit something. This step will generally *not* be discussed here as it is quite uninteresting as a player of the game, but some things actually done in this step have instead been included in other steps.
-
-![ref1]
-
-
-
-
-
-
-**132**
-
-<a name="page138"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 B. To Hit	Here the game checks for the probability of hitting to see if a hit is really
 
@@ -9874,17 +8797,6 @@ So, lets see in more detail how the Mana Shield works.
 
 As can be seen from the above, if the player was set to dying mode during the normal attacks, it will be put into standing mode by the Mana Shield, and thus avoid, for example, hit recovery, which would in some cases had been the more correct mode. It also prevents knock backs as it is not checked in the normal attack routines if the player died. Finally, it avoids any further attacks done in the last turn while the player was dead. An example of this would be if 3 monsters hit you all at the same time; the first one kills you, and the other two monsters’ attacks are then not done as you are already dead. Later in the turn when the magical effects are processed, the Mana Shield restores your life, reduces the damage from mana instead, and puts you back into life. You have then effectively avoided the attack from the last two monsters. This does not happen too often, as the attacks of the monsters need to be done at the *exact* same time.
 
-![ref1]
-
-
-
-**133**
-
-<a name="page139"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
-
 In Hellfire, there are some additional bugs related to the Mana Shield (those bugs were fixed in Diablo, version 1.07). When you run out of mana, and the Mana Shield is terminated, you will take excessive damage (up to twice the damage of the latest attack). It is also possible to cast more than one Mana Shield and although this will not affect the efficiency of the Mana Shield, you will take excessive damage from *each* Mana Shield when you run out of mana and all the Mana Shields are terminated.
 
 
@@ -9925,22 +8837,6 @@ The table below summarizes the end result when you have two items of life or man
 **6.1.5 Fire and Lightning damage on melee weapons**
 
 When you do an attack that does additional fire or lightning damage, this will be handled by the game separately. Upon hit (even if the actual attack misses), the game will spawn an additional magical effect of the appropriate type, which will then be handled normally during the magical effect update. When hitting, the effect will use normal magical To Hit, and all resistance and other effects that normally work against magic apply normally. It will then deal the amount of fire or lighting damage your character currently does. The magical effect will only hit once but it will try to hit up to 7 times (9 if fire) before it ends.
-
-![ref1]
-
-
-
-
-
-
-
-
-
-**134**
-
-<a name="page140"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
 
 
 **6.1.6 Fire and Lightning damage on bows**
@@ -9985,17 +8881,6 @@ Before we go into detail about the actual attacks, it might be good to learn som
 
 Easiest to understand are the missile spells, the ones like Fireball, Charged Bolt, or Holy Bolt. They are basically an effect that moves around in the dungeon at a certain speed and often in a straight line. As soon as it enters a location it checks if it contains a potential target (monsters are immune to other monsters and players are often immune to their own spells and so on). If there is a potential target, it will try to attack, and it is this attack this chapter on Battle will explain in more detail. It will also check if it has hit a wall or some other dungeon feature and, if so, terminate.
 
-![ref1]
-
-
-
-**135**
-
-<a name="page141"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
-
 Some spells like Elemental and Flame Wave (which are in fact several flames, each an effect, moving side by side) will not terminate if they hit a target like a Fireball does. They will, regardless of if they hit or not, continue to move, and can thus hit multiple targets. Some spells consist of multiple missiles, such as Nova and Charged bolt. A Fire Wall is a typical example of a spell that can hit a target repeatedly.
 
 Sometimes a spell can actually consist of several effects. The Lightning spell is such an example. The main spell is totally invisible and starts at the position of the source and travels away at a certain speed (see chapter 4.1.2). Each time it enters a new location it will spawn a new effect, a non moving lighting bolt with a certain duration that will sit in the location and try to hit anything in the location until its duration is over at which time it is removed. As the individual bolts are spawned with a certain delay the further away they are from the original source, they will also disappear with the same delay. The total effect is a seemingly moving stream of lighting bolts when in fact it is stationary bolts, where the duration of the individual bolts determines what looks like the length of the lighting stream. The speed of the stream is actually the speed of the initial invisible moving spell effect that spawns the bolts. Many other spells work in a similar way.
@@ -10034,19 +8919,6 @@ As already explained, an attack will typically always hit a specific location (w
 
 1. Distance to a golem is measured to the Leaving location.
 
-![ref1]
-
-
-
-
-
-**136**
-
-<a name="page142"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
-
 Monsters attacking players in melee does not specifically check for the location of the attack. Instead, upon attack it will check for the distance from the monster to the player. The locations used to calculate the distance is for the monster the location it is occupying and for the player it depends on the direction it is walking. When walking W, NW, N, NE or E, it is always the location the player is leaving and while walking SW, S or SE it is always the location the player is entering.
 
 This has some important consequences that it is good to know about. When walking away from a monster it will thus always miss the check for the To Hit is done after you have started walking downwards on the screen and it will always have a normal chance of hitting you until you have completely reach your new location while walking upwards or sideways from the monster. Further more, if the walk is aborted by an attack, the player will be put in the location as indicated in the table above which means if you walk downwards, you will in such cases always be ”pushed” downwards (regardless of the direction of the attacker) but when walking in other directions, you will be ”pushed” back into the location you were leaving. Further more, when deciding upon what action to perform, see chapter 5.5 the distance is similarly always calculated in the same way. This result in the situation that when you are walking towards a monster it will only initiate a melee attack while you are walking, if you are walking SW, S or SE. If you walk in any other direction towards the monster it will consider you non adjacent up until you have reached the location adjacent to the monster.
@@ -10065,20 +8937,6 @@ Some missile types prevents trying to hit the same location more than once (shou
 To calculate the distance a missile of a specific speed travels, only examples of movement straight along the locations in the dungeon will be considered. It should be easy to apply to movement in any direction with true trigonometry. A missile with a speed value of 64, will travel exactly diagonally through one location each frame. This corresponds to traveling 1.4 locations in a straight line along the locations side. Alternatively you may say that a speed of 45.3 travels a location in one frame straight along the side of a location. The distance traveled per second can thus easily be calculated as:
 
 Locations a missile travel per second:	25·speed/45.3
-
-![ref1]
-
-
-
-
-
-
-**137**
-
-<a name="page143"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 As the distance penalty of an arrow is increased by 1 each frame, the total distance penalty per location (see chapter 2.1.4 and 5.1 for more information) can be calculated as:
 
@@ -10135,18 +8993,6 @@ FTH = 50 + Dex/2 + ToHititems + clvl + bonusplayer - Acmonster *- penaltyquarter
 
 1. calculate Rnd[maxbase weapon damage - minbase weapon damage + 1] + minbase weapon damage (this is basically a random value within the weapons base damage range)
 1. add +% damage
-
-![ref1]
-
-
-
-
-**138**
-
-<a name="page144"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 3. add +damage
 
@@ -10214,17 +9060,6 @@ Step 9 above is actually done as:
 1. calculate Dextarget/5 + Acitems,target + bonustarget
 1. subtract the value in step 2 from the value in step 1
 
-![ref1]
-
-
-
-**139**
-
-<a name="page145"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
-
 4. if the value calculated is below 5, set it to 5
 
 4. if the value calculated is above 95, set it to 95
@@ -10286,19 +9121,6 @@ Steps 5-6 above will further modify the damage by factors that will not be shown
 1. *in Hellfire*, if the attacker hit (regardless of blocking) and has an item equipped with the decay effect, subtract 5 from its To Hit bonus, if it reaches -100%, destroy the item
 
 1. if the attacker hit (regardless of blocking), check for weapon durability loss
-
-![ref1]
-
-
-
-
-
-**140**
-
-<a name="page146"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 4. if the attacker hit and the target did not block, check if life went down to 0 or below, if so put target player into death mode and skip further steps
 
@@ -10362,19 +9184,6 @@ FB = Dex + 2·(clvl - mlvl) + bonusplayer
 - In the cases according to step 1-2 above when a block is not checked, the game actually DOES a random check, but the value checked against is 100 and thus will never result in a block.
 - It is possible to achieve 100% blocking.
 
-![ref1]
-
-
-
-
-
-
-**141**
-
-<a name="page147"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 **Damage**
 
@@ -10435,17 +9244,6 @@ For the probabilities of durability losses, see chapter 3.7.1.
 **6.3 Non melee attacks**
 
 Here we will deal with all other attacks, which include spells, arrows and traps (which are either spells or arrows). As there are so many more possibilities and special cases, some sections have been divided up to handle specific cases.
-
-![ref1]
-
-
-
-
-**142**
-
-<a name="page148"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
 
 
 **6.3.1 Player versus Monster**
@@ -10510,18 +9308,6 @@ Note that in Hellfire, Diablo and Bone Demons have resistance to Holy Bolt.
 1. if the target was a Hidden type of monster and it was not resistant to the spell, put monster into hit recovery as well as in retreat mode (see chapter 5.5.9 under Hidden).
 
 1. if the monster had no specific target before, set the player as the target, this basically activates a monster that gets hit regardless of distance
-
-![ref1]
-
-
-
-
-**143**
-
-<a name="page149"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 7. if the monster died, check for any item dropping (see chapter 3.8) and add any experience to the players that are eligible for it (see chapter 2.6)
 
@@ -10588,17 +9374,6 @@ FB = Dextarget + 2·(clvltarget - clvlattacker) + bonustarget
 
 - Although a player will block monsters even with resistance in Hellfire, they will never block an attack from another player when having resistance.
 
-![ref1]
-
-
-
-
-**144**
-
-<a name="page150"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 **Damage**
 
@@ -10662,18 +9437,6 @@ FTHmonster spell = 40 + 2·mlvl - 2·clvl
 
 FTHtrap spell = 40
 
-![ref1]
-
-
-
-
-**145**
-
-<a name="page151"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
-
 FTHplayer spell = 40
 
 - ToHitbase,monster is the value found in the tables for each monster in chapter 5.2 and 5.4.
@@ -10735,21 +9498,6 @@ FB = Dex + 2·(clvl - mlvl) + bonusplayer
 
 1. if the target blocked, put target player into block mode and check for durability loss on shield
 
-![ref1]
-
-
-
-
-
-
-
-
-**146**
-
-<a name="page152"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 **6.3.4 Monster/Trap versus Monster**
 
@@ -10790,41 +9538,6 @@ FTHspell = 90 - Actarget
 1. if the monster died, check for any item dropping (see chapter 3.8) and add any experience to the players that are eligible for it (see chapter 2.6)
 
 1. if the monster died and it was Diablo, terminate game and show ending movie
-
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**147**
-
-<a name="page153"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
 
 
 **7. Shrines**
@@ -11012,40 +9725,6 @@ There exist a bug that will cause any shrine with a random effect to at times no
 
 Due to the way the game work, it may also have some slight impact on random events that are not pre determined by the game (example of pre determined effects are item drops and result of shrines) occurring after the shrine is used. Cauldrons and Goat shrines are *not* affected by this bug.
 
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**150**
-
-<a name="page156"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 **8. Quests**
 
@@ -11158,21 +9837,7 @@ If you have this quest, you will find a rock on a pedestal somewhere on level 5.
 
 **8.2.7 Valor**
 
-If you have this quest, you will find a special set of rooms on level 5 with the shape of a cross. If you enter the double doors, you will find the first blood stone. Put it on the book with the pedestal in the same room. That will
-
-![ref1]
-
-
-
-
-**152**
-
-<a name="page158"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
-
-open up another door in the room shaped like a cross (go outside to find it). Inside the newly opened room you find yet another blood stone. Bring it back to the book too and a third room will be opened up. In it you find the third blood stone, which, if placed on the book, will open up the final part of the ”cross”. In it you will find Arkaine’s Valor.
+If you have this quest, you will find a special set of rooms on level 5 with the shape of a cross. If you enter the double doors, you will find the first blood stone. Put it on the book with the pedestal in the same room. That will open up another door in the room shaped like a cross (go outside to find it). Inside the newly opened room you find yet another blood stone. Bring it back to the book too and a third room will be opened up. In it you find the third blood stone, which, if placed on the book, will open up the final part of the ”cross”. In it you will find Arkaine’s Valor.
 
 
 **8.2.8 The Chamber of Bone**
@@ -11259,22 +9924,6 @@ Level 16 is made up of four areas. The first one, at the top, has a lever in the
 
 When Diablo dies, anyone currently on dlvl 16 will be awarded dots for the difficulty level in question. See chapter 9.4 for more information about dots.
 
-![ref1]
-
-
-
-
-
-
-
-
-
-**154**
-
-<a name="page160"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 **8.3 Quests in Hellfire**
 
@@ -11319,21 +9968,6 @@ You will find the Cornerstone of the World (the CoW) in a small room on level 1 
 
 On each of the first 3 levels of the Crypt you will find one Torn Note. When you have found all three, they will combine to the Reconstructed Note, which tells you about how to open the room to Na-Krul. This quest will never show up in the quest log.
 
-![ref1]
-
-
-
-
-
-
-
-
-**155**
-
-<a name="page161"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 **8.3.8 Na-Krul**
 
@@ -11355,62 +9989,6 @@ When killed, Na-Krul will always drop four items according to the table below.
 
 1. It is worth noticing that the game actually checks the *picture* of the created item (except for the book). This does, of course, mean that any unique of the appropriate type that has a unique picture cannot be chosen. It also means that any unique item of another base item (but still within the appropriate group; that is, sword, staff, and bow) can be chosen if it has the picture of the base item that is supposed to be dropped.
 1. The base item is of course a *book of* but the game will attach the spell Apocalypse to it.
-
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**156**
-
-<a name="page162"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
 
 
 **9. Battle.net**
@@ -11529,19 +10107,6 @@ join screen. Aliases for this command: */join*.
 
 whispered to you from being displayed on your screen. This is excellent if you are in a game and do not want to be disturbed. Typing /dnd with no <reason>
 
-![ref1]
-
-
-
-
-
-**158**
-
-<a name="page164"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
-
 ||will toggle it on/off depending on its previous status. So to turn it off, make||
 | :- | :- | :- |
 ||sure it is already on, and type only /dnd.||
@@ -11591,20 +10156,7 @@ user, including the user’s current location (channel or game, but will not lis
 
 **Operator commands**
 
-Operator commands only apply to private channels. The first person to create a private channel becomes the operator of that channel (except in special clan channels where the person using the clan account name automatically gains operator status upon entry, see chapter 9.1 for more information). You can tell who is the operator of a channel by looking for the user with the gavel. When you list all persons in a channel with the /who command, the operator
-
-![ref1]
-
-
-
-**159**
-
-<a name="page165"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
-
-will have [ ] around his/her name. It is possible to use [ ] in ones name. When the channel operator leaves, he can pass on the gavel to an heir that he designates. If he or she does not designate an heir, the person below him on the list will be the new operator.
+Operator commands only apply to private channels. The first person to create a private channel becomes the operator of that channel (except in special clan channels where the person using the clan account name automatically gains operator status upon entry, see chapter 9.1 for more information). You can tell who is the operator of a channel by looking for the user with the gavel. When you list all persons in a channel with the /who command, the operator will have [ ] around his/her name. It is possible to use [ ] in ones name. When the channel operator leaves, he can pass on the gavel to an heir that he designates. If he or she does not designate an heir, the person below him on the list will be the new operator.
 
 /ban <username> <message>	*Examples: /ban Jarulf because I don’t like him or /ban #995959.* Kicks a user out of
 
@@ -11655,17 +10207,6 @@ it in. You will not see the link underscored and in blue on your own profile but
 The 1.05 patch introduced the possibility of issuing some commands from within a game to other persons not in the game. It is also possible to use those commands on a user in a game. The commands work the same way as in a chat channel, and are typed where you type messages for persons in the game. All commands available in chat with the exception of /channel, /me, and the operator commands are available. All aliases work as well.
 
 Also note that you can use the mute buttons beside a persons name if you do not want that person to hear what you say while in a game. By default all other players in a game will hear what you say, and this is true for any version of Diablo or Hellfire. No one will hear your whispers, of course. For more game information, press F1 while in a game.
-
-![ref1]
-
-
-
-
-**160**
-
-<a name="page166"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
 
 
 **9.4 Character icons**
@@ -11735,22 +10276,7 @@ command on.
 
 No icon at all	Most likely someone that has hacked his character to have a clvl outside the 1-99
 
-range. Of course, unless you cheat, your clvl can never be higher than 50. In the shareware version, the theoretical maximum clvl, based on what monsters can be found on the first two dlvl of the church, is 16. The clvl is no longer shown
-
-![ref1]
-
-
-
-
-
-**161**
-
-<a name="page167"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
-
-for people connecting with the shareware version (unless one also uses shareware, of course; in that case the icon will, in addition, always be grey).
+range. Of course, unless you cheat, your clvl can never be higher than 50. In the shareware version, the theoretical maximum clvl, based on what monsters can be found on the first two dlvl of the church, is 16. The clvl is no longer shown for people connecting with the shareware version (unless one also uses shareware, of course; in that case the icon will, in addition, always be grey).
 
 The list above is only complete if you are using Diablo. Just as Diablo has specific icons for various characters, all other games have similar game specific icons. Such game specific icons are not shown to users of other games and thus are not explained above as this Guide only covers Diablo.
 
@@ -11798,20 +10324,6 @@ A plug	The player can not play, only chat. The reason for this can be varied: *v
 connection, connection through a chat client, being behind a fire wall, or using a proxy server that is not set up correctly. If you ever get a plug suddenly although you have been able to play before, try rebooting your computer that normally helps.
 
 Note that the game no longer measures the lag between you and the other players, only between each player and the Battle.net server. Thus, even if someone has bad lag to the server, he or she can have good lag to you. Of course, the reverse is also true. When pressing JOIN, the lag you see beside a game should be between you and the person that created the, game just as in 1.04 (not between the person that created the game and the Battle.net server he/she is using). There seem to be some problems though, so that the lags you see for games are often shown to be way higher than they actually are.
-
-![ref1]
-
-
-
-
-
-
-
-**162**
-
-<a name="page168"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
 
 
 **9.6 Text**
@@ -11883,76 +10395,6 @@ When you press the JOIN button, you are presented with a list of games created b
 
 Nothing prevents you from joining any game that you know the name of (and the password if it is private), as long as you fulfill the difficulty requirements (see chapter 0). They will just not show up on the list.
 
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**164**
-
-<a name="page170"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
-
 
 **10. Other useful information**
 
@@ -11994,20 +10436,6 @@ There is no way to transfer a save file (and thus a character) to/from single an
 To transfer a multi player character from one computer to another in Hellfire (and in Diablo on the PC previous to the 1.08 patch) is a bit tricky. The reason for this is that the game has included the computer name into the save file (you can find the computer name under network in the control panel). Thus, for a save file to be playable on another machine, the computer name has to be the same as on the computer you take the character from. Otherwise, Hellfire will not recognize the save. If the computer name of the two computers is the same, one can simply copy the multi player save file from one of the computers to the other. Don’t forget to put it in the Windows folder of the new computer if it is a PC. Single player files seems to be transferable between computers, even between a PC and a Mac) without problems in any version.
 
 If the number of the save file (the # in the name above) is already in use on the new computer it should be safe to change it to a non used number in the 0..9 range. It is very important to make sure you don’t get two characters with the exact same name this way as Diablo/Hellfire does not manage to handle such a situation well.
-
-![ref1]
-
-
-
-
-
-
-
-**165**
-
-<a name="page171"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**	**Created by Pedro Faria**
-
-![ref1]
 
 
 **10.4 Backing up your character**
