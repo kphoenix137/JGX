@@ -1,27 +1,11 @@
-﻿**Jarulf’s Guide**
-
-**to**
-
-**Diablo and Hellfire**
-
-**version 1.62**
-
-**by**
-
-**Pedro Faria / Jarulf**
-
+﻿# Jarulf’s Guide X
 
 # Table of Contents
 
-## [1. INTRODUCTION](#1-introduction)
-- [1.1 Patches for Diablo and Hellfire](#11-patches-for-diablo-and-hellfire)
-- [1.2 Hidden quests and characters in Hellfire](#12-hidden-quests-and-characters-in-hellfire)
-- [1.3 General remarks](#13-general-remarks)
-- [1.4 Abbreviations](#14-abbreviations)
-- [1.5 Acknowledgment](#15-acknowledgment)
-- [1.6 New in this version](#16-new-in-this-version)
+## [1. Introduction](#1-introduction)
+- [1.1 Abbreviations](#11-abbreviations)
 
-## [2. CHARACTERS](#2-characters)
+## [2. Characters](#2-characters)
 - [2.1 Character stats](#21-character-stats)
   - [2.1.1 Starting stats](#211-starting-stats)
   - [2.1.2 Maximum stats](#212-maximum-stats)
@@ -39,7 +23,7 @@
   - [2.7.1 Single player difficulty levels](#271-single-player-difficulty-levels)
 - [2.8 Character names](#28-character-names)
 
-## [3. ITEMS](#3-items)
+## [3. Items](#3-items)
 - [3.1 Armor, weapons and jewelry](#31-armor-weapons-and-jewelry)
 - [3.2 Other base items](#32-other-base-items)
   - [3.2.1 Runes and oils](#321-runes-and-oils)
@@ -67,12 +51,12 @@
   - [3.9.3 Pepin](#393-pepin)
   - [3.9.4 Wirt](#394-wirt)
 
-## [4. MAGIC](#4-magic)
+## [4. Magic](#4-magic)
 - [4.1 Spells available to players](#41-spells-available-to-players)
 - [4.2 Spell casting monsters](#42-spell-casting-monsters)
 - [4.3 Traps](#43-traps)
 
-## [5. MONSTERS](#5-monsters)
+## [5. Monsters](#5-monsters)
 - [5.1 How to calculate monster data](#51-how-to-calculate-monster-data)
 - [5.2 Monster data](#52-monster-data)
 - [5.3 Monster properties](#53-monster-properties)
@@ -80,19 +64,19 @@
 - [5.5 Monster AI](#55-monster-ai)
 - [5.6 Summary of various monster stats](#56-summary-of-various-monster-stats)
 
-## [6. BATTLE](#6-battle)
+## [6. Battle](#6-battle)
 - [6.1 General information](#61-general-information)
 - [6.2 Melee attacks](#62-melee-attacks)
 - [6.3 Non melee attacks](#63-non-melee-attacks)
 
-## [7. SHRINES](#7-shrines)
+## [7. Shrines](#7-shrines)
 
-## [8. QUESTS](#8-quests)
+## [8. Quests](#8-quests)
 - [8.1 How quests are chosen](#81-how-quests-are-chosen)
 - [8.2 Quests in Diablo](#82-quests-in-diablo)
 - [8.3 Quests in Hellfire](#83-quests-in-hellfire)
 
-## [10. OTHER USEFUL INFORMATION](#10-other-useful-information)
+## [10. Other Useful Information](#10-other-useful-information)
 - [10.1 Hot keyed messages while playing](#101-hot-keyed-messages-while-playing)
 - [10.2 Save files](#102-save-files)
 - [10.3 Transferring save files](#103-transferring-save-files)
@@ -104,38 +88,6 @@
 
 
 # 1. Introduction
-
-This guide is a compilation of all the data I have collected about Diablo and Hellfire during the many months of playing those games. It has virtually no tactics or strategy but instead contains a wealth of numerical data and formulas for many aspects of the game. As far as possible all data and information has been either collected by me or otherwise verified by me. Of course, some information is very hard to verify or check.
-
-Some things have been changed in Hellfire over Diablo and I have tried to note that. Apart from that I have tried to merge the new Hellfire data into old Diablo data, either by having separate tables or by appending the Hellfire data at the end of each table. In the latter case they are separated by a thicker line. I don’t think there will be any problem distinguishing the Hellfire data from the Diablo data. If no specific data or information is given for Hellfire, it can be assumed to be like in Diablo.
-
-With such a great number of tables and data that is presented in this guide, errors are bound to exist. I am grateful for any information about errors. If you do want to report such errors or missing information, do so by mail to pedro.faria@chemeng.lth.se. But please avoid writing me asking about other information, clarifications, and so on. All I know and have information about can already be found in this guide.
-
-Feel free to use this guide personally in any way you want. If you want to give it away to anyone or make it available for others in any way, feel free to do so as long as you don’t charge anything for it or use it commercially in any way. And, please don’t change, remove or add anything in it.
-
-Since the formatting of a Word document varies with different printers, it may take some personal formatting to fix things such as the positions of page breaks and line breaks in the tables. There is nothing I can do about it, but I have tried to make it as self-formatting as possible. Feel free to change any formatting you decide is needed for your own personal use. You may, for example, want to increase the size of the text for easier reading; the default setting is quite small to keep the size of the document down. I have used templates and other formatting tools to a large extent in the guide, so it should be easy for anyone to do the necessary changes. If this happens to be a copy in pdf or html format, the above problems will, of course, not exist.
-
-Also note that due to the size of the document and the numerous tables in it, it may, especially on slower computers, take quite a while for Word to open the document. So please have patience when you open it!
-
-
-## 1.1 Patches for Diablo and Hellfire
-
-The latest patches are 1.09 for Diablo and 1.01 for Hellfire. The Playstation version of Diablo should be almost identical to the 1.04 version except that you can’t play on Battle.net. Unless otherwise stated, all information is true for those versions only. If you want a list of fixes for those patches, look in the file *update.txt* in your Diablo folder and *patch.txt* in your Hellfire folder. As far as I know all information in this guide should be equally true for the PC, Macintosh, and Playstation versions. If not, I would very much like to hear about it. Hellfire only exists for the PC.
-
-Hellfire was mainly based on the 1.04 version of Diablo although it has had its own fixes, changes, and tweaks made to it. Unfortunately it only got patched once for various reasons. Thus, some bugs fixed in later Diablo patches never made it into the Hellfire patch. There still exists quite a lot of mostly minor bugs in Diablo and Hellfire. Most of them do not affect the game play to much though and are probably very hard to spot unless you have played for quite some time or are told about them.
-
-This guide is written for the latest versions (as given above) only. Thus if you play an older version, information in this guide may not be correct. In some cases I have referred to how it used to be in earlier versions when it may be of importance. In some cases I also refer to existing bugs if it may have an effect on the information presented in this Guide, but normally bugs are *not* covered. This Guide does in no way cover the demo or spawned version (actually the same as the demo) of the game.
-
-
-## 1.2 Hidden quests and characters in Hellfire
-
-There are some hidden Easter Eggs in Hellfire. To activate them, you must create a text file named *command.txt* in your Hellfire folder. In the text file you put the following line:
-cowquest; theoquest; bardtest; barbariantest; nestart;
-
-Note that the Barbarian is only available if you have Hellfire 1.01 or later. In version 1.00 of Hellfire, you could also add *multitest* for the option to play multi player games over modem, direct cable, or IPX. That option is disabled in version 1.01. To play multi player in version 1.01 of Hellfire, obtaining a hacked hellfrui.dll is the only solution I am aware of. Use it at your own risk and note that multi player is *not* supported by Sierra. The *nestart* command simply sets a specific palette when playing in the Hive. Otherwise, the palette is chosen randomly as normal.
-
-
-## 1.3 General remarks
 
 There are a few general things about the guide that can be good to know when you read it. Below are summarized such general remarks that are valid for the whole guide but never explicitly mentioned anywhere else.
 
@@ -157,160 +109,25 @@ There are a few general things about the guide that can be good to know when you
 
 - The dungeon basically consists of square locations where each square can typically contain only one monster, player or other object. In the guide, unfortunately, the terminology used for those squares includes terms such as location, tile and square. They should all be read and understood to be the same thing.
 
-## 1.4 Abbreviations
+## 1.1 Abbreviations
 
 Throughout this guide some common abbreviations are used. They are summarized below.
 
-|clvl|character level|Str|character strength|
-| :- | :- | :- | :- |
-|dlvl|dungeon level|Mag|character magic|
-|ilvl|item creation level, used for creating items|Dex|character dexterity|
-|mlvl|monster level|Vit|character vitality|
-|qlvl|quality level of base item, prefix, suffix and unique item|Intf|Intelligence factor|
-|slvl|spell level|||
-|Rnd[x]|random integer in the range 0 to x-1|[ ]|round down|
-
-## 1.5 Acknowledgment
-
-There are a few persons without whose help this guide would never have been what it is and I would like to take the opportunity to thank them here. Most grateful I am to Peter J. Hradilek (Da O’Toth) who has helped me with filling in some missing gaps and has also been a great help with lots of overall suggestions and ideas about this guide. I would also like to thank Bolty, who has provided some great proofreading help with some earlier versions; Warren Smith Jr. and Tolitz Rosel (The Azian Wolf) provided extensive help with the initial version by reading through and finding all those small errors that always slip through, and having good overall suggestions. Crystalion [Snakegod] has helped me by sorting out errors and has been a good help in many areas. Other contributors are Bostic, Ironbeard, Jens Baumann (Varaya), Sourceror, Nils Petersson (concre+e), Gyrefalcon, Disen Abella (LaRouge) and Martin Reich (Khan).
-
-I would also like to thank Robert Seger, Tom Sosnowski, Karsten Hess, Alex Owens, Paul Watts, t’kron, Gabriel Oak, Belgarath, Dalai Lama, Christian (Cormac), Hibiki Sakuru, moe SAINT EverGreen, Claudio Giannini (Cathrin[BWO]), Booga, Bill Quirk, Moriah, Walter Puller, Zakarun, Charlie, Jerome Waters, Marcus Malden, Alvin J. Boning Jr., Mithrandir(COD), Aaron Burnell, Wolfspirit, Stu, PKRankin, Henk Morren, Tanja[BWO], Olivier Flipo, Dr. Zed, Tommi Helminen, Don Bush, Rand’al, MMAgCh, Scrape, Gregarious\_Zinn, HowGozit, Heiko Klein, Tom O’Shea, M., Jan Willem Helderman, Vlad Rostovsky, Meshuggah, Chinh Tran, Keith Costorf, Renè Naustvik Åsen, Rhydderch Hael, Msalcoryp, Zamal, SoulEdge, CebeWee, Layil, Jason Redmond, Maurice van Mil, Jim Thompson (Ji'Dath), Waikano, Matt Brown (Eli), Queto Yurlunyur, Regna, FoxBat and a few unmentioned persons (you know who you are, thanks). The final ”thank you” goes to Desslock and his guide. It was that guide that inspired me to do my own. Without it, I would probably never have done this one. Ah, and big thanks to Blizzard and Synergistic at Sierra for making two such great games.
-
-Remember that without the help of others, this guide would never be what it is today. I would thus like to take the opportunity to say thanks to all of you that have written to me just to say that you liked the guide, or generally encouraged me. Such mail is what really makes it worth all the effort, time and hard work. Also many thanks to all people at Blizzard’s Diablo Strategy Forum, Sierra’s RPG Message Board and the alt.games.diablo news group. I could not have done it without you!
-
-
-## 1.6 New in this version
-
-As there are always more things to add and errors to correct, I must at some time decide when to release an update. I feel I have added enough new information to justify a new version. I will, however, continue to add, correct and update it, so please feel free to send me mails about it.
-
-
-**Things that have been added or changed substantially in 1.60/1.61 over previous version:**
-
-- Added a massive chapter detailing information about the monster AI scripts and other related information.
-
-- The list of people acknowledged has been updated.
-
-- Updates and corrections to chapter about experience points.
-
-- Added information about character naming.
-
-- Updated the repair and recharge costs.
-
-- Rewrote the item price calculation chapter some.
-
-- Corrected some errors and expanded information about prefix and suffix selection.
-
-- Corrections regarding item creation for staves.
-
-- Added probabilities for unique items being found.
-
-- Updated and corrected information about some spells including Chain Lightning, Mana Shield, Telekinesis, Flame Wave, Fire Wall, Lightning Wall and Ring of Fire (both in spell chapter and in battle chapter).
-- Removed all information regarding distance for spells as it does not apply.
-
-- Some added information about traps.
-
-- Corrected information about monster hit point regeneration.
-
-- Added information about second attacks for many monsters, including timing information.
-
-- Some additional information about the Skeleton King and the Skeleton King quest.
-
-- Corrected some resistances and immunities for unique and special monsters.
-
-- Added information about what and how monsters and players are targetable, especially in reference to walking.
-- Updated the command section for Battle.net.
-
-- Added information about channels on Battle.net.
-
-- Small corrections and additions all over the guide.
-
-**Things that have been added or changed in 1.61:**
-
-This list contain *all* changes between 1.60 and 1.61. Some changes, this page for example, may change the page breaks of the Guide and thus push/pull pages forward or backwards but mostly one should be able to just print the selected pages where changes were made.
-
-- Updated the front page.
-
-- Updated the Index.
-
-- Changed chapter 1.1 to acknowledge the latest patch for Diablo, v1.08.
-
-- Added some information to chapter 1.1.
-
-- Added one more general remark to chapter 1.3.
-
-- Added to and corrected the list of acknowledged people in chapter 1.5.
-
-- Added information about what is new in this update to chapter 1.6.
-
-- Added link about target location under *Hit recovery* in chapter 2.2.1.
-
-- Added footnote about Armor Class to table about +% Armor Class in chapter 3.4 and 3.13.5.
-
-- Added small clarification in chapter 3.5.
-
-- Corrected information about tables in chapter 3.11.
-
-- Added note to Bone Spirit in chapter 4.1.3.
-
-- Corrected and clarified the tables of tables in chapter 4.1.5.
-
-- Changed text about unknown information (as it is actually know and explained in the guide) in chapter 5.3.4 under *Hit recovery time*.
-
-- Removed erroneous information about Arch-Bishop Lazarus regarding Hit Recovery in chapter 5.3.4 under *Hit recovery time* and in footnote under table in chapter 5.4 and 5.6.2 .
-- Corrected the data for Deathshade Fleshmaul in chapter 5.4
-
-- Small addition about Hidden attack type in chapter 5.5.2.
-
-- Added small paragraph, about a change in walking in the latest patch, at the end of chapter 6.1.9.
-
-- Added the missing parts of chapter 6.1.10.
-
-- Corrected the footnote in chapter 8.3.8.
-
-- Added information about command completion with the Tab key in chapter 9.2.
-
-- Changed information about save files on PC computers in chapter 10.2 due to changes in 1.08 patch.
-
-- Added reference to save files in chapter 10.4.
-
-- Updated chapter 10.7.
-
-- Some smaller layout changes at various places (does not in any way affect the content).
-
-**Things that have been added or changed in 1.62:**
-
-This list contain *all* changes between 1.61 and 1.62. Some changes, this page for example, may change the page breaks of the Guide and thus push/pull pages forward or backwards but mostly one should be able to just print the selected pages where changes were made.
-
-- Updated the front page.
-
-- Updated the Index.
-
-- Added text about opening the document in Word in chapter 1.
-
-- Changed chapter 1.1 to acknowledge the latest patch for Diablo, v1.09.
-
-- Added to the list of acknowledged people in chapter 1.5.
-
-- Clarified melee character damage and special ”weapon” damage for the Monk in chapter 2.2.2.
-
-- Corrected the weapon speed for the Monk with just a shield in chapter 2.2.3.
-
-- Small addition to the Resurrect spell in chapter 4.1.3.
-
-- Corrected table in chapter 6.1.4.
-
-- Removed text about a change only present in version 1.08 of the game in chapter 6.1.9.
-
-- Added some text in chapter 9.
-
-- Updated the channel list in chapter 9.1.
-
-- Added some information about avoiding the end game movie in chapter 10.6.
-
-- Small adjustments for the 1.09 patch in chapter 10.2.
-
-- Updated chapter 10.7.
-
+| Abbreviation | Meaning |
+|-------------|--------------------------------------------------|
+| clvl        | character level |
+| dlvl        | dungeon level |
+| ilvl        | item creation level, used for creating items |
+| mlvl        | monster level |
+| qlvl        | quality level of base item, prefix, suffix, and unique item |
+| Intf        | Intelligence factor |
+| slvl        | spell level |
+| Rnd[x]      | random integer in the range 0 to x-1 |
+| Str         | character strength |
+| Mag         | character magic |
+| Dex         | character dexterity |
+| Vit         | character vitality |
+| [ ]         | round down |
 
 # 2. Characters
 
@@ -553,15 +370,9 @@ Barbarian:	damage >= 1.25·clvl
 It is worth noticing that the check for hit recovery is made prior to any damage reduction due to using a Mana Shield. There are also some bugs regarding hit recovery while using Mana Shield. So while using a Mana Shield, in addition to the requirements above, damage must also be below your current life for you to be put into hit recovery:
 
 
-Any character, except the Barbarian, using Mana Shield:
+Any character, except the Barbarian, using Mana Shield: current life > damage >= clvl
 
-Barbarian using Mana Shield:
-
-
-
-current life > damage >= clvl current life > damage >= 1.25·clvl
-
-
+Barbarian using Mana Shield: current life > damage >= 1.25·clvl
 
 The table below list the time, in seconds, it takes to block and to do a hit recovery for each character class. It also lists the effects of some specific suffixes that influence blocking or hit recovery. For more information on the suffixes, see chapter 3.2.2.
 
@@ -734,14 +545,6 @@ The speed with which the arrows travel also varies with character class. Below i
 ## 2.3 Timing information
 
 This chapter summarizes all timing information for players. For blocking and hit recovery, this information can also be found in chapter 2.2, and for weapon speed, it can also be found in chapter 2.2.3. For monsters all timing information can be found in chapter 5.3. The table below summarizes all timing information for the different character classes.
-
-![ref1]
-
-
-
-
-
-**11**
 
 |<a name="page17"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**||**Created by Pedro Faria**|||||
 | :- | :- | :- | :- | :- | :- | :- |
@@ -917,15 +720,6 @@ Listed below are the required experience points for each level. You will also fi
 
 1	This cap only applies to multi player. In single player, there is no such cap.
 
-![ref1]
-
-
-
-
-
-
-**14**
-
 |<a name="page20"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||**Created by Pedro Faria**||||||
 | -: | :- | :- | :- | :- | :- | :- | :- | :- |
 ||||||||||
@@ -1033,11 +827,7 @@ Books and oils also work in a similar way, as they consist of the base item *boo
 
 In the tables below are listed all the base items you can equip in the game. They can be found in the dungeons or bought from Griswold, Adria and Wirt. Jewelry can only be bought in single player, never in multi player. Listed are also all those base items upon which the quest items are based. Those special quest base items cannot be found otherwise in the game.
 
-![ref2]![ref3]![ref3]
-
 <b>Armor<sup>1</sup></b>
-
-![ref4]
 
 ||**Type**|**Armor Class**|**Durability**|**Requirements**|**Price**|**qlvl**||||
 | :- | :- | -: | -: | :- | -: | -: | :- | :- | :- |
@@ -1062,11 +852,7 @@ In the tables below are listed all the base items you can equip in the game. The
 
 1. These items have the same picture.
 
-![ref2]![ref5]![ref5]
-
 <b>Axes<sup>1</sup></b>
-
-![ref4]
 
 ||**Type**|**Damage**|**Durability**|**Requirements**|**Price**|**qlvl**|||
 | :- | :- | -: | -: | :- | -: | -: | :- | :- |
@@ -1077,19 +863,6 @@ In the tables below are listed all the base items you can equip in the game. The
 ||Battle Axe|10|- 25|60|65 Str|1 500|10||
 ||Great Axe|12|- 30|75|80 Str|2 500|12||
 1	All axes are Two-handed.
-
-![ref1]
-
-
-
-
-
-
-
-
-
-
-**17**
 
 |<a name="page23"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||**Created by Pedro Faria**||||||
 | :- | :- | :- | :- | :- | :- | :- | :- | :- |
@@ -1150,20 +923,6 @@ In the tables below are listed all the base items you can equip in the game. The
 1. All staves are Two-handed.
 1. These items have the same picture.
 
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-**18**
-
 |<a name="page24"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||**Created by Pedro Faria**||||||
 | :- | :- | :- | :- | :- | :- | :- | :- | :- |
 ||||||||||
@@ -1187,11 +946,7 @@ In the tables below are listed all the base items you can equip in the game. The
 
 1. These swords are Two-handed except for the Barbarian.
 
-![ref2]![ref6]![ref6]
-
 <b>Jewelry<sup>1</sup></b>
-
-![ref4]
 
 ||**Type**|**Durability**|**Requirements**|**Price**|**qlvl**|||
 | :- | :- | :-: | :- | -: | -: | :- | :- |
@@ -1199,11 +954,7 @@ In the tables below are listed all the base items you can equip in the game. The
 ||Amulet|indestructible||1 200|8,|16||
 1	Jewelry always has a prefix and/or a suffix, unless being unique.
 
-![ref2]![ref7]![ref7]
-
 <b>Quest Items<sup>1</sup></b>
-
-![ref4]
 
 ||**Type**|**Based on**|**Damage**|**Armor Class**|**Durability**|**Requirements**||||
 | :- | :- | :- | :-: | -: | -: | :- | :- | :- | :- |
@@ -1228,19 +979,6 @@ This chapter will give you information about all those items in the game that yo
 ### 3.2.1 Runes and oils
 
 Runes and oils were introduced in Hellfire and do not exist in Diablo. Runes are placed in the dungeons and when a monster or player walks over them the spell is released. They can also be used directly on a target. Oils are used on items to boost their properties. Note that only effects from oils that affect the durability are carried over when you start a new game.
-
-![ref1]
-
-
-
-
-
-
-
-
-
-
-**19**
 
 |<a name="page25"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||**Created by Pedro Faria**||||
 | :- | :- | :- | :- | :- | :- | :- |
@@ -1370,14 +1108,6 @@ Books, scrolls and staves with spells are found in the dungeons but can also be 
 
 1	Available as a book in Hellfire only.
 
-![ref1]
-
-
-
-
-
-**21**
-
 |<a name="page27"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||**Created by Pedro Faria**|||||||||
 | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
 |||||||||||||
@@ -1432,17 +1162,6 @@ Not all prefixes and suffixes can occur on all types of items. The tables also l
 |S|Shields|B|Bows|
 |W|Weapons (Axes, Clubs and Swords)|J|Jewelry|
 |T|Staves|||
-![ref1]
-
-
-
-
-
-
-
-
-
-**22**
 
 |<a name="page28"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**||||||**Created by Pedro Faria**||||||||
 | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
@@ -1496,22 +1215,6 @@ Not all prefixes and suffixes can occur on all types of items. The tables also l
 |the stars|8|-|11|A-W-BJ|17|3|8 800|-|12 000||3 200|15||
 |the heavens|12|-|15|-–W–BJ|25|3|12 800 -|20 000||7 200|20|||
 |the zodiac|16|-|20|––-––J|30|4|20 800 -|40 000||19 200|30|||
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**23**
 
 |<a name="page29"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**||||||**Created by Pedro Faria**||||||||
 | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
@@ -1545,11 +1248,7 @@ Not all prefixes and suffixes can occur on all types of items. The tables also l
 1. A suffix.
 1. Only available in Hellfire.
 
-![ref2]![ref8]![ref8]
-
 <b>+% Armor Class<sup>1</sup></b>
-
-![ref9]
 
 ||**Prefix**|**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**|**Range**|**Multiplier**||||||
 | :- | :- | -: | :-: | -: | -: | -: | -: | -: | :- | :- | :- | :- | :- |
@@ -1566,29 +1265,6 @@ Not all prefixes and suffixes can occur on all types of items. The tables also l
 ||holy|151|- 170|AS––––|35|19|5 200|-|6 000|800|17|||
 ||godly|171|- 200|AS––––|60|29|6 200|-|7 000|800|20|||
 1. There is a minimum increase of 1 in AC. That is, even if the percentage will give an increase to AC less than one, it will be increased by at least one. Due to a bug, any decrease in AC less than 1 will be transformed into a positive increase by 1.
-
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**24**
 
 ||<a name="page30"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**||||||||||||**Created by Pedro Faria**||||||||||||||||||
 | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | -: | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
@@ -1628,8 +1304,6 @@ Not all prefixes and suffixes can occur on all types of items. The tables also l
 
 1. Only available in Hellfire. Has 10% chance of duplicating any monster hit except Diablo and unique monsters.
 
-![ref9]![ref2]![ref10]![ref10]
-
 **+% Damage Done**
 
 ||**Prefix**|**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**|**Range**|**Multiplier**||||||
@@ -1652,21 +1326,6 @@ Not all prefixes and suffixes can occur on all types of items. The tables also l
 1. Bonus decreases by 5% each hit. When reaching -100%, the item is destroyed.
 
 1. Also has from -30 to -70% lower durability.
-
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-**25**
 
 |<a name="page31"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**||||||**Created by Pedro Faria**||||||||
 | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
@@ -1691,11 +1350,7 @@ Not all prefixes and suffixes can occur on all types of items. The tables also l
 |osmosis|5|-|6|A–––––|50|1|7 500|-|10 000||2 500|20||
 1. Works for all type of damage, even from spells, but does not work against other players. The damage is reduced before any resistance is applied but after the thieves effect. The damage will never be reduced below 1.
 
-![ref2]![ref11]![ref11]
-
 <b>+ Fire Damage<sup>1</sup></b>
-
-![ref9]
 
 ||**Suffix**|**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**|**Range**|**Multiplier**|||
 | :- | :- | -: | :-: | -: | :- | :- | :- | :-: | :- | :- |
@@ -1707,11 +1362,7 @@ Not all prefixes and suffixes can occur on all types of items. The tables also l
 
 1. A prefix.
 
-![ref2]![ref11]![ref11]
-
 <b>+ Lightning Damage<sup>1</sup></b>
-
-![ref9]
 
 ||**Suffix**|**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**|**Range**|**Multiplier**|||
 | :- | :- | -: | :-: | -: | :- | -: | :- | :-: | :- | :- |
@@ -1723,11 +1374,7 @@ Not all prefixes and suffixes can occur on all types of items. The tables also l
 
 1. A prefix.
 
-![ref2]![ref12]![ref12]
-
 <b>% Steal Life<sup>1</sup></b>
-
-![ref9]
 
 ||**Suffix**|**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**|**Range**|**Multiplier**||
 | :- | :- | -: | :-: | -: | :- | -: | :- | :-: | :- |
@@ -1735,27 +1382,13 @@ Not all prefixes and suffixes can occur on all types of items. The tables also l
 ||blood|5|––W–––|19||15 000||3||
 1. The amount is based on damage done even if the monster has less HP left. The amount is *not* cumulative if you have more than one item with the capability of stealing life (an item of blood will take precedence over an item of the leech). An exception is The Undead Crown which is cumulative with both an item of blood or an item of the leech for a total of 3% to 15.5% or 5% to 17.5% life stealing. The Helm of Sprits, Shadowhawk, and The Eater of Souls are all treated as items of blood. Does not work against players. See chapter 6.1.4 for more information.
 
-![ref2]![ref12]![ref12]
-
 <b>% Steal Mana<sup>1</sup></b>
-
-![ref9]
 
 ||**Suffix**|**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**|**Range**|**Multiplier**||
 | :- | :- | -: | :-: | -: | :- | -: | :- | :-: | :- |
 ||the bat|3|––W–––|8||7 500||3||
 ||vampires|5|––W–––|19||15 000||3||
 1. The amount is based on damage done even if the monster has less HP left. The amount is *not* cumulative if you have more than one item with the capability of stealing mana (an item of vampires will take precedence over an item of the bat. The Eater of Souls is treated as an item of vampire. Does not work against players. See chapter 6.1.4 for more information.
-
-![ref1]
-
-
-
-
-
-
-
-**26**
 
 |<a name="page32"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**||||||**Created by Pedro Faria**||||||||||
 | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
@@ -1818,16 +1451,6 @@ Not all prefixes and suffixes can occur on all types of items. The tables also l
 
 1. Add 12.5 when used by a Barbarian.
 
-![ref1]
-
-
-
-
-
-
-
-**27**
-
 |<a name="page33"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**||||**Created by Pedro Faria**||||||
 | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
 |||||||||||
@@ -1839,11 +1462,7 @@ Not all prefixes and suffixes can occur on all types of items. The tables also l
 |radiance|40|A–W—J|8||1 500|||3||
 1. Also affects the distance at which you activate monsters. A higher value means at a greater distance. There is no additional effect of wearing more than +50% or less than -80% light radius. As a curiosity, the light radius is always one square less in the catacombs and it is always the highest light radius you have had on a level that counts, even if you later lower it.
 
-![ref2]![ref11]![ref11]
-
 <b>Weapon Speed<sup>1</sup></b>
-
-![ref9]
 
 ||**Suffix**|**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**|**Range**|**Multiplier**||
 | :- | :- | :-: | :-: | -: | :- | -: | :- | -: | :- |
@@ -1858,11 +1477,7 @@ Not all prefixes and suffixes can occur on all types of items. The tables also l
 
 1. Has the same effect as speed despite what is said in the latest Diablo patch (1.07).
 
-![ref2]![ref13]![ref13]
-
 <b>Hit Recovery<sup>1</sup></b>
-
-![ref9]
 
 ||**Suffix**|**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**|**Range**|**Multiplier**||
 | :- | :- | :-: | :-: | -: | :- | :- | :- | :-: | :- |
@@ -1870,8 +1485,6 @@ Not all prefixes and suffixes can occur on all types of items. The tables also l
 ||stability1|faster|A––––J|10||4 000||4||
 ||harmony1|fastest|A––––J|20||8 000||8||
 1. A character only benefits from the fastest one, as they are not cumulative. The exception is if you have one of each in which case you will, in Diablo only, receive a further reduction in hit recovery time. See chapter 2.2.1 for more information.
-
-![ref9]![ref2]![ref14]![ref14]
 
 **+% Durability**
 
@@ -1932,8 +1545,6 @@ chapter 3.8. Please note that all items *below* a thick line are only available 
 
 the item has a unique picture or not.
 
-![ref15]![ref16]![ref17]![ref17]
-
 **Armor**
 
 ||**Name**|**Base item**|**Price**|**qlvl**|**Pic**|**Magical Effects**||
@@ -1970,21 +1581,6 @@ the item has a unique picture or not.
 
 1. A quest item.
 
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-**29**
-
 ||<a name="page35"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||**Created by Pedro Faria**||||
 | :- | -: | :- | :- | :- | :- | :- | :- |
 |||||||||
@@ -2014,8 +1610,6 @@ the item has a unique picture or not.
 1. A quest item only available in single player.
 
 1. These items have the same picture and it is one of a normal great axe.
-
-![ref15]![ref16]![ref18]![ref18]
 
 **Bows**
 
@@ -2047,25 +1641,6 @@ the item has a unique picture or not.
 1. Will cast a lightning spell when fired.
 
 1. Will cast a fireball when fired.
-
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**30**
 
 ||<a name="page36"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||**Created by Pedro Faria**||||
 | :- | -: | :- | :- | :- | :- | :- | :- |
@@ -2100,8 +1675,6 @@ the item has a unique picture or not.
 
 1. Does not exist in Hellfire and is not possible to find in multi player in Diablo, only single player. Still very rare in single player, see chapter 3.5.2 for more information. It also seems that although findable in single player, it will morph as soon as a new game is started or loaded.
 
-![ref15]![ref16]![ref19]![ref19]
-
 **Helms**
 
 ||**Name**|**Base item**|**Price**|**qlvl**|**Pic**|**Magical Effects**||
@@ -2127,24 +1700,6 @@ the item has a unique picture or not.
 1. A quest item only available in single player.
 
 1. These items have the same picture. The Helm of Sprits looks like a crown when on the ground.
-
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**31**
 
 ||<a name="page37"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||**Created by Pedro Faria**||||
 | :- | -: | :- | :- | :- | :- | :- | :- |
@@ -2186,8 +1741,6 @@ the item has a unique picture or not.
 
 1. A quest item. Not really a unique item.
 
-![ref15]![ref16]![ref20]![ref20]
-
 **Shields**
 
 ||**Name**|**Base item**|**Price**|**qlvl**|**Pic**|**Magical Effects**||
@@ -2207,23 +1760,6 @@ the item has a unique picture or not.
 1. This item has a picture of a normal buckler.
 
 1. Both versions have a picture of a normal gothic shield.
-
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**32**
 
 ||<a name="page38"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||**Created by Pedro Faria**||||
 | :- | :- | :- | :- | :- | :- | :- | :- |
@@ -2812,8 +2348,6 @@ Some prefixes actually has a double chance of being chosen. The table below list
 
 Despite what has been said above, there are some combinations of prefixes and suffixes that can-not exist on the same item. The table below list all combinations that are. As the game always picks the prefix first, it is always the suffix that will be discarded; this can be important to know if one wants to figure out exactly what items are possible and the probabilities of them.
 
-![ref9]![ref2]![ref7]![ref7]
-
 **None of the combinations below can exist on the same item**
 
 |angel’s|trouble|gold|pain|silver|corruption|
@@ -2899,28 +2433,6 @@ Due to the way the game picks a random spell, some spells have a higher chance t
 - Spells at the start of the list will have a higher probability than those later in the list. The exact cut off depends on the ilvl. This means that there will be two different levels of probabilities for the spells, a higher one for spells at the start of the list and a lower one for spells at the end of the list. At rare occasions all spells will have the same probability.
 
 - The order of the spells is *not* the same as in your spell book or any of the other lists in this Guide. The table below lists the order of the spells for the purpose of selecting a spell for a staff or a book.
-
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**44**
 
 |<a name="page50"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**||||**Created by Pedro Faria**|||||||
 | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
@@ -3029,8 +2541,6 @@ It is done in the table below.
 
 As noted in the table above, ilvl is in many cases derived in a special way; the table below explains how it is derived for Adria’s, Pepin’s and Griswold’s basic items. In multi player it depends on your character level. In single player it depends on what dungeon level you have been to in the current game. Difficulty does not affect it in any way.
 
-![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcQAAAANCAYAAAA3zx7XAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAFFJREFUeJzt1UERACEQwLBy/pWtKZBxzJAo6K9rZnYA8Ljv7wAAuIEhAkCGCACVIQJAZYgAUBkiAFSGCACVIQJAZYgAUBkiAFSGCACVIQJAVQcGDQN3PgY01QAAAABJRU5ErkJggg==)![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcoAAAABCAYAAABexO4fAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAB5JREFUOI3twTEBADAMwKDUv+ju2FMRwPRtAMA1VQ8onwECTzItUAAAAABJRU5ErkJggg==)![ref21]![ref21]
-
 **Definition of ilvl at Adria, Pepin and for Griswold’s basic items**
 
 ||**Single Player**|**Multi Player**||||||
@@ -3051,13 +2561,6 @@ As noted in the table above, ilvl is in many cases derived in a special way; the
 1	Only available in Hellfire.
 
 For Griswold’s premium items the ilvl varies depending on what slot the items is created in (in his list of items). The table below explains exactly how.
-
-![ref1]
-
-
-
-
-**46**
 
 |<a name="page52"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**||**Created by Pedro Faria**||||
 | :- | :- | :- | :- | :- | :- |
@@ -3161,17 +2664,6 @@ Range of qlvl for prefixes and suffixes:	ilvl to 2·ilvl
 He will renew the item only if you have bought the previous one and then gone into the dungeons or when you gain a new character level that is even.
 
 In Hellfire, Wirt will only sell certain item types to you depending on your character class. The table below summarizes what items he will sell to each character class. Wirt will, in Hellfire, also try to offer you better (more expensive than 80% of your most expensive item) items than what you already have (both equipped ones and not equipped ones).
-
-![ref1]
-
-
-
-
-
-
-
-
-**48**
 
 |<a name="page54"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|**Created by Pedro Faria**|||
 | :- | :- | :- | :- |
@@ -3299,19 +2791,6 @@ The value given is an estimate of how many games it takes on average to find a s
 |The Rift Bow|480||1|2 500||1|2 900|1|
 |Windforce|40||15|35||15|35|15|
 
-![ref1]
-
-
-
-
-
-
-
-
-
-
-**51**
-
 |<a name="page57"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||||**Created by Pedro Faria**|||||
 | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
 |||||||||||
@@ -3367,19 +2846,6 @@ The value given is an estimate of how many games it takes on average to find a s
 |Staff of Shadows|impossible||-|2 000||2|2 200|2||
 |Storm Spire|64||6|45||3|45|3||
 |Thundercall|29||15|31||15|31|15||
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-**52**
 
 |<a name="page58"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||||**Created by Pedro Faria**|||||
 | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
@@ -3435,22 +2901,6 @@ The reason most unique items are more likely in a Hellfire game than in a Diablo
 |Sharp Beak|impossible||-|1 300||2|1 500|2|
 |Stonecleaver|18||15|19||15|19|15|
 |Wicked Axe|15||15|17||15|17|15|
-
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-**53**
 
 |<a name="page59"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||||**Created by Pedro Faria**|||||
 | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
@@ -3512,13 +2962,6 @@ The reason most unique items are more likely in a Hellfire game than in a Diablo
 |Ring of the Mystics|impossible||-|impossible||-|impossible|-||
 |Ring of Thunder|86||3|52||3|53|3||
 |Xorine’s Ring|impossible||-|impossible||-|impossible|-||
-![ref1]
-
-
-
-
-
-**54**
 
 |<a name="page60"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||||**Created by Pedro Faria**|||||
 | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
@@ -3580,8 +3023,6 @@ This chapter summarizes various properties of items and lets you review them wit
 ### 3.13.1 Levels of base items
 
 Below is a list of all the base items in the game. It has been divided into two different tables: equipable items (excluding jewelry) and other items. The items are sorted by their qlvl.
-
-![ref22]![ref23]![ref24]![ref24]
 
 **Armor and Weapons**
 
@@ -3821,15 +3262,6 @@ The tables below are extracted from the more comprehensive ones above and summar
 
 1. There is a minimum increase of 1 in AC. That is, even if the percentage will give an increase to AC less than one, it will be increased by at least one. Due to a bug, any decrease in AC less than 1 will be transformed into a positive increase by 1.
 
-![ref1]
-
-
-
-
-
-
-**60**
-
 |<a name="page66"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||||**Created by Pedro Faria**||||||||||
 | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
 ||||||||||||||||
@@ -3963,15 +3395,6 @@ The tables below are extracted from the more comprehensive ones above and summar
 |ivory|ASWTBJ|crimson|ASWTBJ|lapis||ASWTBJ||jade|ASWTBJ||||||||||
 |crystal|ASWTBJ|garnet|ASWTBJ|cobalt||ASWTBJ||obsidian|ASWTBJ||||||||||
 |diamond|ASWTBJ|ruby|ASWTBJ|sapphire||ASWTBJ||emerald|–SWTB–||||||||||
-![ref1]
-
-
-
-
-
-
-
-**62**
 
 |<a name="page68"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**||||||**Created by Pedro Faria**|||||||||
 | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
@@ -4098,8 +3521,6 @@ Note that it is very important to round down. For those spells using this recurs
 
 Note that this formula does not round down and you will therefore get a damage a bit too high, but it will still be more or less accurate. For a level 20 fireball from a level 50 character the correct maximum damage is 1442, while this quick method gives 1476. In the table below, I have listed values for use with the quick formula.
 
-![ref9]![ref2]![ref25]![ref25]
-
 **Summary for quick damage**
 
 |(9/8)^1|1\.125|(9/8)^6|2\.027|(9/8)^11|3\.653|(9/8)^16|6\.583|
@@ -4159,20 +3580,6 @@ The spells below are listed in alphabetical order and are available in both Diab
 ||”travels” with a speed of 32.|
 ||\*  The bolt will try to hit once each 0.05 seconds for a|
 ||total of [slvl/2] + 6 times.|
-
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-**66**
 
 |<a name="page72"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|**Created by Pedro Faria**||
 | :- | :- | :- |
@@ -4234,16 +3641,6 @@ The spells below are listed in alphabetical order and are available in both Diab
 |\*  The flame will try to hit once every 0.05 seconds for a|||
 |total of 160 + 160·slvl times (240 + 160·slvl times in|||
 |Hellfire).|||
-![ref1]
-
-
-
-
-
-
-
-
-**67**
 
 |<a name="page73"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|**Created by Pedro Faria**|||
 | :- | :- | :- | :- |
@@ -4293,30 +3690,6 @@ The spells below are listed in alphabetical order and are available in both Diab
 |actually bogus.||||
 |\*  You will get normal experience for any monster that||||
 |your guardians kill.||||
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**68**
 
 |<a name="page74"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|**Created by Pedro Faria**|||
 | :- | :- | :- | :- |
@@ -4371,24 +3744,6 @@ The spells below are listed in alphabetical order and are available in both Diab
 |\*  As far as I know, you will never find Murky Pools in|”travels” with a speed of 32.|||
 |the Hive or in the Crypt.||\*  The bolt will try to hit once every 0.05 seconds for a||
 |||total of [slvl/2]+6 times.||
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**69**
 
 |<a name="page75"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|**Created by Pedro Faria**||
 | :- | :- | :- |
@@ -4451,13 +3806,6 @@ The spells below are listed in alphabetical order and are available in both Diab
 
 The spells in the table below are new spells in Hellfire. Apocalypse and Nova, although new as learnable spells in Hellfire, exist in Diablo and no changes have been done to them. See chapter 4.1.3 for information about Apocalypse and Nova.
 
-![ref1]
-
-
-
-
-**70**
-
 |<a name="page76"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|**Created by Pedro Faria**|||
 | :- | :- | :- | :- |
 |||||
@@ -4507,29 +3855,6 @@ The spells in the table below are new spells in Hellfire. Apocalypse and Nova, a
 |||longer.||
 |||\*  The flame will try to hit once every 0.05 seconds for a||
 |||total of 255 + 255·slvl times.||
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**71**
 
 |<a name="page77"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|**Created by Pedro Faria**|||
 | :- | :- | :- | :- |
@@ -4581,19 +3906,6 @@ The spells in the table below are new spells in Hellfire. Apocalypse and Nova, a
 Casting spells costs mana and each spell has an initial mana cost at slvl 1. For each slvl the mana cost then decreases by a certain amount specific for each spell until it reaches its minimum mana cost. The table below shows the mana cost for each spell as well as the slvl you reach the minimum mana cost (unless stated otherwise, use the 100% value in the table unless stated otherwise for a character class). Note that Rogues, Monks and Bards only pay 75% of the mana cost (use the 75% value in the table). In Hellfire (after patch 1.01) the Sorcerer only pays 50% of the mana cost (use the 50% value in the table for Hellfire and the 100% value for Diablo). However, no character class ever pays less than the minimum mana cost. Casting spells from scrolls and staves do not cost any mana, but you have to have the required magic to do so.
 
 For staves, the required magic to cast a spell from it is the same as it is to learn the same spell to the first slvl. For scrolls, the mana required to cast a spell is normally a bit less. The table below also shows those required magic levels. For information about prices and slvl of books, scrolls, and staves with spells, see chapter 3.2.3.
-
-![ref1]
-
-
-
-
-
-
-
-
-
-
-**72**
 
 |<a name="page78"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**||||||**Created by Pedro Faria**||||||
 | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
@@ -4659,15 +3971,6 @@ For staves, the required magic to cast a spell from it is the same as it is to l
 1. You can only learn this spell in Hellfire.
 
 The table above has the magic requirement to learn a spell to level 1. For each additional spell level the magic requirement is 20% higher to learn. To make it easier for you, the table below lists the magic requirement for each spell and spell level. Note that if the magic requirement is 213 or higher, it is always adjusted to 255.
-
-![ref1]
-
-
-
-
-
-
-**73**
 
 |<a name="page79"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||||||**Created by Pedro Faria**||||||||||
 | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
@@ -4778,14 +4081,6 @@ The spell affects your character directly. Infravision is such a spell.
 
 Some monsters have the ability to do magical attacks. Monsters in Diablo can only use spells that are available to the player (although they work a bit differently in regard to damage, for example), except for Spitting Terrors. In Hellfire, there are many new monsters that also have the ability to do magical attacks. Often those are new ones that are not available to the player in any way. The tables below summarize all monsters with magical attacks as well as what type of magic it is (not always obvious).
 
-![ref1]
-
-
-
-
-
-**75**
-
 |<a name="page81"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|**Created by Pedro Faria**||||
 | :- | :- | :- | :- | :- |
 ||||||
@@ -4842,16 +4137,6 @@ Below are listed all those spells that monsters are able to use. In most cases t
 ||of this Guide, it is thus useful to list arrow attacks|
 ||here.|
 
-![ref1]
-
-
-
-
-
-
-
-**76**
-
 |<a name="page82"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|**Created by Pedro Faria**||
 | :- | :- | :- |
 ||||
@@ -4901,28 +4186,6 @@ Below are listed all those spells that monsters are able to use. In most cases t
 |”travels” with a speed of 32.|||
 |\*  The bolt will try to hit once every 0.05 seconds for a|||
 |total of 10 times.|||
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**77**
 
 |<a name="page83"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|**Created by Pedro Faria**||
 | :- | :- | :- |
@@ -4977,21 +4240,6 @@ Most new monsters in Hellfire that can use spells have new special spells not av
 
 Most traps are of magical nature, and thus it is appropriate to explain how they work here. Traps can be set off when you open chests, sarcophagi, barrels, or doors. There are 7 different types of traps (including skeletons) in the original Diablo. Three new ones were added in Hellfire. The probability of a trap is shown in the table below. Traps originating from shrines are not covered by this guide.
 
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-**78**
-
 |<a name="page84"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||**Created by Pedro Faria**|||||||
 | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
 |||||||||||
@@ -5027,42 +4275,6 @@ Most traps are of magical nature, and thus it is appropriate to explain how they
 1. Rooms also includes the fenced locations in caves. A room does not necessarily need to have a door, in cats and especially in hell, many rooms just have an opening.
 
 For damage and other information about the traps, see below. For damage, when two values or formulas are given, the top one is minimum damage and the bottom one is maximum damage. With fire arrows, the maximum damage might at times be less than the minimum damage (possible on dlvl 1-8). In that case, the actual damage done is always identical to the minimum damage. The table also list some dungeon features that while not being traps, still deal damage to players.
-
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**79**
 
 |<a name="page85"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**||**Created by Pedro Faria**|||||
 | :- | :- | :- | :- | :- | :- | :- |
@@ -5285,8 +4497,6 @@ Resistances and immunities are given in the following way. In the top of the col
 
 ### 5.2.1 Monsters in Diablo
 
-![ref26]![ref27]![ref28]![ref28]
-
 **Zombies - Undead**
 
 ||**Name**|**dlvl**|**mlvl**|**HP-single**|**HP-multi**|**AC**|**To Hit%**|**Damage**|**MFL**|**Base Exp**|||||
@@ -5322,27 +4532,6 @@ Resistances and immunities are given in the following way. In the top of the col
 ||Dark One|3- 5|22|80-|104|61-|109|65|115|12- 20||2 510|||
 ||||37|140-|172|83-|147|95|150|22- 38|--R|5 020|||
 1	When you kill any monster, Fallen Ones will walk away from you for a short while, see chapter 5.5.9 under Fallen One.
-
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**84**
 
 ||<a name="page90"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||||**Created by Pedro Faria**||||||||||
 | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
@@ -5397,25 +4586,6 @@ Resistances and immunities are given in the following way. In the top of the col
 |||||39|128-|190|63-|183|95|155|14- 42|I-R|6 376|||
 
 1. They can fire arrows at a golem regardless of the distance (assuming they have a line of sight to it) but will not be activated unless the golem is adjacent to them.
-
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**85**
 
 ||<a name="page91"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||||**Created by Pedro Faria**|||||||||
 | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
@@ -5476,21 +4646,6 @@ Resistances and immunities are given in the following way. In the top of the col
 
 1. Familiars have the ability to cast a stationary charged bolt when attacking you.
 
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-**86**
-
 ||<a name="page92"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||||**Created by Pedro Faria**|||||||||
 | :- | -: | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
 ||||||||||||||||
@@ -5513,11 +4668,7 @@ Resistances and immunities are given in the following way. In the top of the col
 1. The Hiddens have the ability to disappear. They are always active and can always see you, even with max reduced light radius, regardless of whether or not you have a line of sight to them and regardless of the distance. They will fade in at a distance of 4-Intf and fade away at a distance of 6-Intf. See chapter 5.3.3 for information about the intelligence factor (Intf).
 1. While moving away from you (after getting hit), the Illusion Weavers are impossible to hit.
 
-![ref27]![ref28]![ref28]
-
 <b>Goat Men<sup>2</sup> - Demons</b>
-
-![ref26]
 
 ||**Name**|**dlvl**|**mlvl**|**HP-single**|**HP-multi**|**AC**|**To Hit%**|**Damage**|**MFL**|**Base Exp**||||
 | :- | :- | :- | -: | -: | -: | -: | -: | -: | :- | -: | :- | :- | :- |
@@ -5537,11 +4688,7 @@ Resistances and immunities are given in the following way. In the top of the col
 1. They only appear on level 2 as part of the Poisoned Water quest.
 1. Goat Men have a second spinning attack. They will only perform this attack once their HP gets low (see chapter 5.5.9). Flesh, Stone and Fire Clan have a base To Hit of 0, 85 and 120 for the three difficulty levels while the damage is 0-0, 4-4 and 6-6. Night Clan have a base To Hit of 15, 100 and 135 while the damage is 30-30, 64-64 and 126-126.
 
-![ref27]![ref28]![ref28]
-
 <b>Goat Men Archers<sup>1</sup> - Demons</b>
-
-![ref26]
 
 ||**Name**|**dlvl**|**mlvl**|**HP-single**|**HP-multi**|**AC**|**To Hit%**|**Damage**|**MFL**|**Base Exp**|||||
 | :- | :- | :- | -: | -: | -: | -: | -: | -: | :- | -: | :- | :- | :- | :- |
@@ -5563,16 +4710,6 @@ Resistances and immunities are given in the following way. In the top of the col
 1. They only appear on level 2 as part of the Poisoned Water quest.
 
 1. They only appear on level 10 as part of the Anvil of Fury quest.
-
-![ref1]
-
-
-
-
-
-
-
-**87**
 
 ||<a name="page93"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||||**Created by Pedro Faria**||||||||
 | :- | -: | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
@@ -5596,11 +4733,7 @@ Resistances and immunities are given in the following way. In the top of the col
 1. Overlords have a second melee attack. Overlord, Mud Man and Flayed One have a base To Hit of 0, 85 and 120 for the three difficulty levels while the damage is 0-0, 4-4 and 6-6. Toad Demon have a base To Hit of 40, 125 and 160 while the damage is 8-20, 20-44 and 38-86.
 1. They only appear on level 4 as part of the Tavern Sign quest.
 
-![ref27]![ref28]![ref28]
-
 <b>Gargoyles<sup>1,2</sup> - Demons</b>
-
-![ref26]
 
 ||**Name**|**dlvl**|**mlvl**|**HP-single**|**HP-multi**|**AC**|**To Hit%**|**Damage**|**MFL**|**Base Exp**||||
 | :- | :- | :- | -: | -: | -: | -: | -: | -: | :- | -: | :- | :- | :- |
@@ -5620,11 +4753,7 @@ Resistances and immunities are given in the following way. In the top of the col
 1. Gargoyles have the ability to regenerate hit points faster while in stone form.
 1. If you leave a level all Gargoyles are active when you come back.
 
-![ref27]![ref28]![ref28]
-
 <b>Magma Demons<sup>1,2</sup> - Demons</b>
-
-![ref26]
 
 ||**Name**|**dlvl**|**mlvl**|**HP-single**|**HP-multi**|**AC**|**To Hit%**|**Damage**|**MFL**|**Base Exp**||||
 | :- | :- | :- | -: | -: | -: | -: | -: | -: | :- | -: | :- | :- | :- |
@@ -5644,19 +4773,6 @@ Resistances and immunities are given in the following way. In the top of the col
 1. Magma demons may hit with their second hand as well. Such an attack has the To Hit increased by 10% and the damage decreased by 2.
 
 1. Magma Demons have the ability to cast magma balls, which do fire damage.
-
-![ref1]
-
-
-
-
-
-
-
-
-
-
-**88**
 
 ||<a name="page94"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||||**Created by Pedro Faria**||||||||
 | :- | -: | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
@@ -5680,11 +4796,7 @@ Resistances and immunities are given in the following way. In the top of the col
 1. Horned Demons have the ability to charge. Their charges have a base To Hit of 500%, so you’d better move out of the way. The damage of such a charge is - Horned Demon: 5-32 / 12-68 / 26-134, Mud Runner: 12-36 / 28-76 / 54-150, Frost Charger: 20-40 / 44-84 / 86-166 and Obsidian Lord: 20-50 / 44-104 / 86-206.
 1. They only appear on level 5 as part of the Valor quest.
 
-![ref27]![ref28]![ref28]
-
 <b>Spitting Terrors<sup>1</sup> - Animals</b>
-
-![ref26]
 
 ||**Name**|**dlvl**||**mlvl**|**HP-single**|**HP-multi**|**AC**|**To Hit%**|**Damage**|**MFL**|**Base Exp**||||
 | :- | :- | -: | :- | :- | :- | :- | -: | -: | -: | :- | -: | :- | :- | :- |
@@ -5721,20 +4833,6 @@ Resistances and immunities are given in the following way. In the top of the col
 1. Lightning demons may hit with their second hand as well. Such an attack has the To Hit decreased by 20% and the damage increased by 4.
 
 1. Lightning demons have the ability to cast Lightning.
-
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-**89**
 
 ||<a name="page95"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||||**Created by Pedro Faria**|||||||||
 | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
@@ -5774,11 +4872,7 @@ Resistances and immunities are given in the following way. In the top of the col
 
 1. Vipers have the ability to do a short range charge attack with a To Hit of 500. This short ranged charge will have a base damage of 0-0 / 4-4 / 6-6, and will be in addition to their normal attack.
 
-![ref27]![ref28]![ref28]
-
 <b>Succubi<sup>1</sup> - Demons<sup>2</sup></b>
-
-![ref26]
 
 ||**Name**|**dlvl**|**mlvl**|**HP-single**|**HP-multi**|**AC**|**To Hit%**|**Damage**|**MFL**|**Base Exp**||||
 | :- | :- | -: | -: | -: | -: | -: | :-: | -: | :- | -: | :- | :- | :- |
@@ -5798,22 +4892,6 @@ Resistances and immunities are given in the following way. In the top of the col
 1. Succubi have the ability to cast Blood Stars. They can also see and fire Blood Stars at a golem regardless of the distance (assuming they have a line of sight to it) but will not be activated unless the golem is adjacent to them.
 
 1. In Hellfire, Hell Spawns are animals, not demons.
-
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-**90**
 
 ||<a name="page96"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||||**Created by Pedro Faria**||||||||
 | :- | -: | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
@@ -5837,11 +4915,7 @@ Resistances and immunities are given in the following way. In the top of the col
 1. One Black Knight is always present in Diablo’s room. Otherwise they don’t appear on level 16.
 1. They only appear on level 13 as part of the Warlord of Blood quest.
 
-![ref27]![ref28]![ref28]
-
 <b>Mages<sup>1</sup> - Demons</b>
-
-![ref26]
 
 ||**Name**|**dlvl**|**mlvl**|**HP-single**|**HP-multi**|**AC**|**To Hit%**|**Damage**|**MFL**|**Base Exp**||||
 | :- | :- | :- | -: | -: | -: | -: | -: | -: | :- | -: | :- | :- | :- |
@@ -5876,26 +4950,6 @@ In the table below are listed the special monsters in Diablo. They are truly uni
 
 Like unique monsters, the special monsters have two different mlvl as well. One is used for combat and experience point award (battle) and one is used for item generation of items dropped by the unique monster (item). Both are given below.
 
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**91**
-
 ||<a name="page97"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**||||**Created by Pedro Faria**||||||||
 | :- | -: | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
 ||||||||||||||
@@ -5927,8 +4981,6 @@ Like unique monsters, the special monsters have two different mlvl as well. One 
 
 Contrary to the original Diablo monsters, most Hellfire monsters do not have subtypes within a specific type. Some of the monsters do exist in two different variants though. For formatting reasons, the Hellfire monsters are grouped into monsters found in the Hive and monsters found in the Crypt. They are further grouped into monsters that have subtypes and monsters that have no subtypes.
 
-![ref26]![ref27]![ref29]![ref29]
-
 **The Hive - monsters with subtypes, U - Undead, A - Animals, D - Demons**
 
 ||**Name**|**dlvl**|**mlvl**|**HP-single**|**HP-multi**|**AC**|**To Hit%**|**Damage**|**MFL**|**Base Exp**||||
@@ -5953,23 +5005,6 @@ Contrary to the original Diablo monsters, most Hellfire monsters do not have sub
 ||||54|260-|300|520-|600|140|180|38- 86|-RI|9 000||
 1. Psychorbs and Necromorbs have the ability to cast magical bolts, which do magic damage.
 1. Spider Lords have the ability to spit, which does magic damage.
-
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**92**
 
 ||<a name="page98"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||||**Created by Pedro Faria**||||||||
 | :- | -: | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
@@ -6000,8 +5035,6 @@ Contrary to the original Diablo monsters, most Hellfire monsters do not have sub
 
 1. Torchants have the ability to cast Fireball.
 
-![ref26]![ref27]![ref29]![ref29]
-
 **The Crypt - monsters with subtypes, U - Undead, A - Animals, D - Demons**
 
 ||**Name**|**dlvl**|**mlvl**|**HP-single**|**HP-multi**|**AC**|**To Hit%**|**Damage**|**MFL**|**Base Exp**||||
@@ -6030,27 +5063,6 @@ Contrary to the original Diablo monsters, most Hellfire monsters do not have sub
 1. Bone Demons have the ability to cast magical bolts, which do magic damage. Bone Demons are also resistant to Holy Bolt.
 
 1. Liches and Arch Liches have the ability to cast magical bolts, which do magic damage.
-
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**93**
 
 ||<a name="page99"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||||**Created by Pedro Faria**||||||||
 | :- | -: | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
@@ -6092,8 +5104,6 @@ Contrary to the original Diablo monsters, most Hellfire monsters do not have sub
 
 In the table below are listed the special monsters in Hellfire. They are truly unique and are not based on any monster type. They are all treated by the game as unique monsters. Like unique monsters, the special monsters have two different mlvl as well. One is used for combat and experience point award (battle) and one is used for item generation of items dropped by the unique monster (item). Both are given below. For information about the modified data for Diablo in Hellfire, see chapter 5.2.2.
 
-![ref26]![ref27]![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAASCAYAAABxYA+/AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAABtJREFUCJljYIACRgYGhv8MDAwMTDCRgWXAAQCfJAEfuqfwrgAAAABJRU5ErkJggg==)![ref28]
-
 **Special Monsters in Hellfire - Demons**
 
 ||**Name**|**dlvl**|**mlvl**|**mlvl**|**HP-single**|**HP-multi**|**AC**|**To Hit%**|**Damage**|**MFL**|**Base Exp**|||
@@ -6126,8 +5136,6 @@ Apart from the data given in earlier chapters, monsters have other properties th
 ### 5.3.1 Monster size
 
 Each monster type has a size associated with it. That size is used when selecting monsters for a specific level of the dungeon. Maximum total size of all monsters types on a level is 4000. Most monsters in the church, for example, have small sizes, and that is the reason why you will see many different monsters on each level. Monsters in hell and the Crypt normally have large sizes and thus you will only see two or three different monster types at once. In the tables below you can find the size of all monster types in the game. Note that golems also have a size, which is important for monster selection (see below).
-
-![ref22]![ref23]![ref30]![ref30]
 
 **Monsters in Diablo**
 
@@ -6209,30 +5217,6 @@ With the algorithm above and the monster size also from the tables above, it is 
 |Plague Eater|28|||||
 |Fiend|35|||||
 |Hidden|16|||||
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**96**
 
 |<a name="page102"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**||**Created by Pedro Faria**||||||
 | :- | :- | :- | :- | :- | :- | :- | :- |
@@ -6290,17 +5274,6 @@ With the algorithm above and the monster size also from the tables above, it is 
 ||||Storm Rider|13|Succubus|23||
 ||||Storm Lord|13|Black Knight|9||
 ||||Maelstorm|13||||
-![ref1]
-
-
-
-
-
-
-
-
-
-**97**
 
 |<a name="page103"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**||**Created by Pedro Faria**||||||
 | :- | :- | :- | :- | :- | :- | :- | :- |
@@ -6358,14 +5331,6 @@ Most monster types have their own unique way of attacking and moving. However, s
 
 When a unique monster is present, it and its mob may have a different attack type than the normal one for that monster type. See chapter 5.4 for information about such attack type changes.
 
-![ref1]
-
-
-
-
-
-**98**
-
 ||<a name="page104"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**||**Created by Pedro Faria**||||||
 | :- | :- | :- | :- | :- | :- | :- | :- | :- |
 ||||||||||
@@ -6399,23 +5364,6 @@ The attack type does not only affect the actual attack but also how the monsters
 It is worth noticing that within a certain monster type the various monsters normally have an increasing ”intelligence”. A good way to see this difference is the look the various Goat Archers. Run up to them and you will see that a normal Flesh Clan Archer will not run a way immediately while a Night Clan Archer will normally run away before you even get close. Similar differences can be seen for most monster types. The table below will list the intelligence factor (Intf) within each monster type. It is basically a number between 0 and 3 (inclusive). The higher the number, the higher the intelligence of the monster. For monster types with 4 subtypes in Diablo, I have listed the four values after each other. For monsters that have no subtypes, there is only one number. Otherwise, there is no value given. For information about what intelligence factor unique monsters have, see chapter 5.4.
 
 Presented in the table below is also the ability to open doors and to follow characters around walls. If a character disappears from the line of visibility of a player, they will normally move to the last position where they saw the character. Some monsters have the improved ability to also find the way around obstacles and follow you even further. This makes it possible for them to even follow you around a wall should you just teleport to the other side of it. If they do not have that ability, they will normally end up where you teleported from. These abilities are also presented below in the same way as the intelligence factor. A *D* means the monster can open doors and an *F* that means they will follow you.
-
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**99**
 
 ||<a name="page105"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||||**Created by Pedro Faria**|||||||||||||||
 | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
@@ -6480,8 +5428,6 @@ This is the time it takes a monster to do a complete attack against you, in much
 
 Within the swing this is the time it takes to reach the frame where the actual hit on a player occurs. This is of course always identical or shorter than the complete attack time. When there exist two attacks and thus two attack times, there will also be two hit times given. For Magma Demons and Lightning Demons there are actually three times given, where the first two relate to the melee attack which, as described above, can hit you twice in the same attack and the last number correspond to the spell attack.
 
-![ref9]![ref2]![ref31]![ref31]
-
 **Diablo**
 
 ||**Monster type**|**Walk time**|**Hit recovery time**|**Attack time**|**Hit time**||
@@ -6509,8 +5455,6 @@ Within the swing this is the time it takes to reach the frame where the actual h
 
 1. The Magma Demon actually hit at 0.65 while the other three types hit at 0.70.
 
-![ref9]![ref2]![ref32]![ref32]
-
 **Diablo**
 
 ||**Monster type**|**Walk time**|**Hit recovery time**|**Attack time**|**Hit time**||
@@ -6534,13 +5478,6 @@ Within the swing this is the time it takes to reach the frame where the actual h
 1. The second value is for the revive skeleton animation.
 
 1. The second value is for the fade in animation.
-
-![ref1]
-
-
-
-
-**101**
 
 |<a name="page107"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**||**Created by Pedro Faria**||||
 | :- | :- | :- | :- | :- | :- |
@@ -6654,8 +5591,6 @@ Generally, a unique monster has the same AC and To Hit as a normal monster. Ther
 
 If the monster has any AC or To Hit that differs from the base monster, it will be noted in a note under the table.
 
-![ref33]![ref34]![ref28]![ref28]
-
 **Zombies**
 
 ||**Name**|**Type**|**Attack type**|**Intf**|**Mob**|**dlvl**|**mlvl**|**mlvl**|**HP**|**Damage**|**MFL**||||
@@ -6704,23 +5639,6 @@ If the monster has any AC or To Hit that differs from the base monster, it will 
 1. Has an AC of 45 on all difficulty levels.
 1. Has the ability to disappear, like The Hiddens.
 
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**104**
-
 ||<a name="page110"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||||**Created by Pedro Faria**|||||||||
 | :- | :- | :- | :- | :- | :- | -: | :- | :- | :- | :- | :- | :- | :- | :- |
 ||||||||||||||||
@@ -6738,8 +5656,6 @@ If the monster has any AC or To Hit that differs from the base monster, it will 
 ||||||||38|4|303|90|- 102||||
 1. Has a base To Hit of 100 on all difficulty levels.
 1. Has an AC of 30 on all difficulty levels.
-
-![ref33]![ref34]![ref35]![ref35]
 
 **Skeleton Archers**
 
@@ -6784,20 +5700,6 @@ If the monster has any AC or To Hit that differs from the base monster, it will 
 ||||||||38|8|723|78|- 106||||
 1	Has an AC of 45 on all difficulty levels.
 
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-**105**
-
 ||<a name="page111"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||||**Created by Pedro Faria**|||||||||
 | :- | :- | :- | :- | :- | :- | -: | :- | :- | :- | :- | :- | :- | :- | :- |
 ||||||||||||||||
@@ -6815,11 +5717,7 @@ If the monster has any AC or To Hit that differs from the base monster, it will 
 ||||||||40|9|987|54|- 118||||
 1. Due to having the Horned Demon attack type, Foulwing and his mob will do full charged attacks with both damage (0-0 / 4-4 / 6-6) and putting the player into hit recovery. For more information, see chapter 6.1.7.
 
-![ref33]![ref34]![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAsMAAAABCAYAAAA7M6PUAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAABxJREFUSIntwQEBAAAIgCD7P7qGBEy1AQDAL1N1FLsBAk5Ku6YAAAAASUVORK5CYII=)![ref34]![ref36]![ref36]
-
 **The Hiddens**
-
-![ref37]![ref37]![ref37]![ref37]![ref37]![ref37]![ref37]![ref37]![ref37]![ref37]
 
 |**Name**||**Type**||**Attack type**||**Intf**||**Mob**|**dlvl**||**mlvl**||**mlvl**||**HP**||**Damage**|**MFL**|
 | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :-: | :- | :-: | :- | :- | :- | :- | :- |
@@ -6850,8 +5748,6 @@ If the monster has any AC or To Hit that differs from the base monster, it will 
 
 1. Due to having the Horned Demon attack type, Blighthorn and its mobs will do full charged attacks with both damage (30-30 / 64-64 / 126-126) and putting the player into hit recovery. For more information, see chapter 6.1.7. Has an AC of 45 on all difficulty levels.
 
-![ref33]![ref34]![ref35]![ref35]
-
 **Goat Men Archers**
 
 ||**Name**|**Type**|**Attack type**|**Intf**|**Mob**|**dlvl**|**mlvl**|**mlvl**|**HP**|**Damage**|**MFL**||||
@@ -6870,15 +5766,6 @@ If the monster has any AC or To Hit that differs from the base monster, it will 
 1. Has the ability to fire Blood Stars instead of arrows, like Succubi.
 
 1. Has a base To Hit of 70 on all difficulty levels.
-
-![ref1]
-
-
-
-
-
-
-**106**
 
 ||<a name="page112"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||||**Created by Pedro Faria**|||||||||||
 | :- | :- | :- | :- | :- | :- | -: | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
@@ -6931,28 +5818,6 @@ If the monster has any AC or To Hit that differs from the base monster, it will 
 |Bluehorn1||Frost Charger|Horned Demon|1|Yes|11|37|17|1 432|54|-|64||IR-|||
 ||||||||||53|17|1 911|106|- 126||||
 1	Has an AC of 90 on all difficulty levels.
-
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**107**
 
 ||<a name="page113"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||||**Created by Pedro Faria**||||||||||
 | :- | :- | :- | :- | :- | :- | -: | :- | :- | :- | :- | :- | :- | :- | :- | :- |
@@ -7012,21 +5877,6 @@ If the monster has any AC or To Hit that differs from the base monster, it will 
 |||||||||58|25|2 727|66|- 206||||
 1	Will never do the short range Viper charge.
 
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-**108**
-
 ||<a name="page114"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||||**Created by Pedro Faria**|||||||||
 | :- | :- | :- | :- | :- | :- | -: | :- | :- | :- | :- | :- | :- | :- | :- |
 ||||||||||||||||
@@ -7053,8 +5903,6 @@ If the monster has any AC or To Hit that differs from the base monster, it will 
 ||||||||93|28|1 603|126|- 206||||
 1. Always appears in every multi player game.
 1. Always appears in Arch-Bishop Lazarus’ room.
-
-![ref33]![ref34]![ref38]![ref38]
 
 **Knights**
 
@@ -7087,24 +5935,6 @@ If the monster has any AC or To Hit that differs from the base monster, it will 
 
 1. Always appear in every game.
 
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**109**
-
 ||<a name="page115"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||||**Created by Pedro Faria**|||||||||
 | :- | :- | :- | :- | :- | :- | -: | :- | :- | :- | :- | :- | :- | :- | :- |
 ||||||||||||||||
@@ -7125,7 +5955,6 @@ If the monster has any AC or To Hit that differs from the base monster, it will 
 ||||||||95|30|2 403|126|- 206||||
 1. Has the ability to fire Fireballs instead of Firebolts, like Advocates. Only appears in a quest in single player.
 1. Always appears in every game.
-
 
 
 ## 5.5 Monster AI
@@ -7869,20 +6698,6 @@ Distance > 1
 
 Special AI scripts are used for most quest monsters. For those not mentioned specifically previously, the only difference from a normal AI script of that monster type is quest related things such as talking. The actual AI behavior when you fight those monsters are identical to the normal AI and is summarized in the table below.
 
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-**122**
-
 |<a name="page128"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|**Created by Pedro Faria**|||
 | :- | :- | :- | :- |
 |||||
@@ -7932,24 +6747,6 @@ This is a summary of the resistance’s and immunities of monsters, as well as o
 |2-4|Corpse Captain|I--|I--|||Brokenhead Bangshield, 3|
 |3-5|Burning Dead Captain|IR-|II-||||
 |4-6|Horror Captain|I-R|I-R||Yes|Shadow Drinker, 5|
-
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**123**
 
 |<a name="page129"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**||||**Created by Pedro Faria**|||||
 | :- | :- | :- | :- | :- | :- | :- | :- | :- |
@@ -8007,17 +6804,6 @@ This is a summary of the resistance’s and immunities of monsters, as well as o
 |11-13|Guardian|RI-||RI-|Yes|Yes|||
 |12-14|Vortex Lord|RI-||RI-|Yes|Yes|Windspawn, 12, Gorefeast, 13||
 |13-15|Balrog|RI-||RIR|Yes|Yes|Blackskull, 13||
-![ref1]
-
-
-
-
-
-
-
-
-
-**124**
 
 |<a name="page130"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**||||**Created by Pedro Faria**|||||
 | :- | :- | :- | :- | :- | :- | :- | :- | :- |
@@ -8065,30 +6851,6 @@ The new monsters in Hellfire do not have any unique monsters. That is the reason
 ### 5.6.2 Resistances, immunities and mob for unique monsters
 
 This is a summary of the unique monsters sorted by dlvl instead of monster type. This makes it very easy to quickly see what potential unique monsters can appear on a dlvl, especially if you have seen what monster types are present, as a unique monster will always appear if its monster type is present on the dungeon level.
-
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**125**
 
 |<a name="page131"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||**Created by Pedro Faria**||||
 | :- | :- | :- | :- | :- | :- | :- |
@@ -8145,23 +6907,6 @@ This is a summary of the unique monsters sorted by dlvl instead of monster type.
 1. Has the ability to fire Blood Stars instead of arrows, like Succubi.
 
 1. Has the ability to fire Fireballs instead of Firebolts, like Advocates. Only appears in quests in single player.
-
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**126**
 
 |<a name="page132"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||**Created by Pedro Faria**||||
 | :- | :- | :- | :- | :- | :- | :- |
@@ -8222,18 +6967,6 @@ This is a summary of the unique monsters sorted by dlvl instead of monster type.
 
 Chapter 5.2 listed the base number of experience points you receive for a monster, as well as the formula for calculating how much you actually get depending on your current level. The tables below list the last level your character will receive full experience (200·clvl or the total experience points needed for advancing to the next clvl divided by 20, whichever is the lowest, see chapter 2.6 for more information) for killing a monster.. It will also list the last level you receive any experience at all for killing a monster (always at a level 9 higher than the monsters level). It gives you those levels for all three difficulty settings. As there is no cap on experience points awarded for killing a monster in single player, that information only applies to multi player.
 
-![ref1]
-
-
-
-
-
-
-
-
-
-**127**
-
 |<a name="page133"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**||||**Created by Pedro Faria**||||||
 | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
 |||||||||||
@@ -8290,17 +7023,6 @@ Chapter 5.2 listed the base number of experience points you receive for a monste
 |7-9|Mud Man|8|23|26|38|43||-||
 |8-10|Toad Demon|10|25|28|40|46||-||
 |10-12|Flayed One|15|29|33|44|50||-||
-![ref1]
-
-
-
-
-
-
-
-
-
-**128**
 
 |<a name="page134"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**||||**Created by Pedro Faria**||||||
 | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
@@ -8350,27 +7072,6 @@ Chapter 5.2 listed the base number of experience points you receive for a monste
 |14-15|Magistrate|25|36|43|-|50||-||
 |14-15|Cabalist|27|38|46|-|50||-||
 |15-16|Advocate|28|39|47|-|50||-||
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**129**
 
 |<a name="page135"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**||||**Created by Pedro Faria**||||||
 | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
@@ -8411,8 +7112,6 @@ Chapter 5.2 listed the base number of experience points you receive for a monste
 
 Below follows lists of all monsters in the order of their mlvl. Of course, on nightmare difficulty all mlvl are 15 higher and on hell difficulty they are 30 higher.
 
-![ref9]![ref2]![ref39]![ref39]
-
 **Diablo**
 
 ||**Monster**|**mlvl**|**Monster**|**mlvl**|**Monster**|**mlvl**|**Monster**|**mlvl**||
@@ -8437,12 +7136,6 @@ Below follows lists of all monsters in the order of their mlvl. Of course, on ni
 ||Black Death|6|Gargoyle|13|Pit Beast|21|Advocate|30||
 ||Burning Dead Cp.|6|Horned Demon|13|Guardian|22|Blood Knight|30||
 ||Horror|6|Illusion Weavers|13|Storm Lord|22|Soul Burner|30||
-![ref1]
-
-
-
-
-**130**
 
 |<a name="page136"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**||||**Created by Pedro Faria**|||||
 | :- | :- | :- | :- | :- | :- | :- | :- | :- |
@@ -9389,17 +8082,6 @@ Shrines are found on levels 1-8 (church and catacombs), cauldrons on levels 13-1
 
 1. All spells cast from a shrine will have an slvl of 2 in church, 4 in catacombs, 6 in caves and 8 in hell.
 
-![ref1]
-
-
-
-
-
-
-
-
-**148**
-
 |<a name="page154"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|**Created by Pedro Faria**|||
 | :- | :- | :- | :- |
 |||||
@@ -9415,8 +8097,6 @@ Shrines are found on levels 1-8 (church and catacombs), cauldrons on levels 13-1
 1. Thaumaturgic Shrine will never appear as a Cauldron or Goat Shrine.
 
 1. All spells cast from a shrine will have an slvl of 2 in church, 4 in catacombs, 6 in caves and 8 in hell.
-
-![ref9]![ref2]![ref41]![ref41]
 
 **New Shrines in Hellfire**
 
@@ -9455,23 +8135,6 @@ Shrines are found on levels 1-8 (church and catacombs), cauldrons on levels 13-1
 All shrines can occur on any dungeon level with the exception of the Enchanted shrine which will only occur on level 1-8. All shrines also have the same probability to occur on any dungeon level. Similarly all shrines have the same probability to be selected when you hit a Goat Shrine or a Cauldron (with the exception of Enchanted shrine mentioned above and the fact that Thaumaturgic Shrines will never appear as a Goat Shrine or a Cauldron).
 
 To make it easier finding out what shrine you have hit when you try your luck at a goat shrine or a cauldron, the table below lists the messages (in alphabetical order) as well as what shrine they correspond to.
-
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**149**
 
 |<a name="page155"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**||**Created by Pedro Faria**||||
 | :- | :- | :- | :- | :- | :- |
@@ -9563,19 +8226,6 @@ This chapter deals with all of the quests present in Diablo and Hellfire. It onl
 
 In single player, the quests that will appear in a single game are chosen at random. But there is some structure in the way they are chosen. Three quests are always present in every game: The Chamber of Bone, Archbishop Lazarus, and Diablo. If you play Hellfire, all the new quests will also always be present. The other quests are all organized into groups. From each group a specific number of quests are chosen for every game. The table below summarizes the different groups and how many quests from each group are chosen each game.
 
-![ref1]
-
-
-
-
-
-
-
-
-
-
-**151**
-
 |<a name="page157"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|**Created by Pedro Faria**|||
 | :- | :- | :- | :- |
 |||||
@@ -9654,20 +8304,6 @@ This is one of the most complicated quests in Diablo. After finding a *fungal to
 ### 8.2.12 Slain Hero
 
 You will find a slain hero somewhere on level 9. He will drop an item depending on your character class. The table below tells what base item each character class will get. The ilvl for item creation for items from the Slain hero is equal to 2·dlvl. The items will be given the same +4 bonus as is given to unique monsters when picking prefixes and suffixes. As such, the item creation follows the same rules and probabilities as for an item dropped from a unique monster (with the exception that the base item is not random).
-
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-**153**
 
 |<a name="page159"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|**Created by Pedro Faria**|||
 | :- | :- | :- | :- |
@@ -9790,8 +8426,6 @@ While playing multi player games, you can set the four keys F9 - F12 to have fou
 
 In single player, you can save (and must save) your game whenever you want. The save files are stored in the Diablo/Hellfire folder and can easily be transferred to other computers. In multi player, you can’t save the game. Your character, its stats and items that it has equipped or carries, is saved automatically by the game as soon as you make any changes to it. Thus, there is never any need to save it. Your character in multi player is also saved in the Diablo folder. The names of the save files are summarized in the tables below. In versions previous to 1.08, the game used to save your multiplayer files in the Windows (!) folder on the PC, so you may still find those save files there. Whenever you run Diablo v1.08 or later, it will move those files to the Diablo folder but will not remove them from the Windows folder. As Hellfire is based on the 1.04 version of Diablo, it still saves the multiplayer files in the Windows folder.
 
-![ref9]![ref2]![ref11]![ref11]
-
 **PC**
 
 ||**Game type**|**Folder**|**Name**|||
@@ -9801,8 +8435,6 @@ In single player, you can save (and must save) your game whenever you want. The 
 ||Diablo multi player|Diablo|multi\_#.sv|Where # is a number in the range 0..9||
 ||Hellfire multi player|Windows1|hrinfo\_#.drv|Where # is a number in the range 0..9||
 1. Since the files end with .drv, the files would normally be hidden by Windows. You might have to activate *show hidden files* to see them.
-
-![ref9]![ref2]![ref12]![ref12]
 
 **Macintosh**
 
@@ -9841,40 +8473,6 @@ An alternative is to rename (or move) the file *Smackw32.dll* found in your Diab
 
 As this is a guide about numbers and formulas it is not more than right that it has a few numbers about itself. Thus, below is a table with some information about this guide. Some of the values may vary with the printer, paper size and format used.
 
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**166**
-
 |<a name="page172"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||**Created by Pedro Faria**|||||
 | :- | :- | :- | :- | :- | :- | :- | :- |
 |||||||||
@@ -9907,86 +8505,3 @@ As this is a guide about numbers and formulas it is not more than right that it 
 ## 10.8 The End
 
 It is worth noticing that there are 3 kinds of people in the world, those who can count and those who can’t.
-
-![ref1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**167**
-
-[ref1]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmIAAAABCAYAAAB9qcI7AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAB1JREFUSIntwTEBAAAIwKDZP7S28AKm2gAA+DRVB48ZAQIMAGERAAAAAElFTkSuQmCC
-[ref2]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmEAAAABCAYAAACWnnk4AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAB1JREFUSIntwTEBAAAIA6Ctf2g97OAFNGcCAMCXLocVAQLEV0a3AAAAAElFTkSuQmCC
-[ref3]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAE0CAYAAAAG4uIgAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAACdJREFUSIntyLERABAAwMCw/840mEHxqf5Sp1GtqnkPAAAAAMDPeG25xQNjVF6V8wAAAABJRU5ErkJggg==
-[ref4]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlsAAAAPCAYAAADTRQq5AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAGRJREFUeJzt1kENACEQwMDj/CtbU6CiISEzCvrsmpn9AQCQ+G8HAAC8zGwBAITMFgBAyGwBAITMFgBAyGwBAITMFgBAyGwBAITMFgBAyGwBAITMFgBAyGwBAITMFgBAyGwBAIQOb8sDeyVPdnQAAAAASUVORK5CYII=
-[ref5]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAACECAYAAAC6X/rhAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAACNJREFUOI1jYIACRgYGhv8MDAwMTDCRUcYoY5QxyhgoBhwAAPKmAgMmWaU0AAAAAElFTkSuQmCC
-[ref6]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAABECAYAAACrt+RVAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAB9JREFUKJFjYIACRgYGhv8MDAwMTDCRUcYogxIGHAAA9OoBg9XwlcUAAAAASUVORK5CYII=
-[ref7]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAACUCAYAAAC5ifh6AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAACJJREFUOI1jYIACRgYGhv8MDAwMTDCRUcYoY5QxyhhloAEAHyQCI6Eor8AAAAAASUVORK5CYII=
-[ref8]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAADiCAYAAABk8hamAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAACdJREFUOI3tyLEJACAAwLDo/z/ropMXCO0UymlgwbwnhBBCCJ/ibQPZcgK9xOgugwAAAABJRU5ErkJggg==
-[ref9]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlsAAAANCAYAAACejauyAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAFtJREFUeJzt1kENACEQwMDj/CtbU6CiISEzCvrsmpn9AQCQ+G8HAAC8zGwBAITMFgBAyGwBAITMFgBAyGwBAITMFgBAyGwBAITMFgBAyGwBAITMFgBAyGwBAIQO4gkDd95PBiEAAAAASUVORK5CYII=
-[ref10]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAEDCAYAAAAfndU1AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAACdJREFUSIntyLERABAAwMBn/51pqGzgkuovnAYWzHtCCCGEEP7G2wYzCQL/0Lo3XAAAAABJRU5ErkJggg==
-[ref11]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAABiCAYAAAB6QgJ+AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAACFJREFUKJFjYIACRgYGhv8MDAwMTDCRUcYoY5RBIQMTAACv3AG9Uam4rQAAAABJRU5ErkJggg==
-[ref12]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAABCCAYAAAB97gdIAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAB9JREFUKJFjYIACRgYGhv8MDAwMTDCRUcYogyADEwAA2X4BfZnYu8gAAAAASUVORK5CYII=
-[ref13]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAABSCAYAAAB+OAXTAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAB9JREFUKJFjYIACRgYGhv8MDAwMTDCRUcYoY8gxMAEAu60BnWPfZ3cAAAAASUVORK5CYII=
-[ref14]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAACiCAYAAABrqhzKAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAACVJREFUOI1jYIACRgYGhv8MDAwMTDCRUcYoY5QxyhhlDCADEwAANKcCPYBfSBcAAAAASUVORK5CYII=
-[ref15]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAqcAAAANCAYAAACU/celAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAF9JREFUeJzt1jEBwCAQwMBS/8reFExoIMOdgoxZM7M/AAAI+F8HAADAZU4BAMgwpwAAZJhTAAAyzCkAABnmFACADHMKAECGOQUAIMOcAgCQYU4BAMgwpwAAZJhTAAAyDqj0A3cxJpOfAAAAAElFTkSuQmCC
-[ref16]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAq0AAAABCAYAAAD0HZcXAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAB9JREFUSIntwTEBADAMwKDUv+jumIkewPRtAABwz1Q9uFgBArZUNHYAAAAASUVORK5CYII=
-[ref17]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAHHCAYAAACV5ImXAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAACpJREFUSIntyMENABAAwMCy/858sIPk+rq0TqNaVfMeAAAAAAAAAPgarw1C0wSJJI11/AAAAABJRU5ErkJggg==
-[ref18]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAFcCAYAAADiRW8XAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAACZJREFUSIntyDERACAQwLCCf8/PAqhIp1zrtqqp2u8AAAAAAAD8DrnAA7Ofm01JAAAAAElFTkSuQmCC
-[ref19]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAEMCAYAAADuy2fgAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAACdJREFUSIntyLERABAAwMBn/51pMIA6qf7CaWDBvCeEEEIIIfzhtQEqWQMT2k4l+AAAAABJRU5ErkJggg==
-[ref20]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAADNCAYAAACSCKFFAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAACVJREFUOI3tyLERABAAwMBn/51pqIwgqf7CaWDBvCeEEEL4GW8b35sCkyGxBYcAAAAASUVORK5CYII=
-[ref21]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAADwCAYAAAAq7LU2AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAACZJREFUSIntyKENACAAwLDC/z+DAYVDb6oZp4EF854QQgghhA+8bTvwAtk0EDTLAAAAAElFTkSuQmCC
-[ref22]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAANCAYAAAB1uhCxAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAF9JREFUeJzt1kENgEAQwEAOUev/vabARBMSMqOgz57dfS4AABIzc+6vIwAA/sZgAQDEDBYAQMxgAQDEDBYAQMxgAQDEDBYAQMxgAQDEDBYAQMxgAQDEDBYAQMxgAQDEXnv6BBrBJkw0AAAAAElFTkSuQmCC
-[ref23]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAl0AAAABCAYAAADkURuOAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAB1JREFUSIntwTEBAAAIA6Ctf2g9zOAHNGcCAMCXLncFAQJ/SBUnAAAAAElFTkSuQmCC
-[ref24]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAGSCAYAAADJpxDTAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAClJREFUSIntyLERABAAwMCw/840VDZwn+ovdRrVqpr3AAAAAAAAwMd42ywcBB0HWtBnAAAAAElFTkSuQmCC
-[ref25]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAABkCAYAAACsG+FjAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAACFJREFUKJFjYIACRgYGhv8MDAwMTDCRUcYoY5RBOwYcAADPyAHDQVuuWwAAAABJRU5ErkJggg==
-[ref26]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArYAAAANCAYAAABckS1zAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAGFJREFUeJzt1kENwDAQwLCu/JEdqY3EpKqRjSDPPDPzLgAAuNw+HQAAAH8wtgAAJBhbAAASjC0AAAnGFgCABGMLAECCsQUAIMHYAgCQYGwBAEgwtgAAJBhbAAASjC0AAAkfE50Dd9y+b/MAAAAASUVORK5CYII=
-[ref27]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArwAAAABCAYAAAA8cX3BAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAB9JREFUSIntwTERADAIALHHv2g61AWXZPo2AAC4Zaoe9JQBAktOuVwAAAAASUVORK5CYII=
-[ref28]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAADnCAYAAAA0P4cVAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAACZJREFUSIntyLERABAAwMBn/51pqIwgqf7CaWDBvCeEEEIIP+BtA1Z8AseAjxsoAAAAAElFTkSuQmCC
-[ref29]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAE4CAYAAABxICJbAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAACdJREFUSIntyMENABAAwMCy/858sIPk+rq0TqNaVfMeAAAAAIDf8do0vANrPOvq5wAAAABJRU5ErkJggg==
-[ref30]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAACyCAYAAABofB5RAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAACRJREFUOI3tyLERABAAwMBn/51p0Fghqf7CaWDBvCeEEEJ4+NuC1gJdBON1ugAAAABJRU5ErkJggg==
-[ref31]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAECCAYAAADUwQaQAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAACdJREFUSIntyLERABAAwMBn/51pqGzgkuovnAYWzHtCCCGEEL7E2wYX7gL9A0t7+AAAAABJRU5ErkJggg==
-[ref32]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAADyCAYAAABnJBQ9AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAACZJREFUSIntyKENACAAwLDC/z+DAYVFbqoZp4EF854QQgghhC9422+wAt1OkUPtAAAAAElFTkSuQmCC
-[ref33]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAr4AAAANCAYAAABPRm2HAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAGRJREFUeJzt1kERgDAQwECKqPp/nylwUWbIroI8s2bmuQAA4Mf23uv+OgIAAE4wvgAAJBhfAAASjC8AAAnGFwCABOMLAECC8QUAIMH4AgCQYHwBAEgwvgAAJBhfAAASjC8AAAkvfx8EGiqxVYgAAAAASUVORK5CYII=
-[ref34]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAsQAAAABCAYAAADZ77itAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAB5JREFUSIntwUEBADAIAKGzf2j3WAyB6dsAAOCWqXoUwwECp3jhHgAAAABJRU5ErkJggg==
-[ref35]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAC5CAYAAAACu+6SAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAACVJREFUOI3tyKENACAAwLDC/z+DAYVFbqoZp4EF854QQgjhF942GrwCa2kWEDIAAAAASUVORK5CYII=
-[ref36]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAABdCAYAAACPbrcGAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAACBJREFUKJFjYIACRgYGhv8MDAwMTDCRUcYoY5SBycAEAGGjAbPof23zAAAAAElFTkSuQmCC
-[ref37]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAABNCAYAAABnjw6eAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAABdJREFUGJVjYGBg+M/EwMDAMErQkUAAAO9BAZSFg4TbAAAAAElFTkSuQmCC
-[ref38]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAFxCAYAAABZd3n/AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAChJREFUSIntyMENABAAwMCy/858sIPk+rq0TqNaVfMeAAAAAACAr/HahswD3d9FCkYAAAAASUVORK5CYII=
-[ref39]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAFiCAYAAADcNQnKAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAChJREFUSIntyKENACAAwLDB/z+DAYXCd6pZnUa1quY9AAAAAAAAX3jbg1MDvcqWd98AAAAASUVORK5CYII=
-[ref40]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAALACAYAAAC5CaOyAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAC5JREFUWIXtyLERABAAwMCw/840GEH1qf5Sp1GtqnkPAAAAAAAAAAAAAADAT7w2lugGe995zy8AAAAASUVORK5CYII=
-[ref41]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAHeCAYAAACxPdrEAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAACtJREFUWIXtyLERABAAwMCw/840VAbQfKq/1GlUq2reAwAAAAAAAADwHW8bArgEtelIgkYAAAAASUVORK5CYII=
