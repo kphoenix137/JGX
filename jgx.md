@@ -783,333 +783,369 @@ Items play a very important role in Diablo and come in many variants. This chapt
 Books and oils also work in a similar way, as they consist of the base item *book of* and *oil of,* to which you then add either a spell or an oil type (for exceptions to oils see chapter 3.2.1). Scrolls, on the other hand, are each single base items and do not consist of the base item plus a spell as books do. Finally we have potions, elixirs, and runes that are all base items. In many tables in this chapter there is a reference to a qlvl. That level is used by the game when creating items; see chapter 3.8 and 3.9. Information about qlvl and occurrences of prefixes and suffixes initially came from Bostic.
 
 
-
 ## 3.1 Armor, weapons and jewelry
 
 In the tables below are listed all the base items you can equip in the game. They can be found in the dungeons or bought from Griswold, Adria and Wirt. Jewelry can only be bought in single player, never in multi player. Listed are also all those base items upon which the quest items are based. Those special quest base items cannot be found otherwise in the game.
 
-<b>Armor<sup>1</sup></b>
+### Armor<sup>[^23]</sup>
 
-||**Type**|**Armor Class**|**Durability**|**Requirements**|**Price**|**qlvl**||||
-| :- | :- | -: | -: | :- | -: | -: | :- | :- | :- |
-||Rags|2|-|6|6||5|1||
-||Cape|1|-|5|12||10|1||
-||Cloak|3|-|7|18||40|2||
-||Robe|4|-|7|24||75|3||
-||Quilted Armor|7|- 10|30||200|4|||
-||Leather Armor|10|- 13|35||300|6|||
-||Hard Leather Armor|11|- 14|40||450|7|||
-||Studded Leather Armor|15|- 17|45|20 Str|700|9|||
-||Ring Mail|17|- 20|50|25 Str|900|11|||
-||Chain Mail|18|- 22|55|30 Str|1 250|13|||
-||Scale Mail|23|- 28|60|35 Str|2 300|15|||
-||Splint Mail|30|- 35|65|40 Str|3 250|17|||
-||Breast Plate|20|- 24|80|40 Str|2 800|16|||
-||Plate Mail2|42|- 50|75|60 Str|4 600|19|||
-||Field Plate2|40|- 45|80|65 Str|5 800|21|||
-||Gothic Plate|50|- 60|100|80 Str|8 000|23|||
-||Full Plate Mail|60|- 75|90|90 Str|6 500|25|||
-1. Armor can be divided into three different categories, light, Rags - Studded Leather Armor, medium, Ring Mail - Splint Mail and heavy, Breast Plate - Full Plate Mail. Each of the three different types of armor will give your character a different look.
+| **Type**                  | **Armor Class** | **Durability** | **Requirements** | **Price** | **qlvl** |
+|---------------------------|--------------:|--------------:|----------------:|---------:|--------:|
+| Rags                      | 2 - 6        | 6            | -               | 5       | 1       |
+| Cape                      | 1 - 5        | 12           | -               | 10      | 1       |
+| Cloak                     | 3 - 7        | 18           | -               | 40      | 2       |
+| Robe                      | 4 - 7        | 24           | -               | 75      | 3       |
+| Quilted Armor             | 7 - 10       | 30           | -               | 200     | 4       |
+| Leather Armor             | 10 - 13      | 35           | -               | 300     | 6       |
+| Hard Leather Armor        | 11 - 14      | 40           | -               | 450     | 7       |
+| Studded Leather Armor     | 15 - 17      | 45           | 20 Str          | 700     | 9       |
+| Ring Mail                 | 17 - 20      | 50           | 25 Str          | 900     | 11      |
+| Chain Mail               | 18 - 22      | 55           | 30 Str          | 1,250   | 13      |
+| Scale Mail                | 23 - 28      | 60           | 35 Str          | 2,300   | 15      |
+| Splint Mail               | 30 - 35      | 65           | 40 Str          | 3,250   | 17      |
+| Breast Plate              | 20 - 24      | 80           | 40 Str          | 2,800   | 16      |
+| Plate Mail<sup>[^24]</sup>  | 42 - 50      | 75           | 60 Str          | 4,600   | 19      |
+| Field Plate<sup>[^24]</sup> | 40 - 45      | 80           | 65 Str          | 5,800   | 21      |
+| Gothic Plate              | 50 - 60      | 100          | 80 Str          | 8,000   | 23      |
+| Full Plate Mail           | 60 - 75      | 90           | 90 Str          | 6,500   | 25      |
 
-1. These items have the same picture.
+[^23]: Armor can be divided into **three different categories**:
+   - **Light**: Rags → Studded Leather Armor  
+   - **Medium**: Ring Mail → Splint Mail  
+   - **Heavy**: Breast Plate → Full Plate Mail  
+   Each category gives your character a **different look**.
+[^24]: These items share the **same in-game appearance**.
 
-<b>Axes<sup>1</sup></b>
 
-||**Type**|**Damage**|**Durability**|**Requirements**|**Price**|**qlvl**|||
-| :- | :- | -: | -: | :- | -: | -: | :- | :- |
-||Small Axe|2|- 10|24||150|2||
-||Axe|4|- 12|32|22 Str|450|4||
-||Large Axe|6|- 16|40|30 Str|750|6||
-||Broad Axe|8|- 20|50|50 Str|1 000|8||
-||Battle Axe|10|- 25|60|65 Str|1 500|10||
-||Great Axe|12|- 30|75|80 Str|2 500|12||
-1	All axes are Two-handed.
+### Axes<sup>[^25]</sup>
 
-|<a name="page23"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||**Created by Pedro Faria**||||||
-| :- | :- | :- | :- | :- | :- | :- | :- | :- |
-||||||||||
-|<b>Bows<sup>1</sup></b>|||||||||
-|**Type**|**Damage**|**Durability**|**Requirements**|**Price**|**qlvl**||||
-|Short Bow|1|-|4|30||100|1||
-|Long Bow2|1|-|6|35|25 Str, 30 Dex|250|5||
-|Hunter’s Bow2|2|-|5|40|20 Str, 35 Dex|350|3||
-|Composite Bow|3 -|6|45|25 Str, 40 Dex|600|7|||
-|Short Battle Bow|3 -|7|45|30 Str, 50 Dex|750|9|||
-|Long Battle Bow3|1|- 10|50|30 Str, 60 Dex|1 000|11|||
-|Short War Bow|4|-|8|55|35 Str, 70 Dex|1 500|15||
-|Long War Bow3|1|- 14|60|45 Str, 80 Dex|2 000|19|||
-1. All bows are Two-handed.
-1. These items have the same picture.
+| **Type**      | **Damage** | **Durability** | **Requirements** | **Price** | **qlvl** |
+|--------------|----------:|--------------:|----------------:|---------:|--------:|
+| Small Axe    | 2 - 10   | 24           | -               | 150      | 2       |
+| Axe          | 4 - 12   | 32           | 22 Str          | 450      | 4       |
+| Large Axe    | 6 - 16   | 40           | 30 Str          | 750      | 6       |
+| Broad Axe    | 8 - 20   | 50           | 50 Str          | 1,000    | 8       |
+| Battle Axe   | 10 - 25  | 60           | 65 Str          | 1,500    | 10      |
+| Great Axe    | 12 - 30  | 75           | 80 Str          | 2,500    | 12      |
 
-1. These items have the same picture.
+[^25]: All **axes** are **two-handed** weapons.
 
-|**Clubs**||||||||
-| :- | :- | :- | :- | :- | :- | :- | :- |
-|**Type**|**Damage**|**Durability**|**Requirements**|**Price**|**qlvl**|||
-|Club|1|-|6|20||20|1|
-|Spiked Club|3|-|6|20|18 Str|225|4|
-|Mace|1|-|8|32|16 Str|200|2|
-|Morning Star|1|- 10|40|26 Str|300|3||
-|Flail|2|- 12|36|30 Str|500|7||
-|War Hammer|5|-|9|50|40 Str|600|5|
-|Maul1|6|- 20|50|55 Str|900|10||
-|1  This weapon is Two-handed|except for the Barbarian.|||||||
-|||||||||
-|**Helms**||||||||
-|**Type**|**Armor Class**|**Durability**|**Requirements**|**Price**|**qlvl**|||
-|Cap|1|-|3|15||15|1|
-|Skull Cap|2|-|4|20||25|4|
-|Helm|4|-|6|30|25 Str|40|8|
-|Full Helm|6|-|8|35|35 Str|90|12|
-|Crown|8|- 12|40||200|16||
-|Great Helm|10|- 15|60|50 Str|400|20||
-|||||||||
-|**Shields**||||||||
-|**Type**|**Armor Class**|**Durability**|**Requirements**|**Price**|**qlvl**|||
-|Buckler|1|-|5|16||30|1|
-|Small Shield|3|-|8|24|25 Str|90|5|
-|Large Shield|5|- 10|32|40 Str|200|9||
-|Kite Shield|8|- 15|40|50 Str|400|14||
-|Gothic Shield|14|- 18|60|80 Str|2 300|23||
-|Tower Shield|12|- 20|50|60 Str|850|20||
-|||||||||
-|<b>Staves<sup>1</sup></b>||||||||
-|**Type**|**Damage**|**Durability**|**Requirements**|**Price**|**qlvl**|||
-|Short Staff2|2|-|4|25||30|1|
-|Long Staff|4|-|8|35||100|4|
-|Composite Staff|5|- 10|45||500|6||
-|Quarter Staff2|6|- 12|55|20 Str|1 000|9||
-|War Staff|8|- 16|75|30 Str|1 500|12||
 
-1. All staves are Two-handed.
-1. These items have the same picture.
+### Bows<sup>[^26]</sup>
 
-|<a name="page24"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||**Created by Pedro Faria**||||||
-| :- | :- | :- | :- | :- | :- | :- | :- | :- |
-||||||||||
-|**Swords**|||||||||
-|**Type**|**Damage**|**Durability**|**Requirements**|**Price**|**qlvl**||||
-|Dagger|1|-|4|16||60|1||
-|Sword1,2|1|-|5|8|15 Str, 20 Dex|50|n/a||
-|Short Sword2|2|-|6|24|18 Str|120|1||
-|Sabre|1|-|8|45|17 Str|170|1||
-|Scimitar|3|-|7|28|23 Str, 23 Dex|200|4||
-|Blade|3|-|8|30|25 Str, 30 Dex|280|4||
-|Falchion|4|-|8|20|30 Str|250|2||
-|Long Sword|2|- 10|40|30 Str, 30 Dex|350|6|||
-|Claymore|1|- 12|36|35 Str|450|5|||
-|Broad Sword|4|- 12|50|40 Str|750|8|||
-|Bastard Sword|6|- 15|60|50 Str|1 000|10|||
-|Two-Handed Sword3|8|- 16|75|65 Str|1 800|14|||
-|Great Sword3|10|- 20|100|75 Str|3 000|17|||
-1. Only available to the Bard as a starting weapon.
-1. These items have the same picture.
+| **Type**             | **Damage** | **Durability** | **Requirements**         | **Price** | **qlvl** |
+|----------------------|----------:|--------------:|------------------------:|---------:|--------:|
+| Short Bow           | 1 - 4     | 30           | -                        | 100      | 1       |
+| Long Bow<sup>[^27]</sup>      | 1 - 6     | 35           | 25 Str, 30 Dex         | 250      | 5       |
+| Hunter’s Bow<sup>[^27]</sup>  | 2 - 5     | 40           | 20 Str, 35 Dex         | 350      | 3       |
+| Composite Bow       | 3 - 6     | 45           | 25 Str, 40 Dex         | 600      | 7       |
+| Short Battle Bow    | 3 - 7     | 45           | 30 Str, 50 Dex         | 750      | 9       |
+| Long Battle Bow<sup>[^28]</sup> | 1 - 10    | 50           | 30 Str, 60 Dex         | 1,000    | 11      |
+| Short War Bow       | 4 - 8     | 55           | 35 Str, 70 Dex         | 1,500    | 15      |
+| Long War Bow<sup>[^28]</sup>  | 1 - 14    | 60           | 45 Str, 80 Dex         | 2,000    | 19      |
 
-1. These swords are Two-handed except for the Barbarian.
+[^26]: All **bows** are **two-handed** weapons.  
+[^27]: These items have the **same picture**.  
+[^28]: These items have the **same picture**.
 
-<b>Jewelry<sup>1</sup></b>
 
-||**Type**|**Durability**|**Requirements**|**Price**|**qlvl**|||
-| :- | :- | :-: | :- | -: | -: | :- | :- |
-||Ring|indestructible||1 000|5, 10,|15||
-||Amulet|indestructible||1 200|8,|16||
-1	Jewelry always has a prefix and/or a suffix, unless being unique.
+### Clubs
 
-<b>Quest Items<sup>1</sup></b>
+| **Type**          | **Damage** | **Durability** | **Requirements** | **Price** | **qlvl** |
+|-------------------|----------:|--------------:|----------------:|---------:|--------:|
+| Club            | 1 - 6      | 20            | -                | 20       | 1       |
+| Spiked Club     | 3 - 6      | 20            | 18 Str           | 225      | 4       |
+| Mace            | 1 - 8      | 32            | 16 Str           | 200      | 2       |
+| Morning Star    | 1 - 10     | 40            | 26 Str           | 300      | 3       |
+| Flail           | 2 - 12     | 36            | 30 Str           | 500      | 7       |
+| War Hammer      | 5 - 9      | 50            | 40 Str           | 600      | 5       |
+| Maul<sup>[^29]</sup>         | 6 - 20     | 50            | 55 Str           | 900      | 10      |
 
-||**Type**|**Based on**|**Damage**|**Armor Class**|**Durability**|**Requirements**||||
-| :- | :- | :- | :-: | -: | -: | :- | :- | :- | :- |
-||Arkaine’s Valor|ring mail||0|-|0|40|||
-||Bovine Plate|full plate mail||0|-|0|40|50 Str||
-||Cleaver|axe|4-24||||10|||
-||Griswold’s Edge|broad sword|4-12||||50|40 Str||
-||Harlequin Crest|cap||0|-|0|15|||
-||The Undead Crown|crown||15|- 15|50||||
-||Veil of Steel|great helm||18|- 18|60||||
-1. This is a list of the base items upon which quest items are based. It does not include rings or amulets as it would make no difference. Note that any of the above properties may be superseded by one of the unique properties of the quest item.
+[^29]: This weapon is **two-handed**, except for the **Barbarian**.
+
+
+### Helms
+
+| **Type**       | **Armor Class** | **Durability** | **Requirements** | **Price** | **qlvl** |
+|---------------|--------------:|--------------:|----------------:|---------:|--------:|
+| Cap          | 1             | 3             | -                | 15       | 1       |
+| Skull Cap    | 2             | 4             | -                | 25       | 4       |
+| Helm         | 4             | 6             | 25 Str           | 40       | 8       |
+| Full Helm    | 6             | 8             | 35 Str           | 90       | 12      |
+| Crown        | 8 - 12        | 40            | -                | 200      | 16      |
+| Great Helm   | 10 - 15       | 60            | 50 Str           | 400      | 20      |
+
+
+### Shields
+
+| **Type**         | **Armor Class** | **Durability** | **Requirements** | **Price** | **qlvl** |
+|----------------|--------------:|--------------:|----------------:|---------:|--------:|
+| Buckler       | 1             | 5             | -                | 30       | 1       |
+| Small Shield  | 3             | 8             | 25 Str           | 90       | 5       |
+| Large Shield  | 5 - 10        | 32            | 40 Str           | 200      | 9       |
+| Kite Shield   | 8 - 15        | 40            | 50 Str           | 400      | 14      |
+| Gothic Shield | 14 - 18       | 60            | 80 Str           | 2,300    | 23      |
+| Tower Shield  | 12 - 20       | 50            | 60 Str           | 850      | 20      |
+
+
+### Staves<sup>[^30]</sup>
+
+| **Type**             | **Damage** | **Durability** | **Requirements** | **Price** | **qlvl** |
+|----------------------|:---------:|--------------:|----------------:|---------:|--------:|
+| Short Staff<sup>[^31]</sup>  | 2 - 4     | 25            | -                | 30       | 1       |
+| Long Staff          | 4 - 8     | 35            | -                | 100      | 4       |
+| Composite Staff     | 5 - 10    | 45            | -                | 500      | 6       |
+| Quarter Staff<sup>[^31]</sup> | 6 - 12    | 55            | 20 Str           | 1,000    | 9       |
+| War Staff          | 8 - 16    | 75            | 30 Str           | 1,500    | 12      |
+
+[^30]: All staves are **Two-handed**.
+[^31]: These items have the **same picture**.  
+
+
+### Swords
+
+| **Type**               | **Damage** | **Durability** | **Requirements**         | **Price** | **qlvl** |
+|------------------------|:---------:|--------------:|------------------------:|---------:|--------:|
+| Dagger                | 1 - 4      | 16            | -                        | 60       | 1       |
+| Sword<sup>[^32][^33]</sup> | 1 - 5      | 8             | 15 Str, 20 Dex           | 50       | n/a     |
+| Short Sword<sup>[^33]</sup> | 2 - 6      | 24            | 18 Str                   | 120      | 1       |
+| Sabre                 | 1 - 8      | 45            | 17 Str                   | 170      | 1       |
+| Scimitar              | 3 - 7      | 28            | 23 Str, 23 Dex           | 200      | 4       |
+| Blade                 | 3 - 8      | 30            | 25 Str, 30 Dex           | 280      | 4       |
+| Falchion              | 4 - 8      | 20            | 30 Str                   | 250      | 2       |
+| Long Sword           | 2 - 10     | 40            | 30 Str, 30 Dex           | 350      | 6       |
+| Claymore              | 1 - 12     | 36            | 35 Str                   | 450      | 5       |
+| Broad Sword         | 4 - 12     | 50            | 40 Str                   | 750      | 8       |
+| Bastard Sword       | 6 - 15     | 60            | 50 Str                   | 1,000    | 10      |
+| Two-Handed Sword<sup>[^34]</sup> | 8 - 16     | 75            | 65 Str                   | 1,800    | 14      |
+| Great Sword<sup>[^34]</sup>       | 10 - 20    | 100           | 75 Str                   | 3,000    | 17      |
+
+[^32]: Only available to the **Bard** as a starting weapon.  
+[^33]: These items have the **same picture**.  
+[^34]: These swords are **Two-handed**, except for the **Barbarian**.
+
+
+### Jewelry<sup>[^35]</sup>
+
+| **Type**  | **Durability**  | **Requirements** | **Price**  | **qlvl**       |
+|-----------|:--------------:|----------------:|----------:|--------------:|
+| Ring      | Indestructible | -              | 1,000     | 5, 10, 15     |
+| Amulet    | Indestructible | -              | 1,200     | 8, 16         |
+
+[^35]: Jewelry always has a **prefix and/or a suffix**, unless it is **unique**.
+
+### Quest Items<sup>[^36]</sup>
+
+| **Type**            | **Based on**      | **Damage** | **Armor Class** | **Durability** | **Requirements** |
+|---------------------|------------------|:---------:|---------------:|--------------:|----------------:|
+| Arkaine’s Valor    | Ring Mail        |     -      |       0        |       -       | 40              |
+| Bovine Plate       | Full Plate Mail  |     -      |       0        |       -       | 50 Str          |
+| Cleaver           | Axe               |  4 - 24    |       -        |       -       | 10              |
+| Griswold’s Edge   | Broad Sword       |  4 - 12    |       -        |       -       | 40 Str          |
+| Harlequin Crest   | Cap               |     -      |       0        |       -       | 15              |
+| The Undead Crown  | Crown             |     -      |     15 - 15     |      50       | -               |
+| Veil of Steel     | Great Helm        |     -      |     18 - 18     |      60       | -               |
+
+[^36]: This is a list of the **base items** upon which **quest items** are based.  
+It does not include **rings or amulets**, as it would make no difference.  
+Note that any of the above **properties may be superseded** by one of the **unique properties** of the quest item.
+
 
 ## 3.2 Other base items
 
 This chapter will give you information about all those items in the game that you can’t wear. It also has information about magic related items. However, for information about the actual spells, how they work and their use, see chapter 4. Books and most oils consist of a base item type, *book of* and *oil of* listed in the table below. Each book then has a spell assigned to it and oils have an oil type assigned.
 
-|**Type**|**Price**|**qlvl**|
-| :- | -: | -: |
-|Book of|-|2, 8, 14, 20|
-|Oil of|-|10|
+
+### Books & Oils
+
+| **Type**       | **Price** | **qlvl** |
+|---------------|---------:|--------:|
+| Book of       |    -     | 2, 8, 14, 20 |
+| Oil of        |    -     | 10 |
+
 
 ### 3.2.1 Runes and oils
 
 Runes and oils were introduced in Hellfire and do not exist in Diablo. Runes are placed in the dungeons and when a monster or player walks over them the spell is released. They can also be used directly on a target. Oils are used on items to boost their properties. Note that only effects from oils that affect the durability are carried over when you start a new game.
 
-|<a name="page25"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||**Created by Pedro Faria**||||
-| :- | :- | :- | :- | :- | :- | :- |
-||||||||
-|<b>Rune<sup>1</sup></b>|**Cost**||**qlvl**|<b>Effect<sup>2</sup></b>|**Requirement**||
-|Rune of Fire|100||1|Casts Fireball|No requirement||
-|Rune of Lightning|200||3|Casts Lightning Wall|Requires 13 magic||
-|Rune of Stone|300||7|Casts Stone Curse|Requires 25 magic||
-|Greater Rune of Fire|400||7|Casts Immolation|Requires 42 magic||
-|Greater Rune of Lightning|500||7|Casts Nova|Requires 42 magic||
-1. Runes can be found in the dungeon or bought from Adria.
-1. Actually not the exact spell but one that is similar to the listed one. It is the player’s level that effects the damage/duration of the runes.
+### Runes
+
+| **Rune<sup>[^37]</sup>** | **Cost** | **qlvl** | **Effect<sup>[^38]</sup>** | **Requirement** |
+|----------------------|--------:|--------:|------------------|--------------|
+| Rune of Fire        | 100     | 1      | Casts Fireball   | No requirement |
+| Rune of Lightning   | 200     | 3      | Casts Lightning Wall | Requires 13 Magic |
+| Rune of Stone       | 300     | 7      | Casts Stone Curse | Requires 25 Magic |
+| Greater Rune of Fire | 400    | 7      | Casts Immolation | Requires 42 Magic |
+| Greater Rune of Lightning | 500 | 7    | Casts Nova | Requires 42 Magic |
+
+[^37]: **Runes** can be found in the dungeon or bought from **Adria**.
+[^38]: The runes **do not cast the exact spell** but rather a **similar version**. The **player’s level affects the damage/duration** of the runes.
 
 Oils might need some more explanation. They are created by the game in two different ways. You won’t see that as a player and there is actually no difference in how they work depending on how they were created. The first three oils in the list below actually exist as a single base item. All other oils, including also versions of the first three ones, are created as a base item *oil of* to which an oil type is then assigned, just like spell books. They are listed below the thick line.
 
-|<b>Oil<sup>1</sup></b>|**Cost**|**qlvl**|<b>Effect<sup>2</sup></b>|
-| :- | -: | -: | :- |
-|Blacksmith Oil3|100|1|Restores 20% of durability or add 1 to max durability|
-|Oil of Accuracy|500|1|Adds 1-2% To Hit (if < 50)|
-|Oil of Sharpness|500|1|Adds 1 to max damage (if < 30)|
-|Blacksmith3|100|1|Restores 20% of durability or add 1 to max durability (if < 100)|
-|Fortitude3|2 500|5|Adds 10-50 to max and current durability (if < 200)|
-|Permanence3,4|15 000|17|Makes an item indestructible|
-|Accuracy4|500|1|Adds 1-2% To Hit (if < 50)|
-|Mastery4|2 500|10|Adds 3-5% To Hit (if < 100)|
-|Hardening4|2 500|1|Adds 1-2 AC (if < 60)|
-|Imperviousness4|2 500|10|Adds 3-5 AC (if < 120)|
-|Sharpness4|500|1|Adds 1 to max damage (if max-min < 30)5|
-|Death4|2 500|10|Adds 1 to min damage and 2 to max damage (if max-min < 30)5|
-|Skill4|1 500|4|Decreases all requirement to use by 5-10 (may reach 0)6|
+### Oils
 
-1. Oils cannot be bought, only found in the dungeons.
-1. Only affects the item it is used on.
+| **Oil<sup>[^39]</sup>** | **Cost** | **qlvl** | **Effect<sup>[^40]</sup>** |
+|-----------------------|--------:|--------:|--------------------------------------------|
+| Blacksmith Oil<sup>[^41]</sup> | 100 | 1 | Restores 20% of durability or adds 1 to max durability |
+| Oil of Accuracy | 500 | 1 | Adds 1-2% To Hit (if < 50) |
+| Oil of Sharpness | 500 | 1 | Adds 1 to max damage (if < 30) |
+| Blacksmith<sup>[^41]</sup> | 100 | 1 | Restores 20% of durability or adds 1 to max durability (if < 100) |
+| Fortitude<sup>[^41]</sup> | 2,500 | 5 | Adds 10-50 to max and current durability (if < 200) |
+| Permanence<sup>[^41][^42]</sup> | 15,000 | 17 | Makes an item indestructible |
+| Accuracy<sup>[^42]</sup> | 500 | 1 | Adds 1-2% To Hit (if < 50) |
+| Mastery<sup>[^42]</sup> | 2,500 | 10 | Adds 3-5% To Hit (if < 100) |
+| Hardening<sup>[^42]</sup> | 2,500 | 1 | Adds 1-2 AC (if < 60) |
+| Imperviousness<sup>[^42]</sup> | 2,500 | 10 | Adds 3-5 AC (if < 120) |
+| Sharpness<sup>[^42]</sup> | 500 | 1 | Adds 1 to max damage (if max-min < 30)<sup>[^43]</sup> |
+| Death<sup>[^42]</sup> | 2,500 | 10 | Adds 1 to min damage and 2 to max damage (if max-min < 30)<sup>[^43]</sup> |
+| Skill<sup>[^42]</sup> | 1,500 | 4 | Decreases all requirements to use by 5-10 (may reach 0)<sup>[^44]</sup> |
 
-1. Effect is permanent and carries over when you restart a new game.
-
-1. Only exists in single player.
-
-1. It is the difference between min and max damage that must be less than 30.
-
-1. All requirements are lowered by the same amount.
+[^39]: Oils **cannot be bought**, only found in dungeons.  
+[^40]: Oils **only affect** the item they are used on.  
+[^41]: Effect is **permanent** and **carries over** when restarting a new game.  
+[^42]: **Only available in single-player mode.**  
+[^43]: The **difference between min and max damage** must be **less than 30** for the effect to apply.  
+[^44]: **All item requirements** are lowered by the **same amount**.  
 
 
 ### 3.2.2 Potions and elixirs
 
 The tables below hold information about potions and elixirs. As always, the prices are buying prices.
 
-|**Potion**|**Cost**||**qlvl**|**Effect**|
-| :- | -: | :- | -: | :- |
-|Potion of Healing1|50||1|Restores some of your life|
-|Potion of Full Healing|150||1|Restores all of your life|
-|Potion of Mana1|50||1|Restores some of your mana|
-|Potion of Full Mana|150||1|Restores all of your mana|
-|Potion of Rejuvenation1|120||3|Restores some of your life and mana|
-|Potion of Full Rejuvenation|600||7|Restores all of your life and mana|
-|1  See below for information on how much|mana/life is restored.||||
-||||||
-|<b>Elixir<sup>1</sup></b>|**Cost**||**qlvl**|**Effect**|
-|Elixir of Strength|5 000||15|Increases strength by one|
-|Elixir of Magic|5 000||15|Increases magic by one3|
-|Elixir of Dexterity|5 000||15|Increases dexterity by one|
-|Elixir of Vitality|5 000|2|20|Increases vitality by one4|
+### Potions
 
-1. In multi player elixirs can be bought from Adria once your character reaches level 26. In single player they can be bought from both Adria and Pepin once you have been on dlvl 13 or in the Hive or the Crypt in Hellfire.
+| **Potion** | **Cost** | **qlvl** | **Effect** |
+|-----------|--------:|--------:|-----------|
+| Potion of Healing<sup>[^45]</sup> | 50 | 1 | Restores some of your life |
+| Potion of Full Healing | 150 | 1 | Restores all of your life |
+| Potion of Mana<sup>[^45]</sup> | 50 | 1 | Restores some of your mana |
+| Potion of Full Mana | 150 | 1 | Restores all of your mana |
+| Potion of Rejuvenation<sup>[^45]</sup> | 120 | 3 | Restores some of your life and mana |
+| Potion of Full Rejuvenation | 600 | 7 | Restores all of your life and mana |
 
-1. Elixirs of Vitality cannot be bought, only found in the dungeons.
+[^45]: See below for information on how much **life/mana** is restored.
 
-1. In Hellfire it also restores all of your mana.
+### Elixirs<sup>[^46]</sup>
 
-1. In Hellfire it also restores all of your life.
+| **Elixir** | **Cost** | **qlvl** | **Effect** |
+|------------|--------:|--------:|------------------|
+| Elixir of Strength | 5,000 | 15 | Increases Strength by 1 |
+| Elixir of Magic | 5,000 | 15 | Increases Magic by 1<sup>[^48]</sup> |
+| Elixir of Dexterity | 5,000 | 15 | Increases Dexterity by 1 |
+| Elixir of Vitality | 5,000<sup>[^47]</sup> | 20 | Increases Vitality by 1<sup>[^49]</sup> |
+
+[^46]In **multiplayer**, elixirs can be **bought from Adria** once your character reaches **level 26**. In **single-player**, they can be **bought from both Adria and Pepin** once you have been to **dlvl 13, the Hive, or the Crypt (Hellfire)**.  
+[^47]: **Elixirs of Vitality** cannot be bought, only **found in dungeons**.  
+[^48]: In **Hellfire**, the **Elixir of Magic** **also restores all of your mana**.  
+[^49]: In **Hellfire**, the **Elixir of Vitality** **also restores all of your life**.  
 
 Potions of Healing and Mana restore life and mana as stated below. Potions of Rejuvenation are basically treated as one Potion of Mana and one Potion of Healing. For information on how scrolls of healing and the Healing spell work, see chapter 4.1.2.
 
-Potion of Healing:	bonus · maxlife/8	to	bonus · 3·maxlife/8
+### **Potion Restoration Values**
 
-Potion of Mana:	bonus · maxmana/8	to	bonus · 3·maxmana/8
+| **Potion Type** | **Restores** |
+|---------------|----------------------|
+| Potion of Healing | bonus × maxlife / 8 to bonus × 3 × maxlife / 8 |
+| Potion of Mana | bonus × maxmana / 8 to bonus × 3 × maxmana / 8 |
 
 - Any value in the range is equally probable.
-
 - The bonus is summarized in the table below.
-
 - maxlife and maxmana are the modified values. If they are negative, the amount added will also be negative and in fact subtract life or mana.
 
-|**Type**|**Warrior**|**Rogue**|**Sorcerer**|**Monk**|**Bard**|**Barbarian**|
-| :- | :-: | :-: | :-: | :-: | :-: | :-: |
-|Healing|2\.0|1\.5|1\.0|1\.51|1\.51|2\.0|
-|Mana|1\.0|1\.5|2\.0|1\.51|1\.51|1\.0|
 
-1	When using a Potion of Rejuvenation the bonus for a Monk and a Bard is 1.0 due to a bug in Hellfire.
+### **Potion Bonus Multipliers**
+
+| **Type**  | **Warrior** | **Rogue** | **Sorcerer** | **Monk** | **Bard** | **Barbarian** |
+|-----------|:----------:|:---------:|:------------:|:--------:|:--------:|:------------:|
+| Healing   | 2.0        | 1.5       | 1.0          | 1.5<sup>[^50]</sup> | 1.5<sup>[^50]</sup> | 2.0          |
+| Mana      | 1.0        | 1.5       | 2.0          | 1.5<sup>[^50]</sup> | 1.5<sup>[^50]</sup> | 1.0          |
+
+[^50]: When using a Potion of Rejuvenation the bonus for a Monk and a Bard is 1.0 due to a bug in Hellfire.
 
 
 ### 3.2.3 Books, scrolls and staves with spells
 
 Books, scrolls and staves with spells are found in the dungeons but can also be bought from Adria. Healing scrolls and scrolls of Resurrection (only in multi player) can also be bought from Pepin. Below is listed how much you have to pay for scrolls, books, and data for calculating the cost of staves with spells. For information on how to calculate staff prices, see chapter 3.6. You can also find information about qlvl; see chapters 3.8 and 3.9 for information about qlvl and how to use it. Note that for books and staves, the qlvl is of the actual spell on that base item. The base item, *staff* or *book of*, has its own qlvl as well. As with other items, you can sell any book, scroll, or staff for one fourth of* the price. Note that in Hellfire, staves without spells are bought and sold at Griswold. In Hellfire, Wirt will also sell staves both with and without spells.
 
-|**Spell**|**Book**|||**Scroll**||**Staff**|||||
-| :- | -: | :- | :- | -: | :- | -: | :- | :- | :- | :- |
-||**Price**||**qlvl**|**Price**|**qlvl**|**Multiplier (P)**|**Charges**|**qlvl**|||
-|Apocalypse|30 000|1|19|2 000|22|400|8|- 12|15||
-|Blood Star|27 500||14|-|-|360|20|-|60|13|
-|Bone Spirit|11 500||9|-|-|160|20|-|60|7|
-|Chain Lightning|11 000||8|750|10|150|20|-|60|7|
-|Charged Bolt|1 000||1|-|-|10|40|-|80|1|
-|Elemental|10 500||8|-|-|140|20|-|60|6|
-|Fireball|8 000||8|300|8|60|40|-|80|7|
-|Firebolt|1 000||1|-|-|10|40|-|80|1|
-|Fire Wall|6 000||3|400|4|80|8|-|16|2|
-|Flame Wave|10 000||9|650|10|130|20|- 40|8||
-|Flash|7 500||5|500|6|100|20|-|40|4|
-|Golem|18 000||11|1 100|10|220|16|- 32|9||
-|Guardian|14 000||9|950|12|190|16|- 32|8||
-|Healing|1 000||1|50|1|10|20|-|40|1|
-|Heal Other|1 000||1|-|-|10|20|-|40|1|
-|Holy Bolt|1 000||1|-|-|10|40|-|80|1|
-|Identify|-||-|100|1|-||-||-|
-|Inferno|2 000||3|100|1|20|20|-|40|1|
-|Infravision|-||-|600|8|-||-||-|
-|Lightning|3 000||4|150|4|30|20|-|60|3|
-|Mana Shield|16 000||6|1 200|8|240|4|- 10|5||
-|Nova|21 000|1|14|1 300|14|260|16|- 32|10||
-|Phasing|3 500||7|200|6|40|40|-|80|6|
-|Resurrect|-||-|250|1|50|4|-|10|5|
-|Stone Curse|12 000||6|800|6|160|8|- 16|5||
-|Telekinesis|2 500||2|-|-|40|20|-|40|2|
-|Teleport|20 000||14|3 000|14|250|16|-|32|12|
-|Town Portal|3 000||3|200|4|40|8|- 12|3||
+## **Spell Costs and Attributes**
 
-1	Available as a book in Hellfire only.
+| **Spell**       | **Book Price** | **Book qlvl** | **Scroll Price** | **Scroll qlvl** | **Staff Multiplier (P)** | **Staff Charges** | **Staff qlvl** |
+|----------------|--------------:|--------------:|-----------------:|----------------:|-------------------------:|------------------:|--------------:|
+| Apocalypse<sup>[^51]</sup> | 30,000 | 19 | 2,000 | 22 | 400 | 8 – 12 | 15 |
+| Blood Star      | 27,500        | 14            | -               | -              | 360                     | 20               | 60 |
+| Bone Spirit    | 11,500        | 9             | -               | -              | 160                     | 20               | 60 |
+| Chain Lightning | 11,000        | 8             | 750             | 10             | 150                     | 20               | 60 |
+| Charged Bolt   | 1,000         | 1             | -               | -              | 10                      | 40               | 80 |
+| Elemental      | 10,500        | 8             | -               | -              | 140                     | 20               | 60 |
+| Fireball       | 8,000         | 8             | 300             | 8              | 60                      | 40               | 80 |
+| Firebolt       | 1,000         | 1             | -               | -              | 10                      | 40               | 80 |
+| Fire Wall      | 6,000         | 3             | 400             | 4              | 80                      | 8                | 16 |
+| Flame Wave     | 10,000        | 9             | 650             | 10             | 130                     | 20               | 40 |
+| Flash          | 7,500         | 5             | 500             | 6              | 100                     | 20               | 40 |
+| Golem         | 18,000        | 11            | 1,100           | 10             | 220                     | 16               | 32 |
+| Guardian       | 14,000        | 9             | 950             | 12             | 190                     | 16               | 32 |
+| Healing        | 1,000         | 1             | 50              | 1              | 10                      | 20               | 40 |
+| Heal Other     | 1,000         | 1             | -               | -              | 10                      | 20               | 40 |
+| Holy Bolt      | 1,000         | 1             | -               | -              | 10                      | 40               | 80 |
+| Identify       | -             | -             | 100             | 1              | -                       | -                | - |
+| Inferno        | 2,000         | 3             | 100             | 1              | 20                      | 20               | 40 |
+| Infravision    | -             | -             | 600             | 8              | -                       | -                | - |
+| Lightning      | 3,000         | 4             | 150             | 4              | 30                      | 20               | 60 |
+| Mana Shield    | 16,000        | 6             | 1,200           | 8              | 240                     | 4                | 10 |
+| Nova           | 21,000        | 14            | 1,300           | 14             | 260                     | 16               | 32 |
+| Phasing        | 3,500         | 7             | 200             | 6              | 40                      | 40               | 80 |
+| Resurrect      | -             | -             | 250             | 1              | 50                      | 4                | 10 |
+| Stone Curse    | 12,000        | 6             | 800             | 6              | 160                     | 8                | 16 |
+| Telekinesis    | 2,500         | 2             | -               | -              | 40                      | 20               | 40 |
+| Teleport       | 20,000        | 14            | 3,000           | 14             | 250                     | 16               | 32 |
+| Town Portal    | 3,000         | 3             | 200             | 4              | 40                      | 8                | 12 |
 
-|<a name="page27"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||**Created by Pedro Faria**|||||||||
-| :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
-|||||||||||||
-|**Spell**|**Book**|||**Scroll**||**Staff**||||||
-|**New in Hellfire**|**Price**|**qlvl**||**Price**|**qlvl**|**Multiplier (P)**|**Charges**|**qlvl**||||
-|Berserk|3 000|3||-|-|40|8|-|12|3||
-|Immolation|21 000|14||-|-|260|16|-|32|10||
-|Jester|-|-||-|-|40|15|-|30|4||
-|Lightning Wall|6 000|3||-|-|80|8|-|16|2||
-|Magi|-|-||-|-|40|15|-|30|20||
-|Mana|-|-||-|-|10|12|-|24|5||
-|Reflect|3 000|3||-|-|40|8|-|12|3||
-|Ring of Fire|6 000|5||-|-|80|8|-|16|5||
-|Search|3 000|1||50|3|40|8|-|12|3||
-|Warp|3 000|3||-|-|40|8|- 12|3|||
+[^51]: Available as a book in *Hellfire* only.
+
+
+## **New Spells in Hellfire**
+
+| **Spell**       | **Book Price** | **Book qlvl** | **Scroll Price** | **Scroll qlvl** | **Staff Multiplier (P)** | **Staff Charges** | **Staff qlvl** |
+|----------------|--------------:|--------------:|-----------------:|----------------:|-------------------------:|------------------:|--------------:|
+| Berserk        | 3,000         | 3             | -               | -              | 40                      | 8                | 12 |
+| Immolation     | 21,000        | 14            | -               | -              | 260                     | 16               | 32 |
+| Jester         | -             | -             | -               | -              | 40                      | 15               | 30 |
+| Lightning Wall | 6,000         | 3             | -               | -              | 80                      | 8                | 16 |
+| Magi           | -             | -             | -               | -              | 40                      | 15               | 30 |
+| Mana           | -             | -             | -               | -              | 10                      | 12               | 24 |
+| Reflect        | 3,000         | 3             | -               | -              | 40                      | 8                | 12 |
+| Ring of Fire   | 6,000         | 5             | -               | -              | 80                      | 8                | 16 |
+| Search        | 3,000         | 1             | 50              | 3              | 40                      | 8                | 12 |
+| Warp           | 3,000         | 3             | -               | -              | 40                      | 8                | 12 |
+
 
 ## 3.3 Quest items
 
 In the table below is listed all the various special items you will find in various quests (with the exception of the ear and the heart). They will only appear in single player and have no purposes outside the specific quest. As for the special reward items you get from various quests, they are all found in the chapter 3.5.
 
-|**Item in Diablo**|**Quest**|<b>Item in Hellfire<sup>1</sup></b>|**Quest**|
-| :- | :- | :- | :- |
-|Anvil of Fury|Anvil of Fury|Brown Suit|The Jersey’s Jersey|
-|Black Mushroom|Black Mushroom|Cathedral Map|Grave Matters|
-|Blood Stone2|Valor|Grey Suit|The Jersey’s Jersey|
-|Brain|Black Mushroom|Reconstructed Note|Torn Notes|
-|Ear3|n/a|Rune Bomb|Farmer’s Orchard|
-|Fungal Tome|Black Mushroom|Theodore|Little Girl|
-|Golden Elixir|Lachdanan|Torn Note 1|Torn Notes|
-|Heart3,4|n/a|Torn Note 2|Torn Notes|
-|Magic Rock|The Magic Rock|Torn Note 3|Torn Notes|
-|Spectral Elixir|Black Mushroom|||
-|Staff of Lazarus|Archbishop Lazarus|||
-|Tavern Sign|Ogden’s Sign|||
-1. All quest items in Diablo are also present in Hellfire.
-1. There are three of them.
 
-1. Adria will buy ears and hearts. Their buying price is equal to the clvl of the character they belonged to.
+### **Quest Items in Diablo & Hellfire**
 
-1. An ear turns into a heart if you identify it. It will always return into an ear in the next game.
+| **Item in Diablo**    | **Quest**                | **Item in Hellfire**<sup>[^52]</sup> | **Quest**                 |
+|----------------------|------------------------|----------------------------------|--------------------------|
+| Anvil of Fury       | Anvil of Fury          | Brown Suit                      | The Jersey’s Jersey      |
+| Black Mushroom      | Black Mushroom         | Cathedral Map                    | Grave Matters           |
+| Blood Stone<sup>[^53]</sup> | Valor                  | Grey Suit                        | The Jersey’s Jersey      |
+| Brain              | Black Mushroom         | Reconstructed Note               | Torn Notes              |
+| Ear<sup>[^54]</sup>         | n/a                    | Rune Bomb                        | Farmer’s Orchard        |
+| Fungal Tome        | Black Mushroom         | Theodore                         | Little Girl             |
+| Golden Elixir      | Lachdanan              | Torn Note 1                      | Torn Notes              |
+| Heart<sup>[^54][^55]</sup> | n/a                    | Torn Note 2                      | Torn Notes              |
+| Magic Rock        | The Magic Rock         | Torn Note 3                      | Torn Notes              |
+| Spectral Elixir   | Black Mushroom         | -                                | -                        |
+| Staff of Lazarus  | Archbishop Lazarus     | -                                | -                        |
+| Tavern Sign       | Ogden’s Sign           | -                                | -                        |
 
+[^52]: All quest items in *Diablo* are also present in *Hellfire*.  
+[^53]: There are three *Blood Stones*.  
+[^54]: Adria will buy ears and hearts. Their buying price is equal to the `clvl` of the character they belonged to.  
+[^55]: An ear turns into a heart if you identify it. It will always return into an ear in the next game.  
 
 
 ## 3.4 Prefixes and suffixes
@@ -1118,35 +1154,40 @@ All equipable items can have a prefix and/or a suffix. In the tables below, you 
 
 Not all prefixes and suffixes can occur on all types of items. The tables also list on which type of items you will find each prefix and suffix. The following abbreviations are used:
 
-|A|Armor and Helms|t|Staves, but only in Hellfire|
-| :- | :- | :- | :- |
-|S|Shields|B|Bows|
-|W|Weapons (Axes, Clubs and Swords)|J|Jewelry|
-|T|Staves|||
+| **Code** | **Category** |
+| :- | :- |
+| A | Armor and Helms |
+| S | Shields |
+| W | Weapons (Axes, Clubs, and Swords) |
+| T | Staves |
+| t | Staves, but only in Hellfire |
+| B | Bows |
+| J | Jewelry |
 
-|<a name="page28"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**||||||**Created by Pedro Faria**||||||||
-| :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
-|||||||||||||||
-|**+ Strength**||||||||||||||
-|**Suffix**|**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**||**Range**|**Multiplier**||||||
-|frailty|-10 -|-6|ASW–BJ|3|||||||-3|||
-|weakness|-5 -|-1|ASWtBJ|1|||||||-2|||
-|strength|1|-|5|ASWtBJ|1|4|200|-|1 000||800|2||
-|might|6|-|10|ASW–BJ|5|4|1 200|-|2 000||800|3||
-|power|11|-|15|ASW–BJ|11|4|2 200|-|3 000||800|4||
-|giants|16|-|20|A–W–BJ|17|4|3 200|-|5 000||1 800|7||
-|titans|21|-|30|––W––J|23|9|5 200|-|10 000||4 800|10||
-|||||||||||||||
-|**+ Magic**||||||||||||||
-|**Suffix**|**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**||**Range**|**Multiplier**||||||
-|the fool|-10 -|-6|ASWTBJ|3|||||||-3|||
-|dyslexia|-5 -|-1|ASWTBJ|1|||||||-2|||
-|magic|1|-|5|ASWTBJ|1|4|200|-|1 000||800|2||
-|the mind|6|-|10|ASWTBJ|5|4|1 200|-|2 000||800|3||
-|brilliance|11|-|15|ASWTBJ|11|4|2 200|-|3 000||800|4||
-|sorcery|16|-|20|A–WTBJ|17|4|3 200|-|5 000||1 800|7||
-|wizardry|21|-|30|–––T–J|23|9|5 200|-|10 000||4 800|10||
-|||||||||||||||
+### + Strength
+
+| **Suffix**  | **Value**  | **Occurrence** | **qlvl** | **Steps** | **Base-Max** | **Range** | **Multiplier** |
+|------------|-----------|---------------|---------|----------|------------|---------|-------------|
+| frailty    | -10 – -6  | ASW–BJ        | 3       | -        | -          | -       | -3          |
+| weakness   | -5 – -1   | ASWtBJ        | 1       | -        | -          | -       | -2          |
+| strength   | 1         | ASWtBJ        | 1       | 4        | 200 – 1,000 | 800     | 2           |
+| might      | 6         | ASW–BJ        | 5       | 4        | 1,200 – 2,000 | 800     | 3           |
+| power      | 11        | ASW–BJ        | 11      | 4        | 2,200 – 3,000 | 800     | 4           |
+| giants     | 16        | A–W–BJ        | 17      | 4        | 3,200 – 5,000 | 1,800   | 7           |
+| titans     | 21        | ––W––J        | 23      | 9        | 5,200 – 10,000 | 4,800   | 10          |
+
+### + Magic
+
+| **Suffix**    | **Value**  | **Occurrence** | **qlvl** | **Steps** | **Base-Max**  | **Range**  | **Multiplier** |
+|--------------|-----------|---------------|---------|----------|------------|---------|-------------|
+| the fool    | -10 – -6  | ASWTBJ        | 3       | -        | -          | -       | -3          |
+| dyslexia    | -5 – -1   | ASWTBJ        | 1       | -        | -          | -       | -2          |
+| magic       | 1         | ASWTBJ        | 1       | 4        | 200 – 1,000 | 800     | 2           |
+| the mind    | 6         | ASWTBJ        | 5       | 4        | 1,200 – 2,000 | 800     | 3           |
+| brilliance  | 11        | ASWTBJ        | 11      | 4        | 2,200 – 3,000 | 800     | 4           |
+| sorcery     | 16        | A–WTBJ        | 17      | 4        | 3,200 – 5,000 | 1,800   | 7           |
+| wizardry    | 21        | –––T–J        | 23      | 9        | 5,200 – 10,000 | 4,800   | 10          |
+
 |**+ Dexterity**||||||||||||||
 |**Suffix**|**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**||**Range**|**Multiplier**||||||
 |paralysis|-10 -|-6|ASW–BJ|3|||||||-3|||
@@ -1156,7 +1197,7 @@ Not all prefixes and suffixes can occur on all types of items. The tables also l
 |accuracy|11|-|15|ASW–BJ|11|4|2 200|-|3 000||800|4||
 |precision|16|-|20|A–W–BJ|17|4|3 200|-|5 000||1 800|7||
 |perfection|21|-|30|––––BJ|23|9|5 200|-|10 000||4 800|10||
-|||||||||||||||
+
 |**+Vitality**||||||||||||||
 |**Suffix**|**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**||**Range**|**Multiplier**||||||
 |illness|-10 -|-6|ASW–BJ|3|||||||-3|||
@@ -1166,7 +1207,7 @@ Not all prefixes and suffixes can occur on all types of items. The tables also l
 |vim|11|-|15|ASW–BJ|11|4|2 200|-|3 000||800|4||
 |vigor|16|-|20|A–W–BJ|17|4|3 200|-|5 000||1 800|7||
 |life|21|-|30|––-––J|23|9|5 200|-|10 000||4 800|10||
-|||||||||||||||
+
 |**+ All Attributes**||||||||||||||
 |**Suffix**|**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**||**Range**|**Multiplier**||||||
 |trouble|-10 -|-6|ASWtBJ|12|||||||-10|||
@@ -1177,9 +1218,6 @@ Not all prefixes and suffixes can occur on all types of items. The tables also l
 |the heavens|12|-|15|-–W–BJ|25|3|12 800 -|20 000||7 200|20|||
 |the zodiac|16|-|20|––-––J|30|4|20 800 -|40 000||19 200|30|||
 
-|<a name="page29"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**||||||**Created by Pedro Faria**||||||||
-| :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
-|||||||||||||||
 |**+ Life**||||||||||||||
 |**Suffix**|**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**||**Range**|**Multiplier**||||||
 |the vulture|-25|-|-11|AS---J|4|||||||-4||
@@ -1192,10 +1230,10 @@ Not all prefixes and suffixes can occur on all types of items. The tables also l
 |the lion|51|-|60|A----J|27|9|10 100 -|15 000||4 900|11|||
 |the mammoth|61|-|80|A-----|35|19|15 100 - 19 000||3 900|12||||
 |the whale|81|- 100|A-----|60|19|19 100 - 30 000||10 900|13|||||
-|||||||||||||||
+
 |**+ Mana**||||||||||||||
 |**Prefix**|**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**||**Range**|**Multiplier**||||||
-|corruption1|||-all|ASW---|5||-1 000||||2|||
+|corruption[1]|||-all|ASW---|5||-1 000||||2|||
 |hyena’s|-25|- -11|---T-J|4|14|100|-|1 000||900|-2|||
 |frog’s|-10|-|-1|---T-J|1|||||||-2||
 |spider’s|10|-|15|---T-J|1|5|500|-|1 000||500|2||
@@ -1204,10 +1242,10 @@ Not all prefixes and suffixes can occur on all types of items. The tables also l
 |serpent’s|30|-|40|---T-J|15|10|4 100|-|6 000||1 900|7||
 |drake’s|41|-|50|---T-J|21|9|6 100|-|10 000||3 900|9||
 |dragon’s|51|-|60|---T-J|27|9|10 100 -|15 000||4 900|11|||
-|wyrm’s2|61|-|80|---t--|35|19|15 100 - 19 000||3 900|12||||
-|hydra’s2|81|- 100|---t--|60|19|19 100 -|30 000||10 900|13||||
+|wyrm’s[2]|61|-|80|---t--|35|19|15 100 - 19 000||3 900|12||||
+|hydra’s[2]|81|- 100|---t--|60|19|19 100 -|30 000||10 900|13||||
 1. A suffix.
-1. Only available in Hellfire.
+2. Only available in Hellfire.
 
 <b>+% Armor Class<sup>1</sup></b>
 
@@ -1227,9 +1265,6 @@ Not all prefixes and suffixes can occur on all types of items. The tables also l
 ||godly|171|- 200|AS––––|60|29|6 200|-|7 000|800|20|||
 1. There is a minimum increase of 1 in AC. That is, even if the percentage will give an increase to AC less than one, it will be increased by at least one. Due to a bug, any decrease in AC less than 1 will be transformed into a positive increase by 1.
 
-||<a name="page30"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**||||||||||||**Created by Pedro Faria**||||||||||||||||||
-| :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | -: | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
-||||||||||||||||||||||||||||||||
 ||**+% To Hit**||||||||||||||||||||||||||||||
 ||**Prefix**|||**Value**||**Occurrence**|**qlvl**||**Steps**||**Base-Max**|||**Range**|**Multiplier**||||||||||||||||
 ||tin|||-10|-|-6||––W–BJ|3||||||||||||||||-3||||||
@@ -1244,12 +1279,12 @@ Not all prefixes and suffixes can occur on all types of items. The tables also l
 ||meteoric|||61|-|80||––W–B–|23|||19|||6 100|-|10 000||3 900|||15|||||||||
 ||weird|||81|- 100||––W–B–|35|||19|||10 100 - 14 000||3 900|||17||||||||||||
 ||strange|||101|- 150||––W–B–|60|||49|||14 100 -|20 000||5 900|||20|||||||||||
-||||||||||||||||||||||||||||||||
+
 |**+% To Hit, +% Damage Done**|||||||||||||||||||||||||||||||
-|**Prefix**||**To Hit**||**Damage**|**Occurrence**||**qlvl**||<b>Steps<sup>1</sup></b>||**Base-Max**||**Range**||**Multiplier**||||||||||||||||
+|**Prefix**||**To Hit**||**Damage**|**Occurrence**||**qlvl**||<b>Steps<sup>[1]</sup></b>||**Base-Max**||**Range**||**Multiplier**||||||||||||||||
 |clumsy||-10|-|-6||-75|-|-50|––WTB–||5||||||||||||||-7||||||
 |dull||-5|-|-1||-45|-|-25|––WTB–||1||||||||||||||-5||||||
-|sharp2||1|-|5||20|-|35|––WTB–||1||15|||350|-|950||600||5|||||||||
+|sharp[2]||1|-|5||20|-|35|––WTB–||1||15|||350|-|950||600||5|||||||||
 |fine||6|-|10||36|-|50|––WTB–||6||14|||1 100|-|1 700||600||7|||||||||
 |Warrior’s||11|-|15||51|-|65|––WTB–||10||14|||1 850|-|2 450||600||13|||||||||
 |soldier’s||16|-|20||66|-|80|––WT––||15||14|||2 600|-|3 950||1 350||17|||||||||
@@ -1258,12 +1293,12 @@ Not all prefixes and suffixes can occur on all types of items. The tables also l
 |master’s||41|-|50||111|- 125|––WT––||28||14|||8 600|-|13 000||4 400||30||||||||||
 |champion’s||51|-|75||126|- 150|––WT––||40||24||15 200 - 24 000||8 800||33|||||||||||||
 |king’s||76|- 100||151|- 175|––WT––||28||24||24 100 -|35 000||10 900||38|||||||||||||
-|doppelganger’s3||21|-|30||81|-|95|––Wt––||11||14|||2 000|-|2 400||400||10|||||||||
+|doppelganger’s[3]||21|-|30||81|-|95|––Wt––||11||14|||2 000|-|2 400||400||10|||||||||
 
 1. It is the damage value that is used for price calculations.
-1. Is treated by the game as a cursed item during item creation so you will, for example, not be able to buy it in town.
+2. Is treated by the game as a cursed item during item creation so you will, for example, not be able to buy it in town.
 
-1. Only available in Hellfire. Has 10% chance of duplicating any monster hit except Diablo and unique monsters.
+3. Only available in Hellfire. Has 10% chance of duplicating any monster hit except Diablo and unique monsters.
 
 **+% Damage Done**
 
@@ -1281,16 +1316,13 @@ Not all prefixes and suffixes can occur on all types of items. The tables also l
 ||savage|111|- 125|––W–B–|23|14|2 500|-|3 000|500|15|||
 ||ruthless|126|- 150|––W–B–|35|24|10 100 -|15 000|4 900|17||||
 ||merciless|151|- 175|––W–B–|60|24|15 000 -|20 000|5 000|20||||
-||decay1,2|150|- 250|––WtB–|1||200|-|200|0|2|||
-||crystalline1,3|200|- 280|––W–––|5|79|1 000|-|3 000|2 000|3|||
+||decay[1][2]|150|- 250|––WtB–|1||200|-|200|0|2|||
+||crystalline[1][3]|200|- 280|––W–––|5|79|1 000|-|3 000|2 000|3|||
 1. Only available in Hellfire.
-1. Bonus decreases by 5% each hit. When reaching -100%, the item is destroyed.
+2. Bonus decreases by 5% each hit. When reaching -100%, the item is destroyed.
 
-1. Also has from -30 to -70% lower durability.
+3. Also has from -30 to -70% lower durability.
 
-|<a name="page31"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**||||||**Created by Pedro Faria**||||||||
-| :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
-|||||||||||||||
 |**+ Damage Done**||||||||||||||
 |**Suffix**|**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**||**Range**|**Multiplier**||||||
 |quality|1|-|2|––WtB–|2|1|100|-|200||100|2||
@@ -1299,8 +1331,8 @@ Not all prefixes and suffixes can occur on all types of items. The tables also l
 |gore|9|-|12|––W–––|25|3|4 100|-|5 000||900|8||
 |carnage|13|-|16|––W–––|35|3|5 100|-|10 000||4 900|10||
 |slaughter|17|-|20|––W–––|60|3|10 100 -|15 000||4 900|13|||
-|||||||||||||||
-|<b>- Damage Taken<sup>1</sup></b>||||||||||||||
+
+|<b>- Damage Taken<sup>[1]</sup></b>||||||||||||||
 |**Suffix**|**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**||**Range**|**Multiplier**||||||
 |pain|+4|-|+2|AS–––J|4|||||||-4||
 |tears|||+1|AS–––J|2|||||||-2||
@@ -1311,31 +1343,31 @@ Not all prefixes and suffixes can occur on all types of items. The tables also l
 |osmosis|5|-|6|A–––––|50|1|7 500|-|10 000||2 500|20||
 1. Works for all type of damage, even from spells, but does not work against other players. The damage is reduced before any resistance is applied but after the thieves effect. The damage will never be reduced below 1.
 
-<b>+ Fire Damage<sup>1</sup></b>
+<b>+ Fire Damage<sup>[1]</sup></b>
 
 ||**Suffix**|**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**|**Range**|**Multiplier**|||
 | :- | :- | -: | :-: | -: | :- | :- | :- | :-: | :- | :- |
 ||flame|1 -|3|––––B–|1||2 000||2||
 ||fire|1 -|6|––––B–|11||4 000||4||
 ||burning|1 -|16|––––B–|35||6 000||6||
-||flaming2|1 -|10|––WT––|7||5 000||2||
+||flaming[2]|1 -|10|––WT––|7||5 000||2||
 1. There are quite a few bugs associated with fire and lightning arrows which make them often deal erroneous damage (way too high or no additional damage at all).
 
-1. A prefix.
+2. A prefix.
 
-<b>+ Lightning Damage<sup>1</sup></b>
+<b>+ Lightning Damage<sup>[1]</sup></b>
 
 ||**Suffix**|**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**|**Range**|**Multiplier**|||
 | :- | :- | -: | :-: | -: | :- | -: | :- | :-: | :- | :- |
 ||shock|1 -|6|––––B–|13||6 000||2||
 ||lightning|1 -|10|––––B–|21||8 000||4||
 ||thunder|1 -|20|––––B–|60||12 000||6||
-||lightning2|2 -|20|––WT––|18||10 000||2||
+||lightning[2]|2 -|20|––WT––|18||10 000||2||
 1. There are quite a few bugs associated with fire and lightning arrows which make them often deal erroneous damage (way too high or no additional damage at all).
 
-1. A prefix.
+2. A prefix.
 
-<b>% Steal Life<sup>1</sup></b>
+<b>% Steal Life<sup>[1]</sup></b>
 
 ||**Suffix**|**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**|**Range**|**Multiplier**||
 | :- | :- | -: | :-: | -: | :- | -: | :- | :-: | :- |
@@ -1343,7 +1375,7 @@ Not all prefixes and suffixes can occur on all types of items. The tables also l
 ||blood|5|––W–––|19||15 000||3||
 1. The amount is based on damage done even if the monster has less HP left. The amount is *not* cumulative if you have more than one item with the capability of stealing life (an item of blood will take precedence over an item of the leech). An exception is The Undead Crown which is cumulative with both an item of blood or an item of the leech for a total of 3% to 15.5% or 5% to 17.5% life stealing. The Helm of Sprits, Shadowhawk, and The Eater of Souls are all treated as items of blood. Does not work against players. See chapter 6.1.4 for more information.
 
-<b>% Steal Mana<sup>1</sup></b>
+<b>% Steal Mana<sup>[1]</sup></b>
 
 ||**Suffix**|**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**|**Range**|**Multiplier**||
 | :- | :- | -: | :-: | -: | :- | -: | :- | :-: | :- |
@@ -1351,10 +1383,7 @@ Not all prefixes and suffixes can occur on all types of items. The tables also l
 ||vampires|5|––W–––|19||15 000||3||
 1. The amount is based on damage done even if the monster has less HP left. The amount is *not* cumulative if you have more than one item with the capability of stealing mana (an item of vampires will take precedence over an item of the bat. The Eater of Souls is treated as an item of vampire. Does not work against players. See chapter 6.1.4 for more information.
 
-|<a name="page32"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**||||||**Created by Pedro Faria**||||||||||
-| :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
-|||||||||||||||||
-|<b>+% Resist Magic<sup>1</sup></b>||||||||||||||||
+|<b>+% Resist Magic<sup>[1]</sup></b>||||||||||||||||
 |**Prefix**||||**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**||**Range**|**Multiplier**|||||
 |white||||10 -|20|ASWTBJ|4|10|500|-|1 500||1 000|2||
 |pearl||||21 -|30|ASWTBJ|10|9|2 100|-|3 000||900|2||
@@ -1362,8 +1391,8 @@ Not all prefixes and suffixes can occur on all types of items. The tables also l
 |crystal||||41 -|50|ASWTBJ|20|9|8 200|-|12 000||3 800|3||
 |diamond||||51 -|60|ASWTBJ|26|9|17 100 - 20 000||2 900|5||||
 |1  Is applied after any|effects from thieves and -damage. It can reduce damage below 1.|||||||||||||||
-|||||||||||||||||
-|<b>+% Resist Fire<sup>1</sup></b>||||||||||||||||
+
+|<b>+% Resist Fire<sup>[1]</sup></b>||||||||||||||||
 |**Prefix**||||**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**||**Range**|**Multiplier**|||||
 |red||||10 -|20|ASWTBJ|4|10|500|-|1 500||1 000|2||
 |crimson||||21 -|30|ASWTBJ|10|9|2 100|-|3 000||900|2||
@@ -1371,8 +1400,8 @@ Not all prefixes and suffixes can occur on all types of items. The tables also l
 |garnet||||41 -|50|ASWTBJ|20|9|8 200|-|12 000||3 800|3||
 |ruby||||51 -|60|ASWTBJ|26|9|17 100 - 20 000||2 900|5||||
 |1  Is applied after any|effects from thieves and -damage. It can reduce damage below 1.|||||||||||||||
-|||||||||||||||||
-|<b>+% Resist Lightning<sup>1</sup></b>||||||||||||||||
+
+|<b>+% Resist Lightning<sup>[1]</sup></b>||||||||||||||||
 |**Prefix**||||**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**||**Range**|**Multiplier**|||||
 |blue||||10 -|20|ASWTBJ|4|10|500|-|1 500||1 000|2||
 |azure||||21 -|30|ASWTBJ|10|9|2 100|-|3 000||900|2||
@@ -1380,8 +1409,8 @@ Not all prefixes and suffixes can occur on all types of items. The tables also l
 |cobalt||||41 -|50|ASWTBJ|20|9|8 200|-|12 000||3 800|3||
 |sapphire||||51 -|60|ASWTBJ|26|9|17 100 -|20 000||2 900|5|||
 |1  Is applied after any|effects from thieves and -damage. It can reduce damage below 1.|||||||||||||||
-|||||||||||||||||
-|<b>+% Resist All<sup>1</sup></b>||||||||||||||||
+
+|<b>+% Resist All<sup>[1]</sup></b>||||||||||||||||
 |**Prefix**||||**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**||**Range**|**Multiplier**|||||
 |topaz||||10 -|15|ASWTBJ|8|5|2 000|-|5 000||3 000|3||
 |amber||||16 -|20|ASWTBJ|12|4|7 400|-|10 000||2 600|3||
@@ -1389,33 +1418,30 @@ Not all prefixes and suffixes can occur on all types of items. The tables also l
 |obsidian||||31 -|40|ASWTBJ|24|9|24 000 -|40 000||16 000|4|||
 |emerald||||41 -|50|–SWTB–|31|9|61 000 - 75 000||14 000|7||||
 |1  Is applied after any|effects from thieves and -damage. It can reduce damage below 1.|||||||||||||||
-|||||||||||||||||
+
 |**+ Spell Levels**||||||||||||||||
 |**Prefix**||||**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**||**Range**|**Multiplier**|||||
 |angel’s||||1||–––T––|15||25 000||||2|||
 |arch-angel’s||||2||–––T––|25||50 000||||3|||
-|||||||||||||||||
+
 |**× Charges**||||||||||||||||
 |**Prefix**||||**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**||**Range**|**Multiplier**|||||
 |plentiful||||2||–––T––|4||2 000||||2|||
 |bountiful||||3||–––T––|9||3 000||||3|||
-|||||||||||||||||
-|<b>Damage / Penetrate Armor<sup>1</sup></b>||||||||||||||||
-|**Suffix**|<b>Value<sup>2</sup></b>|<b>Value<sup>3</sup></b>|**Occurrence**|**qlvl**|**Steps**|**Base-Max**||**Range**|**Multiplier**|||||||
-|piercing|2 -|6|254 %|––W–B–|1||1 000||||3|||||
-|puncturing|4 -|12|504 %|––W–B–|9||2 000||||6|||||
-|bashing|8 -|24|754 %|––W–––|17||4 000||||12|||||
+
+|<b>Damage / Penetrate Armor<sup>[1]</sup></b>||||||||||||||||
+|**Suffix**|<b>Value<sup>[2]</sup></b>|<b>Value<sup>[3]</sup></b>|**Occurrence**|**qlvl**|**Steps**|**Base-Max**||**Range**|**Multiplier**|||||||
+|piercing|2 -|6|25[4] %|––W–B–|1||1 000||||3|||||
+|puncturing|4 -|12|50[4] %|––W–B–|9||2 000||||6|||||
+|bashing|8 -|24|75[4] %|––W–––|17||4 000||||12|||||
 1. In Diablo these suffixes lower the AC of the target by a specific random amount in the range shown in the table. In Hellfire they reduce the AC of the target by a certain percentage shown in the table. It does not work against players. The exact value (in Diablo) is determined at the time of creation of the item and the extra To Hit is never shown on the character screen.
-1. In Diablo.
+2. In Diablo.
 
-1. In Hellfire.
+3. In Hellfire.
 
-1. Add 12.5 when used by a Barbarian.
+4. Add 12.5 when used by a Barbarian.
 
-|<a name="page33"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**||||**Created by Pedro Faria**||||||
-| :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
-|||||||||||
-|<b>+% Light Radius<sup>1</sup></b>||||||||||
+|<b>+% Light Radius<sup>[1]</sup></b>||||||||||
 |**Suffix**|**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**||**Range**|**Multiplier**||
 |the dark|-40|A–W—J|6|||||-3||
 |the night|-20|A–W—J|3|||||-2||
@@ -1423,28 +1449,28 @@ Not all prefixes and suffixes can occur on all types of items. The tables also l
 |radiance|40|A–W—J|8||1 500|||3||
 1. Also affects the distance at which you activate monsters. A higher value means at a greater distance. There is no additional effect of wearing more than +50% or less than -80% light radius. As a curiosity, the light radius is always one square less in the catacombs and it is always the highest light radius you have had on a level that counts, even if you later lower it.
 
-<b>Weapon Speed<sup>1</sup></b>
+<b>Weapon Speed<sup>[1]</sup></b>
 
 ||**Suffix**|**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**|**Range**|**Multiplier**||
 | :- | :- | :-: | :-: | -: | :- | -: | :- | -: | :- |
-||readiness2,3|quick|––WTB–|1||2 000||2||
-||swiftness3|fast|––WTB–|10||4 000||4||
+||readiness[2][3]|quick|––WTB–|1||2 000||2||
+||swiftness[3]|fast|––WTB–|10||4 000||4||
 ||speed|faster|––WT––|19||8 000||8||
-||haste4|fastest|––WT––|27||16 000||16||
+||haste[4]|fastest|––WT––|27||16 000||16||
 1. A Bard only benefits from the fastest weapon.
-1. Has no effect in Diablo.
+2. Has no effect in Diablo.
 
-1. In Hellfire, it makes the arrows travel faster on bows instead of increasing the ”swing” speed.
+3. In Hellfire, it makes the arrows travel faster on bows instead of increasing the ”swing” speed.
 
-1. Has the same effect as speed despite what is said in the latest Diablo patch (1.07).
+4. Has the same effect as speed despite what is said in the latest Diablo patch (1.07).
 
-<b>Hit Recovery<sup>1</sup></b>
+<b>Hit Recovery<sup>[1]</sup></b>
 
 ||**Suffix**|**Value**|**Occurrence**|**qlvl**|**Steps**|**Base-Max**|**Range**|**Multiplier**||
 | :- | :- | :-: | :-: | -: | :- | :- | :- | :-: | :- |
-||balance1|fast|A––––J|1||2 000||2||
-||stability1|faster|A––––J|10||4 000||4||
-||harmony1|fastest|A––––J|20||8 000||8||
+||balance[1]|fast|A––––J|1||2 000||2||
+||stability[1]|faster|A––––J|10||4 000||4||
+||harmony[1]|fastest|A––––J|20||8 000||8||
 1. A character only benefits from the fastest one, as they are not cumulative. The exception is if you have one of each in which case you will, in Diablo only, receive a further reduction in hit recovery time. See chapter 2.2.1 for more information.
 
 **+% Durability**
@@ -1459,32 +1485,32 @@ Not all prefixes and suffixes can occur on all types of items. The tables also l
 ||many|||100|––––B–||3|||750||||2||
 ||plenty|||200|––––B–||7|||1 500||||3||
 ||the ages|indestruct.|ASWt––||25|||600||||5||||
-|||||||||||||||||
+
 ||**Other**|||||||||||||||
 ||**Suffix**||||**Effect**||**Occurrence**|**qlvl**||**Base-Max**|**Multiplier**|||||
-||the bear2|knocks target back||––WTB–|5||750|2||||||||
-||blocking2|fast block||||-S----|5||4 000|4||||||
-||thieves1,2,3|absorbs half trap damage||AS–––J|11||1 500|2||||||||
-||thorns1,2|attacker takes 1-3 damage||AS––––|1||500|2||||||||
-||devastation1,2,4,5,6|5% chance of doing ×3 damage||––WtB–|1||1 200|3||||||||
-||jester’s1,2,4,5,7|each swing does ×0-6 damage9||––W–––|7||1 200|3||||||||
-||peril1,2,4,6,8|×2 damage to monster, ×1 to user|––WtB–|5||500|1|||||||||
+||the bear[2]|knocks target back||––WTB–|5||750|2||||||||
+||blocking[2]|fast block||||-S----|5||4 000|4||||||
+||thieves[1][2][3]|absorbs half trap damage||AS–––J|11||1 500|2||||||||
+||thorns[1][2]|attacker takes 1-3 damage||AS––––|1||500|2||||||||
+||devastation[1][2][4][5][6]|5% chance of doing ×3 damage||––WtB–|1||1 200|3||||||||
+||jester’s[1][2][4][5][7]|each swing does ×0-6 damage9||––W–––|7||1 200|3||||||||
+||peril[1][2][4][6][8]|×2 damage to monster, ×1 to user|––WtB–|5||500|1|||||||||
 1. Does not work versus players.
-1. These effects are not cumulative if you have them more than once. They are cumulative with other effects though.
+2. These effects are not cumulative if you have them more than once. They are cumulative with other effects though.
 
-1. In Hellfire it also absorbs half arrow and magical damage (magic, fire, lightning and apocalypse) from monster attacks. It is applied before both -damage and resistance.
+3. In Hellfire it also absorbs half arrow and magical damage (magic, fire, lightning and apocalypse) from monster attacks. It is applied before both -damage and resistance.
 
-1. Only available in Hellfire.
+4. Only available in Hellfire.
 
-1. Damage bonus applies to total damage, not just weapon damage.
+5. Damage bonus applies to total damage, not just weapon damage.
 
-1. Does not work on bows.
+6. Does not work on bows.
 
-1. A prefix.
+7. A prefix.
 
-1. Affects total damage versus monsters but only weapon damage and character damage versus user. This damage is modified by any -damage from enemies, though.
+8. Affects total damage versus monsters but only weapon damage and character damage versus user. This damage is modified by any -damage from enemies, though.
 
-1. The game erroneously states it does ×0-5. Average value is ×2. For more details, see chapter 6.2.1. Does not work against Diablo or unique monsters.
+9. The game erroneously states it does ×0-5. Average value is ×2. For more details, see chapter 6.2.1. Does not work against Diablo or unique monsters.
 
 
 ## 3.5 Unique items
