@@ -154,14 +154,14 @@ Each character in Diablo has a set of stats (or abilities) that greatly affect h
 
 Each character class has its own starting values for the basic stats. They are listed below. Also listed are which stats are increased and by how much when you gain a level. Apart from those, you also gain 5 ”points” to distribute among your four main stats until they have reached their maximum value. Shrines and some monsters have the ability to alter your stats, too. See appropriate chapters for more information.
 
-| **Class**    | **Strength** | **Magic** | **Dexterity** | **Vitality** | **Life** | **Mana** | **Effect of Level <sup>[^1]</sup>** |
+| **Class**    | **Strength** | **Magic** | **Dexterity** | **Vitality** | **Life** | **Mana** | **Effect of Level<sup>[^1]</sup>** |
 |-------------|:-----------:|----------:|:------------:|:-----------:|:--------:|---------:|:-----------------:|
 | **Warrior**   | 30  | 10  | 20  | 25  | 70  | 10  | +2 life, +1 mana  |
 | **Rogue**     | 20  | 15  | 30  | 20  | 45  | 22  | +2 life, +2 mana  |
 | **Sorcerer**  | 15  | 35  | 15  | 20  | 30  | 70  | +1 life, +2 mana  |
 | **Monk**      | 25  | 15  | 25  | 20  | 45  | 22  | +2 life, +2 mana  |
 | **Bard**      | 20  | 20  | 25  | 20  | 45  | 35  | +2 life, +2 mana  |
-| **Barbarian** | 40  |  0  | 20  | 25  | 70  |  0  | +2 life, +0 mana <sup>[^2]</sup>  |
+| **Barbarian** | 40  |  0  | 20  | 25  | 70  |  0  | +2 life, +0 mana<sup>[^2]</sup>  |
 
 [^1]: You don’t get any life or mana when gaining level 50.  
 [^2]: The Barbarian also gets 1% resistance per level.
@@ -199,23 +199,23 @@ Life is based on vitality while mana is based on magic. To calculate how much li
 
 | **Class**     | **Formula for Life Calculation**                                      | **Bonus** |
 |--------------|------------------------------------------------------------------------|---------:|
-| **Warrior**   | (2 × Vit<sup>character</sup>) + (2 × Vit<sup>items</sup>) + (2 × clvl) + Life<sup>items</sup>  | +18  |
-| **Rogue**     | (1 × Vit<sup>character</sup>) + (1.5 × Vit<sup>items</sup>) + (2 × clvl) + Life<sup>items</sup> | +23  |
-| **Sorcerer**  | (1 × Vit<sup>character</sup>) + (1 × Vit<sup>items</sup>) + (1 × clvl) + Life<sup>items</sup>  | +9   |
-| **Monk**      | (1 × Vit<sup>character</sup>) + (1.5 × Vit<sup>items</sup>) + (2 × clvl) + Life<sup>items</sup> | +23  |
-| **Bard**      | (1 × Vit<sup>character</sup>) + (1.5 × Vit<sup>items</sup>) + (2 × clvl) + Life<sup>items</sup> | +23  |
-| **Barbarian** | (2 × Vit<sup>character</sup>) + (2.5 × Vit<sup>items</sup>) + (2 × clvl) + Life<sup>items</sup> | +18  |
+| **Warrior**   | (2 × Vit<sub>character</sub>) + (2 × Vit<sub>items</sub>) + (2 × clvl) + Life<sub>items</sub>  | +18  |
+| **Rogue**     | (1 × Vit<sub>character</sub>) + (1.5 × Vit<sub>items</sub>) + (2 × clvl) + Life<sub>items</sub> | +23  |
+| **Sorcerer**  | (1 × Vit<sub>character</sub>) + (1 × Vit<sub>items</sub>) + (1 × clvl) + Life<sub>items</sub>  | +9   |
+| **Monk**      | (1 × Vit<sub>character</sub>) + (1.5 × Vit<sub>items</sub>) + (2 × clvl) + Life<sub>items</sub> | +23  |
+| **Bard**      | (1 × Vit<sub>character</sub>) + (1.5 × Vit<sub>items</sub>) + (2 × clvl) + Life<sub>items</sub> | +23  |
+| **Barbarian** | (2 × Vit<sub>character</sub>) + (2.5 × Vit<sub>items</sub>) + (2 × clvl) + Life<sub>items</sub> | +18  |
 
 ---
 
 | **Class**     | **Formula for Mana Calculation**                                      | **Bonus** |
 |--------------|------------------------------------------------------------------------|---------:|
-| **Warrior**   | (1 × Mag<sup>character</sup>) + (1 × Mag<sup>items</sup>) + (1 × clvl) + Mana<sup>items</sup>  | -1  |
-| **Rogue**     | (1 × Mag<sup>character</sup>) + (1.5 × Mag<sup>items</sup>) + (2 × clvl) + Mana<sup>items</sup> | +5  |
-| **Sorcerer**  | (2 × Mag<sup>character</sup>) + (2 × Mag<sup>items</sup>) + (2 × clvl) + Mana<sup>items</sup>  | -2  |
-| **Monk**      | (1 × Mag<sup>character</sup>) + (1.5 × Mag<sup>items</sup>) + (2 × clvl) + Mana<sup>items</sup> | +5  |
-| **Bard**      | (1.5 × Mag<sup>character</sup>) + (1.75 × Mag<sup>items</sup>) + (2 × clvl) + Mana<sup>items</sup> | +3  |
-| **Barbarian** | (1 × Mag<sup>character</sup>) + (1 × Mag<sup>items</sup>) + (0 × clvl) + Mana<sup>items</sup> | +0  |
+| **Warrior**   | (1 × Mag<sub>character</sub>) + (1 × Mag<sub>items</sub>) + (1 × clvl) + Mana<sub>items</sub>  | -1  |
+| **Rogue**     | (1 × Mag<sub>character</sub>) + (1.5 × Mag<sub>items</sub>) + (2 × clvl) + Mana<sub>items</sub> | +5  |
+| **Sorcerer**  | (2 × Mag<sub>character</sub>) + (2 × Mag<sub>items</sub>) + (2 × clvl) + Mana<sub>items</sub>  | -2  |
+| **Monk**      | (1 × Mag<sub>character</sub>) + (1.5 × Mag<sub>items</sub>) + (2 × clvl) + Mana<sub>items</sub> | +5  |
+| **Bard**      | (1.5 × Mag<sub>character</sub>) + (1.75 × Mag<sub>items</sub>) + (2 × clvl) + Mana<sub>items</sub> | +3  |
+| **Barbarian** | (1 × Mag<sub>character</sub>) + (1 × Mag<sub>items</sub>) + (0 × clvl) + Mana<sub>items</sub> | +0  |
 
 - Black Deaths (a zombie type of monster) can permanently decrease your life.
 
@@ -276,7 +276,7 @@ Both Armor Class (AC) and To Hit are based on your Dexterity. Below is a summary
 
 The bonus in the above formulas refers to some *hidden* To Hit modifiers specific for each character class. They are listed in the table below but do not show up in the To Hit value you see on the character screen. For the blocking bonus see chapter 2.2.
 
-| **Class**      | **Melee** | **Arrow** | **Magic** | **Blocking <sup>[^3]</sup>** |
+| **Class**      | **Melee** | **Arrow** | **Magic** | **Blocking<sup>[^3]</sup>** |
 |--------------|:-------:|:-------:|:-------:|:---------:|
 | **Warrior**   | 20      | 10      | -       | 30        |
 | **Rogue**     | -       | 20      | -       | 20        |
@@ -295,9 +295,9 @@ In the table below, maximum AC and To Hit for each character class is summarized
 | **Warrior**   | 12               | 80               | 45 / 57               | 162 / 192                 | 349 / 401 | 392        |
 | **Rogue**     | 50               | 175              | 83 / 95               | 257 / 287                 | 385 / 425 | 487        |
 | **Sorcerer**  | 17               | 92               | 50 / 62               | 175 / 205                 | 350 / 390 | 405        |
-| **Monk**      | 130 <sup>[^4]</sup>         | 125              | 175 <sup>[^4]</sup>              | 237                        | 419       | 437        |
+| **Monk**      | 130<sup>[^4]</sup>         | 125              | 175<sup>[^4]</sup>              | 237                        | 419       | 437        |
 | **Bard**      | 24               | 110              | 72                     | 230                        | 413       | 565        |
-| **Barbarian**     | 23 <sup>[^4]</sup>      | 77               | 56                     | 190                        | 370       | 390        |
+| **Barbarian**     | 23<sup>[^4]</sup>      | 77               | 56                     | 190                        | 370       | 390        |
 
 [^4]: For a level 50 character.
 
@@ -389,42 +389,27 @@ Just equipping two items with different suffixes **has no effect**.
 
 Damage done by players is composed of two parts, character damage and weapon damage. The character damage is based on your character’s stats and can be calculated with the formulas below. To that damage you add the damage of any weapon, or weapons in the case of the Bard, you have equipped. For information about damage from spells, see chapter 4.
 
+| **Class**     | **Bow Character Damage Formula**             |
+|--------------|----------------------------------------------|
+| **Warrior**   | (Str × clvl) / 200                         |
+| **Rogue**     | ((Str + Dex) × clvl) / 200                 |
+| **Sorcerer**  | (Str × clvl) / 200                         |
+| **Monk**      | ((Str + Dex) × clvl) / 600                 |
+| **Bard**      | ((Str + Dex) × clvl) / 500                 |
+| **Barbarian** | (Str × clvl) / 600                         |
 
-**Bow character damage**
-
-Warrior:	Str·clvl / 200
-
-Rogue:	(Str+Dex) · clvl / 200
-
-Sorcerer:	Str·clvl / 200
-
-Monk:	(Str+Dex) · clvl / 600
-
-Bard:	(Str+Dex) · clvl / 500
-
-Barbarian:	Str·clvl / 600
-
-**Melee character damage**
-
-Warrior:	Str·clvl / 100
-
-Rogue:	(Str+Dex) · clvl / 200
-
-Sorcerer:	Str·clvl / 100
-
-Monk with staff or bare-handed:	(Str+Dex) · clvl / 150
-
-Monk with other weapons:	(Str+Dex) · clvl / 300
-
-Bard with at least one sword:	(Str+Dex) · clvl / 150
-
-Bard with any weapon(s) except sword:	Str·clvl / 100
-
-Barbarian with axes and clubs:	Str·clvl / 75
-
-Barbarian except for axes and clubs:	Str·clvl / 100
-
-Extra bonus for Barbarian without shield:	Vit·clvl / 100
+| **Class**      | **Melee Character Damage Formula**                  |
+|---------------|----------------------------------------------------|
+| **Warrior**   | (Str × clvl) / 100                                |
+| **Rogue**     | ((Str + Dex) × clvl) / 200                        |
+| **Sorcerer**  | (Str × clvl) / 100                                |
+| **Monk** (staff or bare-handed) | ((Str + Dex) × clvl) / 150  |
+| **Monk** (other weapons)        | ((Str + Dex) × clvl) / 300  |
+| **Bard** (at least one sword)   | ((Str + Dex) × clvl) / 150  |
+| **Bard** (any weapon except sword) | (Str × clvl) / 100       |
+| **Barbarian** (axes and clubs)  | (Str × clvl) / 75           |
+| **Barbarian** (except axes and clubs) | (Str × clvl) / 100    |
+| **Extra Bonus** (Barbarian without shield) | (Vit × clvl) / 100 |
 
 - All Bow character damage is doubled for player versus player except for Rogues.
 
@@ -441,45 +426,43 @@ Extra bonus for Barbarian without shield:	Vit·clvl / 100
 
 As already stated, you add weapon damage to the damage above to get the final damage. Some ”weapons” don’t have any damage listed and are given below. Shield damage only applies if you wear no other weapon and hand/feet damage only applies if you have no other weapon or shield equipped.
 
+| **Special "Weapon"**            | **Damage Formula**             |
+|---------------------------------|------------------------------|
+| **Hands/Feet (except for Monk)** | 1                            |
+| **Shield (except for Monk)**     | 1 - 3                        |
+| **Feet or Shield (for Monk)**    | clvl / 2 - clvl              |
 
-|**Special ”weapon” damage**||
-| :- | :- |
-|Hands/Feet except for Monk:|1|
-|Shield except for Monk:|1 - 3|
-|Feet or shield for Monk:|clvl/2 - clvl|
 
 - The special damage for a Monk using his feet or just a shield will never be below those values listed for non Monks (min and max damage checked separately).
 
 The table below shows maximum naked character damage for various types of weapons. As character damage is based on a character’s level, it (in the table below) only applies to level 50 characters. On top of the listed damage you should then add weapon damage and possibly modify either or both character damage and weapon damage.
 
-|**Class**|<b>Bare-handed<sup>1</sup></b>|**Swords**|**Clubs**|**Axes**|**Bows**|**Staves**|||
-| :- | -: | -: | -: | -: | -: | -: | :- | :- |
-|Warrior|125|125||125||125|62|125|
-|Rogue|76|76||76||76|76|76|
-|Sorcerer|22|22||22||22|11|22|
-|Monk|100|50||50||50|25|100|
-|Bard|60|80||60||60|40|60|
-|Barbarian|202|202|2|245|2|245|21|202|
+| **Class**     | **Bare-handed**<sup>[^8]</sup> | **Swords** | **Clubs** | **Axes** | **Bows** | **Staves** |
+|--------------|------------------:|---------:|---------:|---------:|---------:|---------:|
+| **Warrior**   | 125              | 125      | 125      | 125      | 62       | 125      |
+| **Rogue**     | 76               | 76       | 76       | 76       | 76       | 76       |
+| **Sorcerer**  | 22               | 22       | 22       | 22       | 11       | 22       |
+| **Monk**      | 100              | 50       | 50       | 50       | 25       | 100      |
+| **Bard**      | 60               | 80       | 60       | 60       | 40       | 60       |
+| **Barbarian** | 202              | 202<sup>[^9]</sup> | 245<sup>[^9]</sup> | 245 | 21 | 202 |
 
-1. To this value you should add the ”weapon” damage of bare hands/feet.
-1. Subtract 75 if using a shield at the same time
-
+[^8]: To this value, you should add the "weapon" damage of bare hands/feet.  
+[^9]: Subtract 75 if using a shield at the same time.
 
 **Things that affect damage done**
 
 Various things affect the amount of damage a character does. Mostly those things are related to various prefixes, suffixes, or unique properties, but a few exceptions exist. Critical Hits are explained below and type of monster is explained in chapter 5.1. The modifications to the damage can either modify weapon damage alone or your total damage; that is, both your character damage and your weapon damage. In the table below is a list of all modifications that apply to your total damage. They are each cumulative with each other and are applied on top of each other.
 
-|**Reason**|**Effect**|
-| :- | :- |
-|Critical Hit|Double damage|
-|Monster type|Half damage or increased damage by 50%|
-|+200% damage against demons1|Triple damage|
-|suffix of devastation|Triple damage|
-|prefix jester’s|Between zero and six times the damage.|
-|suffix of peril|Double damage.|
+| **Reason**                           | **Effect**                          |
+|--------------------------------------|-------------------------------------|
+| **Critical Hit**                     | Double damage                      |
+| **Monster type**                     | Half damage or increased damage by 50% |
+| **+200% damage against demons**<sup>[^10]</sup> | Triple damage                  |
+| **Suffix: *of Devastation***          | Triple damage                      |
+| **Prefix: *Jester’s***                | Between zero and six times the damage |
+| **Suffix: *of Peril***                | Double damage                      |
 
-1	Does not work on bows.
-
+[^10]: Does not work on bows.
 
 **Critical Hit**
 
@@ -503,160 +486,148 @@ Adjacent quarter damage can never hit a player, only monsters.
 
 A very important factor is how quickly you swing different weapons. A faster weapon not only causes more damage per unit of time, but also helps you stun lock your enemies more easily. Below are listed values for how quickly each character class swings each weapon. Only the Barbarian has different weapon speed for clubs and swords, for all other classes they are identical. The value given is the time in seconds it takes to do one swing.
 
-|**Weapon**|**Suffix**|**Warrior**|**Rogue**|**Sorcerer**|**Monk**|**Bard**|**Barbarian**|
-| :- | :- | :- | :- | :- | :-: | :-: | :- |
-|**Swords/Clubs**|Normal & Readiness|0\.45|0\.50|0\.60|0\.60|0\.50|0\.45 / 0.40|
-||Swiftness|0\.40|0\.45|0\.55|0\.55|0\.45|0\.40 / 0.35|
-||Speed & Haste|0\.35|0\.40|0\.50|0\.50|0\.40|0\.35 / 0.30|
-|**Axes**|Normal & Readiness|0\.50|0\.65|0\.80|0\.70|0\.65|0\.40|
-||Swiftness|0\.45|0\.60|0\.75|0\.65|0\.60|0\.35|
-||Speed & Haste|0\.40|0\.55|0\.70|0\.60|0\.55|0\.30|
-|**Staves**|Normal & Readiness|0\.55|0\.55|0\.60|0\.40|0\.55|0\.55|
-||Swiftness|0\.50|0\.50|0\.55|0\.35|0\.50|0\.50|
-||Speed & Haste|0\.45|0\.45|0\.50|0\.30|0\.45|0\.45|
-|**Bows**|Normal & Readiness|0\.55|0\.35|0\.80|0\.70|0\.55|0\.55|
-||Swiftness|0\.501|0\.301|0\.751|0\.70|0\.55|0\.55|
-|**Other**|Shield|0\.45|0\.50|0\.45|0\.35|0\.50|0\.45|
-||Bare hands & feet|0\.45|0\.50|0\.60|0\.35|0\.50|0\.45|
-||Spell|0\.70|0\.60|0\.40|0\.65|0\.60|0\.70|
+| **Weapon**      | **Suffix**           | **Warrior** | **Rogue** | **Sorcerer** | **Monk** | **Bard** | **Barbarian** |
+|---------------|-------------------|:----------:|:--------:|:----------:|:------:|:------:|:----------:|
+| **Swords/Clubs** | Normal & Readiness | 0.45 | 0.50 | 0.60 | 0.60 | 0.50 | 0.45 / 0.40 |
+|                 | Swiftness         | 0.40 | 0.45 | 0.55 | 0.55 | 0.45 | 0.40 / 0.35 |
+|                 | Speed & Haste     | 0.35 | 0.40 | 0.50 | 0.50 | 0.40 | 0.35 / 0.30 |
+| **Axes**        | Normal & Readiness | 0.50 | 0.65 | 0.80 | 0.70 | 0.65 | 0.40 |
+|                 | Swiftness         | 0.45 | 0.60 | 0.75 | 0.65 | 0.60 | 0.35 |
+|                 | Speed & Haste     | 0.40 | 0.55 | 0.70 | 0.60 | 0.55 | 0.30 |
+| **Staves**      | Normal & Readiness | 0.55 | 0.55 | 0.60 | 0.40 | 0.55 | 0.55 |
+|                 | Swiftness         | 0.50 | 0.50 | 0.55 | 0.35 | 0.50 | 0.50 |
+|                 | Speed & Haste     | 0.45 | 0.45 | 0.50 | 0.30 | 0.45 | 0.45 |
+| **Bows**        | Normal & Readiness | 0.55 | 0.35 | 0.80 | 0.70 | 0.55 | 0.55 |
+|                 | Swiftness         | 0.50<sup>[^11]</sup> | 0.30<sup>[^11]</sup> | 0.75<sup>[^11]</sup> | 0.70 | 0.55 | 0.55 |
+| **Other**       | Shield            | 0.45 | 0.50 | 0.45 | 0.35 | 0.50 | 0.45 |
+|                 | Bare hands & feet | 0.45 | 0.50 | 0.60 | 0.35 | 0.50 | 0.45 |
+|                 | Spell             | 0.70 | 0.60 | 0.40 | 0.65 | 0.60 | 0.70 |
 
-1	In Hellfire Readiness and Swiftness make the arrows fly faster, the time is still the same as for Normal.
+[^11]: In Hellfire Readiness and Swiftness make the arrows fly faster, the time is still the same as for Normal.
 
 The speed with which the arrows travel also varies with character class. Below is given the speed of arrows for all characters as well as some other factors affecting the speed of an arrow. The actual value is just a value given for comparison with other traveling effects, such as spells. The higher the number, the faster it will be. Arrows from monsters will always have a speed of 32. For the speed of arrows from traps, see chapter 4.3.
 
-|**Arrow or other effect**|**Warrior, Monk**|**Rogue**|**Sorcerer, Bard,**|
-| :- | :-: | :-: | :-: |
-||||**Barbarian**|
-|Normal arrow|32 + (clvl-1)/8|32 + (clvl-1)/4|32|
-|Fire and Lightning arrow|31 + clvl/8|31 + clvl/4|32|
-|Random speed arrows|16 + Rnd[32] + (clvl-1)/8|16 + Rnd[32] + (clvl-1)/4|16 + Rnd[32]|
-|readiness1|+1|+1|+1|
-|swiftness1|+2|+2|+2|
+| **Arrow or Other Effect**     | **Warrior, Monk**  | **Rogue**  | **Sorcerer, Bard, Barbarian** |
+|-----------------------------|:-----------------:|:---------:|:-------------------------:|
+| **Normal Arrow**            | 32 + (clvl-1)/8   | 32 + (clvl-1)/4  | 32  |
+| **Fire and Lightning Arrow** | 31 + clvl/8       | 31 + clvl/4      | 32  |
+| **Random Speed Arrows**      | 16 + Rnd[32] + (clvl-1)/8  | 16 + Rnd[32] + (clvl-1)/4  | 16 + Rnd[32]  |
+| **Readiness**<sup>[^12]</sup> | +1  | +1  | +1  |
+| **Swiftness**<sup>[^12]</sup> | +2  | +2  | +2  |
 
-1	Will only affect the arrow speed in Hellfire. In Diablo it will affect the weapon speed instead.
+[^12]: Will only affect the arrow speed in *Hellfire*. In *Diablo*, it will affect the weapon speed instead.
 
 
 ## 2.3 Timing information
 
 This chapter summarizes all timing information for players. For blocking and hit recovery, this information can also be found in chapter 2.2, and for weapon speed, it can also be found in chapter 2.2.3. For monsters all timing information can be found in chapter 5.3. The table below summarizes all timing information for the different character classes.
 
-|<a name="page17"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**||**Created by Pedro Faria**|||||
-| :- | :- | :- | :- | :- | :- | :- |
-||||||||
-|**Class**|**Walk speed**|**Hit recovery**|<b>Blocking speed<sup>1</sup></b>|**Swing speed**|<b>Hit time<sup>2</sup></b>||
-|||<b>speed<sup>1</sup></b>|||||
-|Warrior|0\.40|0\.30|0\.10|see chap. 2.2.3|swing speed3||
-|Rogue|0\.40|0\.35|0\.20|see chap. 2.2.3|swing speed3||
-|Sorcerer|0\.40|0\.40|0\.30|see chap. 2.2.3|swing speed3||
-|Monk|0\.40|0\.30|0\.15|see chap. 2.2.3|swing speed3||
-|Bard|0\.40|0\.35|0\.20|see chap. 2.2.3|swing speed3||
-|Barbarian|0\.40|0\.304|0\.10|see chap. 2.2.3|swing speed3||
-1. For more information, see chapter 2.2.
-1. The hit time (or rather the time at which the spell effect is initialized) for a player is identical to the swing speed (that is, at the last frame) except for non targeted spells (those for which you don’t target a specific monster or player) which have a 0.05 seconds faster hit time.
+| **Class**     | **Walk Speed** | **Hit Recovery Speed** | **Blocking Speed**<sup>[^13]</sup> | **Swing Speed** | **Hit Time**<sup>[^14]</sup> |
+|--------------|:--------------:|:---------------------:|:--------------------------------:|:--------------:|:----------------:|
+| **Warrior**   | 0.40  | 0.30  | 0.10  | See chap. 2.2.3  | Swing speed<sup>[^15]</sup>  |
+| **Rogue**     | 0.40  | 0.35  | 0.20  | See chap. 2.2.3  | Swing speed<sup>[^15]</sup>  |
+| **Sorcerer**  | 0.40  | 0.40  | 0.30  | See chap. 2.2.3  | Swing speed<sup>[^15]</sup>  |
+| **Monk**      | 0.40  | 0.30  | 0.15  | See chap. 2.2.3  | Swing speed<sup>[^15]</sup>  |
+| **Bard**      | 0.40  | 0.35  | 0.20  | See chap. 2.2.3  | Swing speed<sup>[^15]</sup>  |
+| **Barbarian** | 0.40  | 0.30<sup>[^16]</sup>  | 0.10  | See chap. 2.2.3  | Swing speed<sup>[^15]</sup>  |
 
-1. The swing speed is of course the one for casting a spell.
+[^13]: For more information, see chapter **2.2**.  
+[^14]: The **hit time** (or rather the time at which the spell effect is initialized) for a player is identical to the **swing speed** (that is, at the last frame) except for **non-targeted spells** (those for which you don’t target a specific monster or player) which have a **0.05 seconds faster hit time**.  
+[^15]: The swing speed is of course the one for **casting a spell**.  
+[^16]: The **Barbarian** has built-in *stability* while using an **axe** or a **club**, unless wearing an item that affects **hit recovery** in a better way.  
 
-1. The Barbarian has built it *stability* while using an axe or a club on top of this unless wearing an item that affects the hit recovery in a better way.
 
 
 ## 2.4 Skills
 
 Each character class has a skill it can perform. For most classes, the skill improves as they gain levels. The various skills are summarized below.
 
-Warrior:	Repair items (as your level goes up the durability loss decreases).
-
-Rogue:	Disarm traps (as your Dexterity goes up the chance of successfully
-
-disarming the trap increases).
-
-Sorcerer:	Recharge staves (as your level goes up the charge loss decreases).
-
-Monk:	Search.
-
-Bard:	Identify.
-
-Barbarian:	Rage (as your level goes up, the improvement in stats during the rage is
-
-higher but so is the penalty during the lethargy phase).
-
+| **Class**     | **Skill**            | **Effect**  |
+|--------------|----------------------|-----------------------------------------------|
+| **Warrior**   | Repair Items         | Durability loss decreases as level increases. |
+| **Rogue**     | Disarm Traps         | Success chance increases with higher Dexterity. |
+| **Sorcerer**  | Recharge Staves      | Charge loss decreases as level increases. |
+| **Monk**      | Search               | Reveals nearby objects and hidden doors. |
+| **Bard**      | Identify             | Allows identification of items. |
+| **Barbarian** | Rage                 | Stat boost increases with level, but so do penalties during lethargy. |
 
 **Warrior**
 
 The skill of the Warrior works in the following way:
 
-1. if current durability is equal to max durability, exit
-
-1. x = 0
-1. add (clvl + Rnd[clvl]) to x
-1. y = [MaxDur/(clvl+9)], if less than 1 set to 1
-1. decrease MaxDur by y
-1. if x + CurDur < MaxDur, goto 3.
-1. CurDur = MaxDur
+### **Item Repair Formula**
+1. **If** current durability is equal to max durability, **exit**.
+2. **Set** `x = 0`
+3. **Add** `(clvl + Rnd[clvl])` to `x`
+4. **Calculate** `y = [MaxDur / (clvl + 9)]`, **if** `y < 1`, **set** `y = 1`
+5. **Decrease** `MaxDur` by `y`
+6. **If** `x + CurDur < MaxDur`, **goto step 3**.
+7. **Set** `CurDur = MaxDur`
 
 If max durability ever reaches 0, the item is of course destroyed.
-
 
 **Rogue**
 
 The skill of the Rogue works in the following way:
 
-1. x = 2·Dex - 5·dlvl
-
-1. if x > Rnd[100], trap is disarmed
+### **Trap Disarm Formula**
+1. **Calculate** `x = (2 × Dex) - (5 × dlvl)`
+2. **If** `x > Rnd[100]`, **trap is disarmed**
 
 **Sorcerer**
 
 The skill of the Sorcerer works in the following way:
 
-1. if current charges is equal to max charges or max charges is equal to 0, exit
-
-1. x = Rnd[clvl/qlvl(book)] + 1
-1. decrease MaxChrg by 1
-1. add x to CurChrg
-1. if CurChrg < MaxChrg, goto 3.
-1. CurChrg = MaxChrg
+### **Staff Recharge Formula**
+1. **If** `CurChrg` (current charges) **is equal to** `MaxChrg` **or** `MaxChrg` **is 0**, **exit**.
+2. **Calculate** `x = Rnd[clvl / qlvl(book)] + 1`
+3. **Decrease** `MaxChrg` by `1`
+4. **Add** `x` to `CurChrg`
+5. **If** `CurChrg < MaxChrg`, **go to** Step 3.
+6. **Set** `CurChrg = MaxChrg`
 
 It seems strange that it is not the qlvl of the spell on a staff, and I wonder what happens for a spell like resurrect where the qlvl value is -1. Any information about this is appreciated.
-
 
 **Monk**
 
 The skill of the Monk is identical to the spell with the same name.
 
-
 **Bard**
 
 The skill of the Bard is identical to the spell with the same name.
-
 
 **Barbarian**
 
 The skill of the Barbarian works in the following way:
 
-1. For 12 seconds it adds: 2·clvl to Strength and Vitality and 1.5·clvl to Dexterity.
+### **Rage Formula**
+1. **For 12 seconds**, gain:
+   - `+ (2 × clvl)` to **Strength** and **Vitality**
+   - `+ (1.5 × clvl)` to **Dexterity**
+2. **For the next 12 seconds** (lethargy phase), **lose** the **same** amount from **Strength, Dexterity, and Vitality** (calculated from normal values).
+3. **Afterwards**, lose `(2 × Vit)` **life**.
+   - 🐞 **Bug:** Clicking any item in your inventory **restores** lost life.
 
-1. For 12 more seconds, during a lethargy phase, it decreases Strength, Dexterity and Vitality by the same amount (counted from normal values).
-
-1. Afterwards you lose 2·Vit life. There is a bug however so if you click on any item in your inventory your life is restored.
 
 ## 2.5 Starting equipment
 
 All character classes start the game with some items. These items are listed in the table below. Note that the prices for these items sometimes differ from the ones of normal items of the same type. The sword that the Bard starts with seems not to be available otherwise in the game.
 
-|**Class**|**Weapon**|**Price**|**Gold**|**Potions**||
-| :- | :- | -: | -: | :- | :- |
-|Warrior|Short Sword|50|100|2 Potions of Healing||
-||Club|20||||
-||Buckler|50||||
-|Rogue|Short Bow|100|100|2|Potions of Healing|
-|Sorcerer (Diablo)|Short Staff of Charged Bolt1 (40 charges)|520|100|2|Potions of Mana|
-|Sorcerer (Hellfire)|Short Staff of Mana1 (18 charges)|520|100|2|Potions of Healing|
-|Monk|Short Staff|20|100|2|Potions of Healing|
-|Bard|Sword|50|100|2 Potions of Healing||
-||Dagger|20||||
-|Barbarian|Spiked Club|225|100|2 Potions of Healing||
-||Buckler|50||||
-1. These starting staves are special in that they are *not* composed of a staff with a spell on it, but are special base items that have the spell built into them. The prices given are for those two base items and no additional cost is added for the actual spell.
+| **Class**       | **Weapon**                            | **Price** | **Gold** | **Potions** |
+|---------------|----------------------------------|--------:|--------:|-----------|
+| **Warrior**   | Short Sword                     | 50      | 100     | 2 Potions of Healing |
+|               | Club                             | 20      |         |           |
+|               | Buckler                          | 50      |         |           |
+| **Rogue**     | Short Bow                        | 100     | 100     | 2 Potions of Healing |
+| **Sorcerer** *(Diablo)*  | Short Staff of Charged Bolt<sup>[17]</sup> *(40 charges)* | 520      | 100     | 2 Potions of Mana |
+| **Sorcerer** *(Hellfire)* | Short Staff of Mana<sup>[17]</sup> *(18 charges)*  | 520      | 100     | 2 Potions of Healing |
+| **Monk**      | Short Staff                      | 20      | 100     | 2 Potions of Healing |
+| **Bard**      | Sword                            | 50      | 100     | 2 Potions of Healing |
+|               | Dagger                           | 20      |         |           |
+| **Barbarian** | Spiked Club                      | 225     | 100     | 2 Potions of Healing |
+|               | Buckler                          | 50      |         |           |
+
+[^17]: These starting staves are special in that they are *not* composed of a staff with a spell on it, but are unique base items that have the spell built into them. The prices listed are for these base items, and no additional cost is added for the spell itself.
 
 
 ## 2.6 Experience points
@@ -664,12 +635,9 @@ All character classes start the game with some items. These items are listed in 
 Each time you kill a monster you have a chance of receiving experience points. You receive experience for killing a monster as long as your own level is below the mlvl+10 (see chapter 5.2 and 5.6.3 for more information about mlvl and experience points). In multi player, each person that fulfills one of following requirements is entitled to receive experience points when a monster is killed.
 
 - Killing the monster (both in melee and with spell).
-
 - Dealing damage to the monster in either melee or with a bow (regardless of any extra fire or lightning damage even if the monster is resistant or immune to it).
 - Dealing damage to the monster with a spell to which the monster is *not* resistant or immune.
-
 - Having your golem kill or deal damage to the monster.
-
 - Having used Telekinesis on the monster (Snotspill, Gharbad the Weak, Zhar the Mad, Warlord of Blood, Lachdanan, Arch-Bishop Lazarus, Blackjade and Red Vex are all immune to Telekinesis though).
 
 In all cases you must be alive at the moment the monster dies and you must never have left the level in-between fulfilling any of the requirements above and the monster dying, or you will not receive any experience points. The requirement of dealing damage is fulfilled even if for some reason the damage itself is reduced to below 1 point of damage (theoretically even 0 damage will be enough). Stone Cursing a monster will *not* be enough to receive any experience points. A Guardian is treated as a normal fire spell for the purpose of deciding if the owning player is entitled to experience points. In Hellfire a Berserk monster will *not* give you experience points for the other monsters it kills.
@@ -684,67 +652,62 @@ The maximum experience you can obtain for killing a monster in multi player (bot
 
 Listed below are the required experience points for each level. You will also find the maximum experience point you can be given for a monster at that character level (see above for information about this cap). Listed is also the minimum number of monsters you need to kill to reach the next level assuming you get maximum experience for each kill. This is in practice impossible and even theoretically impossible at low levels. The *Total Kills* column is simply the total minimum number of monsters needed to kill to reach a specific level and is valid for Diablo only as there is no limit on the number of experience points given for killing a monster in Hellfire. Note that the numbers under *Increase*, *Increase %, Kills,* and *Total Kills* are all how much is needed for the *next* level.
 
-|**Level**|**Experience**|**Increase**|**Increase in %**|<b>Max exp.<sup>1</sup></b>|**Kills**|**Total Kills**|
-| -: | -: | -: | -: | -: | -: | -: |
-|1|0|2 000|n/a|100|20|20|
-|2|2 000|2 620|131\.0|231|12|32|
-|3|4 620|3 420|74\.0|402|9|41|
-|4|8 040|4 449|55\.3|624|7|48|
-|5|12 489|5 769|46\.2|912|7|55|
-|6|18 258|7 454|40\.8|1 200|6|61|
-|7|25 712|9 597|37\.3|1 400|7|68|
-|8|35 309|12 313|34\.9|1 600|8|76|
-|9|47 622|15 742|33\.1|1 800|9|84|
-|10|63 364|20 055|31\.7|2 000|11|95|
-|11|83 419|25 460|30\.5|2 200|12|106|
-|12|108 879|32 207|29\.6|2 400|14|120|
-|13|141 086|40 597|28\.8|2 600|16|135|
-|14|181 683|49 392|27\.2|2800|18|153|
-|15|231 075|82 581|35\.7|3 000|28|181|
-|16|313 656|110 411|35\.2|3 200|35|215|
-|17|424 067|147 123|34\.7|3 400|44|258|
-|18|571 190|195 379|34\.2|3 600|55|313|
-|19|766 569|258 585|33\.7|3 800|69|381|
-|20|1 025 154|341 073|33\.3|4 000|86|466|
-|21|1 366 227|448 341|32\.8|4 200|107|573|
-|22|1 814 568|587 327|32\.4|4 400|134|706|
-|23|2 401 895|766 756|31\.9|4 600|167|873|
-|24|3 168 651|997 549|31\.5|4 800|208|1 081|
-|25|4 166 200|1 293 323|31\.0|5 000|259|1 340|
+| **Level** | **Experience** | **Increase** | **Increase in %** | **Max Exp.<sup>[^18]</sup>** | **Kills** | **Total Kills** |
+|---------:|-------------:|-------------:|------------------:|-----------------:|------:|------------:|
+| 1  | 0             | 2,000        | n/a      | 100   | 20  | 20    |
+| 2  | 2,000         | 2,620        | 131.0%   | 231   | 12  | 32    |
+| 3  | 4,620         | 3,420        | 74.0%    | 402   | 9   | 41    |
+| 4  | 8,040         | 4,449        | 55.3%    | 624   | 7   | 48    |
+| 5  | 12,489        | 5,769        | 46.2%    | 912   | 7   | 55    |
+| 6  | 18,258        | 7,454        | 40.8%    | 1,200 | 6   | 61    |
+| 7  | 25,712        | 9,597        | 37.3%    | 1,400 | 7   | 68    |
+| 8  | 35,309        | 12,313       | 34.9%    | 1,600 | 8   | 76    |
+| 9  | 47,622        | 15,742       | 33.1%    | 1,800 | 9   | 84    |
+| 10 | 63,364        | 20,055       | 31.7%    | 2,000 | 11  | 95    |
+| 11 | 83,419        | 25,460       | 30.5%    | 2,200 | 12  | 106   |
+| 12 | 108,879       | 32,207       | 29.6%    | 2,400 | 14  | 120   |
+| 13 | 141,086       | 40,597       | 28.8%    | 2,600 | 16  | 135   |
+| 14 | 181,683       | 49,392       | 27.2%    | 2,800 | 18  | 153   |
+| 15 | 231,075       | 82,581       | 35.7%    | 3,000 | 28  | 181   |
+| 16 | 313,656       | 110,411      | 35.2%    | 3,200 | 35  | 215   |
+| 17 | 424,067       | 147,123      | 34.7%    | 3,400 | 44  | 258   |
+| 18 | 571,190       | 195,379      | 34.2%    | 3,600 | 55  | 313   |
+| 19 | 766,569       | 258,585      | 33.7%    | 3,800 | 69  | 381   |
+| 20 | 1,025,154     | 341,073      | 33.3%    | 4,000 | 86  | 466   |
+| 21 | 1,366,227     | 448,341      | 32.8%    | 4,200 | 107 | 573   |
+| 22 | 1,814,568     | 587,327      | 32.4%    | 4,400 | 134 | 706   |
+| 23 | 2,401,895     | 766,756      | 31.9%    | 4,600 | 167 | 873   |
+| 24 | 3,168,651     | 997,549      | 31.5%    | 4,800 | 208 | 1,081 |
+| 25 | 4,166,200     | 1,293,323    | 31.0%    | 5,000 | 259 | 1,340 |
+| 26 | 5,459,523     | 1,670,973    | 30.6%    | 5,200 | 322 | 1,661 |
+| 27 | 7,130,496     | 2,151,378    | 30.2%    | 5,400 | 399 | 2,059 |
+| 28 | 9,281,874     | 2,760,218    | 29.7%    | 5,600 | 493 | 2,552 |
+| 29 | 12,042,092    | 3,528,939    | 29.3%    | 5,800 | 609 | 3,161 |
+| 30 | 15,571,031    | 4,495,869    | 28.9%    | 6,000 | 750 | 3,910 |
+| 31 | 20,066,900    | 5,707,505    | 28.4%    | 6,200 | 921 | 4,831 |
+| 32 | 25,774,405    | 7,219,994    | 28.0%    | 6,400 | 1,129 | 5,959 |
+| 33 | 32,994,399    | 9,100,803    | 27.6%    | 6,600 | 1,379 | 7,338 |
+| 34 | 42,095,202    | 11,430,609   | 27.2%    | 6,800 | 1,681 | 9,019 |
+| 35 | 53,525,811    | 14,305,407   | 26.7%    | 7,000 | 2,044 | 11,063 |
+| 36 | 67,831,218    | 17,838,843   | 26.3%    | 7,200 | 2,478 | 13,540 |
+| 37 | 85,670,061    | 22,164,762   | 25.9%    | 7,400 | 2,996 | 16,536 |
+| 38 | 107,834,823   | 27,439,976   | 25.4%    | 7,600 | 3,610 | 20,146 |
+| 39 | 135,274,799   | 33,847,210   | 25.0%    | 7,800 | 4,340 | 24,486 |
+| 40 | 169,122,009   | 41,598,222   | 24.6%    | 8,000 | 5,200 | 29,685 |
+| 41 | 210,720,231   | 50,937,022   | 24.2%    | 8,200 | 6,212 | 35,897 |
+| 42 | 261,657,253   | 62,143,167   | 23.7%    | 8,400 | 7,398 | 43,295 |
+| 43 | 323,800,420   | 75,535,020   | 23.3%    | 8,600 | 8,784 | 52,078 |
+| 44 | 399,335,440   | 91,472,909   | 22.9%    | 8,800 | 10,395 | 62,473 |
+| 45 | 490,808,349   | 110,362,065  | 22.5%    | 9,000 | 12,263 | 74,735 |
+| 46 | 601,170,414   | 132,655,203  | 22.1%    | 9,200 | 14,420 | 89,154 |
+| 47 | 733,825,617   | 158,854,605  | 21.6%    | 9,400 | 16,900 | 106,054 |
+| 48 | 892,680,222   | 190,228,390  | 21.3%    | 9,600 | 19,816 | 125,869 |
+| 49 | 1,082,908,612 | 227,798,497  | 21.0%    | 9,800 | 23,245 | 149,114 |
+| 50 | 1,310,707,109 | 272,788,700  | 20.8%    | 10,000 | 27,279 | 176,393 |
+| **MAX** | **1,583,495,809** | **-** | **-** | **-** | **-** | **-** |
 
-1	This cap only applies to multi player. In single player, there is no such cap.
+[^18]: This cap only applies to multiplayer. In single-player, there is no such cap.
 
-|<a name="page20"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||**Created by Pedro Faria**||||||
-| -: | :- | :- | :- | :- | :- | :- | :- | :- |
-||||||||||
-||**Level**|**Experience**|**Increase**|**Increase in %**|<b>Max exp.<sup>1</sup></b>|**Kills**|**Total Kills**||
-||26|5 459 523|1 670 973|30\.6|5 200|322|1 661||
-||27|7 130 496|2 151 378|30\.2|5 400|399|2 059||
-||28|9 281 874|2 760 218|29\.7|5 600|493|2 552||
-||29|12 042 092|3 528 939|29\.3|5 800|609|3 161||
-||30|15 571 031|4 495 869|28\.9|6 000|750|3 910||
-||31|20 066 900|5 707 505|28\.4|6 200|921|4 831||
-||32|25 774 405|7 219 994|28\.0|6 400|1 129|5 959||
-||33|32 994 399|9 100 803|27\.6|6 600|1 379|7 338||
-||34|42 095 202|11 430 609|27\.2|6 800|1 681|9 019||
-||35|53 525 811|14 305 407|26\.7|7 000|2 044|11 063||
-||36|67 831 218|17 838 843|26\.3|7 200|2 478|13 540||
-||37|85 670 061|22 164 762|25\.9|7 400|2 996|16 536||
-||38|107 834 823|27 439 976|25\.4|7 600|3 610|20 146||
-||39|135 274 799|33 847 210|25\.0|7 800|4 340|24 486||
-||40|169 122 009|41 598 222|24\.6|8 000|5 200|29 685||
-||41|210 720 231|50 937 022|24\.2|8 200|6 212|35 897||
-||42|261 657 253|62 143 167|23\.7|8 400|7 398|43 295||
-||43|323 800 420|75 535 020|23\.3|8 600|8 784|52 078||
-||44|399 335 440|91 472 909|22\.9|8 800|10 395|62 473||
-||45|490 808 349|110 362 065|22\.5|9 000|12 263|74 735||
-||46|601 170 414|132 655 203|22\.1|9 200|14 420|89 154||
-||47|733 825 617|158 854 605|21\.6|9 400|16 900|106 054||
-||48|892 680 222|190 228 390|21\.3|9 600|19 816|125 869||
-||49|1 082 908 612|227 798 497|21\.0|9 800|23 245|149 114||
-||50|1 310 707 109|272 788 700|20\.8|10 000|27 279|176 393||
-||MAX|1 583 495 809|||||||
-1	This cap only applies to multi player. In single player, there is no such cap.
 
 Note that when you reach level 50, you don’t get any life or mana. Your other stats are updated correctly, though. After reaching level 50, you still receive experience points for killing monsters until you reach enough experience points for MAX (see below). Reaching MAX has no effect at all (apart from not being able to get any more experience of course).
 
@@ -760,33 +723,36 @@ In single player you can only enter the church when you start a new game. To acc
 
 In multi player, all areas are accessible from town right away, but you can go down into them only if you have reached a certain character level. The table below summarizes at what character level you can access the different areas. Even if your level is too low, it is still possible to enter an area if someone opens a portal for you.
 
-|**Dungeon area**|<b>clvl needed to enter<sup>1</sup></b>|
-| :- | -: |
-|Church|1|
-|Catacombs|8|
-|Caves|13|
-|Hell|17|
-|Hive|15|
-|Crypt|15|
+| **Dungeon Area** | **clvl Needed to Enter<sup>[^19]</sup>** |
+|-----------------|-------------------:|
+| Church         | 1   |
+| Catacombs     | 8   |
+| Caves         | 13  |
+| Hell          | 17  |
+| Hive          | 15  |
+| Crypt        | 15  |
 
-1	There is no requirement if you enter a level by going through a portal.
+[^19]: There is no requirement if you enter a level by going through a portal.
+
 
 
 **Difficulty levels**
 
 The table below summarizes at what character level you can enter different difficulty levels.
 
-|**Game type**|**Normal**|**Nightmare**|**Hell**|
-| :- | :-: | -: | -: |
-|Diablo single player|1|n/a1|n/a1|
-|Diablo multi player (IPX and Battle.net)|1|20|30|
-|Diablo Modem and Direct connection game|1|20/12|30/12|
-|Hellfire single player|1|1|1|
-|Hellfire multi player (IPX and Kali)|1|20|30|
-|Hellfire Modem and Direct connection game|1|20/12|30/12|
+| **Game Type** | **Normal** | **Nightmare** | **Hell** |
+|--------------|:---------:|-------------:|---------:|
+| Diablo Single Player | 1  | n/a<sup>[^20]</sup> | n/a<sup>[^20]</sup> |
+| Diablo Multi Player (IPX and Battle.net) | 1  | 20  | 30  |
+| Diablo Modem and Direct Connection Game | 1  | 20/1<sup>[^21]</sup>  | 30/1<sup>[^21]</sup>  |
+| Hellfire Single Player | 1  | 1  | 1  |
+| Hellfire Multi Player (IPX and Kali) | 1  | 20  | 30  |
+| Hellfire Modem and Direct Connection Game | 1  | 20/1<sup>[^21]</sup>  | 30/1<sup>[^21]</sup>  |
 
-1. It is available in the Playstation version. Also see chapter 2.7.1 for a way to play single player with different difficulties.
-1. The creator must be of level 20 or 30 but anyone joining it can be of any level.
+[^20]: It is available in the PlayStation version. Also, see chapter **2.7.1** for a way to play Single Player with different difficulties.
+
+[^21]: The creator must be **level 20 or 30**, but anyone joining can be of any level.
+
 
 
 ### 2.7.1 Single player difficulty levels
@@ -800,13 +766,14 @@ To do this, first start a multi player game with the chosen difficulty. Exit it,
 
 When you create a character, you also have to give it a name. Depending on if it is a single or multi player character, the characters that are allowed to use in the name differ slightly. The table below summarize all allowed characters.
 
-|**Game type**|**Allowed characters in name**|
-| :- | :- |
-|Any|0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ|
-|Single player|!@$(){}[]=+`~^-’.:;\_|”#%&/?\*,<> SPACE    plus localized characters1|
-|Multi player|!@$(){}[]=+`~^-’.:;\_||
+| **Game Type**  | **Allowed Characters in Name** |
+|--------------|--------------------------------------------|
+| Any  | 0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ |
+| Single Player | `!@$(){}[]=+`~^-’.:;\_|”#%&/?\*,<> SPACE` + localized characters<sup>[^22]</sup> |
+| Multi Player  | `!@$(){}[]=+`~^-’.:;\_|` |
 
-1. By localized characters are meant characters that are specific for various non English languages. Examples are: åäöüâãï, and many others. Such localized characters are still possible to enter when you create the character, but there will be an error message when you finish typing in the name.
+[^22]: By "localized characters," we mean characters specific to **various non-English languages**. Examples include: **å, ä, ö, ü, â, ã, ï**, and many others.  
+These characters can still be entered when creating a character, but an **error message** will appear upon finalizing the name.
 
 
 # 3. Items
