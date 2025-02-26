@@ -342,14 +342,14 @@ When you are hit and don’t block it, you will take damage. If the damage is bi
 
 Any character except the Barbarian:	damage >= clvl
 
-Barbarian:	`damage >= 1.25·clvl`
+Barbarian:	`damage >= 1.25×clvl`
 
 It is worth noticing that the check for hit recovery is made prior to any damage reduction due to using a Mana Shield. There are also some bugs regarding hit recovery while using Mana Shield. So while using a Mana Shield, in addition to the requirements above, damage must also be below your current life for you to be put into hit recovery:
 
 
 Any character, except the Barbarian, using Mana Shield: `current life > damage >= clvl`
 
-Barbarian using Mana Shield: `current life > damage >= 1.25·clvl`
+Barbarian using Mana Shield: `current life > damage >= 1.25×clvl`
 
 The table below list the time, in seconds, it takes to block and to do a hit recovery for each character class. It also lists the effects of some specific suffixes that influence blocking or hit recovery. For more information on the suffixes, see chapter 3.2.2.
 
@@ -625,11 +625,11 @@ In all cases you must be alive at the moment the monster dies and you must never
 
 In single player you are then rewarded the amount of experience points according to the formula below. In multi player the same formula applies, but the base experience points of the monster are first divided by the number of players that are entitled to receive experience points, which is not necessarily all players in the game.
 
-`base · (1.0 + 0.1·(mlvl - clvl))`
+`base × (1.0 + 0.1×(mlvl - clvl))`
 
 So when your clvl is 10 levels higher than the mlvl, you no longer receive any experience for killing it. *Base* refers to the base experience points found in chapter 5.2 modified for the number of players that are entitled for experience points according to the explanation above.
 
-The maximum experience you can obtain for killing a monster in multi player (both in Diablo and Hellfire) is 200·clvl or the total experience points needed for advancing to the next clvl divided by 20, whichever is the lowest. In single player there is no such a cap. With the added possibility of difficulty levels in single player in Hellfire along with no character level requirements for harder difficulty levels, you can get quite a lot of experience points when killing monsters. In Hellfire, there are also some shrines that affect your experience points (see chapter 7).
+The maximum experience you can obtain for killing a monster in multi player (both in Diablo and Hellfire) is 200×clvl or the total experience points needed for advancing to the next clvl divided by 20, whichever is the lowest. In single player there is no such a cap. With the added possibility of difficulty levels in single player in Hellfire along with no character level requirements for harder difficulty levels, you can get quite a lot of experience points when killing monsters. In Hellfire, there are also some shrines that affect your experience points (see chapter 7).
 
 Listed below are the required experience points for each level. You will also find the maximum experience point you can be given for a monster at that character level (see above for information about this cap). Listed is also the minimum number of monsters you need to kill to reach the next level assuming you get maximum experience for each kill. This is in practice impossible and even theoretically impossible at low levels. The *Total Kills* column is simply the total minimum number of monsters needed to kill to reach a specific level and is valid for Diablo only as there is no limit on the number of experience points given for killing a monster in Hellfire. Note that the numbers under *Increase*, *Increase %, Kills,* and *Total Kills* are all how much is needed for the *next* level.
 
@@ -1845,10 +1845,10 @@ The table below lists the order for those cases where more than two unique items
 [^131]: **In multiplayer, only the first unique item of each base type is findable.**  
 
 
-
 ## 3.6 Prices of magical items
 
 This chapter will describe how the price of magical items is calculated. Please note that much of the information in this chapter was initially compiled and collected by Ironbeard. I have rewritten it quite a bit to better fit with the rest of the guide and newer findings.
+
 
 ### 3.6.1 Formulas
 
@@ -1858,13 +1858,13 @@ The price of a magical item is affected by three elements: the base effect of a 
 
 | **All magical items except staves with spells:** | **Condition** |
 |--------------------------------|------------------|
-| `C = Bp + Bs + Qp + Qs + I · (Mp + Ms)` | `If Mp + Ms ≥ 0` |
+| `C = Bp + Bs + Qp + Qs + I × (Mp + Ms)` | `If Mp + Ms ≥ 0` |
 | `C = Bp + Bs + Qp + Qs + I / (Mp + Ms)` | `If Mp + Ms < 0` |
 
 | **Staves with spells:** | **Condition** |
 |------------------------|--------------|
-| `C = Bp + Qp + (I + H · P) · Mp` | `If Mp ≥ 0` |
-| `C = Bp + Qp + (I + H · P) / Mp` | `If Mp < 0` |
+| `C = Bp + Qp + (I + H × P) × Mp` | `If Mp ≥ 0` |
+| `C = Bp + Qp + (I + H × P) / Mp` | `If Mp < 0` |
 
 
 ### **Definitions for Magic Item Cost Formula**
@@ -1891,13 +1891,13 @@ Some prefixes/suffixes, like *speed* or *the ages,* do not have the Q to affect 
 
 | **All magical items except staves with spells:** | **Condition** |
 |------------|--------------|
-| `C = Bp + Bs + I · (Mp + Ms)` | `if Mp + Ms ≥ 0` |
+| `C = Bp + Bs + I × (Mp + Ms)` | `if Mp + Ms ≥ 0` |
 | `C = Bp + Bs + I / (Mp + Ms)` | `if Mp + Ms < 0` |
 
 | **Staves with spells:** | **Condition** |
 |------------|--------------|
-| `C = Bp + (I + H·P) · Mp` | `if Mp ≥ 0` |
-| `C = Bp + (I + H·P) / Mp` | `if Mp < 0` |
+| `C = Bp + (I + H×P) × Mp` | `if Mp ≥ 0` |
+| `C = Bp + (I + H×P) / Mp` | `if Mp < 0` |
 
 **Cursed and semi-cursed items**
 
@@ -1912,7 +1912,7 @@ Let’s use the prefix *massive* as an example here. The lowest level of quality
 
 Now, how about the different quality levels in between the base and the max values? Starting from the base at 96% we go on to 97%, 98%,… until we reach the max Q value at 110%. And we took 14 steps to get there (110 - 96 = 14). The quality level on the first step (97%) is 1/14 or 0.071428. On the second step it is 2/14 or 0.142857 and so on until on the last step (at 110%) it is 14/14 or 1. The Q can now be counted with the values we have:
 
-`Q=L/S·R`
+`Q=L/S×R`
 
 ### Variable Definitions
 
@@ -1924,7 +1924,7 @@ Now, how about the different quality levels in between the base and the max valu
 
 One important note here: When counting the value of L/S and you get something like 0.071428 or 0.777777 (7/9) you take into account only two digits after the decimal, meaning that in the first case we would have the L/S to yield 0.07 and in the second case 0.77. Alternatively one can use the formula below in which case the rounding is done automatically:
 
-`Q = [ { [ (100·(Stat - MinStat)) / (MaxStat - MinStat) ] · (Max - Base) } / 100 ]`
+`Q = [ { [ (100×(Stat - MinStat)) / (MaxStat - MinStat) ] × (Max - Base) } / 100 ]`
 
 
 **Unidentified magical item**
@@ -1937,7 +1937,7 @@ All magical items except staves with spells:
 
 Staves with spells:
 
-`C=I+H·P`
+`C=I+H×P`
 
 
 ### 3.6.2 Additional notes on the prices
@@ -1955,7 +1955,7 @@ You can’t sell an item at Griswold if you will be given more gold for it than 
 
 Staves can be recharged at Adria (or by a Sorcerer, see chapter 2.4). The cost to recharge a staff can be calculated using the formula below:
 
-`RcC = FRcC · (1 - CurCha/MaxCha)`
+`RcC = FRcC × (1 - CurCha/MaxCha)`
 
 ### Variable Definitions for Recharge Cost Calculations
 
@@ -1969,9 +1969,9 @@ Staves can be recharged at Adria (or by a Sorcerer, see chapter 2.4). The cost t
 
 The Full Recharge Cost in the formula above can be calculated with:
 
-`FRcC = 0.50 · (I + 5·P)`	if unique or starting staff of the Sorcerer
+`FRcC = 0.50 × (I + 5×P)`	if unique or starting staff of the Sorcerer
 
-`FRcC = 0.50 · (I + H·P + 5·P)`	if *not* unique and *not* starting staff of the Sorcerer
+`FRcC = 0.50 × (I + H×P + 5×P)`	if *not* unique and *not* starting staff of the Sorcerer
 
 ### Variable Definitions for Recharge Cost Calculations
 
@@ -1992,48 +1992,56 @@ If the recharge cost is less than 1 gold (can happen if the ratio CurDur/MaxDur 
 
 Just as with the price of magical items, when counting the value of CurCha/MaxCha you take into account only two digits after the decimal. Alternatively one can use the formula below in which case the rounding is done automatically:
 
-`RcC = [ [ { [ (100·(MaxCha - CurCha)) / MaxCha ] · (I + H·P + 5·P) } / 100 ] / 2 ]`
+`RcC = [ [ { [ (100×(MaxCha - CurCha)) / MaxCha ] × (I + H×P + 5×P) } / 100 ] / 2 ]`
 
-- Of course, for unique staves and the starting staff of the Sorcerer, skip H·P in the formula above.
+- Of course, for unique staves and the starting staff of the Sorcerer, skip H×P in the formula above.
 
 ## 3.7 Durability of items
 
 All unique items and staves with spells found in the dungeon have full durability. So do all items bought in town, of course. All other items found in the dungeon only have partial durability in the range below:
 
-Durability of items found in dungeon:	`(1 + maxdur/4) to 3·maxdur/4`
+Durability of items found in dungeon:	`(1 + maxdur/4) to 3×maxdur/4`
 
 
 ### 3.7.1 Losing durability
 
 All items (except those that are indestructible) have a durability, which will, over time, decrease as you fight. The table below explains under what circumstances and with what chance the durability will go down. It will never go down by more than 1 at a time.
 
-### **Durability Reduction Chances**
+### **Durability Loss Conditions**
 
-| **Item Type**     | **When Durability May Decrease** | **Chance of Decreasing** | **Percentage** |
-|-------------------|---------------------------------|-------------------------:|--------------:|
-| Armor    | Character is stunned          | \( \frac{3}{4} \times \frac{2}{3} = \frac{1}{2} \) | 50.0% |
-| Helm      | Character is stunned          | \( \frac{3}{4} \times \frac{1}{3} = \frac{1}{4} \) | 25.0% |
-| Shield          | Character blocks an attack     | \( \frac{1}{10} \) | 10.0% |
-| Melee Weapon   | Character hits                 | \( \frac{1}{30} \) | 3.3% |
-| Bow            | Character fires                | \( \frac{1}{40} \) | 2.5% |
+| **Item Type**  | **When Durability May Decrease** | **Chance of Decreasing** |
+|---------------|---------------------------------|--------------------------|
+| Armor<sup>[^132]</sup>  | Character is stunned      | 3/4 × 2/3 = 1/2<sup>[^133]</sup> (50.0%) |
+| Helm<sup>[^132]</sup>   | Character is stunned      | 3/4 × 1/3 = 1/4<sup>[^133]</sup> (25.0%) |
+| Shield       | Character blocks an attack      | 1/10 (10.0%)  |
+| Melee Weapon | Character hits                 | 1/30 (3.3%)  |
+| Bow         | Character fires                 | 1/40 (2.5%)  |
 
+[^132]: If you don’t wear both armor and helm but only one of them, the chance is 3/4 that its durability will be decreased.  
+[^133]: You will never lose durability on both the armor and the helm in the same hit.
 
-1. If you don’t wear both armor and helm but only one of them, the chance is 3/4 that its durability will be decreased.
-1. You will never lose durability on both the armor and the helm in the same hit.
 
 
 ### 3.7.2 Repair cost
 
 Repairs are done at Griswold (or by a Warrior, see chapter 2.4). Griswold uses the following formulas to calculate the cost:
 
-|RpC = 0.15 · Price · (1 - CurDur/MaxDur)|For magical and unique items||
-| :- | :- | :- |
-|RpC = 0.50 · Price · (1 - CurDur/MaxDur)|For non magical and unidentified items||
-|where:|||
-|RpC|=  Repair Cost||
-|Price|=  Buying price of the item||
-|MaxDur|=  Maximum durability of item||
-|CurDur|=  Current durability of item||
+### **Repair Cost Formulas**
+
+| **Formula** | **Applies To** | |
+|------------|--------------|--|
+| RpC = 0.15 × Price × (1 - CurDur/MaxDur) | For magical and unique items | |
+| RpC = 0.50 × Price × (1 - CurDur/MaxDur) | For non-magical and unidentified items | |
+
+### Variable Definitions for Repair Cost Calculations
+
+| **Variable** | **Definition** |
+|-------------|--------------|
+| RpC | Repair Cost |
+| Price | Buying price of the item |
+| MaxDur | Maximum durability of the item |
+| CurDur | Current durability of the item |
+
 
 If the repair cost is less than 1 gold Griswold won’t repair it. That makes many of the cursed items irreparable. There also seems to be a bug so that when the ratio CurDur/MaxDur is greater than 99%, the repair cost is rounded down to 0 along the way and is thus not repairable until it takes more damage.
 
@@ -2041,20 +2049,20 @@ Just as with the price of magical items, when counting the value of CurDur/MaxDu
 
 For magical and unique items first calculate:
 
-RpC = [ { [ (100·(MaxDur - CurDur)) / MaxDur] · (30 · Price) } / 100 ]
+`RpC = [ { [ (100×(MaxDur - CurDur)) / MaxDur] × (30 × Price) } / 100 ]`
 
 For non magical and unidentified items first calculate:
 
-RpC = [ { [ (100·(MaxDur - CurDur)) / MaxDur] · Price } / 100 ]
+`RpC = [ { [ (100×(MaxDur - CurDur)) / MaxDur] × Price } / 100 ]`
 
 Then, do the following:
 
-1. if RpC = 1, then exit
-
-1. if RpC > 1, then RpC = [RpC/2], that is, divide the repair cost by 2, then exit
-1. if the item is a non magical and non unique item, set RpC = 1, then exit
-1. if the item is not identified, set RpC = 1, then exit
-1. at this point the item is an identified magical or unique item and RpC is 0 or below 0; the item is in this case not repairable (this would be the case for identified cursed and some semi cursed items)
+1. **If** `RpC = 1`, **then exit**.
+2. **If** `RpC > 1`, **then** `RpC = [RpC / 2]` (divide the repair cost by 2), **then exit**.
+3. **If** the item is a **non-magical and non-unique** item, **set** `RpC = 1`, **then exit**.
+4. **If** the item is **not identified**, **set** `RpC = 1`, **then exit**.
+5. At this point, the item is an **identified magical or unique item** and `RpC` is `0` or below `0`;  
+   - The item is **not repairable** (this applies to identified **cursed** and some **semi-cursed** items).
 
 ## 3.8 Item creation in dungeon
 
@@ -2066,24 +2074,22 @@ Base item in this chapter not only refers to the various equipable items, but al
 
 An item can come from many different sources in the dungeon, and depending on the source, the creation routine is a bit different. To facilitate the explanation below let us first define a new term, *ilvl.* It is defined for various sources in the table below. For information about a monsters mlvl or mlvlitem, see chapters 5.2 and 5.4.
 
-|**Source of item**|**Definition of ilvl**|
-| :- | :- |
-|normal monster|mlvl1|
-|unique monster and special monster2|mlvlitem<sup>3</sup>|
-|decapitated body, sarcophagus, on the ground4, bookcase, skeleton|2·dlvl5|
-|tome, library book and racks||
-|chest, barrel, pod, urn|2·dlvl or dlvl5,6|
+### Source of Item and Item Level (ilvl) Definitions
 
-1. Use the mlvl for normal difficulty regardless of what difficulty you are playing on.
-1. Note that for the purpose of dropping items, Diablo is neither a special nor a unique monster but a normal one.
+| **Source of Item** | **Definition of ilvl** |
+|--------------------|-----------------------|
+| Normal monster | `mlvl`<sup>[^134]</sup> |
+| Unique monster and special monster<sup>[^135]</sup> | `mlvl`<sub>`item`</sub><sup>[^136]</sup> |
+| Decapitated body, sarcophagus, on the ground<sup>[^137]</sup>, bookcase, skeleton | `2 × dlvl`<sup>[^138]</sup> |
+| Tome, library book, and racks | - |
+| Chest, barrel, pod, urn | `2 × dlvl` or `dlvl`<sup>[^138][^139]</sup> |
 
-1. The +4 bonus will be found in the appropriate steps below.
-
-1. You will often find potions of various sorts on the ground; they are specially placed there and are not generated according to normal rules.
-
-1. The Hive levels are numbered 9-12 and the Crypt levels are numbered 13-16.
-
-1. Most chests, barrels, pods and urns have an ilvl equal to 2·dlvl, although some have it equal to dlvl. Those that have the ilvl equal to dlvl will only generate potions and scrolls (and oils in Hellfire). See chapter 3.8.1 for more information. Items created with an ilvl = dlvl are referred to as *special items* in this chapter.
+[^134]: Use the `mlvl` for normal difficulty regardless of what difficulty you are playing on.  
+[^135]: Note that for the purpose of dropping items, Diablo is neither a special nor a unique monster but a normal one.  
+[^136]: The +4 bonus will be found in the appropriate steps below.  
+[^137]: You will often find potions of various sorts on the ground; they are specially placed there and are not generated according to normal rules.  
+[^138]: The Hive levels are numbered 9-12, and the Crypt levels are numbered 13-16.  
+[^139]: Most chests, barrels, pods, and urns have an `ilvl` equal to `2 × dlvl`, although some have it equal to dlvl. Those that have `ilvl` equal to `dlvl` will only generate potions and scrolls (and oils in *Hellfire*). See chapter 3.8.1 for more information. Items created with an `ilvl = dlvl` are referred to as *special items* in this chapter.  
 
 
 **Special items**
@@ -2095,116 +2101,148 @@ Special items appear on those occasions where the item created will not follow n
 
 First the game has do decide if an item is to be dropped at all, if it is going to be gold or an item. The exact probabilities for these are greatly affected by the source of the item. Each source is explained below.
 
+### Monsters
 
-|**Normal monster**||
-| :- | :- |
-|Gold:|30\.3%|
-|Item:|10\.7%|
-|Nothing:|59\.0%|
+#### Normal Monster Drop Chances
+
+| **Drop Type** | **Chance** |
+|--------------|-----------|
+| Gold        | 30.3%     |
+| Item        | 10.7%     |
+| Nothing     | 59.0%     |
 
 - Some monster types (Winged Fiends and Hork Spawns) never drop items.
 
-**Unique monster**
+#### Unique Monster Drop Chances
 
-Item:	100%
+| **Drop Type** | **Chance** |
+|--------------|-----------|
+| Item        | 100%     |
 
 - Unique monsters always drop an item, and it can either be a book or an item that can take on a prefix and/or suffix (or be unique).
 
-**Chest**
+### Chests
 
 Chests can have several possible amounts of items in them and the exact amount is also affected by the size of the chest. The number of *possible* items from a chest is explained in the table below.
 
-|**Number of *possible* items**|**Small chest**|**Chest**|**Large chest**|
-| -: | :- | :- | :-: |
-|0|50 %|33\.3 %|25 %|
-|1|50 %|33\.3 %|25 %|
-|2|-|33\.3%|25 %|
-|3|-|-|25 %|
+#### Possible Number of Items in Chests
+
+| **Number of Possible Items** | **Small Chest** | **Chest** | **Large Chest** |
+|------------------------------:|:--------------:|:---------:|:--------------:|
+| 0                              | 50%            | 33.3%     | 25%            |
+| 1                              | 50%            | 33.3%     | 25%            |
+| 2                              | -              | 33.3%     | 25%            |
+| 3                              | -              | -         | 25%            |
+
 
 For each chest the probability of the items in them being created with varying ilvl is:
 
-|Special item (ilvl = dlvl):|12\.5%|
-| :- | -: |
-|Non special item (ilvl = 2·dlvl):|87\.5%|
+#### Probability of Type of Items in Chests
+
+| **Item Type**                    | **Chance** |
+|----------------------------------:|----------:|
+| Special item (`ilvl = dlvl`)      | 12.5%     |
+| Non-special item (`ilvl = 2 × dlvl`) | 87.5%     |
 
 
 All items in a chest will thus either be all special items or all non special items. For each *possible* item in a chest without special items, the probability is then as follows:
 
-|Gold:|75%|
-| :- | -: |
-|Item:|25%|
+#### Probability of Gold in Chests
+
+| **Type**  | **Chance** |
+|---------:|----------:|
+| Gold     | 75%       |
+| Item     | 25%       |
 
 If the chest is determined to have special items, all possible items will drop as special items. For information about items created by different ilvl, see chapter 3.8.2.
 
 Chests only exist in church, catacombs, caves and hell.
 
 
-**Barrels, pods and urns**
+### Other Objects
 
 Pods and Urns are, for item creation, treated as barrels, so anything said about barrels below applies equally to pods and urns.
 
 Barrels can be of two different types, exploding and non exploding. For information about exploding barrels, see chapter 4.3. Approximately 20% of all barrels are exploding ones. The information below will only apply to *non* exploding barrels. Exploding barrels will never have items in them.
 
-|Skeleton:|20%|
-| :- | :- |
-|Gold:|10%|
-|Special item:|6\.7%|
-|Item:|3\.3%|
-|Nothing:|60%|
+#### Drop Rates for Barrels
+
+| **Drop Type**    | **Chance** |
+|-----------------:|----------:|
+| Skeleton        | 20%       |
+| Gold           | 10%       |
+| Special item   | 6.7%      |
+| Item           | 3.3%      |
+| Nothing        | 60%       |
 
 - Barrels can only exist in church, catacombs, caves and hell.
-
 - Pods can only exist in the Hive.
-
 - Urns can only exists in the Crypt.
 
-|**Sarcophagus**||
-| :- | :- |
-|Skeleton:|20%|
-|Gold:|22\.5%|
-|Item:|7\.5%|
-|Nothing:|50%|
+
+#### Drop Rates for Sarcophagi
+
+| **Drop Type**   | **Chance** |
+|---------------:|----------:|
+| Skeleton      | 20%       |
+| Gold         | 22.5%     |
+| Item         | 7.5%      |
+| Nothing      | 50%       |
 
 - Sarcophagi can only exist in church and in the crypt.
 
-|**Decapitated bodies**||
-| :- | :- |
-|Gold:|75%|
-|Item:|25%|
+
+#### Drop Rates for Decapitated Bodies
+
+| **Drop Type** | **Chance** |
+|-------------:|----------:|
+| Gold        | 75%       |
+| Item        | 25%       |
 
 - Decapitated bodies can only exist in catacombs, caves and hell.
 
-|**Weapon Rack**||
-| :- | :- |
-|Axe:|25%|
-|Bow:|25%|
-|Club:|25%|
-|Sword:|25%|
+
+#### Drop Rates for Weapon Racks
+
+| **Drop Type** | **Chance** |
+|-------------:|----------:|
+| Axe         | 25%       |
+| Bow         | 25%       |
+| Club        | 25%       |
+| Sword       | 25%       |
+
 
 - Weapon racks can never exist in church.
 
-**Armor Rack**
 
-dlvl 5:	light armor
+#### Armor Rack Armor Types
 
-dlvl 6-9:	medium armor
+| **Dungeon Level (`dlvl`)** | **Armor Type**  |
+|--------------------------:|----------------|
+| `5`                      | Light Armor    |
+| `6 - 9`                  | Medium Armor   |
+| `10 - 15`                | Heavy Armor    |
 
-dlvl 10-15:	heavy armor
 
 - See chapter 3.1 for a definition of light, medium and heavy armor.
-
 - Armor racks can never exist in church.
 
-**Bookcase**
 
-Book:	100%
+#### Drop Rates for Bookcases
+
+| **Drop Type** | **Chance** |
+|-------------:|----------:|
+| Book         | 100%       |
 
 - Bookcases can only exist in church and catacombs.
 
-|**Library book and Skeleton Tome**||
-| :- | :- |
-|Book:|20%|
-|Scroll:|80%|
+#### **Library Book and Skeleton Tome Drop Rates**
+
+| **Drop Type** | **Chance** |
+|--------------|----------:|
+| Book        | 20%       |
+| Scroll      | 80%       |
+
 
 - Only scrolls of Apocalypse, Healing, Identify, Infravision, Nova, Mana Shield, Phasing, Teleport, and Town Portal are possible.
 - Library books and Skeleton Tomes can only exist in church and catacombs.
@@ -2218,11 +2256,12 @@ Next, the item type that is to be generated is determined, and the procedure is 
 
 First, it has to be determined what the base item should be. For information about base items, see chapters 3.1 and 3.2. Each base item has a qlvl, and those within the ranges below can be dropped. Depending on the source of the item some base items are, of course, excluded (see chapter 3.8.1).
 
-Normal and special monster:	1 to mlvl
+| **Source**              | **Range**        |
+|-------------------------|----------------:|
+| Normal and special monster | `1` to `mlvl` |
+| Unique monster           | `1` to `mlvl`<sub>`battle`</sub> |
+| Other                   | `1` to `ilvl`   |
 
-Unique monster:	1 to mlvlbattle
-
-Other:	1 to ilvl
 
 - Note that the mlvl is the one modified for difficulty level when the item comes from a monster.
 
@@ -2233,37 +2272,31 @@ Of all the possible base items, one is chosen at random with an equal probabilit
 
 Now it is time to determine if the item is magical or not. Only items that can have a prefix/suffix (or be unique) can be magical. For other items this test is not done. The probability of being magical is as follows depending on the source of the item:
 
-Unique monster:	100%
+| **Source**                           | **Chance** |
+|--------------------------------------|------------:|
+| Unique monster                        | 100% |
+| On the ground                         | 100% |
+| Weapon rack                           | 100% |
+| Armor rack on `dlvl 5` and `dlvl 13-15` | 100% |
+| Armor rack on `dlvl 6-9`              | `(55.5 + 0.445 × (ilvl + 1))%` |
+| Armor rack on `dlvl 10-12`            | `(11 + 0.89 × (ilvl + 1))%` |
+| Monster                               | `(11 + 0.89 × (ilvl + 1))%` |
+| Other                                 | `(11 + 0.89 × (ilvl + 1))%` |
 
-On the ground:	100%
-
-Weapon rack:	100%
-
-Armor rack on dlvl 5 and 13-15:	100%
-
-Armor rack on dlvl 6-9:	(55.5 + 0.445·(ilvl+1))%
-
-Armor rack on dlvl 10-12:	(11 + 0.89·(ilvl+1))%
-
-Monster:	(11 + 0.89·(ilvl+1))%
-
-Other:	(11 + 0.89·(ilvl+1))%
 
 - Only equipable items can be magical; for other base items this step is not performed.
-
 - Rings and amulets are always magical.
-
 - Staves are always magical if they have no spell, see chapter 3.8.3 under *Staff* for more information.
-
 - On the ground only refers to equipable items found, often in special rooms, in the dungeon. It is quite possible that the probability of those items being magical is less than 100% outside of Hell.
 
 **Is it unique?**
 
 If the item was determined to be magical it is next checked for to see if it is unique. The probability of being unique is listed below depending on source. Note that the probability to be unique is applied for this step only. The total probability of an item to be unique is of course less as not all items are magical or even could be magical.
 
-|Unique monster:|16%|
-| :- | :- |
-|Other:|2%|
+| **Source**         | **Chance** |
+|-------------------|------------:|
+| Unique monster   | 16% |
+| Other           | 2%  |
 
 
 ### 3.8.3 Item properties
@@ -2275,17 +2308,17 @@ Once the base item has been determined, the properties of the item are to be dec
 
 The amount of gold dropped or found on the dungeon floor is determined by the formulas below:
 
-Normal difficulty:	5·dlvl to 15·dlvl - 1
-
-Nightmare difficulty:	5·(16 + dlvl) to 15·(16 + dlvl) - 1
-
-Hell difficulty:	5·(32 + dlvl) to 15·(32 + dlvl) - 1
+| **Difficulty**          | **Gold Drop Range** |
+|------------------------|------------------|
+| Normal Difficulty     | `5 × dlvl` to `15 × dlvl - 1` |
+| Nightmare Difficulty  | `5 × (16 + dlvl)` to `15 × (16 + dlvl) - 1` |
+| Hell Difficulty       | `5 × (32 + dlvl)` to `15 × (32 + dlvl) - 1` |
 
 - The Hive levels are numbered 9-12 and the Crypt levels are numbered 13-16.
 
 Furthermore, on any hell dungeon level (dlvl 13-16) or Crypt dungeon level (dlvl 13-16) the amount of gold is increased by:
 
-Hell or Crypt dungeon level:	amount · 1.125
+Hell or Crypt dungeon level:	`amount × 1.125`
 
 - The amount is taken from the appropriate formula above depending on the difficulty level.
 
@@ -2293,9 +2326,11 @@ Hell or Crypt dungeon level:	amount · 1.125
 
 If the item is determined to be unique, the game will drop the unique item that is of the correct base item (determined above) and that has a qlvl according to below:
 
-Unique and special monster:	1 to ilvl+4
+| **Source**                 | **Quality Level Range** |
+|---------------------------|---------------------|
+| Unique and Special Monster | `1 to ilvl + 4` |
+| All Other Sources          | `1 to ilvl` |
 
-All other sources:	1 to ilvl
 
 If several unique items are possible, the one with the highest qlvl will be dropped. If several unique items that are possible have the same qlvl, the one that happens to be first in the list will be dropped. This is the reason that some unique items will never be dropped as there is always another unique item with the same qlvl (and being of the same base item) that will be dropped instead. See chapter 3.5.2 for a list of such unique items.
 
@@ -2308,169 +2343,192 @@ A unique item has up to 6 special properties, which are described in more detail
 
 A magical item has a prefix and/or a suffix (it can of course also be unique but that is covered above). Below are the probabilities for an item having a prefix, a suffix, or both of them.
 
-|Prefix only:|20\.8%|
-| :- | -: |
-|Suffix only:|62\.5%|
-|Prefix and suffix:|16\.7%|
+| **Modifier Type**     | **Chance**  |
+|----------------------|------------:|
+| Prefix only         | 20.8%       |
+| Suffix only         | 62.5%       |
+| Prefix and Suffix   | 16.7%       |
 
 The qlvl of the prefix and/or suffix must be within the range given below:
 
-Unique and special monster:	[(ilvl+4)/2] to ilvl+4
-
-All other sources:	[ilvl/2] to ilvl
+| **Source**                 | **Quality Level Range (`qlvl`)** |
+|----------------------------|----------------------------:|
+| Unique and Special Monster | `[(ilvl + 4) / 2]` to `ilvl + 4` |
+| All Other Sources          | `[ilvl / 2]` to `ilvl` |
 
 - Round down the minimum level. If it is higher than 25, it is set to 25.
-
 - The actual value of the prefix or suffix is chosen randomly within its range.
-
 - Some prefixes has a double chance of being picked, see below.
 
-The range above means that unless the lower limit is set to 25, the highest qlvl of an item with both a prefix and a suffix can’t be more than twice the level of the lower one. This rule is good to know when you want to see if a prefix and a suffix can coexist on an item. It is also worth noticing that as the range above is based on the mlvl, *not* modified for difficulty level (or 2·dlvl), so the prefix and suffix with the highest qlvl you will ever find in the dungeon has qlvl
-
-34. There is no prefix or suffix in the range of 32-34, so qlvl 31 is the highest one you will find, and only emerald has that qlvl. In Hellfire (but not Diablo), Diablo is level 45, so he can drop items with prefixes and suffixes of qlvl up to
-45. Similarly, Na-Krul can drop items with prefixes and suffixes of qlvl up to 44 as he is level 40, and the +4 bonus for being a unique monster applies to him. If for any reason the game fails to select a prefix and/or a suffix, the game will then proceed to create the item as a normal non magical item instead. See chapter 3.13.3 for a list of prefixes and suffixes in the order of their qlvl.
+The range above means that unless the lower limit is set to 25, the highest qlvl of an item with both a prefix and a suffix can’t be more than twice the level of the lower one. This rule is good to know when you want to see if a prefix and a suffix can coexist on an item. It is also worth noticing that as the range above is based on the mlvl, *not* modified for difficulty level (or 2×dlvl), so the prefix and suffix with the highest qlvl you will ever find in the dungeon has qlvl 34. There is no prefix or suffix in the range of 32-34, so qlvl 31 is the highest one you will find, and only emerald has that qlvl. In Hellfire (but not Diablo), Diablo is level 45, so he can drop items with prefixes and suffixes of qlvl up to 45. Similarly, Na-Krul can drop items with prefixes and suffixes of qlvl up to 44 as he is level 40, and the +4 bonus for being a unique monster applies to him. If for any reason the game fails to select a prefix and/or a suffix, the game will then proceed to create the item as a normal non magical item instead. See chapter 3.13.3 for a list of prefixes and suffixes in the order of their qlvl.
 
 Some prefixes actually has a double chance of being chosen. The table below list all prefixes that has a double chance of being chosen.
 
-|**+% Armor Class**|**+% To Hit**|**+% To Hit /**|**+% Damage Done**|
-| :- | :- | :- | :- |
-|||**+% Damage Done**||
-|vulnerable1|tin1|clumsy1|useless1|
-|rusted1|brass1|dull1|bent1|
-|fine|bronze|sharp1|weak|
-|strong|iron|fine|jagged|
-|grand|steel|Warrior’s|deadly|
-|valiant|silver|soldier’s|heavy|
-|glorious|gold|lord’s|vicious|
-|blessed|platinum|knight’s|brutal|
-|saintly|mithril|master’s|massive|
-|awesome|meteoric|champion’s|savage|
-|holy|weird|king’s|ruthless|
-|godly|strange||merciless|
+| **+% Armor Class**  | **+% To Hit**  | **+% To Hit / +% Damage Done** | **+% Damage Done**  |
+|---------------------|---------------|--------------------------------|---------------------|
+| Vulnerable<sup>[^1]</sup>  | Tin<sup>[^1]</sup>    | Clumsy<sup>[^1]</sup>    | Useless<sup>[^1]</sup>   |
+| Rusted<sup>[^1]</sup>      | Brass<sup>[^1]</sup>  | Dull<sup>[^1]</sup>      | Bent<sup>[^1]</sup>      |
+| Fine             | Bronze        | Sharp<sup>[^1]</sup>      | Weak               |
+| Strong          | Iron          | Fine                      | Jagged             |
+| Grand           | Steel         | Warrior’s                 | Deadly             |
+| Valiant         | Silver        | Soldier’s                 | Heavy              |
+| Glorious        | Gold          | Lord’s                    | Vicious            |
+| Blessed         | Platinum      | Knight’s                  | Brutal             |
+| Saintly        | Mithril       | Master’s                  | Massive            |
+| Awesome         | Meteoric      | Champion’s                | Savage             |
+| Holy           | Weird         | King’s                     | Ruthless           |
+| Godly          | Strange       |                             | Merciless          |
 
-1	A cursed prefix. See below for more information when possible.
+[^1]: A **cursed prefix**. See below for more information when possible.
+
 
 Despite what has been said above, there are some combinations of prefixes and suffixes that can-not exist on the same item. The table below list all combinations that are. As the game always picks the prefix first, it is always the suffix that will be discarded; this can be important to know if one wants to figure out exactly what items are possible and the probabilities of them.
 
-**None of the combinations below can exist on the same item**
+#### Incompatible Affix Combinations
 
-|angel’s|trouble|gold|pain|silver|corruption|
-| :- | :- | :- | :- | :- | :- |
-|arch-angel’s|trouble|gold|the dark|silver|pain|
-|blessed|trouble|gold|the bear|silver|the dark|
-|frog’s|vitality|mithril|trouble|silver|the bear|
-|glorious|trouble|platinum|trouble|spider’s|vitality|
-|gold|pit|saintly|trouble|vicious|vim|
-|gold|the vulture|silver|pit|vicious|vigor|
-|gold|corruption|silver|the vulture|vicious|radiance|
+| **Prefix 1**      | **Prefix 2**      |
+|------------------|------------------|
+| Angel’s         | Trouble          |
+| Arch-Angel’s    | Trouble          |
+| Blessed         | Trouble          |
+| Frog’s          | Vitality         |
+| Glorious        | Trouble          |
+| Gold            | Pit              |
+| Gold            | The Vulture      |
+| Gold            | Corruption       |
+| Vicious         | Vim              |
+| Vicious         | Radiance         |
+| Spider’s        | Vitality         |
+| Gold            | Pain             |
+| Gold            | The Dark         |
+| Gold            | The Bear         |
+| Mithril         | Trouble          |
+| Platinum        | Trouble          |
+| Saintly         | Trouble          |
+| Silver         | Pit              |
+| Silver         | The Vulture      |
+| Silver         | The Bear         |
+| Silver         | The Dark         |
+| Vicious         | Vigor            |
 
 Cursed prefixes and suffixes are those who give some sort of drawback to your character when you wear them. It is quite obvious for most prefixes and suffixes. For the ones affecting the light radius, the ones decreasing it are considered as cursed ones. The prefix *sharp* is also treated as cursed, most likely due to a bug. Cursed items are not allowed to appear when the item comes from certain sources. Below is listed if a source can give out cursed items, and if it can, how large the chance is compared to non cursed prefixes and suffixes.
 
-Unique monsters:	No
+| **Source**                                | **Cursed Chance** |
+|-------------------------------------------|------------------------:|
+| Unique Monsters                           | 0%                     |
+| Weapon Rack                               | 0%                     |
+| Armor Rack on `dlvl 5` and `dlvl 13-15`   | 0%                     |
+| Armor Rack on `dlvl 6-9`                  | 16.5%                  |
+| Armor Rack on `dlvl 10-12`                | 33.0%                  |
+| Adria, Griswold, Pepin, and Wirt          | 0%                     |
+| On the Ground                             | 0%                     |
+| Other                                     | 33.0%                  |
 
-Weapon Rack:	No
-
-Armor Rack on dlvl 5 and 13-15:	No
-
-Armor Rack on dlvl 6-9:	16.5%
-
-Armor Rack on dlvl 10-12:	33.0%
-
-Adria, Griswold, Pepin and Wirt:	No
-
-On the ground:	No
-
-Other:	33.0%
 
 - Sources that will not produce equipable items can never produce cursed items.
-
 - If possible, a cursed prefix will, if it is found in the table above with prefixes with a double chance of being chosen, have a double chance compared to other cursed prefixes.
 
 **Staff**
 
 Staves can either have a spell or be normal magical items (of course, they can also be plain staves but that is very rare). The chances for what type the staff will be is as follows:
 
-|Chance for having spell:|75%|
-| :- | -: |
-|Chance for having prefix if it has a spell:|10%|
+| **Condition**                                      | **Chance** |
+|----------------------------------------------------|-----------:|
+| Chance for having a spell                         | 75%        |
+| Chance for having a prefix if it has a spell      | 10%        |
 
 - Staves from a location that has a 100% chance of being magical will, if they have a spell, always have a prefix. as staves with spells without a prefix will not be considered as magical by the game.
 
 Staves that do not have a spell, are treated the same way as any other magical item; see above. However, if they have a spell, they are created a bit differently. For the spell and the prefix they follow the ranges below:
 
-Range of qlvl for spell on staves from unique and special monster:	1 to [(ilvl+4/)2]
-
-Range of qlvl for spell on staves from all other sources:	1 to ilvl/2
-
-Range of qlvl for prefix on staff with spell from unique and special monster:	1 to ilvl+4
-
-Range of qlvl for prefix on staff with spell from all other sources:	1 to ilvl
+| **Condition** | **Range of `qlvl`** |
+|--------------|--------------------:|
+| Spell on staves from unique and special monsters | `1` to `[(ilvl + 4) / 2]` |
+| Spell on staves from all other sources | `1` to `ilvl / 2` |
+| Prefix on staff with spell from unique and special monsters | `1` to `ilvl + 4` |
+| Prefix on staff with spell from all other sources | `1` to `ilvl` |
 
 - Note that the qlvl of a spell is different depending on whether it appears on a staff or on a book.
 
 When found in the dungeon, all non unique staves with spells have full charges. Unique staves has a specific number of current charges according to the table below. All staves bought in town have full charges, of course.
 
-|**Unique staff**|<b>Number of charges when found<sup>1</sup></b>|
-| :- | -: |
-|Gleamsong|10|
-|Mindcry|13|
-|Naj’s Puzzler|23|
-|The Protector|2|
-|Rod of Onan|21|
-|Thundercall|3|
+#### **Number of Charges on Unique Staves When Found**<sup>[^1]</sup>
 
-1. I would say this is a bug and the intention was to make unique staves also have full charges when found. As it is now, the number of charges is the same as the slot number in which you find the spell on the item in the internal spell table.
+| **Unique Staff**   | **Number of Charges** |
+|--------------------|---------------------:|
+| Gleamsong         | 10  |
+| Mindcry           | 13  |
+| Naj’s Puzzler     | 23  |
+| The Protector     | 2   |
+| Rod of Onan       | 21  |
+| Thundercall       | 3   |
+
+[^1]: This is likely a bug. The intended behavior may have been for unique staves to have full charges when found. As it stands, the number of charges corresponds to the slot number in which the spell appears in the internal spell table.
+
 
 Due to the way the game picks a random spell, some spells have a higher chance to be selected than others at a given situation. As the probabilities are different for different ilvl, it is hard to give exact numbers. The general procedure is as follows:
 
-1. calculate x = Rnd[37] + 1 (in Hellfire, calculate x = Rnd[52] + 1)
+1. Calculate `x = Rnd[37] + 1` (in *Hellfire*, calculate `x = Rnd[52] + 1`).
+2. Start with the first spell in the internal list of spells.
+3. Step forward until a spell that exists on staves (or books, if selecting for a book) and has a sufficiently low `ilvl` is found.  
+   - If the end of the list is reached, restart from the beginning.
+4. Decrease `x` by one.
+5. If `x` is not `0`, return to step **3**.
+6. The last spell found in step **3** is the one chosen to appear on the staff (or book).
 
-1. start with the first spell in the internal list of spells
-1. step forward until a spell that exists on staves (or books if it is for a book) and has low enough ilvl is found (if you ever reach the end, restart from the beginning)
-
-1. decrease x by one
-1. if x is not 0, goto step 3
-1. the last spell found in step 3, is the one chosen to appear on the staff (or book)
 
 - In single player, the spells Heal Other and Resurrect are automatically skipped and do not count even if their ilvl is high enough.
-
 - Spells at the start of the list will have a higher probability than those later in the list. The exact cut off depends on the ilvl. This means that there will be two different levels of probabilities for the spells, a higher one for spells at the start of the list and a lower one for spells at the end of the list. At rare occasions all spells will have the same probability.
-
 - The order of the spells is *not* the same as in your spell book or any of the other lists in this Guide. The table below lists the order of the spells for the purpose of selecting a spell for a staff or a book.
 
-|<a name="page50"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**||||**Created by Pedro Faria**|||||||
-| :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
-||||||||||||
-|<b>Position<sup>1</sup></b>|**Spell**|**Book**||**Staff**|<b>Position<sup>1</sup></b>|**Spell**||**Book**|**Staff**||
-|1|Firebolt|Yes||Yes|19|Charged Bolt||Yes|Yes||
-|2|Healing|Yes||Yes|20|Holy Bolt||Yes|Yes||
-|3|Lightning|Yes||Yes|21|Ressurect3||-|Yes||
-|4|Flash|Yes||Yes|22|Telekinesis||Yes|Yes||
-|5|Fire Wall|Yes||Yes|23|Heal Other3||Yes|Yes||
-|6|Town Portal|Yes||Yes|24|Blood Star||Yes|Yes||
-|7|Stone Curse|Yes||Yes|25|Bone Spirit||Yes|Yes||
-|8|Phasing|Yes||Yes|26|Mana||-|Yes||
-|9|Mana Shield|Yes||Yes|27|Magi||-|Yes||
-|10|Fireball|Yes||Yes|28|Jester||-|Yes||
-|11|Guardian|Yes||Yes|29|Lightning Wall||Yes|Yes||
-|12|Chain Lightning|Yes||Yes|30|Immolation||Yes|Yes||
-|13|Flame Wave|Yes||Yes|31|Warp||Yes|Yes||
-|14|Nova|Yes2||Yes|32|Reflect||Yes|Yes||
-|15|Golem|Yes||Yes|33|Berserk||Yes|Yes||
-|16|Teleport|Yes||Yes|34|Ring of Fire||Yes|Yes||
-|17|Apocalypse|Yes2||Yes|35|Search||Yes|Yes||
-|18|Elemental|Yes||Yes|||||||
-1. Position 26 to 35 only exist in Hellfire.
-1. Only exists as books in Hellfire.
+| **Position<sup>[^1]</sup>** | **Spell**        | **Book** | **Staff** |
+|------------:|----------------|:-------:|:-------:|
+| 1  | Firebolt        | Yes | Yes |
+| 2  | Healing        | Yes | Yes |
+| 3  | Lightning      | Yes | Yes |
+| 4  | Flash          | Yes | Yes |
+| 5  | Fire Wall      | Yes | Yes |
+| 6  | Town Portal    | Yes | Yes |
+| 7  | Stone Curse    | Yes | Yes |
+| 8  | Phasing        | Yes | Yes |
+| 9  | Mana Shield    | Yes | Yes |
+| 10 | Fireball       | Yes | Yes |
+| 11 | Guardian       | Yes | Yes |
+| 12 | Chain Lightning | Yes | Yes |
+| 13 | Flame Wave     | Yes | Yes |
+| 14 | Nova          | Yes<sup>[^2]</sup> | Yes |
+| 15 | Golem         | Yes | Yes |
+| 16 | Teleport      | Yes | Yes |
+| 17 | Apocalypse    | Yes<sup>[^2]</sup> | Yes |
+| 18 | Elemental     | Yes | Yes |
+| 19 | Charged Bolt     | Yes | Yes |
+| 20 | Holy Bolt       | Yes | Yes |
+| 21 | Resurrection<sup>[^3]</sup> | - | Yes |
+| 22 | Telekinesis     | Yes | Yes |
+| 23 | Heal Other<sup>[^3]</sup> | Yes | Yes |
+| 24 | Blood Star      | Yes | Yes |
+| 25 | Bone Spirit     | Yes | Yes |
+| 26 | Mana            | - | Yes |
+| 27 | Magi            | - | Yes |
+| 28 | Jester          | - | Yes |
+| 29 | Lightning Wall  | Yes | Yes |
+| 30 | Immolation      | Yes | Yes |
+| 31 | Warp            | Yes | Yes |
+| 32 | Reflect         | Yes | Yes |
+| 33 | Berserk         | Yes | Yes |
+| 34 | Ring of Fire    | Yes | Yes |
+| 35 | Search          | Yes | Yes |
 
-1. In single player, the spells Heal Other and Resurrect are automatically skipped and do not count even if the ilvl is high enough.
+[^1]: **Positions 26 to 35 only exist in *Hellfire*.**  
+[^2]: **Only exists as books in *Hellfire*.**  
+[^3]: **In *single player*, "Heal Other" and "Resurrect" are automatically skipped and do not count, even if the `ilvl` is high enough.**  
 
 
 **Book**
 
 If the item type is a *book of,* the game then attaches a spell to the book. The qlvl of the spell can be in the range given below. For a list of qlvl of spells on books see chapter 3.2.3.
 
-Range of qlvl for spell on books:	1 to ilvl/2
+Range of qlvl for spell on books:	`1 to ilvl/2`
 
 - Note that the qlvl of a spell is different depending on whether it appears on a book or on a staff. For information about how the spell is chosen, see above under Staff.
 
@@ -2478,116 +2536,125 @@ Range of qlvl for spell on books:	1 to ilvl/2
 
 Oils can, as noted in chapter 3.2.1, be of two types; either the oil together with its type is treated as a base item, just like a potion and thus no further processing of the oil is needed, or it can be created as the base item *oil of*, to which an oil type is then attached. See chapter 3.2.1 for more information on which oils can be created in which way. If the case is the latter one, the oil type attached to the oil follows the range below:
 
-Range of qlvl for oil type:	1 to ilvl
+Range of qlvl for oil type:	`1 to ilvl`
 
 
-**Special item**
+### **Special Item Probabilities**
 
-A special item can only be of a limited number of base items. In Diablo, the list below shows what base items are possible and their probabilities.
+A *special item* can only be one of a limited set of base items. In *Diablo*, the table below lists the possible base items and their probabilities.
 
-|Scroll of Town Portal|33\.3%|
-| :- | -: |
-|Potion of Healing|33\.3%|
-|Potion of Mana|33\.3%|
+#### **Diablo Special Item Probabilities**
+| **Item**               | **Probability** |
+|-----------------------|---------------:|
+| Scroll of Town Portal | 33.3% |
+| Potion of Healing    | 33.3% |
+| Potion of Mana       | 33.3% |
 
-In Hellfire the list is slightly modified and depends on the dlvl. For dlvl 1 the list of probabilities is:
+---
 
-|Potion of Healing|42\.9%|
-| :- | -: |
-|Potion of Mana|42\.9%|
-|Blacksmith Oil|14\.3%|
+#### **Hellfire Special Item Probabilities**
+In *Hellfire*, the probabilities vary based on dungeon level (`dlvl`).
 
-For any dlvl higher than 1 in Hellfire, the list of probabilities is:
+##### **For `dlvl = 1`**
+| **Item**          | **Probability** |
+|------------------|---------------:|
+| Potion of Healing | 42.9% |
+| Potion of Mana    | 42.9% |
+| Blacksmith Oil    | 14.3% |
 
-|Scroll of Town Portal|28\.6%|
-| :- | -: |
-|Potion of Healing|28\.6%|
-|Potion of Mana|28\.6%|
-|Blacksmith Oil|14\.3%|
+##### **For `dlvl > 1`**
+| **Item**               | **Probability** |
+|-----------------------|---------------:|
+| Scroll of Town Portal | 28.6% |
+| Potion of Healing    | 28.6% |
+| Potion of Mana       | 28.6% |
+| Blacksmith Oil       | 14.3% |
 
 
 ## 3.9 Item creation in town
 
 For many parts, the creation of items in town is the same as that in the dungeon, but there are several differences and they are explained in this chapter. In the table below are listed what type of items you can buy from each person in town.
 
-|**Person**|<b>Items sold<sup>1</sup></b>|
-| :- | :- |
-|Adria|staves2, books, scrolls, mana potions, rejuvenation potions and elixirs3|
-|Griswold|weapons (excluding staves4), armor, helms, shields and jewlery5|
-|Pepin|healing potions, rejuvenation potions, scroll of resurrect, scroll of healing and elixirs3,5|
-|Wirt6|weapons (excluding staves4), armor, helms, shields and jewlery5|
+### **NPC Vendors and Items Sold**<sup>[^1]</sup>
 
-1. Only Griswold and Adria will buy items.
-1. In Hellfire only with spells.
+| **Person**  | **Items Sold** |
+|------------|---------------------------------------------------------------|
+| **Adria**  | Staves<sup>[^2]</sup>, books, scrolls, mana potions, rejuvenation potions, and elixirs<sup>[^3]</sup> |
+| **Griswold** | Weapons (excluding staves<sup>[^4]</sup>), armor, helms, shields, and jewelry<sup>[^5]</sup> |
+| **Pepin** | Healing potions, rejuvenation potions, Scroll of Resurrect, Scroll of Healing, and elixirs<sup>[^3][^5]</sup> |
+| **Wirt**<sup>[^6]</sup> | Weapons (excluding staves<sup>[^4]</sup>), armor, helms, shields, and jewelry<sup>[^5]</sup> |
 
-1. Once you are level 26 in multi player or have been to Hell, Crypt, or Hive in single player.
+---
 
-1. In Hellfire he does sell staves.
-
-1. In single player only.
-
-1. For special exceptions regarding Wirt, see chapter 3.9.4.
+[^1]: Only *Griswold* and *Adria* will buy items.  
+[^2]: In *Hellfire*, only staves *with spells* are sold.  
+[^3]: Available once you reach level 26 in *multiplayer*, or after visiting *Hell*, *Crypt*, or *Hive* in *single player*.  
+[^4]: In *Hellfire*, *Griswold* does sell staves.  
+[^5]: Only available in *single player*.  
+[^6]: For *special exceptions* regarding *Wirt*, see **chapter 3.9.4**.  
 
 Just as for item creation in the dungeon we start by defining the ilvl for each person that you can shop from in town.
 
 It is done in the table below.
 
-|**Source of item**|**Definition of ilvl**|
-| :- | :- |
-|Adria|special1|
-|Griswold basic items|special1|
-|Griswold premium items|varying from clvl-1 to clvl+22|
-|Pepin|special1|
-|Wirt|clvl|
+| **Source of Item**        | **Definition of `ilvl`** |
+|--------------------------|-------------------------|
+| **Adria**                | `special`<sup>[^1]</sup> |
+| **Griswold (basic items)**  | `special`<sup>[^1]</sup> |
+| **Griswold (premium items)** | Varies from `clvl - 1` to `clvl + 2`<sup>[^2]</sup> |
+| **Pepin**                | `special`<sup>[^1]</sup> |
+| **Wirt**                 | `clvl` |
 
-1. See table below for how clvl is converted to ilvl in special cases.
-1. Maximum ilvl is 30 in all cases, though. In Hellfire it varies from clvl-1 to clvl+3. See table below for exact variation.
+[^1]: See the table below for how `clvl` is converted to `ilvl` in *special cases*.  
+[^2]: Maximum `ilvl` is **30** in all cases. In *Hellfire*, it varies from `clvl - 1` to `clvl + 3`. See the table below for exact variation.  
+
 
 As noted in the table above, ilvl is in many cases derived in a special way; the table below explains how it is derived for Adria’s, Pepin’s and Griswold’s basic items. In multi player it depends on your character level. In single player it depends on what dungeon level you have been to in the current game. Difficulty does not affect it in any way.
 
 **Definition of ilvl at Adria, Pepin and for Griswold’s basic items**
 
-||**Single Player**|**Multi Player**||||||
-| :- | :-: | -: | :- | :- | :- | :- | :- |
-||**dlvl**||**clvl**|**ilvl**||||
-||1 -|4|1|-|9|6||
-|||5|10|- 11|7|||
-|||6|12|- 13|8|||
-|||7|14|- 15|9|||
-|||8|16|- 17|10|||
-|||9|18|- 19|11|||
-|||10|20|- 21|12|||
-|||11|22|- 23|13|||
-|||12|24|- 25|14|||
-|||13|26|- 27|15|||
-||14 -|16|28|-|50|16||
-||Hive / Crypt1||||16|||
-1	Only available in Hellfire.
+| **Single Player** | **Multi Player** |          |
+|------------------|-----------------|------------|
+| **`dlvl`**      | **`clvl`**       | **`ilvl`** |
+| 1 - 4          | 1 - 9            | 6          |
+| 5              | 10 - 11          | 7          |
+| 6              | 12 - 13          | 8          |
+| 7              | 14 - 15          | 9          |
+| 8              | 16 - 17          | 10         |
+| 9              | 18 - 19          | 11         |
+| 10             | 20 - 21          | 12         |
+| 11             | 22 - 23          | 13         |
+| 12             | 24 - 25          | 14         |
+| 13             | 26 - 27          | 15         |
+| 14 - 16        | 28 - 50          | 16         |
+| **Hive / Crypt**<sup>[^1]</sup> |                     | 16         |
+
+[^1]: **Only available in *Hellfire*.**
 
 For Griswold’s premium items the ilvl varies depending on what slot the items is created in (in his list of items). The table below explains exactly how.
 
-|<a name="page52"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**||**Created by Pedro Faria**||||
-| :- | :- | :- | :- | :- | :- |
-|||||||
-||**Definition of ilvl for Griswold’s premium items**|||||
-||||**Diablo**|**Hellfire**||
-||<b>slot<sup>1</sup></b>||**ilvl**|**ilvl**||
-||1||clvl - 1|clvl - 1||
-||2||clvl - 1|clvl - 1||
-||3||clvl|clvl - 1||
-||4||clvl|clvl||
-||5||clvl + 1|clvl||
-||6||clvl + 2|clvl||
-||7|||clvl||
-||8|||clvl + 1||
-||9|||clvl + 1||
-||10|||clvl + 1||
-||11|||clvl + 1||
-||12|||clvl + 2||
-||13|||clvl + 2||
-||14|||clvl + 3||
-||15|||clvl + 3||
-1	There are only six slots in Diablo.
+#### Definition of `ilvl` for Griswold’s Premium Items
+
+|                 | **Diablo** | **Hellfire** |
+|---------------|------------|-------------|
+| **Slot**<sup>[^1]</sup>  | **`ilvl`**   | **`ilvl`**  |
+| 1             | `clvl - 1`  | `clvl - 1`  |
+| 2             | `clvl - 1`  | `clvl - 1`  |
+| 3             | `clvl`      | `clvl - 1`  |
+| 4             | `clvl`      | `clvl`      |
+| 5             | `clvl + 1`  | `clvl`      |
+| 6             | `clvl + 2`  | `clvl`      |
+| 7             | -           | `clvl`      |
+| 8             | -           | `clvl + 1`  |
+| 9             | -           | `clvl + 1`  |
+| 10            | -           | `clvl + 1`  |
+| 11            | -           | `clvl + 1`  |
+| 12            | -           | `clvl + 2`  |
+| 13            | -           | `clvl + 2`  |
+| 14            | -           | `clvl + 3`  |
+| 15            | -           | `clvl + 3`  |
+
+[^1]: **There are only six slots in *Diablo*.**
 
 When you gain a level, the items in slot 1 and 2 (and 3 in Hellfire) are removed and items are pushed upwards so that slot 4 and 6 becomes empty (slot 11, 13 and 15 in Hellfire). Those empty slots are then refilled with new items of the appropriate ilvl matching the slot.
 
@@ -2604,9 +2671,9 @@ The prefix, suffix and spell on the appropriate item is then chosen according to
 
 Range of qlvl for spell (staff or book):	1 to ilvl
 
-Range of qlvl for prefix on staff with spell:	1 to 2·ilvl
+Range of qlvl for prefix on staff with spell:	1 to 2×ilvl
 
-Range of qlvl for prefix and suffix on staff without spell:	ilvl to 2·ilvl
+Range of qlvl for prefix and suffix on staff without spell:	ilvl to 2×ilvl
 
 As the ilvl at Adria can never be higher than 16 (see table in chapter 3.9), there is a cap at qlvl 32 for prefixes and suffixes at Adria. For spells and base items the cap is at 16.
 
@@ -2659,7 +2726,7 @@ Range of qlvl for base item:	1 to ilvl
 
 The prefixes and suffixes are then chosen with a qlvl in the following range:
 
-Range of qlvl for prefixes and suffixes:	ilvl to 2·ilvl
+Range of qlvl for prefixes and suffixes:	ilvl to 2×ilvl
 
 - If lower limit is higher than 25, it is set to 25.
 
@@ -2669,16 +2736,19 @@ He will renew the item only if you have bought the previous one and then gone in
 
 In Hellfire, Wirt will only sell certain item types to you depending on your character class. The table below summarizes what items he will sell to each character class. Wirt will, in Hellfire, also try to offer you better (more expensive than 80% of your most expensive item) items than what you already have (both equipped ones and not equipped ones).
 
-|<a name="page54"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|**Created by Pedro Faria**|||
-| :- | :- | :- | :- |
-|||||
-|**Class**|**Items never sold at Wirt in Hellfire**|||
-|Warrior|bows and staves|||
-|Rogue|axes, clubs, swords, staves and shields|||
-|Sorcerer|axes, clubs, bows and staves|||
-|Monk|clubs, bows, shields and medium armor (see chapter 3.1 for definition of medium armor)|||
-|Bard|axes, clubs and staves|||
-|Barbarian|bows and staves|||
+### Items Never Sold at Wirt in *Hellfire* by Class
+
+| **Class**    | **Items Never Sold** |
+|-------------|----------------------|
+| **Warrior**  | Bows, Staves         |
+| **Rogue**    | Axes, Clubs, Swords, Staves, Shields |
+| **Sorcerer** | Axes, Clubs, Bows, Staves |
+| **Monk**     | Clubs, Bows, Shields, Medium Armor<sup>[^1]</sup> |
+| **Bard**     | Axes, Clubs, Staves  |
+| **Barbarian**| Bows, Staves         |
+
+[^1]: See **Chapter 3.1** for the definition of *Medium Armor*.
+
 
 ## 3.10 General remarks on possible items
 
@@ -2696,7 +2766,7 @@ Just because both a prefix and a suffix can exist on a base item does not mean y
 
 ilvl/2 - ilvl:	for non Wirt and Adria items, including items form the dungeons
 
-ilvl - 2·ilvl:	for Wirt and Adria items
+ilvl - 2×ilvl:	for Wirt and Adria items
 
 Items from Adria only follow Wirt if they are staves without spells. From this it follows that the prefix or suffix with the lowest qlvl on an item can never be higher than half (rounded down except for Wirt and some Adria items) the qlvl of the higher one (the other way around the higher level can never be higher than 2 times the lower one, plus one if odd, (except for Wirt and some Adria items) the plus one due to rounding effects if the item does not come from Wirt or Adria). As noted in the same chapter the exception for this is that if the highest limit of the qlvl is higher than 50 the lower limit is always 25. This rule can quickly rule out an item like obsidian shield of brilliance as impossible as the qlvl of the prefix and suffix is 24 and 11. This only has importance if an item has both a prefix and a suffix.
 
@@ -2705,7 +2775,7 @@ There are no restrictions on the relationship between the qlvl of the base item 
 
 **Restrictions in the dungeon**
 
-As explained in chapter 3.8, prefixes and suffixes are assigned to items based on a monsters unmodified mlvl. This means that no prefix or suffix with a qlvl higher than 30 (34 when a unique monster drops it as they have a +4 bonus) can be found in the dungeons, except from Diablo and Na-Krul in Hellfire, which have a maximum limit of 45 and 44. This rules out quite a few of the best prefixes and suffixes such as a godly plate of whale, even if they would be possible according to what was said above under occurrences and level differences. Similarly, items from non monsters have a limit of 30 in Diablo and 34 in Hellfire (2·dlvl). Note, this is true for any version of Diablo, even 1.00. Wirt (but not Griswold) can still sell those prefixes and suffixes impossible to find in the dungeons.
+As explained in chapter 3.8, prefixes and suffixes are assigned to items based on a monsters unmodified mlvl. This means that no prefix or suffix with a qlvl higher than 30 (34 when a unique monster drops it as they have a +4 bonus) can be found in the dungeons, except from Diablo and Na-Krul in Hellfire, which have a maximum limit of 45 and 44. This rules out quite a few of the best prefixes and suffixes such as a godly plate of whale, even if they would be possible according to what was said above under occurrences and level differences. Similarly, items from non monsters have a limit of 30 in Diablo and 34 in Hellfire (2×dlvl). Note, this is true for any version of Diablo, even 1.00. Wirt (but not Griswold) can still sell those prefixes and suffixes impossible to find in the dungeons.
 
 
 **Restrictions at Griswold and Adria**
@@ -2752,267 +2822,6 @@ As with all other items in the game with the exception of quest related items, w
 - The values are only valid for multi player. In single player some quest monsters will drop a quest item instead of a random magical item. Also, dungeon levels normally has less monsters than in single player. Finally, unique items are picked slightly different in single player than multi player meaning some of the unique items marked as Impossible ones, actually has a very small chance of appearing in a single player game (but very small, typically square the number for the uniques being second in the order and raise it to the power of three for the third one in the list. For the drop order of such unique items, see chapter 3.5.2. It is my belief that the values should be more or less accurate for single player as well though.
 
 The value given is an estimate of how many games it takes on average to find a specific unique. To find the probability of a specific unique to exist in a game, simply divide 1 by the number given. Given are also numbers telling on what dlvl the unique item has the highest overall chance (includes all sources) to be found. It is very important to realize that the number given here are necessarily *not* the same as the typical player will find. A typical player will for example not play in all areas equally much. Also, even though the chances are over all greater for monsters than for unique monsters, you need to kill a lot more of them. So if you are hunting for specific unique items, it is normally a much faster method to kill, say only bosses on level 13-15 than killing all monsters on the same levels. Never the less, the numbers below should give a rough estimate on how rare or common a specific unique item is. If an item is impossible to generate for some reason, it will say ”impossible”.
-
-
-### 3.11.1 Probabilities in Diablo
-
-|**Armor**|**Normal**||**Nightmare**||**Hell**||||
-| :- | :- | :- | :- | :- | -: | :- | :- | :- |
-|**Name**|**Probability**||**dlvl**|**Probability**||**dlvl**|**Probability**|**dlvl**|
-|Demonspike Coat|56||15|51||15|51|15|
-|The Gladiator’s Bane|23||15|21||15|21|15|
-|Leather of Aut|16||15|19||15|19|15|
-|Naj’s Light Plate|40||15|38||15|38|15|
-|Nightscape|32||15|34||15|34|15|
-|The Rainbow Cloak|13||2|19||15|19|15|
-|Scavenger Carapace|35||15|28||15|28|15|
-|Sparking Mail|29||15|24||15|24|15|
-|Torn Flesh of Souls|13||2|19||15|19|15|
-|Wisdom’s Wrap|14||2|19||15|19|15|
-||||||||||
-|**Axes**|**Normal**||**Nightmare**||**Hell**||||
-|**Name**|**Probability**||**dlvl**|**Probability**||**dlvl**|**Probability**|**dlvl**|
-|Aguinara’s Hatchet|24||15|27||15|27|15|
-|Bloodslayer|impossible||-|150||2|160|2|
-|The Celestial Axe|90||5|46||2|47|2|
-|Hellslayer|31||15|33||15|33|15|
-|The Mangler|impossible||-|impossible||-|impossible|-|
-|Messerschmidt’s Reaver|51||15|51||15|51|15|
-|Sharp Beak|impossible||-|1 200||2|1 300|2|
-|Stonecleaver|20||15|22||15|22|15|
-|Wicked Axe|16||15|19||15|19|15|
-||||||||||
-|**Bows**|**Normal**||**Nightmare**||**Hell**||||
-|**Name**|**Probability**||**dlvl**|**Probability**||**dlvl**|**Probability**|**dlvl**|
-|The Blackoak Bow|41||3|60||2|62|2|
-|Bow of the Dead|20||15|19||15|20|15|
-|The Celestial Bow|impossible||-|1 200||2|1 300|2|
-|Deadly Hunter|impossible||-|2 100||2|2 300|2|
-|Eaglehorn|54||15|54||15|54|15|
-|Flamedart|21||15|24||15|24|15|
-|Fleshstinger|26||15|28||15|28|15|
-|The Needler|13||2|19||15|19|15|
-|The Rift Bow|480||1|2 500||1|2 900|1|
-|Windforce|40||15|35||15|35|15|
-
-|<a name="page57"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||||**Created by Pedro Faria**|||||
-| :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
-|||||||||||
-|**Clubs**|**Normal**||**Nightmare**||**Hell**|||||
-|**Name**|**Probability**||**dlvl**|**Probability**||**dlvl**|**Probability**|**dlvl**||
-|Baranar’s Star|14||2|19||15|20|15||
-|The Celestial Star|20||15|19||15|20|15||
-|Civerb’s Cudgel|18||2|29||2|29|2||
-|Crackrust|impossible||-|impossible||-|impossible|-||
-|The Cranium Basher|25||15|27||15|27|15||
-|Dreamflange|54||15|54||15|54|15||
-|Gnarled Root, Club|20||15|24||15|24|15||
-|Gnarled Root, Spiked Club|20||15|24||15|24|15||
-|Hammer of Jholm|340||5|62||2|65|2||
-|Lightforge|impossible||-|impossible||-|impossible|-||
-|Schaefer’s Hammer|32||15|34||15|34|15||
-|||||||||||
-|**Helms**|**Normal**||**Nightmare**||**Hell**|||||
-|**Name**|**Probability**||**dlvl**|**Probability**||**dlvl**|**Probability**|**dlvl**||
-|Fool’s Crest|24||15|27||15|27|15||
-|Gotterdamerung|43||15|43||15|43|15||
-|Helm of Sprits|impossible||-|130||2|140|2||
-|Overlord’s Helm|120||4|120||4|120|4||
-|Royal Circlet|56||15|56||15|56|15||
-|Thinking Cap|16||15|21||15|21|15||
-|||||||||||
-|**Jewelry**|**Normal**||**Nightmare**||**Hell**|||||
-|**Name**|**Probability**||**dlvl**|**Probability**||**dlvl**|**Probability**|**dlvl**||
-|The Bleeder|impossible||-|59||2|65|2||
-|Bramble|impossible||-|impossible||-|impossible|-||
-|Constricting Ring|28||2|16||2|17|2||
-|Ring of Engagement|6||15|6||15|6|15||
-|Ring of Regha|impossible||-|110||1|120|1||
-|||||||||||
-|**Shields**|**Normal**||**Nightmare**||**Hell**|||||
-|**Name**|**Probability**||**dlvl**|**Probability**||**dlvl**|**Probability**|**dlvl**||
-|Blackoak Shield|16||15|19||15|19|15||
-|The Deflector|impossible||-|impossible||-|impossible|-||
-|Dragon’s Breach|29||15|19||15|19|15||
-|Holy Defender|23||15|24||15|24|15||
-|Split Skull Shield|13||2|19||15|19|15||
-|Stormshield, Gothic Shield|48||15|48||15|48|15||
-|Stormshield, Tower Shield|50||15|48||15|48|15||
-|||||||||||
-|**Staves**|**Normal**||**Nightmare**||**Hell**|||||
-|**Name**|**Probability**||**dlvl**|**Probability**||**dlvl**|**Probability**|**dlvl**||
-|Gleamsong|41||3|66||3|66|3||
-|Immolator|22||2|40||2|41|2||
-|Mindcry|41||15|41||15|41|15||
-|Naj’s Puzzler|35||15|36||15|36|15||
-|The Protector|32||15|34||15|34|15||
-|Rod of Onan|44||15|45||15|45|15||
-|Staff of Shadows|impossible||-|2 000||2|2 200|2||
-|Storm Spire|64||6|45||3|45|3||
-|Thundercall|29||15|31||15|31|15||
-
-|<a name="page58"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||||**Created by Pedro Faria**|||||
-| :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
-|||||||||||
-|**Swords**|**Normal**||**Nightmare**||**Hell**|||||
-|**Name**|**Probability**||**dlvl**|**Probability**||**dlvl**|**Probability**|**dlvl**||
-|Black Razor|31||2|75||2|79|2||
-|The Bonesaw|18||15|21||15|21|15||
-|The Defender|25||2|55||2|57|2||
-|Doombringer|38||15|38||15|38|15||
-|The Executioner’s Blade|14||2|19||15|19|15||
-|The Falcon’s Talon|31||15|33||15|33|15||
-|Gibbous Moon|impossible||-|120||2|130|2||
-|Gonnagal’s Dirk|impossible||-|impossible||-|impossible|-||
-|The Grandfather|56||15|56||15|56|15||
-|The Grizzly|46||15|46||15|46|15||
-|Gryphons Claw|630||1|1 200||1|1 400|1||
-|Ice Shank|30||3|41||2|42|2||
-|Inferno|34||15|35||15|35|15||
-|Lightsabre|26||15|28||15|28|15||
-|Shadowhawk|20||15|23||15|23|15||
-|Wizardspike|22||15|25||15|25|15||
-
-### 3.11.2 Probabilities in Hellfire
-
-The reason most unique items are more likely in a Hellfire game than in a Diablo game is of course due to the fact that a Hellfire game has two additional dungeons with lots of more monsters and other sources for items.
-
-|**Armor**|**Normal**||**Nightmare**||**Hell**||||
-| :- | :- | :- | :- | :- | -: | :- | :- | :- |
-|**Name**|**Probability**||**dlvl**|**Probability**||**dlvl**|**Probability**|**dlvl**|
-|Demonspike Coat|impossible||-|impossible||-|impossible|-|
-|The Gladiator’s Bane|20||15|18||15|18|15|
-|Leather of Aut|15||15|17||15|17|15|
-|Naj’s Light Plate|30||15|29||15|29|15|
-|Nightscape|26||15|27||15|27|15|
-|The Rainbow Cloak|12||2|17||15|17|15|
-|Scavenger Carapace|28||15|23||15|23|15|
-|Sparking Mail|impossible||-|140||4|140|4|
-|Torn Flesh of Souls|12||2|19||17|17|15|
-|Wisdom’s Wrap|13||2|17||15|17|15|
-|Armor of Gloom|impossible||-|impossible||-|impossible|-|
-|Bone Chain Armor|24||15|23||15|23|15|
-|Demon Plate Armor|46||15|42||15|42|15|
-||||||||||
-|**Axes**|**Normal**||**Nightmare**||**Hell**||||
-|**Name**|**Probability**||**dlvl**|**Probability**||**dlvl**|**Probability**|**dlvl**|
-|Aguinara’s Hatchet|20||15|22||15|22|15|
-|Bloodslayer|impossible||-|150||2|160|2|
-|The Celestial Axe|92||5|47||2|48|2|
-|Hellslayer|25||15|26||15|26|15|
-|The Mangler|impossible||-|impossible||-|impossible|-|
-|Messerschmidt’s Reaver|24||15|42||15|42|15|
-|Sharp Beak|impossible||-|1 300||2|1 500|2|
-|Stonecleaver|18||15|19||15|19|15|
-|Wicked Axe|15||15|17||15|17|15|
-
-|<a name="page59"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||||**Created by Pedro Faria**|||||
-| :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
-|||||||||||
-|**Bows**|**Normal**||**Nightmare**||**Hell**|||||
-|**Name**|**Probability**||**dlvl**|**Probability**||**dlvl**|**Probability**|**dlvl**||
-|The Blackoak Bow|42||3|60||2|62|2||
-|Bow of the Dead|240||4|84||2|88|2||
-|The Celestial Bow|impossible||-|1 300||2|1 500|2||
-|Deadly Hunter|impossible||-|2 300||2|2 600|2||
-|Eaglehorn|45||15|45||15|45|15||
-|Flamedart|65||5|96||5|97|5||
-|Fleshstinger|22||15|23||15|23|15||
-|The Needler|12||2|17||15|17|15||
-|The Rift Bow|600||1|2 800||1|3 100|1||
-|Windforce|30||15|28||15|28|15||
-|Blitzen|22||15|23||15|23|15||
-|Flambeau|130||4|210||5|210|5||
-|Gnat Sting|25||15|26||15|26|15||
-|||||||||||
-|**Clubs**|**Normal**||**Nightmare**||**Hell**|||||
-|**Name**|**Probability**||**dlvl**|**Probability**||**dlvl**|**Probability**|**dlvl**||
-|Baranar’s Star|13||2|17||15|17|15||
-|The Celestial Star|17||15|17||15|17|15||
-|Civerb’s Cudgel|17||2|26||2|26|2||
-|Crackrust|impossible||-|impossible||-|impossible|-||
-|The Cranium Basher|21||15|22||15|22|15||
-|Dreamflange|45||15|45||15|45|15||
-|Gnarled Root, Club|17||15|20||15|20|15||
-|Gnarled Root, Spiked Club|17||15|20||15|20|15||
-|Hammer of Jholm|350||5|63||2|66|2||
-|Lightforge|impossible||-|impossible||-|impossible|-||
-|Schaefer’s Hammer|26||15|27||15|27|15||
-|Thunderclap|130||3|170||3|170|3||
-|||||||||||
-|**Helms**|**Normal**||**Nightmare**||**Hell**|||||
-|**Name**|**Probability**||**dlvl**|**Probability**||**dlvl**|**Probability**|**dlvl**||
-|Fool’s Crest|20||15|22||15|22|15||
-|Gotterdamerung|32||15|32||15|32|15||
-|Helm of Sprits|impossible||-|130||2|140|2||
-|Overlord’s Helm|120||4|120||4|120|4||
-|Royal Circlet|47||15|47||15|47|15||
-|Thinking Cap|15||15|18||15|18|15||
-|||||||||||
-|**Jewelry**|**Normal**||**Nightmare**||**Hell**|||||
-|**Name**|**Probability**||**dlvl**|**Probability**||**dlvl**|**Probability**|**dlvl**||
-|The Bleeder|impossible||-|65||2|71|2||
-|Bramble|impossible||-|impossible||-|impossible|-||
-|Constricting Ring|28||2|16||2|17|2||
-|Ring of Engagement|4||15|4||15|4|15||
-|Ring of Regha|impossible||-|120||1|130|1||
-|Amulet of Warding|2||H3|2||H3|2|H3||
-|Acolytes Amulet|110||4|83||4|83|4||
-|Giant’s Knuckle|impossible||-|impossible||-|impossible|-||
-|Gladiators Ring|190||7|150||4|160|4||
-|Karik’s Ring|impossible||-|impossible||-|impossible|-||
-|Mercurial Ring|impossible||-|impossible||-|impossible|-||
-|Ring of Magma|impossible||-|impossible||-|impossible|-||
-|Ring of the Mystics|impossible||-|impossible||-|impossible|-||
-|Ring of Thunder|86||3|52||3|53|3||
-|Xorine’s Ring|impossible||-|impossible||-|impossible|-||
-
-|<a name="page60"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||||**Created by Pedro Faria**|||||
-| :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
-|||||||||||
-|**Shields**|**Normal**||**Nightmare**||**Hell**|||||
-|**Name**|**Probability**||**dlvl**|**Probability**||**dlvl**|**Probability**|**dlvl**||
-|Blackoak Shield|15||15|17||15|17|15||
-|The Deflector|impossible||-|impossible||-|impossible|-||
-|Dragon’s Breach|24||15|17||15|17|15||
-|Holy Defender|20||15|21||15|21|15||
-|Split Skull Shield|12||2|17||15|17|15||
-|Stormshield, Gothic Shield|38||15|38||15|38|15||
-|Stormshield, Tower Shield|39||15|38||15|38|15||
-|||||||||||
-|**Staves**|**Normal**||**Nightmare**||**Hell**|||||
-|**Name**|**Probability**||**dlvl**|**Probability**||**dlvl**|**Probability**|**dlvl**||
-|Gleamsong|42||3|67||3|67|3||
-|Immolator|22||2|41||2|42|2||
-|Mindcry|31||15|31||15|31|15||
-|Naj’s Puzzler|27||15|28||15|28|15||
-|The Protector|26||15|27||15|27|15||
-|Rod of Onan|5||C4|5||C4|5|C4||
-|Staff of Shadows|impossible||-|2 200||2|2 400|2||
-|Storm Spire|65||6|45||3|45|3||
-|Thundercall|24||15|25||15|25|15||
-|||||||||||
-|**Swords**|**Normal**||**Nightmare**||**Hell**|||||
-|**Name**|**Probability**||**dlvl**|**Probability**||**dlvl**|**Probability**|**dlvl**||
-|Black Razor|33||2|77||2|80|2||
-|The Bonesaw|16||15|18||15|18|15||
-|The Defender|26||2|56||2|58|2||
-|Doombringer|29||15|29||15|29|15||
-|The Executioner’s Blade|12||2|17||15|17|15||
-|The Falcon’s Talon|25||15|26||15|26|15||
-|Gibbous Moon|impossible||-|120||2|130|2||
-|Gonnagal’s Dirk|impossible||-|impossible||-|impossible|-||
-|The Grandfather|47||15|47||15|47|15||
-|The Grizzly|impossible||-|impossible||-|impossible|-||
-|Gryphons Claw|760||1|1 300||1|1 500|1||
-|Ice Shank|31||3|42||2|43|2||
-|Inferno|impossible||-|impossible||-|impossible|-||
-|Lightsabre|22||15|23||15|23|15||
-|Shadowhawk|18||15|19||15|19|15||
-|Wizardspike|19||15|21||15|21|15||
-|Diamondedge|27||15|28||15|28|15||
-|Eater of Souls|35||15|35||15|36|15||
-|Shirotachi|100||11|100||11|100|11||
 
 ## 3.12 Probabilities of finding magical items
 
@@ -3503,25 +3312,25 @@ Some spells use a recursive formula to calculate damage. The notation for these 
 |Rnd[x]|is a random number in the range 0 to x-1||
 |Rec(slvl, slvl0)|recursive function, defined as follows:||
 ||Rec(0, slvl0):|[slvl0]|
-||and for slvl>0; Rec(slvl, slvl0):|[Rec(slvl-1, slvl0) · 9/8]|
+||and for slvl>0; Rec(slvl, slvl0):|[Rec(slvl-1, slvl0) × 9/8]|
 |Itt(nbr, value)|iterative function, defined as follows:||
 ||Itt(0, value):|value|
 ||and for nbr>0; Itt(nbr, value):|Itt(nbr-1, value) + value|
 
 The easiest way to understand how the recursive function works is to make an example. A Fireball’s maximum damage for a level 30 character is:
 
-1. Rec(slvl, 40 + 2·clvl); clvl=30
+1. Rec(slvl, 40 + 2×clvl); clvl=30
 
-|2\.|First calculate damage for spell level 0:|40 + 2·clvl = 100|
+|2\.|First calculate damage for spell level 0:|40 + 2×clvl = 100|
 | -: | :- | :- |
-|3\.|Damage for spell level 1 can then be calculated as:|[100 · 9/8] = 112|
-|4\.|Damage for spell level 2 can then be calculated as:|[112 · 9/8] = 126|
+|3\.|Damage for spell level 1 can then be calculated as:|[100 × 9/8] = 112|
+|4\.|Damage for spell level 2 can then be calculated as:|[112 × 9/8] = 126|
 
 5. and so on…
 
 Note that it is very important to round down. For those spells using this recursive formula I have also given a quick formula. For a Fireball’s maximum damage it is:
 
-(40 + 2·clvl) · (9/8)^slvl
+(40 + 2×clvl) × (9/8)^slvl
 
 Note that this formula does not round down and you will therefore get a damage a bit too high, but it will still be more or less accurate. For a level 20 fireball from a level 50 character the correct maximum damage is 1442, while this quick method gives 1476. In the table below, I have listed values for use with the quick formula.
 
@@ -3538,7 +3347,7 @@ Lets make an example for the iterative function as well. Take the damage of the 
 
 slvl0 = Itt(clvl, Rnd[20] + 1); clvl=30
 
-This means we should, 30 times, calculate Rnd[20] + 1 and add all those 30 values together. For each value, a new random number should be created, for if the same random number would be used, it would have been written as clvl·(Rnd[20] + 1) instead. This sum of 30 values, ranging from 1 to 20 in the example, is the slvl0 which is then used in the recursive formula. It is worth noticing that if there is any random number used in the iterative formula, the result would typically be a distribution of the values as in a bell curve.
+This means we should, 30 times, calculate Rnd[20] + 1 and add all those 30 values together. For each value, a new random number should be created, for if the same random number would be used, it would have been written as clvl×(Rnd[20] + 1) instead. This sum of 30 values, ranging from 1 to 20 in the example, is the slvl0 which is then used in the recursive formula. It is worth noticing that if there is any random number used in the iterative formula, the result would typically be a distribution of the values as in a bell curve.
 
 
 **Splash damage**
@@ -3553,8 +3362,8 @@ The spells below are listed in alphabetical order and are available in both Diab
 |**Apocalypse**|**Blood Star**|
 | :- | :- |
 |Type: n/a|Type: magic|
-|Min. Damage: clvl|Damage: 3·slvl + [Mag/2] - [Mag/8]|
-|Max. Damage: 6·clvl|Speed: 16|
+|Min. Damage: clvl|Damage: 3×slvl + [Mag/2] - [Mag/8]|
+|Max. Damage: 6×clvl|Speed: 16|
 |Real damage: Itt(clvl, Rnd[6] + 1)|Blockable: Yes|
 |Blockable: Yes||
 |Note:|Note:|
@@ -3565,7 +3374,7 @@ The spells below are listed in alphabetical order and are available in both Diab
 |**Bone Spirit**|**Chain Lightning**|
 |Type: magic|Type: lightning|
 |Damage against monster: 1/3 of targets HP|Min. Damage: 4|
-|Damage against player: 1/6 of targets life|Max. Damage: 4 + 2·clvl|
+|Damage against player: 1/6 of targets life|Max. Damage: 4 + 2×clvl|
 |Speed: 16|Real Damage: Rnd[clvl] + Rnd[2] + 2|
 |Blockable: Yes|Bolts: 1 + numbers of monsters in range|
 |\*  Note that the damage value given above is still subject|Range: 2 + slvl (max 18)|
@@ -3590,11 +3399,11 @@ The spells below are listed in alphabetical order and are available in both Diab
 ||||
 |**Charged Bolt**|**Elemental**||
 |Type: lightning|Type: fire||
-|Min. Damage: 1|Min. Damage: Rec(slvl, 4 + 2·clvl)||
-|Max. Damage: 1 + [Mag/4]|Max. Damage: Rec(slvl, 40 + 2·clvl)||
-|Number of bolts: 4 + [slvl/2]|Quick Min. Damage: (4 + 2·clvl) · (9/8)^slvl||
-|Speed: 8|Quick Max. Damage: (40 + 2·clvl) · (9/8)^slvl||
-|Blockable: Yes|Real Damage: Rec(slvl, 2·(Rnd[10]+Rnd[10]+clvl) +||
+|Min. Damage: 1|Min. Damage: Rec(slvl, 4 + 2×clvl)||
+|Max. Damage: 1 + [Mag/4]|Max. Damage: Rec(slvl, 40 + 2×clvl)||
+|Number of bolts: 4 + [slvl/2]|Quick Min. Damage: (4 + 2×clvl) × (9/8)^slvl||
+|Speed: 8|Quick Max. Damage: (40 + 2×clvl) × (9/8)^slvl||
+|Blockable: Yes|Real Damage: Rec(slvl, 2×(Rnd[10]+Rnd[10]+clvl) +||
 ||4)/2||
 ||Speed: 16||
 ||Blockable: Yes||
@@ -3609,12 +3418,12 @@ The spells below are listed in alphabetical order and are available in both Diab
 ||||
 |**Fireball**|**Firebolt**||
 |Type: fire|Type: fire||
-|Min. Damage: Rec(slvl, 4 + 2·clvl)|Min. Damage: 1 + slvl + [Mag/8]||
-|Max. Damage: Rec(slvl, 40 + 2·clvl)|Max. Damage: 10 + slvl + [Mag/8]||
-|Quick Min. Damage: (4 + 2·clvl) · (9/8)^slvl|Real Damage: Rnd[10] + slvl + [Mag/8] + 1||
-|Quick Max. Damage: (40 + 2·clvl) · (9/8)^slvl|Speed: 16 + 2·slvl||
-|Real Damage: Rec(slvl, 2·(Rnd[10]+Rnd[10]+clvl) + 4)|Blockable: Yes||
-|Speed: 16 + 2·slvl (max 50)|||
+|Min. Damage: Rec(slvl, 4 + 2×clvl)|Min. Damage: 1 + slvl + [Mag/8]||
+|Max. Damage: Rec(slvl, 40 + 2×clvl)|Max. Damage: 10 + slvl + [Mag/8]||
+|Quick Min. Damage: (4 + 2×clvl) × (9/8)^slvl|Real Damage: Rnd[10] + slvl + [Mag/8] + 1||
+|Quick Max. Damage: (40 + 2×clvl) × (9/8)^slvl|Speed: 16 + 2×slvl||
+|Real Damage: Rec(slvl, 2×(Rnd[10]+Rnd[10]+clvl) + 4)|Blockable: Yes||
+|Speed: 16 + 2×slvl (max 50)|||
 |Blockable: Yes|||
 |Note:|||
 |\*  A fireball cause splash damage in adjacent hexes as|||
@@ -3628,10 +3437,10 @@ The spells below are listed in alphabetical order and are available in both Diab
 ||||
 |**Fire Wall**|**Flame Wave**||
 |Type: fire|Type: fire||
-|Min. Damage: 4 + 2·clvl|Min. Damage: 6 + 6·clvl||
-|Max. Damage: 40 + 2·clvl|Max. Damage: 60 + 6·clvl||
+|Min. Damage: 4 + 2×clvl|Min. Damage: 6 + 6×clvl||
+|Max. Damage: 40 + 2×clvl|Max. Damage: 60 + 6×clvl||
 |Real Damage: (Rnd[10] + Rnd[10] + clvl + 2)/8|Real Damage: Rnd[10] + clvl + 1||
-|Duration: 8 + 8·slvl seconds (12 + 8·slvl in Hellfire)|Speed: 16||
+|Duration: 8 + 8×slvl seconds (12 + 8×slvl in Hellfire)|Speed: 16||
 |Number of flames: 11|Number of flames: 5 + [slvl/2]||
 |Blockable: No|Blockable: Yes||
 |Note:|\*  Flame Waves are treated as traps against players,||
@@ -3643,7 +3452,7 @@ The spells below are listed in alphabetical order and are available in both Diab
 |\*  Fire Walls are treated as traps against players,|||
 |including the caster.|||
 |\*  The flame will try to hit once every 0.05 seconds for a|||
-|total of 160 + 160·slvl times (240 + 160·slvl times in|||
+|total of 160 + 160×slvl times (240 + 160×slvl times in|||
 |Hellfire).|||
 
 |<a name="page73"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|**Created by Pedro Faria**|||
@@ -3651,13 +3460,13 @@ The spells below are listed in alphabetical order and are available in both Diab
 |||||
 |**Flash**|**Golem**|||
 |Type: magic (but uses same animation as lightning)|Type: n/a (but uses same animation as fire)|||
-|Min. Damage: [3·Rec(slvl, clvl)/2]|Stated damage: 11-17 (quite meaningless number)|||
-|Max. Damage: 2·[3·Rec(slvl, clvl)/2]|The golem has the following stats:|||
-|Quick Min. Damage: 3·clvl/2 · (9/8)^slvl|HP: 2·maxmana/3 + 10·slvl|||
-|Quick Max. Damage: 3·clvl · (9/8)^slvl|AC: 25|||
-|Real Damage 1: [3·Rec(slvl, Itt(clvl, Rnd[20] + 1))/2]/64|To Hit: 40 + 2·clvl + 5·slvl|||
-|Real Damage 2: [3·Rec(slvl, Itt(clvl, Rnd[2] + 1))/2]/64|Min. Damage: 8 + 2·slvl|||
-|Duration: 0.95 seconds|Max. Damage: 16 + 2·slvl|||
+|Min. Damage: [3×Rec(slvl, clvl)/2]|Stated damage: 11-17 (quite meaningless number)|||
+|Max. Damage: 2×[3×Rec(slvl, clvl)/2]|The golem has the following stats:|||
+|Quick Min. Damage: 3×clvl/2 × (9/8)^slvl|HP: 2×maxmana/3 + 10×slvl|||
+|Quick Max. Damage: 3×clvl × (9/8)^slvl|AC: 25|||
+|Real Damage 1: [3×Rec(slvl, Itt(clvl, Rnd[20] + 1))/2]/64|To Hit: 40 + 2×clvl + 5×slvl|||
+|Real Damage 2: [3×Rec(slvl, Itt(clvl, Rnd[2] + 1))/2]/64|Min. Damage: 8 + 2×slvl|||
+|Duration: 0.95 seconds|Max. Damage: 16 + 2×slvl|||
 |Blockable: No|mlvl: 12 (modified for difficulty)|||
 ||HP regeneration: 1.9, 4.1 and 6.6 each second on|||
 ||normal, nightmare and hell difficulty (same as for|||
@@ -3679,11 +3488,11 @@ The spells below are listed in alphabetical order and are available in both Diab
 |||||
 |**Guardian**|**Healing**|||
 |Type: fire|Type: n/a|||
-|Min. Damage: Rec(slvl, 1 + [clvl/2])|Mana Cost: 8 + 2·clvl - 3·slvl|||
-|Max. Damage: Rec(slvl, 10 + [clvl/2])|Min. Healing: bonus·(1 + clvl + slvl)|||
-|Quick Min. Damage: (1 + clvl/2) · (9/8)^slvl|Max. Healing: bonus·(10 + 4·clvl + 6·slvl)|||
-|Quick Max. Damage: (10 + clvl/2) · (9/8)^slvl|Real Healing: bonus·(Rnd[10] + Itt(clvl, Rnd[4]+1) +|||
-|Duration: 4·slvl/5 + 2·clvl/5 seconds (maximum 24|Itt(slvl, Rnd[6]+1) + 1)|||
+|Min. Damage: Rec(slvl, 1 + [clvl/2])|Mana Cost: 8 + 2×clvl - 3×slvl|||
+|Max. Damage: Rec(slvl, 10 + [clvl/2])|Min. Healing: bonus×(1 + clvl + slvl)|||
+|Quick Min. Damage: (1 + clvl/2) × (9/8)^slvl|Max. Healing: bonus×(10 + 4×clvl + 6×slvl)|||
+|Quick Max. Damage: (10 + clvl/2) × (9/8)^slvl|Real Healing: bonus×(Rnd[10] + Itt(clvl, Rnd[4]+1) +|||
+|Duration: 4×slvl/5 + 2×clvl/5 seconds (maximum 24|Itt(slvl, Rnd[6]+1) + 1)|||
 |seconds, minimum 0.8 seconds)|Bonus:|||
 |Fire frequency: every 0.8 second|Warrior, Monk and Barbarian:|2\.0||
 |Blockable: Yes|Rogue and Bard:|1\.5||
@@ -3700,10 +3509,10 @@ The spells below are listed in alphabetical order and are available in both Diab
 |||||
 |**Heal Other**||**Holy Bolt**||
 |Type: n/a||Type: n/a||
-|Mana Cost: 8 + 2·clvl - 3·slvl||Min. Damage: 9 + clvl||
-|Min. Healing: bonus·(1 + clvl + slvl)|Max. Damage: 18 + clvl|||
-|Max. Healing: bonus·(10 + 4·clvl + 6·slvl)|Speed: 16 + 2·slvl|||
-|Real Healing: bonus·(Rnd[10] + Itt(clvl, Rnd[4]+1) +||||
+|Mana Cost: 8 + 2×clvl - 3×slvl||Min. Damage: 9 + clvl||
+|Min. Healing: bonus×(1 + clvl + slvl)|Max. Damage: 18 + clvl|||
+|Max. Healing: bonus×(10 + 4×clvl + 6×slvl)|Speed: 16 + 2×slvl|||
+|Real Healing: bonus×(Rnd[10] + Itt(clvl, Rnd[4]+1) +||||
 |Itt(slvl, Rnd[6]+1) + 1)||||
 |Bonus:||||
 |Monk:|3\.0|||
@@ -3721,8 +3530,8 @@ The spells below are listed in alphabetical order and are available in both Diab
 |**Identify**||**Inferno**||
 |Type: n/a||Type: fire||
 |||Min. Damage: 3||
-|||Max. Damage: 6 + 3·clvl/2||
-|||Real Damage: (3·(Rnd[clvl]+Rnd[2]) + 6)/16||
+|||Max. Damage: 6 + 3×clvl/2||
+|||Real Damage: (3×(Rnd[clvl]+Rnd[2]) + 6)/16||
 |||Range: 3||
 |||Duration: 1, 1.25 and 1.50 seconds||
 |||Blockable: No||
@@ -3737,7 +3546,7 @@ The spells below are listed in alphabetical order and are available in both Diab
 |**Infravision**||**Lightning**||
 |Type: n/a||Type: lightning||
 |Duration: Rec(slvl, 79.2) seconds||Min. Damage: 4||
-|Murky pools:||Max. Damage: 4 + 2·clvl||
+|Murky pools:||Max. Damage: 4 + 2×clvl||
 |Church:|slvl = 2|Real Damage: Rnd[clvl]+ Rnd[2] + 2||
 |Catacombs:|slvl = 4|Speed: 32||
 |Caves:|slvl = 6|Duration: ([slvl/2]+6)/20 seconds||
@@ -3754,10 +3563,10 @@ The spells below are listed in alphabetical order and are available in both Diab
 ||||
 |**Mana Shield**|**Nova**||
 |Type: n/a|Type: lightning||
-|Damage reduction in Diablo: 33%|Min. Damage: 5·Rec(slvl, 2 + [clvl/2])||
-|Damage reduction in Hellfire: see below|Max. Damage: 5·Rec(slvl, 15 + [clvl/2])||
-|Duration: until mana reaches 0 or you leave the current|Quick Min. Damage: 5·(2 + clvl/2) · (9/8)^slvl||
-|dlvl|Quick Max. Damage: 5·(15 + clvl/2) · (9/8)^slvl||
+|Damage reduction in Diablo: 33%|Min. Damage: 5×Rec(slvl, 2 + [clvl/2])||
+|Damage reduction in Hellfire: see below|Max. Damage: 5×Rec(slvl, 15 + [clvl/2])||
+|Duration: until mana reaches 0 or you leave the current|Quick Min. Damage: 5×(2 + clvl/2) × (9/8)^slvl||
+|dlvl|Quick Max. Damage: 5×(15 + clvl/2) × (9/8)^slvl||
 ||Real Damage: Rec(slvl, (Itt(5, Rnd[6]) + clvl + 5)/2)||
 ||Number of bolts: 92||
 ||Speed: 16||
@@ -3766,7 +3575,7 @@ The spells below are listed in alphabetical order and are available in both Diab
 |\*  A Mana shield decreases the damage taken, but due to|||
 |a bug the reduction actually decreases as slvl goes up.|||
 |The damage is reduced by the following amount:|||
-|100/(3· slvl)%|||
+|100/(3× slvl)%|||
 |\*  If slvl is higher than 7, set slvl to 7.|||
 |Note for both Diablo and Hellfire:|||
 |\*  For slvl 0 there is never any reduction of the damage.|||
@@ -3784,7 +3593,7 @@ The spells below are listed in alphabetical order and are available in both Diab
 ||||
 |**Stone Curse**|**Telekinesis**||
 |Type: n/a|Type: n/a||
-|Duration: 4.8 + 0.8·slvl seconds (max 12 seconds)|||
+|Duration: 4.8 + 0.8×slvl seconds (max 12 seconds)|||
 |Note:|Note:||
 |\*  Stone Curse works on all monsters except Diablo and|\*  Can be used to open doors, chests, bookcases, shrines||
 |Na-Krul.|etc. from a distance.||
@@ -3815,10 +3624,10 @@ The spells in the table below are new spells in Hellfire. Apocalypse and Nova, a
 |||||
 |**Berserk**||**Immolation**||
 |Type: magic||Type: fire||
-|||Min. Damage: 5·Rec(slvl, 2 + clvl/2)||
-|||Max. Damage: 5·Rec(slvl, 15 + clvl/2)||
-|||Quick Min. Damage: 5·(2 + clvl/2) · (9/8)^slvl||
-|||Quick Max. Damage: 5·(15 + clvl/2) · (9/8)^slvl||
+|||Min. Damage: 5×Rec(slvl, 2 + clvl/2)||
+|||Max. Damage: 5×Rec(slvl, 15 + clvl/2)||
+|||Quick Min. Damage: 5×(2 + clvl/2) × (9/8)^slvl||
+|||Quick Max. Damage: 5×(15 + clvl/2) × (9/8)^slvl||
 |||Real Damage: Rec(slvl, (Itt(5, Rnd[6]) + clvl + 5)/2)||
 |||Number of bolts: 92||
 |||Speed: 16 + slvl||
@@ -3841,10 +3650,10 @@ The spells in the table below are new spells in Hellfire. Apocalypse and Nova, a
 |||||
 |**Jester**||**Lightning Wall**||
 |Type: random||Type: lightning||
-|The following spells are cast by a staff of jester:|Min. Damage: 4 + 2·clvl|||
-|Firebolt|20%|Max. Damage: 40 + 2·clvl||
+|The following spells are cast by a staff of jester:|Min. Damage: 4 + 2×clvl|||
+|Firebolt|20%|Max. Damage: 40 + 2×clvl||
 |Apocalypse|10%|Real Damage: (Rnd[10] + Rnd[10] + clvl + 2)/4||
-|Chain lightning|10%|Duration: 12.75 + 12.75·slvl seconds||
+|Chain lightning|10%|Duration: 12.75 + 12.75×slvl seconds||
 |Fireball|10%|Number of bolts: 11||
 |Fire Wall|10%|Blockable: No||
 |Guardian|10%|||
@@ -3858,16 +3667,16 @@ The spells in the table below are new spells in Hellfire. Apocalypse and Nova, a
 |||\*  Does twice the damage of a Fire Wall and lasts||
 |||longer.||
 |||\*  The flame will try to hit once every 0.05 seconds for a||
-|||total of 255 + 255·slvl times.||
+|||total of 255 + 255×slvl times.||
 
 |<a name="page77"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|**Created by Pedro Faria**|||
 | :- | :- | :- | :- |
 |||||
 |**Magi**|**Mana**|||
 |Type: n/a|Type: n/a|||
-||Min. Mana: bonus·(1 + clvl + slvl)|||
-||Max. Mana: bonus·(10 + 4·clvl + 6·slvl)|||
-||Real Mana restore: bonus·(Itt(clvl, Rnd[4]+1) + Itt(slvl,|||
+||Min. Mana: bonus×(1 + clvl + slvl)|||
+||Max. Mana: bonus×(10 + 4×clvl + 6×slvl)|||
+||Real Mana restore: bonus×(Itt(clvl, Rnd[4]+1) + Itt(slvl,|||
 ||Rnd[6] + 1) + Rnd[10] + 1)|||
 ||Bonus:|||
 ||Sorcerer:|2\.0||
@@ -3880,11 +3689,11 @@ The spells in the table below are new spells in Hellfire. Apocalypse and Nova, a
 |||||
 |**Reflect**|**Ring of Fire**|||
 |Type: n/a|Type: fire|||
-|Duration: slvl·clvl hits|Min. Damage: 4 + clvl·2|||
-||Max. Damage: 40 + clvl·2|||
-||Duration: 12 + 8·slvl seconds|||
+|Duration: slvl×clvl hits|Min. Damage: 4 + clvl×2|||
+||Max. Damage: 40 + clvl×2|||
+||Duration: 12 + 8×slvl seconds|||
 ||Real Damage: (Rnd[10] + Rnd[10] + clvl + 2)/8|||
-||Duration: 8 + 8·slvl seconds (12 + 8·slvl in Hellfire)|||
+||Duration: 8 + 8×slvl seconds (12 + 8×slvl in Hellfire)|||
 ||Number of flames: 22|||
 ||Blockable: No|||
 |Note:|Note:|||
@@ -3895,12 +3704,12 @@ The spells in the table below are new spells in Hellfire. Apocalypse and Nova, a
 |reflected back to the attacking monster.|\*  Fire Walls are treated as traps against players,|||
 |\*  An attack counts as a hit even if you block it as it will|including the caster.|||
 |reflect some damage.|\*  The flame will try to hit once every 0.05 seconds for a|||
-|\*  The Reflect will be terminated if you die or leave the|total of 160 + 160·slvl times.|||
+|\*  The Reflect will be terminated if you die or leave the|total of 160 + 160×slvl times.|||
 |current dlvl.||||
 |||||
 |**Search**|**Warp**|||
 |Type: n/a|Type: n/a|||
-|Duration: 12.25 + 10·slvl + clvl seconds||||
+|Duration: 12.25 + 10×slvl + clvl seconds||||
 |Note:|Note:|||
 |\*  Makes items on the ground shine.|\*  Teleports you to the nearest stair.|||
 |\*  Makes items show up on the map.||||
@@ -3942,7 +3751,7 @@ For staves, the required magic to cast a spell from it is the same as it is to l
 
 1. You can only learn this spell in Hellfire.
 
-1. Heal and Heal Other cost 8 + 2·clvl - 3·slvl mana to cast.
+1. Heal and Heal Other cost 8 + 2×clvl - 3×slvl mana to cast.
 
 |**Name of Spell**|||**Mana cost**||||||**Magic requirement**||
 | :- | :- | :- | -: | :- | :- | :- | :- | :- | -: | :- |
@@ -4198,13 +4007,13 @@ Below are listed all those spells that monsters are able to use. In most cases t
 |Type: magic|Type: magic||
 |Damage: min - max|Damage (spit attack): 1/32||
 |Speed: 16|Damage (dead Acid Beasts): (Intf + 1)/64||
-|Duration: 20 + Intf·5|Duration: 2·(Intf + 1) + Rnd[15]/20 seconds||
+|Duration: 20 + Intf×5|Duration: 2×(Intf + 1) + Rnd[15]/20 seconds||
 |Blockable: Yes|Blockable: No||
 |Note:|Note:||
 |\*  See chapters 5.2.1 and 5.2.3 for information about|\*  See chapter 5.3.3 for information about intelligence||
 |min and max damage for monsters.|factors (Intf) for monsters.||
 |\*  See chapter 5.3.3 for information about intelligence|\*  The puddle will try to hit once each 0.05 second for a||
-|factors (Intf) for monsters.|total of (Intf + 1)·2 + Rnd[15] times.||
+|factors (Intf) for monsters.|total of (Intf + 1)×2 + Rnd[15] times.||
 |\*  The duration is actually what determines the distance|||
 |a monster can spit.|||
 
@@ -4285,14 +4094,14 @@ For damage and other information about the traps, see below. For damage, when tw
 ||||||||
 |**Trap**|**Damage**|||**Speed/Duration**|**Other**||
 |Arrow|Min: dlvl|||32|Will fire an arrow, originating from the||
-||Max: 2·dlvl||||nearest wall.1||
+||Max: 2×dlvl||||nearest wall.1||
 |Burning cross|Church:|6/64||n/a|The flame will hit once every 0.05 seconds||
 ||Catacombs:|8/64|||for as long as you are standing in it.||
 ||Caves:|10/64|||||
 ||Hell:|12/64|||||
 |Fire Arrow|Min: dlvl + Rnd[10] + 1||32|Will fire an arrow, originating from the|||
-||Max: 2·dlvl + Rnd[10] + 1||nearest wall.1||||
-|Firebolt|dlvl + Rnd[2·dlvl]|||26|Will cast the spell Firebolt, originating||
+||Max: 2×dlvl + Rnd[10] + 1||nearest wall.1||||
+|Firebolt|dlvl + Rnd[2×dlvl]|||26|Will cast the spell Firebolt, originating||
 ||||||from the nearest wall.1||
 |Lightning|(dlvl + Rnd[dlvl])/32||32 / 0.4 seconds2|Will cast the spell Lightning, originating|||
 ||||||from the nearest wall.1||
@@ -4381,20 +4190,20 @@ A monster’s level affects many things, including To Hit and experience points 
 
 First note that all data for hit points is based on the value for normal multi player (even in Hellfire). To calculate the hit points for normal single player, divide the hit points for normal multi player by 2 and round down (1 minimum though). For higher difficulty levels then use:
 
-Nightmare:	3·normal + 1 (+50 in Hellfire single player and +100 in Hellfire multi player)
+Nightmare:	3×normal + 1 (+50 in Hellfire single player and +100 in Hellfire multi player)
 
-Hell:	4·normal + 3 (+100 in Hellfire single player and +200 in Hellfire multi player)
+Hell:	4×normal + 3 (+100 in Hellfire single player and +200 in Hellfire multi player)
 
 Note that there is a bug in Diablo previous to v1.07 and in the unpatched Hellfire (v1.00). This bug was ”corrected” differently in Hellfire and Diablo. In the tables the hit points for single player are correct for both Diablo and Hellfire (remember that in Diablo, only normal difficulty exists for single player). For multi player, the shown hit points are for Diablo; for Hellfire, you need to add 99 and 197 hit points in nightmare and hell difficulties respectively.
 
-All monsters regenerate hit points. The rate is about 10·mlvl/64 hit points per second. Some monsters might regenerate it faster in some circumstance. Gargoyles, Scavengers and Grave Diggers will all, after having taken a certain amount of damage, move away and start *healing*. Gargoyles do so when in their stone form, while the other two need a carcass of a monster to eat or dig upon. The table below summarize monster regeneration of hit points.
+All monsters regenerate hit points. The rate is about 10×mlvl/64 hit points per second. Some monsters might regenerate it faster in some circumstance. Gargoyles, Scavengers and Grave Diggers will all, after having taken a certain amount of damage, move away and start *healing*. Gargoyles do so when in their stone form, while the other two need a carcass of a monster to eat or dig upon. The table below summarize monster regeneration of hit points.
 
 |**Monster type**|**When to start healing**|**When to stop healing**|<b>Rate<sup>1</sup></b>|
 | :- | :-: | :-: | :- |
-|Scavenger|HP < maxHP/2|HP > 3·maxHp/4|1\.82 hit points per second.|
-|Gargoyle|HP < maxHP/2|HP = maxHP|random between 20·maxHP/64 and|
-||||20·maxHP/128 hit points per second2.|
-|Grave Digger|HP < maxHP/2|HP > 3·maxHp/4|1\.25 hit points per second.|
+|Scavenger|HP < maxHP/2|HP > 3×maxHp/4|1\.82 hit points per second.|
+|Gargoyle|HP < maxHP/2|HP = maxHP|random between 20×maxHP/64 and|
+||||20×maxHP/128 hit points per second2.|
+|Grave Digger|HP < maxHP/2|HP > 3×maxHp/4|1\.25 hit points per second.|
 
 1. Note that they still get the normal regeneration rate on top of the faster one.
 1. The time to completely regenerate HP is thus fixed to between 3.2 and 6.4 seconds.
@@ -4422,10 +4231,10 @@ All data for To Hit in the tables are for the physical attacks only. Magic attac
 
 Note that the To Hit values shown in the tables are the *base* To Hit chance a monster has. The formula for a monster hitting a player is:
 
-|To Hit with melee attack:|30 + base + 2·(mlvl - clvl)||
+|To Hit with melee attack:|30 + base + 2×(mlvl - clvl)||
 | :- | :- | :- |
-|To Hit with arrow attack:|30|+ base + 2·(mlvl - clvl) - 2·distance|
-|To Hit with magic attack:|40|+ 2·(mlvl - clvl)|
+|To Hit with arrow attack:|30|+ base + 2×(mlvl - clvl) - 2×distance|
+|To Hit with magic attack:|40|+ 2×(mlvl - clvl)|
 
 - The term *base* refers to the To Hit values found in the tables. For charges, it is always 500.
 
@@ -4452,9 +4261,9 @@ Each monster also has an automatic To Hit value, just like players (monsters don
 
 **Damage**
 
-Nightmare:	2·normal + 4
+Nightmare:	2×normal + 4
 
-Hell:	4·normal + 6
+Hell:	4×normal + 6
 
 
 **Resistance and immunity**
@@ -4483,9 +4292,9 @@ same resistances and immunities as in normal difficulty.
 
 The experience points gained for killing a monster is explained in chapter 2.6. The base experience points used for those calculations are adjusted according to:
 
-Nightmare:	2·normal + 2000
+Nightmare:	2×normal + 2000
 
-Hell:	4·normal + 4000
+Hell:	4×normal + 4000
 
 
 ## 5.2 Monster data
@@ -5560,7 +5369,7 @@ This is the dlvl the unique monster will appear on. It cannot appear on any othe
 
 Note that unique monsters have two different mlvl. One is used for combat and experience point award (battle), and one is used for item generation of items dropped by the unique monster (item). The mlvl used for combat and experience points follow one of the following two formulas:
 
-mlvlunique = 2·dlvl
+mlvlunique = 2×dlvl
 
 mlvlunique = mlvlnormal + 5
 
@@ -6070,19 +5879,19 @@ General
 
 Distance = 1
 
-1. if R < 2·Intf + 10, do melee attack, exit
+1. if R < 2×Intf + 10, do melee attack, exit
 1. continue to stand still
 
-Distance = 2 to 2·Intf + 3
+Distance = 2 to 2×Intf + 3
 
-1. if R < 2·Intf + 10, walk towards target, exit
+1. if R < 2×Intf + 10, walk towards target, exit
 1. continue to stand still
 
-Distance > 2·Intf + 3
+Distance > 2×Intf + 3
 
-1. if R >= 2·Intf + 10, continue to stand still, exit
+1. if R >= 2×Intf + 10, continue to stand still, exit
 1. calculate new R = Rnd[100]
-1. if R < 2·Intf + 20, walk in random direction (if blocked, continue to stand still), exit
+1. if R < 2×Intf + 20, walk in random direction (if blocked, continue to stand still), exit
 1. continue to walk in the same direction as last time (if blocked, continue to stand still)
 
 **Fallen One**
@@ -6105,7 +5914,7 @@ Occasionally a Fallen One will do a war cry. It is recognized by the monster jum
 |Devil Kin|6|8\.25|
 |Dark One|7|9\.75|
 
-When doing a war cry, the monster will gain 2·Intf + 2 hit points. The current hit points will never go above the maximum value though.
+When doing a war cry, the monster will gain 2×Intf + 2 hit points. The current hit points will never go above the maximum value though.
 
 
 War cry
@@ -6128,14 +5937,14 @@ General
 Distance = 1
 
 1. if last action was delay, do melee attack, exit
-1. if R < 2·Intf + 20, do melee attack, exit
-1. do delay for (Rnd[10] + 10 - 2·Intf)/20 seconds
+1. if R < 2×Intf + 20, do melee attack, exit
+1. do delay for (Rnd[10] + 10 - 2×Intf)/20 seconds
 
 Distance > 1
 
 1. if last action was delay, walk towards last seen position of target, exit
-1. if R < 4·Intf + 65, walk towards last seen position of target, exit
-1. do delay for (Rnd[10] + 15 - 2·Intf)/20 seconds
+1. if R < 4×Intf + 65, walk towards last seen position of target, exit
+1. do delay for (Rnd[10] + 15 - 2×Intf)/20 seconds
 
 **Skeleton**
 
@@ -6147,14 +5956,14 @@ General
 Distance = 1
 
 1. if last action was delay, do melee attack, exit
-1. if R < 2·Intf + 20, do melee attack, exit
-1. do delay for (Rnd[10] + 10 - 2·Intf)/20 seconds
+1. if R < 2×Intf + 20, do melee attack, exit
+1. do delay for (Rnd[10] + 10 - 2×Intf)/20 seconds
 
 Distance > 1
 
 1. if last action was delay, walk towards last seen position of target, exit
-1. if R < 4·Intf + 65, walk towards last seen position of target, exit
-1. do delay for (Rnd[10] + 15 - 2·Intf)/20 seconds
+1. if R < 4×Intf + 65, walk towards last seen position of target, exit
+1. do delay for (Rnd[10] + 15 - 2×Intf)/20 seconds
 
 **Skeleton Archer**
 
@@ -6165,12 +5974,12 @@ General
 
 Distance = 1 to 3
 
-1. if last action was walking and standtime is 0 and R < 2·Intf + 63, walk away from target, exit
-1. if standtime is greater than 1 second and R < 2·Intf + 13, walk away from target, exit
+1. if last action was walking and standtime is 0 and R < 2×Intf + 63, walk away from target, exit
+1. if standtime is greater than 1 second and R < 2×Intf + 13, walk away from target, exit
 
 Distance > 3
 
-1. if R < 2·Intf + 3, do ranged attack
+1. if R < 2×Intf + 3, do ranged attack
 
 **Scavenger**
 
@@ -6192,14 +6001,14 @@ General
 Distance = 1
 
 1. if last action was delay, do melee attack, exit
-1. if R < 2·Intf + 20, do melee attack, exit
-1. do delay for (Rnd[10] + 10 - 2·Intf)/20 seconds
+1. if R < 2×Intf + 20, do melee attack, exit
+1. do delay for (Rnd[10] + 10 - 2×Intf)/20 seconds
 
 Distance > 1
 
 1. if last action was delay, walk towards last seen position of target, exit
-1. if R < 4·Intf + 65, walk towards last seen position of target, exit
-1. do delay for (Rnd[10] + 15 - 2·Intf)/20 seconds
+1. if R < 4×Intf + 65, walk towards last seen position of target, exit
+1. do delay for (Rnd[10] + 15 - 2×Intf)/20 seconds
 
 **Winged Fiends**
 
@@ -6219,8 +6028,8 @@ General
 
 Distance = 1
 
-1. if R < 4·Intf + 8, do melee attack
-1. if R < 4·Intf + 8 and the monster is a familiar, spawn lightning bolt attack
+1. if R < 4×Intf + 8, do melee attack
+1. if R < 4×Intf + 8 and the monster is a familiar, spawn lightning bolt attack
 
 Distance = 2 to 3
 
@@ -6229,7 +6038,7 @@ Distance = 2 to 3
 
 Distance > 3
 
-1. if R < 4·Intf + 33 and the monster is a Gloom, do charge
+1. if R < 4×Intf + 33 and the monster is a Gloom, do charge
 1. if last action was walking and standtime is 0 and R < Intf + 63, walk towards target, exit
 1. if standtime is greater than 1 second and R < Intf + 13, walk towards target
 
@@ -6261,7 +6070,7 @@ General
 
 Distance = 1
 
-1. if R < 4·Intf + 10, do melee attack
+1. if R < 4×Intf + 10, do melee attack
 
 Distance > 1
 
@@ -6280,32 +6089,32 @@ General
 
 Distance = 1
 
-1. if R >= 2·Intf + 23, exit
+1. if R >= 2×Intf + 23, exit
 1. if curHP >= maxHP/2, do melee attack, exit
 1. if Rnd[2] = 0, do melee attack, exit
 1. do special spin attack
 
 Distance > 1, out of light
 
-1. if last action was walking and standtime is 0 and R < 2·Intf + 78, walk towards last seen position of target, exit
+1. if last action was walking and standtime is 0 and R < 2×Intf + 78, walk towards last seen position of target, exit
 
-1. if standtime is greater than 1 second and R < 2·Intf + 28, walk towards last seen position of target
+1. if standtime is greater than 1 second and R < 2×Intf + 28, walk towards last seen position of target
 
 Distance = 1 to 3, in light
 
 1. if target is in another area, use out of light AI
-1. if last action was walking and standtime is 0 and R < 2·Intf + 78, walk towards last seen position of target, exit
+1. if last action was walking and standtime is 0 and R < 2×Intf + 78, walk towards last seen position of target, exit
 
-1. if standtime is greater than 1 second and R < 2·Intf + 28, walk towards last seen position of target
+1. if standtime is greater than 1 second and R < 2×Intf + 28, walk towards last seen position of target
 
 Distance > 3, in light
 
 1. if target is in another area, use out of light AI
 1. if D > 3 and Rnd[4] = 0, start circle walk, exit
 
-3. if last action was walking and standtime is 0 and R < 2·Intf + 78, walk towards last seen position of target, exit
+3. if last action was walking and standtime is 0 and R < 2×Intf + 78, walk towards last seen position of target, exit
 
-3. if standtime is greater than 1 second and R < 2·Intf + 28, walk towards last seen position of target
+3. if standtime is greater than 1 second and R < 2×Intf + 28, walk towards last seen position of target
 
 **Overlord**
 
@@ -6316,8 +6125,8 @@ General
 
 Distance = 1
 
-1. if R < 4·Intf + 15, do melee attack, exit
-1. if R < 4·Intf + 20, do second melee attack
+1. if R < 4×Intf + 15, do melee attack, exit
+1. if R < 4×Intf + 20, do second melee attack
 
 Distance > 1
 
@@ -6346,29 +6155,29 @@ General
 
 Distance = 1
 
-1. if R >= 2·Intf + 23, exit
+1. if R >= 2×Intf + 23, exit
 1. do melee attack
 
 Distance > 1, out of light
 
-1. if last action was walking and standtime is 0 and R < 2·Intf + 78, walk towards last seen position of target, exit
+1. if last action was walking and standtime is 0 and R < 2×Intf + 78, walk towards last seen position of target, exit
 
-1. if standtime is greater than 1 second and R < 2·Intf + 28, walk towards last seen position of target
+1. if standtime is greater than 1 second and R < 2×Intf + 28, walk towards last seen position of target
 
 Distance 1 to 3, in light
 
 1. if target is in another are, use out of light AI
-1. if last action was walking and standtime is 0 and R < 2·Intf + 78, walk towards last seen position of target, exit
+1. if last action was walking and standtime is 0 and R < 2×Intf + 78, walk towards last seen position of target, exit
 
-1. if standtime is greater than 1 second and R < 2·Intf + 28, walk towards last seen position of target
+1. if standtime is greater than 1 second and R < 2×Intf + 28, walk towards last seen position of target
 
 Distance > 1, in light
 
 1. if target is in another are, use out of light AI
 1. if D > 3 and Rnd[4] = 0, start circle walk, exit
-1. if last action was walking and standtime is 0 and R < 2·Intf + 78, walk towards last seen position of target, exit
+1. if last action was walking and standtime is 0 and R < 2×Intf + 78, walk towards last seen position of target, exit
 
-1. if standtime is greater than 1 second and R < 2·Intf + 28, walk towards last seen position of target
+1. if standtime is greater than 1 second and R < 2×Intf + 28, walk towards last seen position of target
 
 
 **Goat Archer**
@@ -6382,7 +6191,7 @@ General
 
 Distance = 1 to 3
 
-1. if R < 10·Intf + 70, walk away from target, exit
+1. if R < 10×Intf + 70, walk away from target, exit
 
 Distance > 3
 
@@ -6398,7 +6207,7 @@ General
 
 Distance = 1 to 3
 
-1. if R < 10·Intf + 70, walk away from target, exit
+1. if R < 10×Intf + 70, walk away from target, exit
 
 Distance > 3
 
@@ -6411,7 +6220,7 @@ When finishing a circle walk, a monster using the Magma Demon attack type will s
 
 Circle Walk
 
-1. If R < 100·(5·Intf + 5), do ranged attack, exit (after this ranged attack, the monster will resume circle walk)
+1. If R < 100×(5×Intf + 5), do ranged attack, exit (after this ranged attack, the monster will resume circle walk)
 1. continue with circle walk
 
 General
@@ -6421,25 +6230,25 @@ General
 
 Distance = 1
 
-1. if R < 100·(5·Intf + 5), do ranged attack, exit
-1. if R < 100·(10·Intf + 60), do attack, exit
+1. if R < 100×(5×Intf + 5), do ranged attack, exit
+1. if R < 100×(10×Intf + 60), do attack, exit
 1. do delay for (Rnd[10] + 5)/20 seconds
 
 Distance > 1, out of light
 
 1. calculate new R = Rnd[100]
-1. if R < 100·(10·Intf + 50), walk towards last seen position of target, exit
-1. if last action was walking and standtime is 0 and R < 100·(10·Intf + 80), walk towards last seen position of target, exit
+1. if R < 100×(10×Intf + 50), walk towards last seen position of target, exit
+1. if last action was walking and standtime is 0 and R < 100×(10×Intf + 80), walk towards last seen position of target, exit
 
 1. do delay for (Rnd[10] + 5)/20 seconds
 
 Distance = 2, in light
 
 1. if target is in another area, use out of light AI
-1. if R < 100·(5·Intf + 5), do ranged attack, exit
+1. if R < 100×(5×Intf + 5), do ranged attack, exit
 1. calculate new R = Rnd[100]
-1. if R < 100·(10·Intf + 50), walk towards last seen position of target, exit
-1. if last action was walking and standtime is 0 and R < 100·(10·Intf + 80), walk towards last seen position of target, exit
+1. if R < 100×(10×Intf + 50), walk towards last seen position of target, exit
+1. if last action was walking and standtime is 0 and R < 100×(10×Intf + 80), walk towards last seen position of target, exit
 
 1. do delay for (Rnd[10] + 5)/20 seconds
 
@@ -6447,10 +6256,10 @@ Distance > 2, in light
 
 1. if target is in another area, use out of light AI
 1. if Rnd[4] = 0, start circle walk, exit
-1. if R < 100·(5·Intf + 10), do ranged attack, exit
+1. if R < 100×(5×Intf + 10), do ranged attack, exit
 1. calculate new R = Rnd[100]
-1. if R < 100·(10·Intf + 50), walk towards last seen position of target, exit
-1. if last action was walking and standtime is 0 and R < 100·(10·Intf + 80), walk towards last seen position of target, exit
+1. if R < 100×(10×Intf + 50), walk towards last seen position of target, exit
+1. if last action was walking and standtime is 0 and R < 100×(10×Intf + 80), walk towards last seen position of target, exit
 
 1. do delay for (Rnd[10] + 5)/20 seconds
 
@@ -6491,7 +6300,7 @@ Distance = 2
 Distance > 2
 
 1. if last action was delay, walk, exit
-1. if R < 2·Intf + 65, walk, exit
+1. if R < 2×Intf + 65, walk, exit
 1. do delay for (Rnd[10] + 15 - Intf)/20 seconds
 
 **Spit**
@@ -6501,7 +6310,7 @@ When finishing a circle walk, a monster using the Spit attack type will start wa
 
 Circle Walk
 
-1. If R < 100·(5·Intf + 5)/2, do ranged attack, exit (after this ranged attack, the monster will resume circle walk)
+1. If R < 100×(5×Intf + 5)/2, do ranged attack, exit (after this ranged attack, the monster will resume circle walk)
 
 1. continue with circle walk
 
@@ -6512,25 +6321,25 @@ General
 
 Distance = 1
 
-1. if R < 100·(5·Intf + 5)/2, do ranged attack, exit
-1. if R < 100·(10·Intf + 60), do attack, exit
+1. if R < 100×(5×Intf + 5)/2, do ranged attack, exit
+1. if R < 100×(10×Intf + 60), do attack, exit
 1. do delay for (Rnd[10] + 5)/20 seconds
 
 Distance > 1, out of light
 
 1. calculate new R = Rnd[100]
-1. if R < 100·(10·Intf + 50), walk towards last seen position of target, exit
-1. if last action was walking and standtime is 0 and R < 100·(10·Intf + 80), walk towards last seen position of target, exit
+1. if R < 100×(10×Intf + 50), walk towards last seen position of target, exit
+1. if last action was walking and standtime is 0 and R < 100×(10×Intf + 80), walk towards last seen position of target, exit
 
 1. do delay for (Rnd[10] + 5)/20 seconds
 
 Distance = 2, in light
 
 1. if target is in another area, use out of light AI
-1. if R < 100·(5·Intf + 5)/2, do ranged attack, exit
+1. if R < 100×(5×Intf + 5)/2, do ranged attack, exit
 1. calculate new R = Rnd[100]
-1. if R < 100·(10·Intf + 50), walk towards last seen position of target, exit
-1. if last action was walking and standtime is 0 and R < 100·(10·Intf + 80), walk towards last seen position of target, exit
+1. if R < 100×(10×Intf + 50), walk towards last seen position of target, exit
+1. if last action was walking and standtime is 0 and R < 100×(10×Intf + 80), walk towards last seen position of target, exit
 
 1. do delay for (Rnd[10] + 5)/20 seconds
 
@@ -6538,10 +6347,10 @@ Distance > 2, in light
 
 1. if target is in another area, use out of light AI
 1. if Rnd[8] = 0, start circle walk, exit
-1. if R < 100·(5·Intf + 10)/2, do ranged attack, exit
+1. if R < 100×(5×Intf + 10)/2, do ranged attack, exit
 1. calculate new R = Rnd[100]
-1. if R < 100·(10·Intf + 50), walk towards last seen position of target, exit
-1. if last action was walking and standtime is 0 and R < 100·(10·Intf + 80), walk towards last seen position of target, exit
+1. if R < 100×(10×Intf + 50), walk towards last seen position of target, exit
+1. if last action was walking and standtime is 0 and R < 100×(10×Intf + 80), walk towards last seen position of target, exit
 
 1. do delay for (Rnd[10] + 5)/20 seconds
 
@@ -6568,24 +6377,24 @@ General
 
 Distance = 1
 
-1. if R < 5·Intf + 5, do spell attack, exit
+1. if R < 5×Intf + 5, do spell attack, exit
 1. calculate new R = Rnd[100]
-1. if R >= 10·Intf + 40, do delay for (Rnd[10] + 5)/20 seconds, exit
+1. if R >= 10×Intf + 40, do delay for (Rnd[10] + 5)/20 seconds, exit
 1. if Rnd[2] = 0, do spell attack, exit
 1. do melee attack
 
 Distance > 1, out of light
 
-1. if R < 10·Intf + 50, walk towards last seen position of target, exit
-1. if last action was walk and R < 10·Intf + 80, walk towards last seen position of target, exit
+1. if R < 10×Intf + 50, walk towards last seen position of target, exit
+1. if last action was walk and R < 10×Intf + 80, walk towards last seen position of target, exit
 1. do delay for (Rnd[10] + 5)/20 seconds
 
 Distance = 2, in light
 
 1. if last action was circle walk, do spell attack, exit
-1. if R < 5·Intf + 5, do spell attack, exit
+1. if R < 5×Intf + 5, do spell attack, exit
 1. calculate new R = Rnd[100]
-1. if R < (10·Intf + 50), walk towards last seen position of target, exit
+1. if R < (10×Intf + 50), walk towards last seen position of target, exit
 1. if last action was not walk, walk towards last seen position of target, exit
 1. do delay for (Rnd[10] + 5)/20 seconds
 
@@ -6593,9 +6402,9 @@ Distance > 2, in light
 
 1. if target is in same area, start circle walk, exit
 1. if last action was circle walk, do spell attack, exit
-1. if R < 5·Intf + 10, do spell attack, exit
+1. if R < 5×Intf + 10, do spell attack, exit
 1. calculate new R = Rnd[100]
-1. if R < (10·Intf + 50), walk towards last seen position of target, exit
+1. if R < (10×Intf + 50), walk towards last seen position of target, exit
 1. if last action was not walk, walk towards last seen position of target, exit
 1. do delay for (Rnd[10] + 5)/20 seconds
 
@@ -6633,7 +6442,7 @@ Distance > 2, in light
 
 1. if target is in another area, use out of light AI
 1. if Rnd[4] = 0, start circle walk, exit
-1. in single player, if 4·Intf + 35, then do revive skeleton, exit
+1. in single player, if 4×Intf + 35, then do revive skeleton, exit
 1. if last action was walking and standtime is 0 and R < Intf + 75, walk towards last seen position of target, exit
 
 1. if standtime is greater than 1 second and R < Intf + 25, walk towards last seen position of target, exit
@@ -6650,22 +6459,22 @@ General
 
 Distance = 1
 
-1. if R < 2·Intf + 28, do melee attack, exit
+1. if R < 2×Intf + 28, do melee attack, exit
 
 Distance = 2 to 4
 
-1. if last action was walking and standtime is 0 and R < 2·Intf + 33, walk towards last seen position of target, exit
+1. if last action was walking and standtime is 0 and R < 2×Intf + 33, walk towards last seen position of target, exit
 
-1. if standtime is greater than 1 second and R < 2·Intf + 83, walk towards last seen position of target
+1. if standtime is greater than 1 second and R < 2×Intf + 83, walk towards last seen position of target
 1. do delay for (Rnd[10] + 10)/20 seconds
 
 Distance > 4
 
 1. if target is in same area Rnd[4] > 0 then start circle walk
-1. if R < 2·Intf + 43 and the line of sight is clear, do charge attack, exit
-1. if last action was walking and standtime is 0 and R < 2·Intf + 33, walk towards last seen position of target, exit
+1. if R < 2×Intf + 43 and the line of sight is clear, do charge attack, exit
+1. if last action was walking and standtime is 0 and R < 2×Intf + 33, walk towards last seen position of target, exit
 
-1. if standtime is greater than 1 second and R < 2·Intf + 83, walk towards last seen position of target
+1. if standtime is greater than 1 second and R < 2×Intf + 83, walk towards last seen position of target
 1. do delay for (Rnd[10] + 10)/20 seconds
 
 **Mage**
@@ -6688,15 +6497,15 @@ Distance = 1
 
 1. if curHP < maxHP/2, go into retreat mode
 1. if last action was a delay, do flash attack, exit
-1. if R < 2·Intf + 20, do flash attack, exit
-1. do delay for (Rnd[10] + 10 - 2·Intf)/20 seconds
+1. if R < 2×Intf + 20, do flash attack, exit
+1. do delay for (Rnd[10] + 10 - 2×Intf)/20 seconds
 
 Distance > 1
 
-1. if in light and R < 5·Intf + 50, do ranged attack, exit
+1. if in light and R < 5×Intf + 50, do ranged attack, exit
 1. calculate new R = Rnd[100]
 1. if R < 30, enter circle walk, exit
-1. do delay for (Rnd[10] + 10 - 2·Intf)/20 seconds
+1. do delay for (Rnd[10] + 10 - 2×Intf)/20 seconds
 
 **Special**
 
@@ -6969,7 +6778,7 @@ This is a summary of the unique monsters sorted by dlvl instead of monster type.
 
 ### 5.6.3 Experience points from monsters
 
-Chapter 5.2 listed the base number of experience points you receive for a monster, as well as the formula for calculating how much you actually get depending on your current level. The tables below list the last level your character will receive full experience (200·clvl or the total experience points needed for advancing to the next clvl divided by 20, whichever is the lowest, see chapter 2.6 for more information) for killing a monster.. It will also list the last level you receive any experience at all for killing a monster (always at a level 9 higher than the monsters level). It gives you those levels for all three difficulty settings. As there is no cap on experience points awarded for killing a monster in single player, that information only applies to multi player.
+Chapter 5.2 listed the base number of experience points you receive for a monster, as well as the formula for calculating how much you actually get depending on your current level. The tables below list the last level your character will receive full experience (200×clvl or the total experience points needed for advancing to the next clvl divided by 20, whichever is the lowest, see chapter 2.6 for more information) for killing a monster.. It will also list the last level you receive any experience at all for killing a monster (always at a level 9 higher than the monsters level). It gives you those levels for all three difficulty settings. As there is no cap on experience points awarded for killing a monster in single player, that information only applies to multi player.
 
 |<a name="page133"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**||||**Created by Pedro Faria**||||||
 | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
@@ -7268,7 +7077,7 @@ So, lets see in more detail how the Mana Shield works.
 1. calculate the decrease in life since last time, this is the damage taken since last time
 1. if slvl=0, skip step 5 and 6
 1. *in Diablo*, calculate damage - [damage/3]
-1. *in Hellfire*, calculate damage - [damage/(3·slvl)] (if slvl is higher than 7, set slvl to 7)
+1. *in Hellfire*, calculate damage - [damage/(3×slvl)] (if slvl is higher than 7, set slvl to 7)
 1. restore current life to its initial value
 1. remove the amount calculated in step 5 or 6 from current mana
 1. if mana has not reached 0, then if the player was previously in dying mode, set player into standing mode, finally exit
@@ -7420,13 +7229,13 @@ Some missile types prevents trying to hit the same location more than once (shou
 
 To calculate the distance a missile of a specific speed travels, only examples of movement straight along the locations in the dungeon will be considered. It should be easy to apply to movement in any direction with true trigonometry. A missile with a speed value of 64, will travel exactly diagonally through one location each frame. This corresponds to traveling 1.4 locations in a straight line along the locations side. Alternatively you may say that a speed of 45.3 travels a location in one frame straight along the side of a location. The distance traveled per second can thus easily be calculated as:
 
-Locations a missile travel per second:	25·speed/45.3
+Locations a missile travel per second:	25×speed/45.3
 
 As the distance penalty of an arrow is increased by 1 each frame, the total distance penalty per location (see chapter 2.1.4 and 5.1 for more information) can be calculated as:
 
-For characters:	distance·distance/2 = (45.3/speed)·(45.3/speed)/2 = 1 048/(speed·speed)
+For characters:	distance×distance/2 = (45.3/speed)×(45.3/speed)/2 = 1 048/(speed×speed)
 
-For monsters:	distance·distance = (45.3/speed)·(45.3/speed) = 2 048/(speed·speed)
+For monsters:	distance×distance = (45.3/speed)×(45.3/speed) = 2 048/(speed×speed)
 
 As noted, for some locations, the fact that the missile will try to hit more than once may make the actual To Hit be slightly different. Also note that a missile will actually start traveling in the location where the player or monster it originates from is currently standing in. It may at times take more than one frame to reach the next location but in no case will a missile make a To Hit check in its location of origin.
 
@@ -7455,7 +7264,7 @@ Here we will only discuss melee attacks; this does *not* apply to attacks with b
 1. *in Hellfire*, if the player has any item with the ”penetrate armor” effect, temporarily reduce Acmonster as appropriate
 1. subtract Acmonster
 
-1. *in Hellfire*, if the attack is an adjacent quarter damage attack, subtract 70 - 2·clvl (minimum 30)
+1. *in Hellfire*, if the attack is an adjacent quarter damage attack, subtract 70 - 2×clvl (minimum 30)
 1. if the value calculated is below 5, set it to 5
 1. if the value calculated is above 95, set it to 95
 1. the value now achieved is the final chance to hit (FTH)
@@ -7487,7 +7296,7 @@ FTH = 50 + Dex/2 + ToHititems + clvl + bonusplayer - Acmonster *- penaltyquarter
 3. if the monster is a demon, triple the damage if the player is carrying any item with the ”+200% damage versus demons” effect
 
 3. *in Hellfire*, if the attacker has an item with the devastation effect and Rnd[100] < 5, triple the damage
-3. *in Hellfire*, if the attacker has an item with the jester’s effect 50% of the time multiply damage by Rnd[100]/100, the other 50% multiply damage by 5·(Rnd[100]+20)/100
+3. *in Hellfire*, if the attacker has an item with the jester’s effect 50% of the time multiply damage by Rnd[100]/100, the other 50% multiply damage by 5×(Rnd[100]+20)/100
 
 3. *in Hellfire*, if the attack is an adjacent ”quarter” damage attack, divide the damage by 4 (hence the ”quarter” damage)
 
@@ -7513,12 +7322,12 @@ Step 9 above is actually done as:
 
 1. if the attacker has an item equipped that has the ”random life stealing” effect, calculate Rnd[FD/8] and add this to current life (while checking so that current life never exceeds max life)
 
-1. if the attacker has an item equipped that has 3% mana stealing, calculate 0.03·FD
-1. if the attacker has an item equipped that has 5% mana stealing, calculate 0.05·FD
+1. if the attacker has an item equipped that has 3% mana stealing, calculate 0.03×FD
+1. if the attacker has an item equipped that has 5% mana stealing, calculate 0.05×FD
 1. if the attacker do *not* have any item of *corruption* add the amount calculated in step 4 or 5 to the current mana (while checking so that current mana never exceeds max mana)
 
-1. if the attacker has an item equipped that has 3% life stealing, calculate 0.03·FD
-1. if the attacker has an item equipped that has 5% life stealing, calculate 0.05·FD
+1. if the attacker has an item equipped that has 3% life stealing, calculate 0.03×FD
+1. if the attacker has an item equipped that has 5% life stealing, calculate 0.05×FD
 1. add the amount calculated in step 7 or 8 to the current life (while checking so that current life never exceeds max life)
 
 1. *in Hellfire*, if the attacker hit and has an item equipped with the decay effect, subtract 5 from its To Hit bonus, if it reaches -100%, destroy the item
@@ -7558,7 +7367,7 @@ FTH = 50 + Dexattacker/2 + ToHititems,attacker + clvlattacker + bonusattacker - 
 
 - The bonusattacker is 20 for Warriors and 0 for all other classes.
 
-- The bonustarget is clvl/4 for Barbarians, depends on the armor type for Monks (0 for non unique plate, clvl/2 for non unique mail or unique plates and 2·clvl for light armor and unique mail or if naked), and 0 for all other classes.
+- The bonustarget is clvl/4 for Barbarians, depends on the armor type for Monks (0 for non unique plate, clvl/2 for non unique mail or unique plates and 2×clvl for light armor and unique mail or if naked), and 0 for all other classes.
 
 - Note that if FTH is below 5 or above 95 it is adjusted to 5 and 95. This is commonly referred to as the auto hit and auto miss of a character.
 
@@ -7568,9 +7377,9 @@ FTH = 50 + Dexattacker/2 + ToHititems,attacker + clvlattacker + bonusattacker - 
 
 1. if the target is not a Monk and is not carrying a shield, skip blocking
 1. if the target is a Monk and is not carrying a shield, a staff or has at least one hand bear, skip blocking
-1. calculate Dextarget + 2·clvltarget + bonustarget
+1. calculate Dextarget + 2×clvltarget + bonustarget
 
-1. subtract 2·clvlattacker
+1. subtract 2×clvlattacker
 1. if the value calculated is below 0, set it to 0
 1. if the value calculated is above 100, set it to 100
 1. the value now achieved is the final chance to block (FB)
@@ -7578,7 +7387,7 @@ FTH = 50 + Dexattacker/2 + ToHititems,attacker + clvlattacker + bonusattacker - 
 
 The steps 3-8 above can be summarized to:
 
-FB = Dextarget + 2·(clvltarget - clvlattacker) + bonustarget
+FB = Dextarget + 2×(clvltarget - clvlattacker) + bonustarget
 
 - The bonustarget is 30 for Warriors and Barbarians, 25 for Monks and Bards, 20 for Rogues, and 10 for Sorcerers. Note that there seems to be a bug that makes all those bonus values be 0.
 - It is possible to achieve 100% blocking.
@@ -7619,9 +7428,9 @@ For the probabilities of durability losses, see chapter 3.7.1.
 
 **To Hit**
 
-1. calculate 30 + ToHitbase,monster + 2·mlvl
+1. calculate 30 + ToHitbase,monster + 2×mlvl
 
-1. calculate Dex/5 + Acitems,player + bonusplayer + 2·clvl
+1. calculate Dex/5 + Acitems,player + bonusplayer + 2×clvl
 1. subtract the value in step 2 from the value in step 1
 1. *in Hellfire*, if the player has extra AC versus Demons or Undead, subtract 40/20 if the monster is of the correct type
 
@@ -7634,13 +7443,13 @@ For the probabilities of durability losses, see chapter 3.7.1.
 
 The steps 1-9 above can be summarized to:
 
-FTH = 30 + ToHitbase,monster + 2·(mlvl-clvl) - Dex/5 - Acitems,player - bonusplayer
+FTH = 30 + ToHitbase,monster + 2×(mlvl-clvl) - Dex/5 - Acitems,player - bonusplayer
 
 - ToHitbase,monster is the value found in the tables for each monster in chapter 5.2 and 5.4. For the second attack of Magma Demons it is 10 higher, and for the second attack of Lightning Demons it is 20 lower. For charges the base value is always 500%.
 
 - For unique monsters, use mlvlbattle
 
-- The bonusplayer is clvl/4 for Barbarians, depends on the armor type for Monks (0 for non unique plate, clvl/2 for non unique mail or unique plates, and 2·clvl for light armor and unique mail or if naked), and 0 for all other classes.
+- The bonusplayer is clvl/4 for Barbarians, depends on the armor type for Monks (0 for non unique plate, clvl/2 for non unique mail or unique plates, and 2×clvl for light armor and unique mail or if naked), and 0 for all other classes.
 
 - Note that the FTH is adjusted for auto hit values.
 
@@ -7650,9 +7459,9 @@ FTH = 30 + ToHitbase,monster + 2·(mlvl-clvl) - Dex/5 - Acitems,player - bonuspl
 
 1. if the target is not a Monk and is not carrying a shield, skip blocking
 1. if the target is a Monk and is not carrying a shield, a staff or has at least one hand bear, skip blocking
-1. calculate Dex + 2·clvl + bonusplayer
+1. calculate Dex + 2×clvl + bonusplayer
 
-1. subtract 2·mlvl
+1. subtract 2×mlvl
 1. if the value calculated is below 0, set it to 0
 1. if the value calculated is above 100, set it to 100
 1. the value now achieved is the final chance to block (FB)
@@ -7660,7 +7469,7 @@ FTH = 30 + ToHitbase,monster + 2·(mlvl-clvl) - Dex/5 - Acitems,player - bonuspl
 
 The steps 3-8 above can be summarized to:
 
-FB = Dex + 2·(clvl - mlvl) + bonusplayer
+FB = Dex + 2×(clvl - mlvl) + bonusplayer
 
 - The bonusplayer is 30 for Warriors and Barbarians, 25 for Monks and Bards, 20 for Rogues, and 10 for Sorcerers. Note that there seems to be a bug that makes all those bonus values be 0.
 - For unique monsters, use mlvlbattle
@@ -7741,11 +7550,11 @@ Here we will deal with all other attacks, which include spells, arrows and traps
 1. if the monster is immune to the spell type, exit as it can’t be damaged
 1. if the target is a monster that is Stone Cursed, the attack is an automatic hit, go directly to damage calculations
 
-1. if the effect is an arrow, calculate 50 + Dex + ToHititems + clvl + bonusplayer - distance·distance/2
+1. if the effect is an arrow, calculate 50 + Dex + ToHititems + clvl + bonusplayer - distance×distance/2
 
 1. if the effect is an arrow, subtract Acmonster
 1. if the effect is a spell, calculate 50 + Mag + bonusplayer
-1. if the effect is a spell, subtract 2·mlvl
+1. if the effect is a spell, subtract 2×mlvl
 1. if the value calculated is below 5, set it to 5
 1. if the value calculated is above 95, set it to 95
 1. the value now achieved is the final chance to hit (FTH)
@@ -7753,7 +7562,7 @@ Here we will deal with all other attacks, which include spells, arrows and traps
 
 The steps 5-11 above can be summarized to:
 
-FTHarrow = 50 + Dex + ToHititems + clvl + bonusplayer - distance·distance/2 - Acmonster FTHspell = 50 + Mag + bonusplayer - 2·mlvl
+FTHarrow = 50 + Dex + ToHititems + clvl + bonusplayer - distance×distance/2 - Acmonster FTHspell = 50 + Mag + bonusplayer - 2×mlvl
 
 - The bonusplayer for arrows is 10 for Warriors and Bards, 20 for Rogues, and 0 for all other classes.
 
@@ -7802,14 +7611,14 @@ Note that in Hellfire, Diablo and Bone Demons have resistance to Holy Bolt.
 **To Hit**
 
 1. if the target is immune to the spell type, exit as it can’t be damaged; this is true for spells like Apocalypse and Holy Bolt
-1. if the effect is an arrow, calculate 50 + Dexattacker + ToHititems,attacker + clvlattacker + bonusattacker - distance·distance/2
+1. if the effect is an arrow, calculate 50 + Dexattacker + ToHititems,attacker + clvlattacker + bonusattacker - distance×distance/2
 
 1. if the effect is an arrow, calculate Dextarget/5 + Acitems,target + bonustarget2.1.4
 
 1. subtract the value in step 3 from the value in step 2
 1. if the effect is a spell, calculate 50 + Magattacker + bonusattacker
 
-1. if the effect is a spell, subtract 2·clvltarget
+1. if the effect is a spell, subtract 2×clvltarget
 1. if the value calculated is below 5, set it to 5
 1. if the value calculated is above 95, set it to 95
 1. the value now achieved is the final chance to hit (FTH)
@@ -7817,17 +7626,17 @@ Note that in Hellfire, Diablo and Bone Demons have resistance to Holy Bolt.
 
 The steps 2-9 above can be summarized to:
 
-FTHarrow = 50 + Dexattacker + ToHititems,attacker + clvlattacker + bonusattacker - distance·distance/2 - Dextarget/5 -
+FTHarrow = 50 + Dexattacker + ToHititems,attacker + clvlattacker + bonusattacker - distance×distance/2 - Dextarget/5 -
 
 Acitems,target - bonustarget
 
-FTHspell = 50 + Magattacker + bonusattacker - 2·clvltarget
+FTHspell = 50 + Magattacker + bonusattacker - 2×clvltarget
 
 - The bonusattacker for arrows is 10 for Warriors and Bards, 20 for Rogues, and 0 for all other classes.
 
 - The bonusattacker for spells is 20 for Sorcerers, 10 for Bards, and 0 for all other classes.
 
-- The bonustarget is clvl/4 for Barbarians, depends on the armor type for Monks (0 for non unique plate, clvl/2 for non unique mail or unique plates and 2·clvl for light armor and unique mail or if naked) and 0 for all other classes.
+- The bonustarget is clvl/4 for Barbarians, depends on the armor type for Monks (0 for non unique plate, clvl/2 for non unique mail or unique plates and 2×clvl for light armor and unique mail or if naked) and 0 for all other classes.
 
 - Note that if FTH is below 5 or above 95 it is adjusted to 5 and 95. This is common referred to as the auto To Hit and auto miss of a character.
 
@@ -7839,9 +7648,9 @@ FTHspell = 50 + Magattacker + bonusattacker - 2·clvltarget
 1. if the target is a Monk and is not carrying a shield, a staff or has at least one hand bear, skip blocking
 1. if the spell type is not blockable, skip blocking
 1. if the spell type is blockable but the target has resistance to it, skip blocking
-1. calculate block Dextarget + 2·clvltarget + bonustarget
+1. calculate block Dextarget + 2×clvltarget + bonustarget
 
-1. subtract 2·clvlattacker
+1. subtract 2×clvlattacker
 1. if the value calculated is below 0, set it to 0
 1. if the value calculated is above 100, set it to 100
 1. the value now achieved is the final chance to block (FB)
@@ -7849,7 +7658,7 @@ FTHspell = 50 + Magattacker + bonusattacker - 2·clvltarget
 
 The steps 5-10 above can be summarized to:
 
-FB = Dextarget + 2·(clvltarget - clvlattacker) + bonustarget
+FB = Dextarget + 2×(clvltarget - clvlattacker) + bonustarget
 
 - The bonustarget is 30 for Warriors and Barbarians, 25 for Monks and Bards, 20 for Rogues, and 10 for Sorcerers. Note that there seems to be a bug that makes all those bonus values be 0.
 
@@ -7897,12 +7706,12 @@ Fire Wall, Flame Wave and Ring of Fire also uses this chapter when attacking pla
 
 **To Hit**
 
-1. if the effect is an arrow from a monster, calculate 30 + ToHitbase,monster + 2·mlvl - 2·distance
+1. if the effect is an arrow from a monster, calculate 30 + ToHitbase,monster + 2×mlvl - 2×distance
 
-1. if the effect is an arrow from a monster, subtract Dex/5 + Acitems,player + bonusplayer + 2·clvl
-1. if the effect is an arrow from a trap, calculate 100 - (Dex/5 + Acitems,player + bonusplayer + 2·clvl) / 2 - 2·distance
-1. if the effect is a spell from a monster, calculate 40 + 2·mlvl
-1. if the effect is a spell from a monster, subtract 2·clvl
+1. if the effect is an arrow from a monster, subtract Dex/5 + Acitems,player + bonusplayer + 2×clvl
+1. if the effect is an arrow from a trap, calculate 100 - (Dex/5 + Acitems,player + bonusplayer + 2×clvl) / 2 - 2×distance
+1. if the effect is a spell from a monster, calculate 40 + 2×mlvl
+1. if the effect is a spell from a monster, subtract 2×clvl
 1. if the effect is a spell from a trap or a player, set To Hit to 40
 1. if the value calculated is below 10, set it to 10
 1. on dlvl 14 if the value calculated is below 20, set it to 20
@@ -7913,11 +7722,11 @@ Fire Wall, Flame Wave and Ring of Fire also uses this chapter when attacking pla
 
 The steps 1-11 above can be summarized to:
 
-FTHmonster arrow = 30 + ToHitbase,monster + 2·mlvl - 2·distance - Dex/5 - Acitems,player - bonusplayer - 2·clvl
+FTHmonster arrow = 30 + ToHitbase,monster + 2×mlvl - 2×distance - Dex/5 - Acitems,player - bonusplayer - 2×clvl
 
-FTHtrap arrow = 100 - (Dex/5 + Acitems,player + bonusplayer + 2·clvl) / 2 - 2·distance
+FTHtrap arrow = 100 - (Dex/5 + Acitems,player + bonusplayer + 2×clvl) / 2 - 2×distance
 
-FTHmonster spell = 40 + 2·mlvl - 2·clvl
+FTHmonster spell = 40 + 2×mlvl - 2×clvl
 
 FTHtrap spell = 40
 
@@ -7929,7 +7738,7 @@ FTHplayer spell = 40
 
 - For unique monsters, use mlvlbattle
 
-- The bonusplayer is clvl/4 for the Barbarian, depends on the armor type for Monks (0 for non unique plate, clvl/2 for non unique mail or unique plates and 2·clvl for light armor and unique mail or if naked) and 0 for all other classes.
+- The bonusplayer is clvl/4 for the Barbarian, depends on the armor type for Monks (0 for non unique plate, clvl/2 for non unique mail or unique plates and 2×clvl for light armor and unique mail or if naked) and 0 for all other classes.
 
 - Note that the FTH is adjusted for auto hit values.
 
@@ -7941,9 +7750,9 @@ FTHplayer spell = 40
 1. if the target is a Monk and is not carrying a shield, a staff or has at least one hand bear, skip blocking
 1. if the spell type is not blockable, skip blocking
 1. *in Diablo*, if the spell type is blockable but the target has resistance to it, skip blocking
-1. if the attacker is a monster calculate block Dex + 2·clvl + bonusplasyer
+1. if the attacker is a monster calculate block Dex + 2×clvl + bonusplasyer
 
-1. if the attacker is a monster subtract 2·mlvl
+1. if the attacker is a monster subtract 2×mlvl
 1. if the attacker is a trap, calculate Dextarget + bonustarget
 
 1. if the value calculated is below 0, set it to 0
@@ -7953,7 +7762,7 @@ FTHplayer spell = 40
 
 The steps 5-11 above can be summarized to:
 
-FB = Dex + 2·(clvl - mlvl) + bonusplayer
+FB = Dex + 2×(clvl - mlvl) + bonusplayer
 
 - The bonusplayer is 30 for Warriors and Barbarians, 25 for Monks and Bards, 20 for Rogues, and 10 for Sorcerers. Note that there seems to be a bug that makes all those bonus values be 0.
 - For unique monsters, use mlvlbattle
@@ -8132,7 +7941,7 @@ Shrines are found on levels 1-8 (church and catacombs), cauldrons on levels 13-1
 |||*”You feel wiser”*|18\.00 to 20.00:|+2 Magic|||
 |||*”You feel refreshed”*|20\.00 to 04.00:|+2 Vitality|||
 |||*”You feel more agile”*|04\.00 to 12.00:|+2 Dexterity|||
-||Sparkling Shrine|*”Some experience is gained by touch”*|+1000·dlvl experience points and casts a||||
+||Sparkling Shrine|*”Some experience is gained by touch”*|+1000×dlvl experience points and casts a||||
 ||||Flash spell (part 1 only).||||
 ||Town Shrine|*”There’s no place like home”*|Casts Town Portal.||||
 
@@ -8297,7 +8106,7 @@ This quest is present if you find a room shaped like an ”8” on level 7. Afte
 
 You will find Zhar the Mad in a room with a book case on level 8. He will give you a book if you talk to him. As soon as you touch the book case, he will attack you (the book case will not drop any book). When you kill him he will drop a random magical item. To make the book case drop a book, you need to either use telekinesis on it before you talk to Zhar the Mad, or you should talk to Zhar the Mad a second time before touching the book case; after beating him you will then get a book from the book case.
 
-Any book from Zhar the Mad or his book case is created from an ilvl equal to 2·dlvl. The item he drops when you kill him is created normally as from a unique monster.
+Any book from Zhar the Mad or his book case is created from an ilvl equal to 2×dlvl. The item he drops when you kill him is created normally as from a unique monster.
 
 
 ### 8.2.11 Black Mushroom
@@ -8307,7 +8116,7 @@ This is one of the most complicated quests in Diablo. After finding a *fungal to
 
 ### 8.2.12 Slain Hero
 
-You will find a slain hero somewhere on level 9. He will drop an item depending on your character class. The table below tells what base item each character class will get. The ilvl for item creation for items from the Slain hero is equal to 2·dlvl. The items will be given the same +4 bonus as is given to unique monsters when picking prefixes and suffixes. As such, the item creation follows the same rules and probabilities as for an item dropped from a unique monster (with the exception that the base item is not random).
+You will find a slain hero somewhere on level 9. He will drop an item depending on your character class. The table below tells what base item each character class will get. The ilvl for item creation for items from the Slain hero is equal to 2×dlvl. The items will be given the same +4 bonus as is given to unique monsters when picking prefixes and suffixes. As such, the item creation follows the same rules and probabilities as for an item dropped from a unique monster (with the exception that the base item is not random).
 
 |<a name="page159"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|**Created by Pedro Faria**|||
 | :- | :- | :- | :- |
