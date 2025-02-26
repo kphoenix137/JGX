@@ -2833,400 +2833,1228 @@ Below is a list of all the base items in the game. It has been divided into two 
 
 **Armor and Weapons**
 
-||**Item**|**qlvl**|**Item**|**qlvl**|**Item**|**qlvl**||
-| :- | :- | :-: | :- | :- | :- | :-: | :- |
-||Buckler|1|Spiked Club|4|Ring Mail|11||
-||Cap|1|Claymore|5|Full Helm|12||
-||Cape|1|Long Bow|5|Great Axe|12||
-||Club|1|Small Shield|5|War Staff|12||
-||Dagger|1|War Hammer|5|Chain Mail|13||
-||Rags|1|Composite Staff|6|Kite Shield|14||
-||Sable|1|Large Axe|6|Two-Handed Sword|14||
-||Short Bow|1|Leather Armor|6|Scale Mail|15||
-||Short Staff|1|Long Sword|6|Short War Bow|15||
-||Short Sword|1|Composite Bow|7|Breast Plate|16||
-||Cloak|2|Flail|7|Crown|16||
-||Falchion|2|Hard Leather Armor|7|Great Sword|17||
-||Mace|2|Broad Axe|8|Splint Mail|17||
-||Small Axe|2|Broad Sword|8|Long War Bow|19||
-||Hunter’s Bow|3|Helm|8|Plate Mail|19||
-||Morning Star|3|Large Shield|9|Great Helm|20||
-||Robe|3|Quarter Staff|9|Tower Shield|20||
-||Axe|4|Short Battle Bow|9|Field Plate|21||
-||Blade|4|Studded Leather Armor|9|Gothic Plate|23||
-||Long Staff|4|Bastard Sword|10|Gothic Shield|23||
-||Quilted Armor|4|Battle Axe|10|Full Plate Mail|25||
-||Scimitar|4|Maul|10||||
-||Skull Cap|4|Long Battle Bow|11||||
-|||||||||
-||**Other base items**|||||||
-||**Item**|**qlvl**|**Item**|**qlvl**|**Item**|**qlvl**||
-||Blacksmith Oil1|1|Rune if Lightning1|4|Scroll of Golem|10||
-||Oil of Accuracy1|1|Scroll of Town Portal|4|Scroll of Chain Lightning|10||
-||Oil of Sharpness1|1|Ring|5|Scroll of Flame Wave|10||
-||Potion of Full Healing|1|Scroll of Flash|6|Scroll of Guardian|12||
-||Potion if Full Mana|1|Scroll of Stone Curse|6|Book of|14||
-||Potion of Healing|1|Scroll of Phasing|6|Scroll of Nova|14||
-||Potion of Mana|1|Greater Rune of Fire1|7|Scroll of Teleport|14||
-||Rune of Fire1|1|Greater Rune of Lightning1|7|Elixir of Dexterity|15||
-||Scroll of Healing|1|Potion of Full Rejuvenation|7|Elixir of Magic|15||
-||Scroll of Identify|1|Rune of Stone1|7|Elixir of Strength|15||
-||Scroll of Inferno|1|Amulet|8|Ring|15||
-||Scroll of Resurrect|1|Book of|8|Amulet|16||
-||Book of|2|Scroll of Fireball|8|Book of|20||
-||Potion of Rejuvenation|3|Scroll of Infravision|8|Elixir of Vitality|20||
-||Scroll of Lightning|3|Scroll of Mana Shield|8|Scroll of Apocalypse|22||
-||Scroll of Search1|3|Oil of1|10||||
-||Scroll of Fire Wall|4|Ring|10||||
-1	Only available in Hellfire.
+| **Item**                | **qlvl** |
+|------------------------|:------:|
+| Buckler               | 1      |
+| Cap                   | 1      |
+| Cape                  | 1      |
+| Club                  | 1      |
+| Dagger                | 1      |
+| Rags                  | 1      |
+| Sable                 | 1      |
+| Short Bow             | 1      |
+| Short Staff           | 1      |
+| Short Sword           | 1      |
+| Cloak                 | 2      |
+| Falchion              | 2      |
+| Mace                  | 2      |
+| Small Axe             | 2      |
+| Hunter’s Bow          | 3      |
+| Morning Star          | 3      |
+| Robe                  | 3      |
+| Axe                   | 4      |
+| Blade                 | 4      |
+| Long Staff            | 4      |
+| Quilted Armor         | 4      |
+| Scimitar              | 4      |
+| Skull Cap             | 4      |
+| Spiked Club           | 4      |
+| Small Shield          | 5      |
+| War Hammer           | 5      |
+| Composite Staff       | 6      |
+| Large Axe             | 6      |
+| Leather Armor         | 6      |
+| Long Sword           | 6      |
+| Composite Bow         | 7      |
+| Flail                 | 7      |
+| Hard Leather Armor    | 7      |
+| Broad Axe            | 8      |
+| Broad Sword          | 8      |
+| Helm                  | 8      |
+| Large Shield          | 9      |
+| Quarter Staff         | 9      |
+| Short Battle Bow      | 9      |
+| Studded Leather Armor | 9      |
+| Bastard Sword         | 10     |
+| Battle Axe           | 10     |
+| Maul                  | 10     |
+| Long Battle Bow      | 11     |
+| Ring Mail            | 11     |
+| Full Helm            | 12     |
+| Great Axe           | 12     |
+| War Staff           | 12     |
+| Chain Mail           | 13     |
+| Kite Shield         | 14     |
+| Two-Handed Sword    | 14     |
+| Scale Mail           | 15     |
+| Short War Bow       | 15     |
+| Breast Plate         | 16     |
+| Crown               | 16     |
+| Great Sword         | 17     |
+| Splint Mail         | 17     |
+| Long War Bow       | 19     |
+| Plate Mail         | 19     |
+| Great Helm        | 20     |
+| Tower Shield       | 20     |
+| Field Plate       | 21     |
+| Gothic Plate      | 23     |
+| Gothic Shield     | 23     |
+| Full Plate Mail  | 25     |
+
+
+| **Item**                          | **qlvl** |
+|-----------------------------------|:------:|
+| Blacksmith Oil<sup>[^1]</sup>     | 1      |
+| Oil of Accuracy<sup>[^1]</sup>    | 1      |
+| Oil of Sharpness<sup>[^1]</sup>   | 1      |
+| Potion of Full Healing           | 1      |
+| Potion of Full Mana              | 1      |
+| Potion of Healing                | 1      |
+| Potion of Mana                   | 1      |
+| Rune of Fire<sup>[^1]</sup>       | 1      |
+| Scroll of Healing                | 1      |
+| Scroll of Identify               | 1      |
+| Scroll of Inferno                | 1      |
+| Scroll of Resurrect              | 1      |
+| Book of                          | 2      |
+| Potion of Rejuvenation           | 3      |
+| Scroll of Lightning              | 3      |
+| Scroll of Search<sup>[^1]</sup>  | 3      |
+| Scroll of Fire Wall              | 4      |
+| Rune of Lightning<sup>[^1]</sup>  | 4      |
+| Scroll of Town Portal            | 4      |
+| Ring                             | 5      |
+| Scroll of Flash                  | 6      |
+| Scroll of Stone Curse            | 6      |
+| Scroll of Phasing                | 6      |
+| Greater Rune of Fire<sup>[^1]</sup>  | 7      |
+| Greater Rune of Lightning<sup>[^1]</sup> | 7      |
+| Potion of Full Rejuvenation      | 7      |
+| Rune of Stone<sup>[^1]</sup>      | 7      |
+| Amulet                           | 8      |
+| Book of                          | 8      |
+| Scroll of Fireball               | 8      |
+| Scroll of Infravision            | 8      |
+| Scroll of Mana Shield            | 8      |
+| Oil of<sup>[^1]</sup>            | 10     |
+| Ring                             | 10     |
+| Scroll of Golem                  | 10     |
+| Scroll of Chain Lightning        | 10     |
+| Scroll of Flame Wave             | 10     |
+| Scroll of Guardian               | 12     |
+| Book of                          | 14     |
+| Scroll of Nova                   | 14     |
+| Scroll of Teleport               | 14     |
+| Elixir of Dexterity              | 15     |
+| Elixir of Magic                  | 15     |
+| Elixir of Strength               | 15     |
+| Ring                             | 15     |
+| Amulet                           | 16     |
+| Book of                          | 20     |
+| Elixir of Vitality               | 20     |
+| Scroll of Apocalypse             | 22     |
+
+[^1]: Only available in *Hellfire*.
 
 
 ### 3.13.2 Levels of spells on books and staves
 
 When spells are attached to books and staves (they never exist on scrolls as each scroll is a separate base item), they also have a qlvl, and that differs between books and staves. Below are listed the qlvl for both types sorted in qlvl order.
 
-|**On books**||**On books**||**On staves**||**On staves**||
-| :- | :- | :- | :- | :- | :- | :- | :- |
-|**Spell**|**qlvl**|**Spell**|**qlvl**|**Spell**|**qlvl**|**Spell**|**qlvl**|
-|Charged Bolt|1|Ring of Fire1|5|Charged Bolt|1|Mana Shield|5|
-|Fire Bolt|1|Mana Shield|6|Fire Bolt|1|Resurrect|5|
-|Healing|1|Stone Curse|6|Healing|1|Ring of Fire1|5|
-|Heal Other|1|Phasing|7|Heal Other|1|Stone Curse|5|
-|Holy Bolt|1|Chain Lightning|8|Holy Bolt|1|Elemental|6|
-|Search1|1|Elemental|8|Inferno|1|Phasing|6|
-|Telekinesis|2|Fireball|8|Fire Wall|2|Chain Lightning|7|
-|Fire Wall|3|Bone Spirit|9|Lightning Wall1|2|Fireball|7|
-|Inferno|3|Flame Wave|9|Telekinesis|2|Bone Spirit|7|
-|Town Portal|3|Guardian|9|Berserk1|3|Flame Wave|8|
-|Berserk1|3|Golem|11|Reflect1|3|Guardian|8|
-|Lightning Wall1|3|Blood Star|14|Warp1|3|Golem|9|
-|Reflect1|3|Immolation1|14|Lightning|3|Immolation1|10|
-|Warp1|3|Nova1|14|Search1|3|Nova|10|
-|Lightning|4|Teleport|14|Town Portal|3|Teleport|12|
-|Flash|5|Apocalypse1|19|Flash|4|Blood Star|13|
-|||||Jester1|4|Apocalypse|15|
-|||||Mana1|5|Magi1|20|
+| **Book Spell**             | **qlvl** |
+|---------------------------|:------:|
+| Charged Bolt             | 1      |
+| Fire Bolt               | 1      |
+| Healing                 | 1      |
+| Heal Other              | 1      |
+| Holy Bolt               | 1      |
+| Search<sup>[^1]</sup>   | 1      |
+| Telekinesis             | 2      |
+| Fire Wall               | 3      |
+| Inferno                 | 3      |
+| Town Portal             | 3      |
+| Berserk<sup>[^1]</sup>  | 3      |
+| Lightning Wall<sup>[^1]</sup> | 3      |
+| Reflect<sup>[^1]</sup>  | 3      |
+| Warp<sup>[^1]</sup>     | 3      |
+| Lightning               | 4      |
+| Ring of Fire<sup>[^1]</sup> | 5      |
+| Flash                   | 5      |
+| Mana Shield             | 6      |
+| Stone Curse             | 6      |
+| Phasing                 | 7      |
+| Chain Lightning         | 8      |
+| Elemental               | 8      |
+| Fireball                | 8      |
+| Bone Spirit             | 9      |
+| Flame Wave              | 9      |
+| Guardian                | 9      |
+| Golem                   | 11     |
+| Blood Star              | 14     |
+| Immolation<sup>[^1]</sup> | 14     |
+| Nova<sup>[^1]</sup>     | 14     |
+| Teleport                | 14     |
+| Apocalypse<sup>[^1]</sup> | 19     |
 
-1	Only available in Hellfire.
+[^1]: Only available in *Hellfire*.
+
+| **Staff Spell**            | **qlvl** |
+|---------------------------|:------:|
+| Charged Bolt            | 1      |
+| Fire Bolt               | 1      |
+| Healing                 | 1      |
+| Heal Other              | 1      |
+| Holy Bolt               | 1      |
+| Inferno                 | 1      |
+| Fire Wall               | 2      |
+| Lightning Wall<sup>[^1]</sup> | 2      |
+| Telekinesis             | 2      |
+| Berserk<sup>[^1]</sup>  | 3      |
+| Reflect<sup>[^1]</sup>  | 3      |
+| Warp<sup>[^1]</sup>     | 3      |
+| Lightning               | 3      |
+| Search<sup>[^1]</sup>   | 3      |
+| Town Portal             | 3      |
+| Flash                   | 4      |
+| Jester<sup>[^1]</sup>   | 4      |
+| Mana<sup>[^1]</sup>     | 5      |
+| Mana Shield             | 5      |
+| Resurrect               | 5      |
+| Ring of Fire<sup>[^1]</sup> | 5      |
+| Stone Curse             | 5      |
+| Elemental               | 6      |
+| Phasing                 | 6      |
+| Chain Lightning         | 7      |
+| Fireball                | 7      |
+| Bone Spirit             | 7      |
+| Flame Wave              | 8      |
+| Guardian                | 8      |
+| Golem                   | 9      |
+| Immolation<sup>[^1]</sup> | 10     |
+| Nova                    | 10     |
+| Teleport                | 12     |
+| Blood Star              | 13     |
+| Apocalypse              | 15     |
+| Magi<sup>[^1]</sup>     | 20     |
+
+[^1]: Only available in *Hellfire*.
 
 
 ### 3.13.3 Levels of prefixes and suffixes
 
 The tables below list all prefixes and suffixes according to their qlvl. All the prefixes are found in one table while all the suffixes are found in another table.
 
-||**Prefix**|**qlvl**|**Prefix**|**qlvl**|**Prefix**|**qlvl**|**Prefix**|**qlvl**|**Prefix**|**qlvl**|
-| :- | :- | :-: | :- | :- | :- | :- | :- | :-: | :- | :-: |
-||brass|1|red|4|crimson|10|lightning|18|dragon’s|27|
-||bronze|1|white|4|pearl|10|blessed|19|awesome|28|
-||dull|1|clumsy|5|valiant|10|lord’s|19|king’s|28|
-||fine|1|crystalline1|5|Warrior’s|10|cobalt|20|master’s|28|
-||frog’s|1|raven’s|5|doppelgang.1|11|crystal|20|emerald|31|
-||rusted|1|useless|5|amber|12|garnet|20|holy|35|
-||sharp|1|deadly|6|gold|12|massive|20|ruthless|35|
-||spider’s|1|fine|6|vicious|12|mithril|20|weird|35|
-||weak|1|grand|6|glorious|14|drake’s|21|wyrm’s1|35|
-||bent|3|steel|6|angel’s|15|knight’s|23|champion’s|40|
-||strong|3|flaming|7|serpent’s|15|meteoric|23|godly|60|
-||tin|3|jester’s1|7|soldier’s|15|savage|23|hydra’s1|60|
-||vulnerable|3|topaz|8|brutal|16|obsidian|24|merciless|60|
-||blue|4|bountiful|9|crimson|16|saintly|24|strange|60|
-||hyena’s|4|heavy|9|ivory|16|arch-angel’s|25|||
-||iron|4|silver|9|lapis|16|diamond|26|||
-||jagged|4|snake’s|9|platinum|16|ruby|26|||
-||plentiful|4|azure|10|jade|18|sapphire|26|||
-||1  Only available in Hellfire.||||||||||
-||||||||||||
-||**Suffix**|**qlvl**|**Suffix**|**qlvl**|**Suffix**|**qlvl**|**Suffix**|**qlvl**|**Suffix**|**qlvl**|
-||atrophy|1|quality|2|skill|5|thieves|11|the tiger|21|
-||balance|1|tears|2|zest|5|vim|11|life|23|
-||brittleness|1|the fool|3|the sky|5|absorption|12|perfection|23|
-||decay1|1|fragility|3|craftman.|6|structure|12|titans|23|
-||dexterity|1|frailty|3|the dark|6|trouble|12|wizardry|23|
-||devastation1|1|illness|3|protection|6|shock|13|the ages|25|
-||disease|1|many|3|maiming|7|slaying|15|gore|25|
-||dyslexia|1|the night|3|plenty|7|the wolf|15|the heavens|25|
-||flame|1|paralysis|3|the bat|8|the stars|17|haste|27|
-||the fox|1|light|4|the leech|8|vigor|17|the lion|27|
-||the jackal|1|pain|4|radiance|8|bashing|17|the zodiac|30|
-||magic|1|the vulture|4|the eagle|9|giants|17|burning|35|
-||piercing|1|the bear|5|puncturing|9|precision|17|carnage|35|
-||readiness|1|blocking|5|stability|10|sorcery|17|the mammoth|35|
-||strength|1|corruption|5|swiftness|10|blood|19|osmosis|50|
-||sturdiness|1|the jaguar|5|accuracy|11|speed|19|slaughter|60|
-||thorns|1|might|5|brilliance|11|vampires|19|thunder|60|
-||vitality|1|the mind|5|fire|11|deflection|20|the whale|60|
-||weakness|1|peril1|5|the moon|11|harmony|20|||
-||health|2|the pit|5|power|11|lightning|21|||
-1	Only available in Hellfire.
+| **Prefix**               | **qlvl** |
+|-------------------------|:------:|
+| brass                  | 1      |
+| bronze                 | 1      |
+| dull                   | 1      |
+| fine                   | 1      |
+| frog’s                 | 1      |
+| rusted                 | 1      |
+| sharp                  | 1      |
+| spider’s               | 1      |
+| weak                   | 1      |
+| bent                   | 3      |
+| strong                 | 3      |
+| tin                    | 3      |
+| vulnerable             | 3      |
+| blue                   | 4      |
+| hyena’s                | 4      |
+| iron                   | 4      |
+| jagged                 | 4      |
+| plentiful              | 4      |
+| red                    | 4      |
+| white                  | 4      |
+| crystalline<sup>[^1]</sup> | 5      |
+| clumsy                 | 5      |
+| raven’s                | 5      |
+| useless                | 5      |
+| deadly                 | 6      |
+| fine                   | 6      |
+| grand                  | 6      |
+| steel                  | 6      |
+| flaming                | 7      |
+| jester’s<sup>[^1]</sup> | 7      |
+| topaz                  | 8      |
+| bountiful              | 9      |
+| heavy                  | 9      |
+| silver                 | 9      |
+| snake’s                | 9      |
+| azure                  | 10     |
+| crimson                | 10     |
+| pearl                  | 10     |
+| valiant                | 10     |
+| Warrior’s              | 10     |
+| doppelganger's<sup>[^1]</sup> | 11     |
+| amber                  | 12     |
+| gold                   | 12     |
+| vicious                | 12     |
+| glorious               | 14     |
+| angel’s                | 15     |
+| serpent’s              | 15     |
+| soldier’s              | 15     |
+| brutal                 | 16     |
+| crimson                | 16     |
+| ivory                  | 16     |
+| lapis                  | 16     |
+| platinum               | 16     |
+| jade                   | 18     |
+| lightning              | 18     |
+| blessed                | 19     |
+| lord’s                 | 19     |
+| cobalt                 | 20     |
+| crystal                | 20     |
+| garnet                 | 20     |
+| massive                | 20     |
+| mithril                | 20     |
+| drake’s                | 21     |
+| knight’s               | 23     |
+| meteoric               | 23     |
+| savage                 | 23     |
+| obsidian               | 24     |
+| saintly                | 24     |
+| arch-angel’s           | 25     |
+| diamond                | 26     |
+| ruby                   | 26     |
+| sapphire               | 26     |
+| dragon’s               | 27     |
+| awesome                | 28     |
+| king’s                 | 28     |
+| master’s               | 28     |
+| emerald                | 31     |
+| holy                   | 35     |
+| ruthless               | 35     |
+| weird                  | 35     |
+| wyrm’s<sup>[^1]</sup>  | 35     |
+| champion’s             | 40     |
+| godly                  | 60     |
+| hydra’s<sup>[^1]</sup> | 60     |
+| merciless              | 60     |
+| strange                | 60     |
+
+[^1]: Only available in *Hellfire*.
+
+| **Suffix**               | **qlvl** |
+|-------------------------|:------:|
+| atrophy                | 1      |
+| balance                | 1      |
+| brittleness            | 1      |
+| decay<sup>[^1]</sup>   | 1      |
+| dexterity              | 1      |
+| devastation<sup>[^1]</sup> | 1      |
+| disease                | 1      |
+| dyslexia               | 1      |
+| flame                  | 1      |
+| the fox                | 1      |
+| the jackal             | 1      |
+| magic                  | 1      |
+| piercing               | 1      |
+| readiness              | 1      |
+| strength               | 1      |
+| sturdiness             | 1      |
+| thorns                 | 1      |
+| vitality               | 1      |
+| weakness               | 1      |
+| quality                | 2      |
+| tears                  | 2      |
+| health                 | 2      |
+| the fool               | 3      |
+| fragility              | 3      |
+| frailty                | 3      |
+| illness                | 3      |
+| many                   | 3      |
+| the night              | 3      |
+| paralysis              | 3      |
+| pain                   | 4      |
+| light                  | 4      |
+| the vulture            | 4      |
+| the bear               | 5      |
+| corruption             | 5      |
+| blocking               | 5      |
+| might                  | 5      |
+| the jaguar             | 5      |
+| the mind               | 5      |
+| peril<sup>[^1]</sup>   | 5      |
+| skill                  | 5      |
+| zest                   | 5      |
+| the sky                | 5      |
+| craftman.              | 6      |
+| the dark               | 6      |
+| protection             | 6      |
+| maiming                | 7      |
+| plenty                 | 7      |
+| the bat                | 8      |
+| the leech              | 8      |
+| radiance               | 8      |
+| the eagle              | 9      |
+| puncturing             | 9      |
+| stability              | 10     |
+| swiftness              | 10     |
+| accuracy               | 11     |
+| brilliance             | 11     |
+| fire                   | 11     |
+| the moon               | 11     |
+| power                  | 11     |
+| thieves                | 11     |
+| vim                    | 11     |
+| absorption             | 12     |
+| structure              | 12     |
+| trouble                | 12     |
+| shock                  | 13     |
+| slaying                | 15     |
+| the wolf               | 15     |
+| the stars              | 17     |
+| vigor                  | 17     |
+| bashing                | 17     |
+| giants                 | 17     |
+| precision              | 17     |
+| sorcery                | 17     |
+| blood                  | 19     |
+| speed                  | 19     |
+| vampires               | 19     |
+| deflection             | 20     |
+| harmony                | 20     |
+| lightning              | 21     |
+| the tiger              | 21     |
+| life                   | 23     |
+| perfection             | 23     |
+| titans                 | 23     |
+| wizardry               | 23     |
+| the ages               | 25     |
+| gore                   | 25     |
+| the heavens            | 25     |
+| haste                  | 27     |
+| the lion               | 27     |
+| the zodiac             | 30     |
+| burning                | 35     |
+| carnage                | 35     |
+| the mammoth            | 35     |
+| osmosis                | 50     |
+| slaughter              | 60     |
+| thunder                | 60     |
+| the whale              | 60     |
+
+[^1]: Only available in *Hellfire*.
 
 
 ### 3.13.4 Levels of unique items
 
 The table below lists all unique items according to their qlvl. As quest items are only dropped in special occasions during the quests, they have no qlvl. I have listed them in a separate table below.
 
-||**Unique Item**|**qlvl**|**Unique Item**|**qlvl**|**Unique Item**|**qlvl**|
-| :- | :- | :-: | :- | :- | :- | :-: |
-||Black Razor|1|The Blackoak Bow|5|Bone Chain Armor1|13|
-||Bramble|1|Bow of the Dead|5|Fleshstinger|13|
-||Civerb’s Cudgel|1|Constricting Ring|5|Lightsabre|13|
-||Crackrust|1|Wicked Axe|5|Scavenger Carapace|13|
-||The Defender|1|Wisdom’s Wrap|5|Thunderclap1|13|
-||The Deflector|1|The Bonesaw|6|Thundercall|14|
-||Gonnagal’s Dirk|1|Gladiator’s Bane|6|The Falcon’s Talon|15|
-||Gryphons Claw|1|Thinking Cap|6|Gnat Sting1|15|
-||Hammer of Jholm|1|Overlords Helm|7|Hellslayer|15|
-||Helm of Sprits|1|Stonecleaver|7|Nightscape|16|
-||Lightforge|1|Giant’s Knuckle1|8|The Protector|16|
-||The Rift Bow|1|Gleamsong|8|Schaefer’s Hammer|16|
-||Ring of Regha|1|Karik’s Ring1|8|Diamondedge1|17|
-||Split Skull Shield|1|Mercurial Ring1|8|Inferno|17|
-||The Bleeder|2|Ring of Magma1|8|Windforce|17|
-||The Celestial Bow|2|Shadowhawk|8|Naj’s Puzzler|18|
-||The Celestial Star|2|Storm Spire|8|Doombringer|19|
-||Dragon’s Breach|2|Ring of the Mystics1|8|Naj’s Light Plate|19|
-||Gibbous Moon|2|Ring of Thunder1|8|Mindcry|20|
-||The Mangler|2|Xorine’s Ring1|8|Gotterdamerung|21|
-||The Needler|2|Gnarled Root|9|Shirotachi1|21|
-||The Rainbow Cloak|2|Sparkling Mail|9|Rod of Onan|22|
-||Sharp Beak|2|Acolytes Amulet1|10|Eater of Souls1|23|
-||Staff of Shadows|2|Flamedart|10|The Grizzly|23|
-||Thorn Flesh of Souls|2|Gladiators Rings1|10|Stormshield|24|
-||Bloodslayer|3|Holy Defender|10|Armor of Gloom1|25|
-||Deadly Hunter|3|Ring of Engagement|11|Demon Plate Armor1|25|
-||The Executioner’s Blade|3|Flambeau1|11|Demonspike Coat|25|
-||Ice Shank|3|Wizardspike|11|Messerschmidt’s Reaver|25|
-||Blackoak Shield|4|Aguinara’s Hatchet|12|Dreamflange|26|
-||The Celestial Axe|4|Amulet of Warding1|12|Eaglehorn|26|
-||Immolator|4|The Cranium Basher|12|The Grandfather|27|
-||Leather of Aut|4|Fool’s Crest|12|Royal Circlet|27|
-||Baranar’s Star|5|Blitzen1|13|||
-||1  Only available in Hellfire.||||||
-||||||||
-||**Unique Item**|**qlvl**|**Unique Item**|**qlvl**|**Unique Item**|**qlvl**|
-||Arkaine’s Valor|n/a|Empyrean Band|n/a|Ring of Truth|n/a|
-||Auric Amulet1|n/a|Griswold’s Edge|n/a|The Undead Crown|n/a|
-||Bovine Plate1|n/a|Harlequin Crest|n/a|Veil of Steel|n/a|
-||The Butcher’s Cleaver|n/a|Optic Amulet|n/a|||
-1	Only available in Hellfire.
+| **Unique Item**         | **qlvl** |
+|-------------------------|:------:|
+| Black Razor            | 1      |
+| Bramble                | 1      |
+| Civerb’s Cudgel        | 1      |
+| Crackrust              | 1      |
+| The Defender           | 1      |
+| The Deflector          | 1      |
+| Gonnagal’s Dirk        | 1      |
+| Gryphons Claw         | 1      |
+| Hammer of Jholm       | 1      |
+| Helm of Sprits        | 1      |
+| Lightforge            | 1      |
+| The Rift Bow         | 1      |
+| Ring of Regha        | 1      |
+| Split Skull Shield    | 1      |
+| The Bleeder          | 2      |
+| The Celestial Bow    | 2      |
+| The Celestial Star   | 2      |
+| Dragon’s Breach      | 2      |
+| Gibbous Moon        | 2      |
+| The Mangler         | 2      |
+| The Needler         | 2      |
+| The Rainbow Cloak   | 2      |
+| Sharp Beak          | 2      |
+| Staff of Shadows    | 2      |
+| Thorn Flesh of Souls | 2      |
+| Bloodslayer        | 3      |
+| Deadly Hunter      | 3      |
+| The Executioner’s Blade | 3  |
+| Ice Shank         | 3      |
+| Blackoak Shield   | 4      |
+| The Celestial Axe | 4      |
+| Immolator        | 4      |
+| Leather of Aut   | 4      |
+| Baranar’s Star   | 5      |
+| The Blackoak Bow | 5      |
+| Bow of the Dead  | 5      |
+| Constricting Ring | 5      |
+| Wicked Axe      | 5      |
+| Wisdom’s Wrap  | 5      |
+| The Bonesaw    | 6      |
+| Gladiator’s Bane | 6      |
+| Thinking Cap   | 6      |
+| Overlords Helm | 7      |
+| Stonecleaver  | 7      |
+| Giant’s Knuckle<sup>[^1]</sup> | 8  |
+| Gleamsong     | 8      |
+| Karik’s Ring<sup>[^1]</sup> | 8  |
+| Mercurial Ring<sup>[^1]</sup> | 8  |
+| Ring of Magma<sup>[^1]</sup> | 8  |
+| Shadowhawk   | 8      |
+| Storm Spire  | 8      |
+| Ring of the Mystics<sup>[^1]</sup> | 8 |
+| Ring of Thunder<sup>[^1]</sup> | 8  |
+| Xorine’s Ring<sup>[^1]</sup> | 8  |
+| Gnarled Root | 9      |
+| Sparkling Mail | 9      |
+| Acolytes Amulet<sup>[^1]</sup> | 10 |
+| Flamedart     | 10     |
+| Gladiators Ring<sup>[^1]</sup> | 10  |
+| Holy Defender | 10     |
+| Ring of Engagement | 11 |
+| Flambeau<sup>[^1]</sup> | 11   |
+| Wizardspike   | 11     |
+| Aguinara’s Hatchet | 12  |
+| Amulet of Warding<sup>[^1]</sup> | 12 |
+| The Cranium Basher | 12  |
+| Fool’s Crest  | 12     |
+| Blitzen<sup>[^1]</sup> | 13    |
+| Bone Chain Armor<sup>[^1]</sup> | 13 |
+| Fleshstinger  | 13     |
+| Lightsabre    | 13     |
+| Scavenger Carapace | 13 |
+| Thunderclap<sup>[^1]</sup> | 13  |
+| Thundercall   | 14     |
+| The Falcon’s Talon | 15 |
+| Gnat Sting<sup>[^1]</sup> | 15   |
+| Hellslayer    | 15     |
+| Nightscape    | 16     |
+| The Protector | 16     |
+| Schaefer’s Hammer | 16 |
+| Diamondedge<sup>[^1]</sup> | 17  |
+| Inferno       | 17     |
+| Windforce     | 17     |
+| Naj’s Puzzler | 18     |
+| Doombringer   | 19     |
+| Naj’s Light Plate | 19  |
+| Mindcry       | 20     |
+| Gotterdamerung | 21    |
+| Shirotachi<sup>[^1]</sup> | 21   |
+| Rod of Onan   | 22     |
+| Eater of Souls<sup>[^1]</sup> | 23 |
+| The Grizzly   | 23     |
+| Stormshield   | 24     |
+| Armor of Gloom<sup>[^1]</sup> | 25 |
+| Demon Plate Armor<sup>[^1]</sup> | 25 |
+| Demonspike Coat | 25   |
+| Messerschmidt’s Reaver | 25 |
+| Dreamflange   | 26     |
+| Eaglehorn     | 26     |
+| The Grandfather | 27   |
+| Royal Circlet | 27     |
+
+[^1]: Only available in *Hellfire*.
+
+| **Unique Item**           | **qlvl** |
+|---------------------------|:------:|
+| Arkaine’s Valor           | n/a    |
+| Empyrean Band             | n/a    |
+| Ring of Truth             | n/a    |
+| Auric Amulet<sup>[^1]</sup>  | n/a    |
+| Griswold’s Edge           | n/a    |
+| The Undead Crown         | n/a    |
+| Bovine Plate<sup>[^1]</sup>    | n/a    |
+| Harlequin Crest          | n/a    |
+| Veil of Steel            | n/a    |
+| The Butcher’s Cleaver    | n/a    |
+| Optic Amulet             | n/a    |
+
+[^1]: Only available in *Hellfire*.
 
 
 ### 3.13.5 Effects of prefixes and suffixes
 
 The tables below are extracted from the more comprehensive ones above and summarize the effects of each prefix and suffix.
 
-|**+ Strength**||**+ Magic**||**+ Dexterity**||**+ Vitality**||**+ All Attributes**||||||||||||
-| :- | :- | :- | :- | :-: | :- | :-: | :- | :-: | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
-|frailty|-10 -|-6|the fool|-10 -|-6|paralysis|-10 -|-6|illness|-10 -|-6|trouble|-10 -|-6||||||
-|weakness|-5- -1|dyslexia|-5- -1|atrophy|-5 -|-1|disease|-5- -1|the pit|-5- -1||||||||||
-|strength|1 -|5|magic|1|-|5|dexterity|1 -|5|vitality|1|-|5|the sky|1 -|3||||
-|might|6 -|10|the mind|6|-|10|skill|6 -|10|zest|6|-|10|the moon|4 -|7||||
-|power|11 -|15|brilliance|11|-|15|accuracy|11 -|15|vim|11|-|15|the stars|8 -|11||||
-|giants|16 -|20|sorcery|16|-|20|precision|16 -|20|vigor|16|-|20|the heavens 12 -|15|||||
-|titans|21 -|30|wizardry|21|-|30|perfection|21 -|30|life|21|-|30|the zodiac|16 -|20||||
-|||||||||||||||||||||
-|**+ Life**|||**+ Mana**|||**+ Damage Done**|<b>- Damage Taken<sup>1</sup></b>|<b>% Steal Life<sup>2</sup></b>||||||||||||
-|||||corruption||||-all|||||||||the leech|3||
-|the vulture -25|- -11|hyena’s|-25|- -11|||||pain|+4- +2|blood|5||||||||
-|the jackal|-10|-|-1|frog’s|-10|-|-1|||||tears|||+1|||||
-|the fox|10|-|15|spider’s|10||-|15|quality|1|-|2|health|||1||||
-|the jaguar|16|-|20|raven’s|15|-|20|maiming|3|-|5|protection|||2|||||
-|the eagle|21|-|30|snake’s|21|-|30|slaying|6|-|8|absorption|||3|<b>% Steal Mana<sup>2</sup></b>||||
-|the wolf|30|-|40|serpent’s|30||-|40|gore|9|-|12|deflection|||4|the bat|3||
-|the tiger|41|-|50|drake’s|41|-|50|carnage|13|-|16|osmosis|5 -|6|vampires|5||||
-|the lion|51|-|60|dragon’s|51|-|60|slaughter|17|-|20|||||||||
-|the. mam.|61|-|80|wyrm’s3|61|-|80|||||||||||||
-|the whale|81|- 100|hydra’s3|81|- 100|||||||||||||||
-1. Works for all type of damage, even from spells, but does not work against other players. The damage is reduced before any resistance is applied but after the thieves effect. The damage will never be reduced below 1.
+#### + Strength
+| **Prefix**  | **Value**     |
+|------------|--------------|
+| frailty    | -10 to -6    |
+| weakness   | -5 to -1     |
+| strength   | 1 to 5       |
+| might      | 6 to 10      |
+| power      | 11 to 15     |
+| giants     | 16 to 20     |
+| titans     | 21 to 30     |
 
-1. The amount is based on damage done even if the monster has less HP left. Note that two items of life stealing, or two items of mana stealing are not cumulative with each other. An item of blood/vampire will take precedence over an item one of the leech/the bat. ). An exception is The Undead Crown which is cumulative with both an item of blood or an item of the leech for a total of 3% to 15.5% or 5% to 17.5% life stealing. The Helm of Sprits, Shadowhawk, and The Eater of Souls are treated as items of blood. The Eater of Souls are treated as an item of vampire. Does not work against players. See chapter 6.1.4 for more information.
+#### + Magic
+| **Prefix**  | **Value**     |
+|------------|--------------|
+| the fool   | -10 to -6    |
+| dyslexia   | -5 to -1     |
+| magic      | 1 to 5       |
+| the mind   | 6 to 10      |
+| brilliance | 11 to 15     |
+| sorcery    | 16 to 20     |
+| wizardry   | 21 to 30     |
 
-1. Only available in Hellfire.
+#### + Dexterity
+| **Prefix**  | **Value**     |
+|------------|--------------|
+| paralysis  | -10 to -6    |
+| atrophy    | -5 to -1     |
+| dexterity  | 1 to 5       |
+| skill      | 6 to 10      |
+| accuracy   | 11 to 15     |
+| precision  | 16 to 20     |
+| perfection | 21 to 30     |
 
-|**+% To Hit / +% Damage Done**|**+% To Hit**||**+% Damage Done**|<b>+% Armor Class<sup>6</sup></b>||||||||||||||||
-| :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
-|||||||||||||useless|-100|||||||
-|clumsy|-10|-|-6 /|-75|- -50|tin|-10|-|-6|bent|-75 - -50|vulnerable-100 - -51||||||||
-|dull|-5|-|-1 /|-45|- -25|brass|-5- -1|weak|-45 - -25|rusted|-50|- -25||||||||
-|sharp1|1|-|5|/|20|-|35|bronze|1|-|5|jagged|20|-|35|fine|20|-|30|
-|fine|6|- 10/|36|-|50|iron|6|-|10|deadly|36|-|50|strong|31|-|40|||
-|Warrior’s|11|- 15/|51|-|65|steel|11|-|15|heavy|51|-|65|grand|41|-|55|||
-|soldier’s|16|-|20|/|66|-|80|silver|16|-|20|vicious|66|-|80|valiant|56|-|70|
-|lord’s|21|- 30/|81|-|95|gold|21|-|30|brutal|81|-|95|glorious|71|-|90|||
-|knight’s|31|- 40/|96|- 110|platinum|31|-|40|massive|96|- 110|blessed|91|- 110||||||
-|master’s|41|- 50|/|111|- 125|mithril|41|-|60|savage|111|- 125|saintly|111|- 130|||||
-|champion’s|51|- 75/|126|- 150|meteoric|61|-|80|ruthless|126|- 150|awesome|131|- 150||||||
-|king’s|76|-100 /|151|- 175|weird|81|- 100|merciless|151|- 175|holy|151|- 170|||||||
-|doppelganger’s2,3|21|- 30|/|81|-|95|strange|101|- 150|decay2,4|150|- 250|godly|171|- 200|||||
-|||||||||||||crystalline2,5|200|- 280||||||
-1. Is treated by the game as a cursed item during item creation so you will, for example, not be able to buy it in town.
-1. Only available in Hellfire.
 
-1. Has a 5% chance of duplicating any monster hit except Diablo and unique monsters.
+#### + Vitality
+| **Prefix**  | **Value**     |
+|------------|--------------|
+| illness    | -10 to -6    |
+| disease    | -5 to -1     |
+| vitality   | 1 to 5       |
+| zest       | 6 to 10      |
+| vim        | 11 to 15     |
+| vigor      | 16 to 20     |
+| life       | 21 to 30     |
 
-1. Bonus decreases by 5% each hit. When reaching -100%, the item is destroyed.
+#### + All Attributes
+| **Prefix**  | **Value**     |
+|------------|--------------|
+| trouble    | -10 to -6    |
+| the pit    | -5 to -1     |
+| the sky    | 1 to 3       |
+| the moon   | 4 to 7       |
+| the stars  | 8 to 11      |
+| the heavens| 12 to 15     |
+| the zodiac | 16 to 20     |
 
-1. Also has from -30 to -70% lower durability.
+#### + Life
+| **Prefix**    | **Value**    |
+|--------------|-------------|
+| the vulture  | -25 to -11  |
+| the jackal   | -10 to -1   |
+| the fox      | 10 to 15    |
+| the jaguar   | 16 to 20    |
+| the eagle    | 21 to 30    |
+| the wolf     | 30 to 40    |
+| the tiger    | 41 to 50    |
+| the lion     | 51 to 60    |
+| the mammoth  | 61 to 80    |
+| the whale    | 81 to 100   |
 
-1. There is a minimum increase of 1 in AC. That is, even if the percentage will give an increase to AC less than one, it will be increased by at least one. Due to a bug, any decrease in AC less than 1 will be transformed into a positive increase by 1.
+#### + Mana
+| **Prefix**    | **Value**    |
+|--------------|-------------|
+| corruption   | -all        |
+| hyena’s      | -25 to -11  |
+| frog’s       | -10 to -1   |
+| spider’s     | 10 to 15    |
+| raven’s      | 15 to 20    |
+| snake’s      | 21 to 30    |
+| serpent’s    | 30 to 40    |
+| drake’s      | 41 to 50    |
+| dragon’s     | 51 to 60    |
+| wyrm’s[^3]   | 61 to 80    |
+| hydra’s[^3]  | 81 to 100   |
 
-|<a name="page66"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**|||||**Created by Pedro Faria**||||||||||
-| :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
-||||||||||||||||
-|<b>+% Resist Magic<sup>1</sup></b>|<b>+% Resist Fire<sup>1</sup></b>|<b>+% Resist Light.<sup>1</sup></b>|<b>+% Resist All<sup>1</sup></b>|**+ Spell Levels**|||||||||||
-|white|10 -|20|red|10 -|20|blue|10 -|20|topaz|10 -|15|angel’s|1 lvl||
-|pearl|21 -|30|crimson|21 -|30|azure|21 -|30|amber|16 -|20|arch-angel’s|2 lvls||
-|ivory|31 -|40|crimson|31 -|40|lapis|31 -|40|jade|21 -|30||||
-|crystal|41 -|50|garnet|41 -|50|cobalt|41 -|50|obsidian|31 -|40||||
-|diamond|51 -|60|ruby|51 -|60|sapphire|51 -|60|emerald|41 -|50||||
-1	Is applied after any effects from thieves and -damage. It can reduce damage below 1.
+[^3]: Only available in *Hellfire*.
 
-|<b>+ Fire Damage<sup>1</sup></b>|<b>+ Lightning Damage<sup>1</sup></b>|<b>Damage / Penet. Armor<sup>2</sup></b>|**× Charges**||||||||||
-| :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
-|flame|1 -|3|shock|1 -|6|piercing|2|- 6 /|254|%|plentiful|2|
-|fire|1 -|6|lightning|1 -|10|puncturing|4|-12 /|504|%|bountiful|3|
-|flaming3|1 -|10|lightning3|2 -|20|bashing|8|-24 /|754|%|||
-|burning|1 -|16|thunder|1 -|20||||||||
-1. There are quite a few bugs associated with fire and lightning arrows which make them often deal erroneous damage (way too high or no additional damage at all).
+#### + Damage Done
+| **Prefix**    | **Value**    |
+|--------------|-------------|
+| quality      | 1 to 2      |
+| maiming      | 3 to 5      |
+| slaying      | 6 to 8      |
+| gore         | 9 to 12     |
+| carnage      | 13 to 16    |
+| slaughter    | 17 to 20    |
 
-1. In Diablo these suffixes lower the AC of the target by a specific random amount in the range shown in the table. In Hellfire they reduce the AC of the target by a certain percentage shown in the table. It does not work against players. The exact value (in Diablo) is determined at the time of creation of the item and the extra To Hit is never shown on the character screen.
+#### - Damage Taken<sup>[^1]</sup>
+| **Prefix**    | **Value**    |
+|--------------|-------------|
+| pain         | +4 to +2    |
+| tears        | +1          |
+| health       | -1          |
+| protection   | -2           |
+| absorption   | -3           |
+| deflection   | -4           |
+| osmosis      | -5 to -6      |
 
-1. A prefix on non bow weapons. All others are suffixes on bows only.
+[^1]: Works for all types of damage, even from spells, but does not work against other players. The damage is reduced before any resistance is applied but after the thieves effect. The damage will never be reduced below 1.
 
-1. Add 12.5 when used by a Barbarian.
+#### % Steal Life<sup>[^2]</sup>
+| **Prefix**    | **Value**    |
+|--------------|-------------|
+| the leech    | 3%          |
+| blood        | 5%          |
 
-|<b>+% Light Radius<sup>1</sup></b>|<b>Weapon Speed<sup>2</sup></b>|<b>Hit Recovery<sup>3</sup></b>|**+% Durability**|||||||
-| :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
-|the dark|-40|||||fragility|||=1|
-|the night|-20|||||brittleness|-26|-|-75|
-|light|20|readiness4,5|quick|balance|fast|sturdiness|26|-|75|
-|radiance|40|swiftness5|fast|stability|faster|craftsmanship  51|-|100||
-|||speed|faster|harmony|fastest|structure|101|-|200|
-|||haste6|fastest|||many7|||100|
-|||||||plenty7|||200|
-|||||||the ages|indestructible|||
+#### % Steal Mana<sup>[^2]</sup>
+| **Prefix**    | **Value**    |
+|--------------|-------------|
+| the bat      | 3%          |
+| vampires     | 5%          |
 
-1. Also affects the distance at which you activate monsters. A higher value means at a greater distance. There is no additional effect of wearing more than +50% or less than -80% light radius. As a curiosity, the light radius is always one square less in the catacombs and it is always the highest light radius you have had on a level that counts, even if you later lower it.
-1. A Bard only benefits from the fastest weapon.
+[^2]: The amount is based on damage done even if the monster has less HP left. Note that two items of life stealing or mana stealing are not cumulative with each other. An item of blood/vampire will take precedence over an item of the leech/the bat. An exception is *The Undead Crown*, which is cumulative with both an item of blood or an item of the leech for a total of 3% to 15.5% or 5% to 17.5% life stealing. *The Helm of Sprits, Shadowhawk, and The Eater of Souls* are treated as items of blood. *The Eater of Souls* is treated as an item of vampire. Does not work against players. See chapter 6.1.4 for more information.
 
-1. A character only benefits from the fastest one, as they are not cumulative. The exception is if you have one of each in which case you will, in Diablo only, receive a further reduction in hit recovery time. See chapter 2.2.1 for more information.
 
-1. Has no effect in Diablo.
 
-1. In Hellfire, it makes the arrows travel faster on bows instead of decreasing the ”swing” speed.
 
-1. Has the same effect as speed despite what is said in the latest Diablo patch (1.07).
+#### +% To Hit / +% Damage Done
+| **Prefix**         | **+% To Hit** | **+% Damage Done** |
+|--------------------|--------------|--------------------|
+| clumsy            | -10 to -6     | -75 to -50        |
+| dull              | -5 to -1      | -45 to -25        |
+| sharp[^1]         | 1 to 5        | 20 to 35          |
+| fine              | 6 to 10       | 36 to 50          |
+| Warrior’s         | 11 to 15      | 51 to 65          |
+| soldier’s         | 16 to 20      | 66 to 80          |
+| lord’s            | 21 to 30      | 81 to 95          |
+| knight’s          | 31 to 40      | 96 to 110         |
+| master’s          | 41 to 50      | 111 to 125        |
+| champion’s        | 51 to 75      | 126 to 150        |
+| king’s            | 76 to 100     | 151 to 175        |
+| doppelganger’s[^2][^3] | 21 to 30  | 81 to 95          |
 
-1. Suffix for bows only. All others are suffixes for non bow weapons.
+[^1]: Is treated by the game as a cursed item during item creation, so you will, for example, not be able to buy it in town.
+[^3]: Has a 5% chance of duplicating any monster hit except Diablo and unique monsters.
 
-|**Other Prefixes/Suffixes**|**Magical Effect**|
-| :- | :- |
-|the bear2|knocks target back|
-|blocking2|fast block|
-|thieves1,2,3|absorbs half of trap damage|
-|thorns1,2|attacker takes 1-3 damage|
-|devastation1,2,4,5,6|5% chance of doing ×3 damage|
-|jester’s1,2,4,5,7|each swing do 0-×6 damage9|
-|peril1,2,4,6,8|×2 damage to monster, ×1 damage to user|
+#### +% To Hit
+| **Prefix**   | **+% To Hit** |
+|-------------|--------------|
+| useless     | -100         |
+| tin         | -10 to -6    |
+| brass       | -5 to -1     |
+| bronze      | 1 to 5       |
+| iron        | 6 to 10      |
+| steel       | 11 to 15     |
+| silver      | 16 to 20     |
+| gold        | 21 to 30     |
+| platinum    | 31 to 40     |
+| mithril     | 41 to 60     |
+| meteoric    | 61 to 80     |
+| weird       | 81 to 100    |
+| strange     | 101 to 150   |
 
-1. Does not work versus players.
-1. These effects are not cumulative if you have them more than once. They are cumulative with other effects though.
+#### +% Damage Done
+| **Prefix**    | **+% Damage Done** |
+|--------------|--------------------|
+| bent         | -75 to -50         |
+| weak         | -45 to -25         |
+| jagged       | 20 to 35           |
+| deadly       | 36 to 50           |
+| heavy        | 51 to 65           |
+| vicious      | 66 to 80           |
+| brutal       | 81 to 95           |
+| massive      | 96 to 110          |
+| savage       | 111 to 125         |
+| ruthless     | 126 to 150         |
+| merciless    | 151 to 175         |
+| decay[^2][^4] | 150 to 250       |
+| crystalline[^2][^5] | 200 to 280  |
 
-1. In Hellfire it also absorbs half arrow and magical damage (magic, fire, lightning and apocalypse) from monster attacks. It is applied before both -damage and resistance.
+[^4]: Bonus decreases by 5% each hit. When reaching -100%, the item is destroyed.
+[^5]: Also has from -30% to -70% lower durability.
 
-1. Only available in Hellfire.
+[^2]: Only available in *Hellfire*.
 
-1. Damage bonus applies to total damage, not just weapon damage.
+#### +% Armor Class<sup>[^6]</sup>
+| **Prefix**     | **+% Armor Class** |
+|--------------|--------------------|
+| vulnerable  | -100 to -51         |
+| rusted      | -50 to -25          |
+| fine        | 20 to 30            |
+| strong      | 31 to 40            |
+| grand       | 41 to 55            |
+| valiant     | 56 to 70            |
+| glorious    | 71 to 90            |
+| blessed     | 91 to 110           |
+| saintly     | 111 to 130          |
+| awesome     | 131 to 150          |
+| holy        | 151 to 170          |
+| godly       | 171 to 200          |
 
-1. Does not work on bows.
+[^6]: There is a minimum increase of 1 in AC. That is, even if the percentage increase in AC is less than one, it will be increased by at least one. Due to a bug, any decrease in AC less than 1 will be transformed into a positive increase by 1.
 
-1. A prefix.
+#### +% Resist Magic<sup>[^1]</sup>
+| **Prefix**   | **+% Resist Magic** |
+|-------------|--------------------|
+| white       | 10 - 20            |
+| pearl       | 21 - 30            |
+| ivory       | 31 - 40            |
+| crystal     | 41 - 50            |
+| diamond     | 51 - 60            |
 
-1. Affects total damage versus monsters but only weapon damage and character damage versus user. This damage is modified by any -damage from enemies, though.
+#### +% Resist Fire<sup>[^1]</sup>
+| **Prefix**  | **+% Resist Fire** |
+|------------|-------------------|
+| red        | 10 - 20           |
+| crimson    | 21 - 30           |
+| crimson    | 31 - 40           |
+| garnet     | 41 - 50           |
+| ruby       | 51 - 60           |
 
-1. The game erroneously states it does ×0-5. Average value is ×2. For more details, see chapter 6.2.1. Does not work against Diablo or unique monsters.
+#### +% Resist Lightning<sup>[^1]</sup>
+| **Prefix**  | **+% Resist Lightning** |
+|------------|------------------------|
+| blue       | 10 - 20                |
+| azure      | 21 - 30                |
+| lapis      | 31 - 40                |
+| cobalt     | 41 - 50                |
+| sapphire   | 51 - 60                |
+
+#### +% Resist All<sup>[^1]</sup>
+| **Prefix**   | **+% Resist All** |
+|-------------|------------------|
+| topaz       | 10 - 15          |
+| amber       | 16 - 20          |
+| jade        | 21 - 30          |
+| obsidian    | 31 - 40          |
+| emerald     | 41 - 50          |
+
+[^1]: Is applied after any effects from thieves and -damage. It can reduce damage below 1.
+
+#### + Spell Levels
+| **Prefix**       | **+ Spell Levels** |
+|-----------------|------------------|
+| angel’s         | +1 lvl           |
+| arch-angel’s    | +2 lvls          |
+
+#### + Fire Damage<sup>[^1]</sup>
+| **Prefix**   | **+ Fire Damage** |
+|-------------|------------------|
+| flame       | 1 - 3            |
+| fire        | 1 - 6            |
+| flaming[^3] | 1 - 10           |
+| burning     | 1 - 16           |
+
+#### + Lightning Damage<sup>[^1]</sup>
+| **Prefix**    | **+ Lightning Damage** |
+|--------------|----------------------|
+| shock        | 1 - 6                |
+| lightning    | 1 - 10               |
+| lightning[^3]| 2 - 20               |
+| thunder      | 1 - 20               |
+
+[^1]: There are quite a few bugs associated with fire and lightning arrows which make them often deal erroneous damage (way too high or no additional damage at all).
+[^3]: A prefix on non-bow weapons. All others are suffixes on bows only.
+
+#### Damage / Penetrate Armor<sup>[^2]</sup>
+| **Suffix**     | **Damage Reduction** / **Armor Penetration** |
+|--------------|-----------------------------------|
+| piercing     | 2 - 6  /  25%<sup>[^4]</sup>                   |
+| puncturing   | 4 - 12 /  50%<sup>[^4]</sup>                   |
+| bashing      | 8 - 24 /  75%<sup>[^4]</sup>                   |
+
+[^4]: Add 12.5 when used by a *Barbarian*.  
+
+#### Damage / Penetrate Armor<sup>[^2]</sup>
+| **Suffix**     | **Damage Reduction** / **Armor Penetration** |
+|--------------|-----------------------------------|
+| piercing     | 2 - 6  /  25%                   |
+| puncturing   | 4 - 12 /  50%                   |
+| bashing      | 8 - 24 /  75%                   |
+
+[^2]: In *Diablo*, these suffixes lower the AC of the target by a specific random amount in the range shown in the table. In *Hellfire*, they reduce the AC of the target by a certain percentage shown in the table. It does not work against players. The exact value (*in Diablo*) is determined at the time of creation of the item, and the extra *To Hit* is never shown on the character screen.  
+
+#### × Charges
+| **Prefix**   | **Multiplier** |
+|-------------|--------------|
+| plentiful   | ×2           |
+| bountiful   | ×3           |
+
+#### +% Light Radius<sup>[^1]</sup>
+| **Suffix**  | **+% Light Radius** |
+|------------|--------------------|
+| the dark   | -40%               |
+| the night  | -20%               |
+| light      | +20%               |
+| radiance   | +40%               |
+
+[^1]: Also affects the distance at which you activate monsters. A higher value means activation at a greater distance. There is no additional effect of wearing more than +50% or less than -80% light radius. As a curiosity, the light radius is always one square less in the catacombs, and it is always the highest light radius you have had on a level that counts, even if you later lower it.  
+
+#### Weapon Speed<sup>[^2]</sup>
+| **Suffix**   | **Effect** |
+|-------------|-----------|
+| readiness[^4][^5] | quick      |
+| swiftness[^5] | fast       |
+| speed      | faster     |
+| haste[^6]  | fastest    |
+
+[^2]: A *Bard* only benefits from the *fastest* weapon speed.
+[^4]: Has no effect in *Diablo*.
+[^5]: In *Hellfire*, it makes arrows travel faster on bows instead of decreasing the "swing" speed.
+[^6]: Has the same effect as *speed* despite what is said in the latest *Diablo* patch (1.07).
+
+#### Hit Recovery<sup>[^3]</sup>
+| **Suffix**  | **Effect** |
+|------------|-----------|
+| balance    | fast      |
+| stability  | faster    |
+| harmony    | fastest   |
+
+[^3]: A character only benefits from the fastest hit recovery suffix, as they are not cumulative. The exception is if you have one of each, in which case you will, in *Diablo* only, receive a further reduction in hit recovery time. See chapter **2.2.1** for more information. 
+
+
+#### +% Durability
+| **Suffix**      | **Durability Bonus** |
+|----------------|---------------------|
+| fragility      | = 1                  |
+| brittleness    | -26% to -75%         |
+| sturdiness     | +26% to +75%         |
+| craftsmanship  | +51% to +100%        |
+| structure      | +101% to +200%       |
+| many[^7]       | +100% (bows only)    |
+| plenty[^7]     | +200% (bows only)    |
+| the ages       | indestructible       |
+
+[^7]: Suffix for *bows only*. All others are suffixes for *non-bow weapons*.  
+
+#### **Other Prefixes/Suffixes**
+| **Prefix/Suffix** | **Magical Effect** |
+|-------------------|-------------------|
+| the bear[^2]    | knocks target back |
+| blocking[^2]    | fast block         |
+| thieves[^1][^2][^3] | absorbs half of trap damage |
+| thorns[^1][^2]  | attacker takes 1-3 damage |
+| devastation[^1][^2][^4][^5][^6] | 5% chance of doing ×3 damage |
+| jester’s[^1][^2][^4][^5][^7] | each swing does **0-×6** damage[^9] |
+| peril[^1][^2][^4][^6][^8] | ×2 damage to monster, ×1 damage to user |
+
+[^1]: Does not work versus players.  
+[^2]: These effects are *not cumulative* if you have them more than once. They are cumulative with other effects, though.  
+[^3]: In *Hellfire*, it also absorbs **half arrow and magical damage** (*magic, fire, lightning, and apocalypse*) from monster attacks. It is applied before both `-damage` and resistance.  
+[^4]: Only available in *Hellfire*.  
+[^5]: Damage bonus applies to *total damage*, not just weapon damage.  
+[^6]: Does not work on bows.  
+[^7]: A *prefix*.  
+[^8]: Affects total damage versus monsters, but *only weapon damage* and character damage versus the user. This damage is modified by any `-damage` from enemies, though.  
+[^9]: The game erroneously states it does **×0-5**. The *actual* average value is **×2**. For more details, see chapter **6.2.1**. Does *not* work against *Diablo* or unique monsters.  
 
 
 ### 3.13.6 Occurrence of prefixes and suffixes
 
 The tables below are extracted from the more comprehensive ones above and summarize the occurrences of prefixes and suffixes. The following abbreviations are used:
 
-|A|Armor and Helms||||||t|Staves in Hellfire only|||||||||||
-| :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
-|S|Shields||||||||B|Bows|||||||||
-|W|Weapons (Axes, Clubs and Swords)||||J|Jewelry|||||||||||||
-|T|Staves||||||||||||||||||
-||||||||||||||||||||
-||**+ Strength**|**+ Magic**||**+ Dexterity**|||**+ Vitality**|**+ All Attributes**|||||||||||
-|frailty|ASW–BJ|the fool|ASWTBJ||paralysis|ASW–BJ||illness|ASW–BJ|trouble|ASWtBJ||||||||
-|weakness|ASWtBJ|dyslexia|ASWTBJ||atrophy||ASWtBJ||disease|ASWtBJ|the pit|ASWtBJ|||||||
-|strength|ASWtBJ|magic|ASWTBJ||dexterity|ASWtBJ||vitality|ASWtBJ|the sky|ASWtBJ||||||||
-|might|ASW–BJ|the mind|ASWTBJ||skill||ASW–BJ||zest|ASW–BJ|the moon|ASWtBJ|||||||
-|power|ASW–BJ|brilliance|ASWTBJ||accuracy|ASW–BJ||vim|ASW–BJ|the stars|A–WtBJ||||||||
-|giants|A–W–BJ|sorcery|A–WTBJ||precision|A–W–BJ||vigor|A–W–BJ|the heav.|––W–BJ||||||||
-|titans|––W––J|wizardry|–––T–J||perfection ––––BJ||life|–––––J|the zodiac –––––J||||||||||
-||||||||||||||||||||
-||**+ Life**|**+ Mana**||**+ Damage Done**||**- Damage Taken**|**% Steal Life**||||||||||||
-||||corruption ASW–––||||||||||||the leech|––W–––|||
-|the vult.|AS–––J|hyena’s|–––T–J|||||||||pain|AS–––J|blood|––W–––||||
-|the jackal|AS–––J|frog’s|–––T–J|||||||||tears|AS–––J||||||
-|the fox|AS–––J|spider’s|–––T–J||quality||––WtB–||health|AS–––J|||||||||
-|the jaguar|AS–––J|raven’s|–––T–J||maiming|––WtB–||protection AS––––|||||||||||
-|the eagle|AS–––J|snake’s|–––T–J||slaying||––W–––||absorption AS––––|**% Steal Mana**|||||||||
-|the wolf|AS–––J|serpent’s|–––T–J||gore||––W–––||deflection  A–––––|the bat|––W–––||||||||
-|the tiger|AS–––J|drake’s|–––T–J||carnage||––W–––||osmosis|A–––––|vampires|––W–––|||||||
-|the lion|A––––J|dragon’s|–––T–J||slaughter|––W–––|||||||||||||
-|the mam.|A–––––|wyrm’s1|–––t–J||||||||||||||||
-|the whale|A–––––|hydra’s1|–––t–J||||||||||||||||
-|1  Only available in Hellfire|||||||||||||||||||
-||||||||||||||||||||
-||**+% To Hit / +% Damage Done**|||**+% To Hit**||||**+% Damage Done**|**+% Armor**||||||||||
-|||||||||||||useless|––WtB–||||||
-|clumsy||––WTB–||tin|––W–BJ||bent|––WtB–|vulnerable|AS––––|||||||||
-|dull||––WTB–||brass|––W–BJ||weak|––WtB–|rusted|AS––––|||||||||
-|sharp||––WTB–||bronze|––W–BJ||jagged|––WtB–|fine|AS––––|||||||||
-|fine||––WTB–||iron|––W–BJ||deadly|––WtB–|strong|AS––––|||||||||
-|Warrior’s||––WTB–||steel|––W–BJ||heavy|––WtB–|grand|AS––––|||||||||
-|soldier’s||––WT––||silver|––W–BJ||vicious|––WtB–|valiant|AS––––|||||||||
-|lord’s||––WT––||gold|––W–BJ||brutal|––WtB–|glorious|AS––––|||||||||
-|knight’s||––WT––||platinum|––W–B–||massive|––WtB–|blessed|AS––––|||||||||
-|master’s||––WT––||mithril|––W–B–||savage|––WtB–|saintly|AS––––|||||||||
-|champion’s|––WT––||meteoric|––W–B–||ruthless|––WtB–|awesome|AS––––||||||||||
-|king’s||––WT––||weird|––W–B–||merciless|––WtB–|holy|AS––––|||||||||
-|doppelganger’s1|--Wt--||strange|––W–B–||decay1|--WtB-|godly|AS––––||||||||||
-|||||||||||||crystalline1|--W---||||||
-|1  Only available in Hellfire|||||||||||||||||||
-||||||||||||||||||||
-|**+ % Resist Magic**|**+ % Resist Fire**|**+ % Resist Light.**|||**+ % Resist All**||**+ Spell Levels**||||||||||||
-|white|ASWTBJ|red|ASWTBJ|blue||ASWTBJ||topaz|ASWTBJ|angel’s|–––T––||||||||
-|pearl|ASWTBJ|crimson|ASWTBJ|azure||ASWTBJ||amber|ASWTBJ|arch-angel’s  –––T––|||||||||
-|ivory|ASWTBJ|crimson|ASWTBJ|lapis||ASWTBJ||jade|ASWTBJ||||||||||
-|crystal|ASWTBJ|garnet|ASWTBJ|cobalt||ASWTBJ||obsidian|ASWTBJ||||||||||
-|diamond|ASWTBJ|ruby|ASWTBJ|sapphire||ASWTBJ||emerald|–SWTB–||||||||||
+#### **Item Categories**
 
-|<a name="page68"></a>**Jarulf’s Guide to Diablo and Hellfire, v1.62**||||||**Created by Pedro Faria**|||||||||
-| :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
-||||||||||||||||
-|**+ Fire Damage**||**+ Lightning Damage**|**Damage / Penet. Armor**|**× Charges**|||||||||||
-|flame|––––B–|shock|––––B–|piercing|––W–B–|plentiful|––––T––||||||||
-|fire|––––B–|lightning|––––B–|puncturing|––W–B–|bountiful|––––T––||||||||
-|flaming|––WT––|lightning|––WT––|bashing|––W–––||||||||||
-|burning|––––B–|thunder|––––B–||||||||||||
-||||||||||||||||
-|**+% Light Radius**|**Weapon Speed**|||**Hit Recovery**||||**Durability**|||||||
-|the dark|A–W––J||||||||||fragility|ASW–––|||
-|the night|A–W––J||||||||||brittleness|ASW–––|||
-|light|A–W––J|readiness|––WTB–||balance|A––––J||sturdiness|ASW–––||||||
-|radiance|A–W––J|swiftness|––WTB–||stability|A––––J||craftsmanship|ASW–––||||||
-|||speed||––WT––||harmony|A––––J||structure|ASW–––|||||
-|||haste||––WT––|||||||many||––––B–||
-||||||||||||plenty||––––B–||
-||||||||||||the ages|ASWt––|||
-||||||||||||||||
-|**Other Prefixes/Suffixes in Diablo**|||**Other Prefixes/Suffixes in Hellfire**||||||||||||
-|the bear|––WTB–|||||devastation||--WtB-|||||||
-|blocking|–S––––|||||jester’s||--W---|||||||
-|thieves|AS–––J|||||peril|||--WtB-||||||
-|thorns|AS––––||||||||||||||
+| **Code** | **Category** |
+|---------|------------------------------------|
+| A       | Armor and Helms                   |
+| S       | Shields                            |
+| W       | Weapons (*Axes, Clubs, and Swords*) |
+| T       | Staves                             |
+| B       | Bows                               |
+| J       | Jewelry                            |
+| t       | Staves (*Hellfire only*)           |
+
+
+#### + Strength
+| **Prefix**  | **Applicable Item Types** |
+|------------|-------------------------|
+| frailty    | ASW–BJ                   |
+| weakness   | ASWtBJ                    |
+| strength   | ASWtBJ                    |
+| might      | ASW–BJ                    |
+| power      | ASW–BJ                    |
+| giants     | A–W–BJ                    |
+| titans     | ––W––J                    |
+
+#### + Magic
+| **Prefix**   | **Applicable Item Types** |
+|-------------|-------------------------|
+| the fool    | ASWTBJ                    |
+| dyslexia    | ASWTBJ                    |
+| magic       | ASWTBJ                    |
+| the mind    | ASWTBJ                    |
+| brilliance  | ASWTBJ                    |
+| sorcery     | A–WTBJ                    |
+| wizardry    | –––T–J                    |
+
+#### + Dexterity
+| **Prefix**   | **Applicable Item Types** |
+|-------------|-------------------------|
+| paralysis   | ASW–BJ                    |
+| atrophy     | ASWtBJ                    |
+| dexterity   | ASWtBJ                    |
+| skill       | ASW–BJ                    |
+| accuracy    | ASW–BJ                    |
+| precision   | A–W–BJ                    |
+| perfection  | ––––BJ                    |
+
+#### + Vitality
+| **Prefix**  | **Applicable Item Types** |
+|------------|-------------------------|
+| illness    | ASW–BJ                    |
+| disease    | ASWtBJ                    |
+| vitality   | ASWtBJ                    |
+| zest       | ASW–BJ                     |
+| vim        | ASW–BJ                     |
+| vigor      | A–W–BJ                     |
+| life       | –––––J                     |
+
+#### + All Attributes
+| **Prefix**  | **Applicable Item Types** |
+|------------|-------------------------|
+| trouble    | ASWtBJ                    |
+| the pit    | ASWtBJ                    |
+| the sky    | ASWtBJ                    |
+| the moon   | ASWtBJ                    |
+| the stars  | A–WtBJ                    |
+| the heavens| ––W–BJ                    |
+| the zodiac | –––––J                    |
+
+
+#### + Life
+| **Prefix**   | **Applicable Item Types** |
+|-------------|-------------------------|
+| the vulture | AS–––J                    |
+| the jackal  | AS–––J                    |
+| the fox     | AS–––J                    |
+| the jaguar  | AS–––J                    |
+| the eagle   | AS–––J                    |
+| the wolf    | AS–––J                    |
+| the tiger   | AS–––J                    |
+| the lion    | A––––J                    |
+| the mammoth | A–––––                    |
+| the whale   | A–––––                    |
+
+#### + Mana
+| **Prefix**  | **Applicable Item Types** |
+|------------|-------------------------|
+| corruption  | ASW–––                    |
+| hyena’s    | –––T–J                   |
+| frog’s     | –––T–J                   |
+| spider’s   | –––T–J                   |
+| raven’s    | –––T–J                   |
+| snake’s    | –––T–J                   |
+| serpent’s  | –––T–J                   |
+| drake’s    | –––T–J                   |
+| dragon’s   | –––T–J                   |
+| wyrm’s [^1] | –––t–J                   |
+| hydra’s [^1] | –––t–J                   |
+
+[^1]: Only available in Hellfire.
+
+#### + Damage Done
+| **Prefix**  | **Applicable Item Types** |
+|------------|-------------------------|
+| quality    | ––WtB–                    |
+| maiming    | ––WtB–                    |
+| slaying    | ––W–––                    |
+| gore       | ––W–––                    |
+| carnage    | ––W–––                    |
+| slaughter  | ––W–––                    |
+
+#### - Damage Taken
+| **Prefix**    | **Applicable Item Types** |
+|--------------|-------------------------|
+| pain       | AS–––J                    |
+| tears      | AS–––J                    |
+| health     | AS–––J                    |
+| absorption  | AS––––                    |
+| protection  | AS––––                    |
+| deflection  | A–––––                    |
+| osmosis     | A–––––                    |
+
+#### % Steal Life
+| **Prefix**  | **Applicable Item Types** |
+|------------|-------------------------|
+| the leech  | ––W–––                    |
+| blood      | ––W–––                    |
+
+#### % Steal Mana
+| **Prefix**  | **Applicable Item Types** |
+|------------|-------------------------|
+| the bat    | ––W–––                    |
+| vampires   | ––W–––                    |
+
+#### +% To Hit / +% Damage Done
+| **Prefix**         | **Applicable Item Types** |
+|--------------------|-------------------------|
+| clumsy            | ––WTB–                   |
+| dull              | ––WTB–                   |
+| sharp             | ––WTB–                   |
+| fine              | ––WTB–                   |
+| Warrior’s         | ––WTB–                   |
+| soldier’s         | ––WT––                   |
+| lord’s            | ––WT––                   |
+| knight’s          | ––WT––                   |
+| master’s          | ––WT––                   |
+| champion’s        | ––WT––                   |
+| king’s            | ––WT––                   |
+| doppelganger’s [^1] | ––Wt––                   |
+
+#### +% To Hit
+| **Prefix**        | **Applicable Item Types** |
+|------------------|-------------------------|
+| tin             | ––W–BJ                   |
+| brass           | ––W–BJ                   |
+| bronze          | ––W–BJ                   |
+| iron            | ––W–BJ                   |
+| steel           | ––W–BJ                   |
+| silver          | ––W–BJ                   |
+| gold            | ––W–BJ                   |
+| platinum        | ––W–B–                   |
+| mithril         | ––W–B–                   |
+| meteoric        | ––W–B–                   |
+| weird           | ––W–B–                   |
+| strange         | ––W–B–                   |
+
+#### +% Damage Done
+| **Prefix**      | **Applicable Item Types** |
+|----------------|-------------------------|
+| bent          | ––WtB–                   |
+| weak          | ––WtB–                   |
+| jagged        | ––WtB–                   |
+| deadly        | ––WtB–                   |
+| heavy         | ––WtB–                   |
+| vicious       | ––WtB–                   |
+| brutal        | ––WtB–                   |
+| massive       | ––WtB–                   |
+| savage        | ––WtB–                   |
+| ruthless      | ––WtB–                   |
+| merciless     | ––WtB–                   |
+| decay [^1]    | ––WtB–                   |
+| crystalline [^1] | ––W–––                   |
+
+[^1]: Only available in Hellfire.
+
+#### +% Armor
+| **Prefix**    | **Applicable Item Types** |
+|--------------|-------------------------|
+| useless      | ––WtB–                   |
+| vulnerable   | AS––––                   |
+| rusted       | AS––––                   |
+| fine         | AS––––                   |
+| strong       | AS––––                   |
+| grand        | AS––––                   |
+| valiant      | AS––––                   |
+| glorious     | AS––––                   |
+| blessed      | AS––––                   |
+| saintly      | AS––––                   |
+| awesome      | AS––––                   |
+| holy         | AS––––                   |
+| godly        | AS––––                   |
+
+#### + % Resist Magic
+| **Prefix**  | **Applicable Item Types** |
+|------------|-------------------------|
+| white      | ASWTBJ                   |
+| pearl      | ASWTBJ                   |
+| ivory      | ASWTBJ                   |
+| crystal    | ASWTBJ                   |
+| diamond    | ASWTBJ                   |
+
+#### + % Resist Fire
+| **Prefix**  | **Applicable Item Types** |
+|------------|-------------------------|
+| red        | ASWTBJ                   |
+| crimson    | ASWTBJ                   |
+| crimson    | ASWTBJ                   |
+| garnet     | ASWTBJ                   |
+| ruby       | ASWTBJ                   |
+
+#### + % Resist Lightning
+| **Prefix**  | **Applicable Item Types** |
+|------------|-------------------------|
+| blue       | ASWTBJ                   |
+| azure      | ASWTBJ                   |
+| lapis      | ASWTBJ                   |
+| cobalt     | ASWTBJ                   |
+| sapphire   | ASWTBJ                   |
+
+#### + % Resist All
+| **Prefix**  | **Applicable Item Types** |
+|------------|-------------------------|
+| topaz      | ASWTBJ                   |
+| amber      | ASWTBJ                   |
+| jade       | ASWTBJ                   |
+| obsidian   | ASWTBJ                   |
+| emerald    | –SWTB–                   |
+
+#### + Spell Levels
+| **Prefix**       | **Applicable Item Types** |
+|-----------------|-------------------------|
+| angel’s         | –––T––                   |
+| arch-angel’s    | –––T––                   |
+
+
+#### + Fire Damage
+| **Prefix**  | **Applicable Item Types** |
+|------------|-------------------------|
+| flame      | ––––B–                   |
+| fire       | ––––B–                   |
+| flaming    | ––WT––                   |
+| burning    | ––––B–                   |
+
+#### + Lightning Damage
+| **Prefix**  | **Applicable Item Types** |
+|------------|-------------------------|
+| shock      | ––––B–                   |
+| lightning  | ––––B–                   |
+| lightning  | ––WT––                   |
+| thunder    | ––––B–                   |
+
+#### Damage / Penetration Armor
+| **Prefix**   | **Applicable Item Types** |
+|-------------|-------------------------|
+| piercing    | ––W–B–                   |
+| puncturing  | ––W–B–                   |
+| bashing     | ––W–––                   |
+
+#### × Charges
+| **Prefix**  | **Applicable Item Types** |
+|------------|-------------------------|
+| plentiful  | ––––T––                   |
+| bountiful  | ––––T––                   |
+
+
+#### +% Light Radius
+| **Prefix**  | **Applicable Item Types** |
+|------------|-------------------------|
+| the dark   | A–W––J                   |
+| the night  | A–W––J                   |
+| light      | A–W––J                   |
+| radiance   | A–W––J                   |
+
+#### Weapon Speed
+| **Prefix**   | **Applicable Item Types** |
+|-------------|-------------------------|
+| readiness   | ––WTB–                   |
+| swiftness   | ––WTB–                   |
+| speed       | ––WT––                   |
+| haste       | ––WT––                   |
+
+#### Hit Recovery
+| **Prefix**   | **Applicable Item Types** |
+|-------------|-------------------------|
+| balance     | A––––J                   |
+| stability   | A––––J                   |
+| harmony     | A––––J                   |
+
+#### Durability
+| **Prefix**       | **Applicable Item Types** |
+|-----------------|-------------------------|
+| fragility       | ASW–––                   |
+| brittleness     | ASW–––                   |
+| sturdiness      | ASW–––                   |
+| craftsmanship   | ASW–––                   |
+| structure       | ASW–––                   |
+| many           | ––––B–                   |
+| plenty         | ––––B–                   |
+| the ages       | ASWt––                   |
+
+#### Other Prefixes/Suffixes in Diablo
+| **Prefix/Suffix** | **Applicable Item Types** |
+|------------------|-------------------------|
+| the bear        | ––WTB–                   |
+| blocking        | –S––––                   |
+| thieves        | AS–––J                   |
+| thorns         | AS––––                   |
+
+#### Other Prefixes/Suffixes in Hellfire
+| **Prefix/Suffix** | **Applicable Item Types** |
+|------------------|-------------------------|
+| devastation     | --WtB-                   |
+| jester’s       | --W---                   |
+| peril          | --WtB-                   |
 
 
 # 4. Magic
