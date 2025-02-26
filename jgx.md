@@ -51,8 +51,6 @@
   - [3.9.3 Pepin](#393-pepin)
   - [3.9.4 Wirt](#394-wirt)
 - [3.10 General remarks on possible items](#310-general-remarks-on-possible-items)
-- [3.11 Probabilities of finding unique items](#311-probabilities-of-finding-unique-items)
-- [3.12 Probabilities of finding magical items](#312-probabilities-of-finding-magical-items)
 - [3.13 Summary of various item properties](#313-summary-of-various-item-properties)
   - [3.13.1 Levels of base items](#3131-levels-of-base-items)
   - [3.13.2 Levels of spells on books and staves](#3132-levels-of-spells-on-books-and-staves)
@@ -2822,30 +2820,6 @@ As the highest qlvl of a base item is 25, any monster with an mlvl equal to that
 **What affects item creation**
 
 As can be seen from the information in chapter 3, the only things that affect what items one can find in the dungeon and can buy in town are the mlvl and dlvl in dungeons and the clvl (or dlvl visited in single player) in town. Thus, item creation is not affected by anything else. There is *no* influence caused by what you are carrying (except in Hellfire for Griswold’s and Wirt’s items), your character class, what items you use, who created the game, or other similar things. The only thing that will affect the creation is the initial seed used by the game in generating random numbers, and in both Diablo and Hellfire, the initial seed is generated out of the time when the game is created (and for items in town, the time when you shop; this is to avoid the chance that all players in the game see the same items, as they would then be treated by the game as duplicates).
-
-
-
-## 3.11 Probabilities of finding unique items
-
-As with all other items in the game with the exception of quest related items, which only exists in single player, unique items are created randomly by the game. In the table below are shown the rarity of all the unique items. The values have been calculated taking into account all the relevant information and formulas found in this Guide as well as all of the following:
-
-- You would have to kill all monsters, break all barrels, open all chests and so on.
-
-- Each monster is modeled with the probabilities found in chapter 5.3.2.
-
-- There are assumed to exist 185 monsters on all levels with the exception of level 1 and 2 that are a bit smaller and thus has a somewhat less monsters.
-
-- On appropriate levels, the following number of item sources have been assumed (usually the average number of them on each level): 7 small chests, 4 chests, 2.5 large chests, 5 patches of 6 barrels, 14.5 sarcophagus and 3.5 decapitated bodies. For the calculations it does not matter if the numbers are decimals instead of integers.
-
-- For various reasons, mostly due to the difficulties in making good estimates of the frequencies, no considerations have been made to those items sometimes appearing directly on the ground or appearing on weapon or armor racks. This should not affect the final probabilities much though. If anyone has any more information on the frequencies of them, please feel free to tell me.
-
-- The values are only valid for multi player. In single player some quest monsters will drop a quest item instead of a random magical item. Also, dungeon levels normally has less monsters than in single player. Finally, unique items are picked slightly different in single player than multi player meaning some of the unique items marked as Impossible ones, actually has a very small chance of appearing in a single player game (but very small, typically square the number for the uniques being second in the order and raise it to the power of three for the third one in the list. For the drop order of such unique items, see chapter 3.5.2. It is my belief that the values should be more or less accurate for single player as well though.
-
-The value given is an estimate of how many games it takes on average to find a specific unique. To find the probability of a specific unique to exist in a game, simply divide 1 by the number given. Given are also numbers telling on what dlvl the unique item has the highest overall chance (includes all sources) to be found. It is very important to realize that the number given here are necessarily *not* the same as the typical player will find. A typical player will for example not play in all areas equally much. Also, even though the chances are over all greater for monsters than for unique monsters, you need to kill a lot more of them. So if you are hunting for specific unique items, it is normally a much faster method to kill, say only bosses on level 13-15 than killing all monsters on the same levels. Never the less, the numbers below should give a rough estimate on how rare or common a specific unique item is. If an item is impossible to generate for some reason, it will say ”impossible”.
-
-## 3.12 Probabilities of finding magical items
-
-It would of course be possible to do similar tables for magical items, as for unique items. However, due to the almost infinite number of possible magical items as well as severe problems to do any probabilities for such items that are sold in town (especially in Hellfire), it is my decision to not have any such information in this guide.
 
 
 ## 3.13 Summary of various item properties
