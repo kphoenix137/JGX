@@ -50,10 +50,29 @@
   - [3.9.2 Griswold](#392-griswold)
   - [3.9.3 Pepin](#393-pepin)
   - [3.9.4 Wirt](#394-wirt)
+- [3.10 General remarks on possible items](#310-general-remarks-on-possible-items)
+- [3.11 Probabilities of finding unique items](#311-probabilities-of-finding-unique-items)
+- [3.12 Probabilities of finding magical items](#312-probabilities-of-finding-magical-items)
+- [3.13 Summary of various item properties](#313-summary-of-various-item-properties)
+  - [3.13.1 Levels of base items](#3131-levels-of-base-items)
+  - [3.13.2 Levels of spells on books and staves](#3132-levels-of-spells-on-books-and-staves)
+  - [3.13.3 Levels of prefixes and suffixes](#3133-levels-of-prefixes-and-suffixes)
+  - [3.13.4 Levels of unique items](#3134-levels-of-unique-items)
+  - [3.13.5 Effects of prefixes and suffixes](#3135-effects-of-prefixes-and-suffixes)
+  - [3.13.6 Occurrence of prefixes and suffixes](#3136-occurrence-of-prefixes-and-suffixes)
 
 ## [4. Magic](#4-magic)
 - [4.1 Spells available to players](#41-spells-available-to-players)
+  - [4.1.1 List of spells and spell effects](#411-list-of-spells-and-spell-effects)
+  - [4.1.2 Details about spells](#412-details-about-spells)
+  - [4.1.3 Spells available in Diablo](#413-spells-available-in-diablo)
+  - [4.1.4 New spells in Hellfire](#414-new-spells-in-hellfire)
+  - [4.1.5 Mana cost and magic requirements for spells](#415-mana-cost-and-magic-requirements-for-spells)
+  - [4.1.6 Spell level of cast spells](#416-spell-level-of-cast-spells)
+  - [4.1.7 Targeting of spells](#417-targeting-of-spells)
 - [4.2 Spell casting monsters](#42-spell-casting-monsters)
+  - [4.2.1 Details about monster spells in Diablo](#421-details-about-monster-spells-in-diablo)
+  - [4.2.2 Details about new monster spells in Hellfire](#422-details-about-new-monster-spells-in-hellfire)
 - [4.3 Traps](#43-traps)
 
 ## [5. Monsters](#5-monsters)
@@ -85,6 +104,7 @@
 - [10.6 Avoiding the Game End movie](#106-avoiding-the-game-end-movie)
 - [10.7 Meaningless information about this guide](#107-meaningless-information-about-this-guide)
 - [10.8 The End](#108-the-end)
+
 
 
 # 1. Introduction
