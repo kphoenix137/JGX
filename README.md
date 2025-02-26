@@ -83,7 +83,4 @@ JGX is a community driven project to rework the classic Jarulf's Guide into a we
 - [10.2 Save files](10-Other-Useful-Information/10.2.md)
 - [10.3 Transferring save files](10-Other-Useful-Information/10.3.md)
 - [10.4 Backing up your character](10-Other-Useful-Information/10.4.md)
-- [10.5 Daylight-saving time problems in Diablo 1.00](10-Other-Useful-Information/10.5.md)
 - [10.6 Avoiding the Game End movie](10-Other-Useful-Information/10.6.md)
-- [10.7 Meaningless information about this guide](10-Other-Useful-Information/10.7.md)
-- [10.8 The End](10-Other-Useful-Information/10.8.md)
