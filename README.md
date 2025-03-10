@@ -52,6 +52,8 @@ JGX is a community driven project to rework the classic Jarulf's Guide into a we
   - [3.9.2 Griswold](3-Items/3.9.md#392-griswold)
   - [3.9.3 Pepin](3-Items/3.9.md#393-pepin)
   - [3.9.4 Wirt](3-Items/3.9.md#394-wirt)
+- [3.10 General remarks on possible items](3-Items/3.10.md)
+- [3.13 Summary of various item properties](3-Items/3.13.md)
 
 ## [4. Magic](4-Magic/4.0.md)
 - [4.1 Spells available to players](4-Magic/4.1.md)
