@@ -59,12 +59,16 @@ JGX is a community driven project to rework the classic Jarulf's Guide into a we
   - [4.1.2 Details about spells](4-Magic/4.1.md#412-details-about-spells)
   - [4.1.3 Spells available in Diablo](4-Magic/4.1.md#413-spells-available-in-diablo)
   - [4.1.4 New spells in Hellfire](4-Magic/4.1.md#414-new-spells-in-hellfire)
+- [4.2 Spell casting monsters](4-Magic/4.2.md)
+- [4.3 Traps](4-Magic/4.3.md)
 
 ## [5. Monsters](5-Monsters/5.0.md)
 - [5.1 How to calculate monster data](5-Monsters/5.1.md)
 - [5.2 Monster data](5-Monsters/5.2.md)
 - [5.3 Monster properties](5-Monsters/5.3.md)
 - [5.4 Unique monsters](5-Monsters/5.4.md)
+- [5.5 Monster AI](5-Monsters/5.5.md)
+- [5.6 Summary of various monster stats](5-Monsters/5.6.md)
 
 ## [6. Battle](6-Battle/6.0.md)
 - [6.1 General information](6-Battle/6.1.md)
